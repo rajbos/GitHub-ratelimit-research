@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub Rate Limit Monitor</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #0d1117;
+      color: #c9d1d9;
+      min-height: 100vh;
+    }
+
+    header {
+      background: #161b22;
+      border-bottom: 1px solid #30363d;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #f0f6fc;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    header h1 svg { width: 24px; height: 24px; fill: #58a6ff; }
+
+    .header-controls {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    select, input[type="text"], button {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+      border-radius: 6px;
+      padding: 6px 12px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+
+    select:focus, input[type="text"]:focus { outline: 2px solid #58a6ff; outline-offset: 0; }
+
+    button {
+      background: #238636;
+      border-color: #2ea043;
+      color: #fff;
+      font-weight: 500;
+    }
+    button:hover { background: #2ea043; }
+    button.secondary { background: #21262d; border-color: #30363d; color: #c9d1d9; }
+    button.secondary:hover { background: #30363d; }
+
+    input[type="text"] { width: 280px; font-family: monospace; }
+
+    main { padding: 24px; }
+
+    .status-bar {
+      margin-bottom: 16px;
+      font-size: 13px;
+      color: #8b949e;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .status-bar .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #3fb950;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .chart-container {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 24px;
+      position: relative;
+    }
+
+    .chart-container h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 16px;
+    }
+
+    .chart-wrapper { position: relative; height: 320px; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 12px;
+      margin-bottom: 24px;
+    }
+
+    .stat-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    .stat-card .label { font-size: 12px; color: #8b949e; margin-bottom: 4px; }
+    .stat-card .value { font-size: 24px; font-weight: 600; color: #f0f6fc; }
+    .stat-card .sub { font-size: 12px; color: #8b949e; margin-top: 2px; }
+
+    .detail-panel {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 8px;
+      padding: 20px;
+      display: none;
+    }
+
+    .detail-panel.visible { display: block; }
+
+    .detail-panel h2 {
+      font-size: 15px;
+      font-weight: 600;
+      color: #f0f6fc;
+      margin-bottom: 4px;
+    }
+
+    .detail-panel .subtitle {
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 16px;
+    }
+
+    .runs-list { list-style: none; }
+
+    .runs-list li {
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .runs-list li .icon { font-size: 20px; flex-shrink: 0; margin-top: 1px; }
+
+    .runs-list li .info { flex: 1; min-width: 0; }
+    .runs-list li .repo { font-size: 13px; color: #58a6ff; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .runs-list li .name { font-size: 13px; color: #c9d1d9; }
+    .runs-list li .meta { font-size: 12px; color: #8b949e; margin-top: 2px; }
+    .runs-list li a { color: inherit; text-decoration: none; }
+    .runs-list li a:hover { text-decoration: underline; }
+
+    .conclusion-success { color: #3fb950; }
+    .conclusion-failure { color: #f85149; }
+    .conclusion-cancelled { color: #8b949e; }
+    .conclusion-in_progress { color: #d29922; }
+
+    .loading {
+      text-align: center;
+      padding: 48px;
+      color: #8b949e;
+      font-size: 14px;
+    }
+
+    .loading::before {
+      content: '';
+      display: block;
+      width: 32px; height: 32px;
+      border: 3px solid #30363d;
+      border-top-color: #58a6ff;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin: 0 auto 16px;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .error {
+      background: #1f1f1f;
+      border: 1px solid #f85149;
+      border-radius: 6px;
+      padding: 16px;
+      color: #f85149;
+      font-size: 13px;
+    }
+
+    .tip {
+      background: #1c2128;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #8b949e;
+      margin-bottom: 24px;
+    }
+
+    .tip strong { color: #f0f6fc; }
+
+    .token-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    #tokenStatus { font-size: 12px; }
+    #tokenStatus.ok { color: #3fb950; }
+    #tokenStatus.missing { color: #d29922; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>
+    <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+    </svg>
+    GitHub Rate Limit Monitor
+  </h1>
+  <div class="header-controls">
+    <select id="rangeSelect">
+      <option value="24">Last 24 hours</option>
+      <option value="72">Last 3 days</option>
+      <option value="168">Last 7 days</option>
+      <option value="720">Last 30 days</option>
+      <option value="0">All time</option>
+    </select>
+    <div class="token-row">
+      <input type="text" id="patInput" placeholder="GitHub PAT (for run details)" />
+      <button onclick="savePAT()">Save</button>
+      <span id="tokenStatus"></span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="tip">
+    <strong>How to use:</strong> This dashboard shows your GitHub API rate limit usage sampled every 15 minutes.
+    Click any data point to see which workflow runs were active during that window.
+    Enter your GitHub PAT above to enable fetching live workflow run details when clicking a data point.
+    Data is stored in the <code>data</code> branch of this repository.
+  </div>
+
+  <div id="statusBar" class="status-bar">
+    <span class="dot"></span>
+    <span id="statusText">Loading data…</span>
+  </div>
+
+  <div id="statsGrid" class="stats-grid" style="display:none;">
+    <div class="stat-card">
+      <div class="label">Core — Current Remaining</div>
+      <div class="value" id="statCoreRemaining">—</div>
+      <div class="sub" id="statCoreLimit">of — limit</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Core — Used This Period</div>
+      <div class="value" id="statCoreUsed">—</div>
+      <div class="sub">API calls used since last reset</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">GraphQL — Remaining</div>
+      <div class="value" id="statGraphqlRemaining">—</div>
+      <div class="sub" id="statGraphqlLimit">of — limit</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Search — Remaining</div>
+      <div class="value" id="statSearchRemaining">—</div>
+      <div class="sub" id="statSearchLimit">of — limit</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Data Points</div>
+      <div class="value" id="statPoints">—</div>
+      <div class="sub" id="statRange">in selected range</div>
+    </div>
+    <div class="stat-card">
+      <div class="label">Last Updated</div>
+      <div class="value" id="statLastUpdated" style="font-size:14px;">—</div>
+      <div class="sub">most recent data point</div>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <h2>Core API — Remaining Calls Over Time</h2>
+    <div class="chart-wrapper">
+      <canvas id="coreChart"></canvas>
+    </div>
+  </div>
+
+  <div class="chart-container">
+    <h2>Core API — Calls Used Per 15-Minute Window</h2>
+    <div class="chart-wrapper">
+      <canvas id="deltaChart"></canvas>
+    </div>
+  </div>
+
+  <div id="detailPanel" class="detail-panel">
+    <h2 id="detailTitle">Workflow Runs</h2>
+    <div id="detailSubtitle" class="subtitle"></div>
+    <div id="detailContent"></div>
+  </div>
+</main>
+
+<script>
+  // ── Configuration ────────────────────────────────────────────────────────────
+  // These defaults point to the repository that hosts this page.
+  // Fork this repo and update OWNER/REPO here, or override them in localStorage
+  // by setting gh_owner and gh_repo keys.
+  const OWNER = localStorage.getItem('gh_owner') || 'rajbos';
+  const REPO  = localStorage.getItem('gh_repo')  || 'GitHub-ratelimit-research';
+  const RAW_BASE = `https://raw.githubusercontent.com/${OWNER}/${REPO}/data`;
+
+  // ── State ────────────────────────────────────────────────────────────────────
+  let allRows   = [];   // parsed CSV rows
+  let coreChart = null;
+  let deltaChart = null;
+
+  // ── PAT storage ──────────────────────────────────────────────────────────────
+  function loadPAT() {
+    const pat = localStorage.getItem('gh_pat') || '';
+    document.getElementById('patInput').value = pat;
+    updateTokenStatus(pat);
+    return pat;
+  }
+
+  function savePAT() {
+    const pat = document.getElementById('patInput').value.trim();
+    localStorage.setItem('gh_pat', pat);
+    updateTokenStatus(pat);
+  }
+
+  function updateTokenStatus(pat) {
+    const el = document.getElementById('tokenStatus');
+    if (pat) {
+      el.textContent = '✓ PAT saved';
+      el.className = 'ok';
+    } else {
+      el.textContent = '⚠ No PAT — run details unavailable';
+      el.className = 'missing';
+    }
+  }
+
+  // ── CSV parsing ───────────────────────────────────────────────────────────────
+  function parseCSV(text) {
+    const lines = text.trim().split('\n');
+    if (lines.length < 2) return [];
+    // skip header
+    return lines.slice(1).map(line => {
+      const [
+        timestamp, core_limit, core_remaining, core_used, core_reset,
+        search_limit, search_remaining, search_used,
+        graphql_limit, graphql_remaining, graphql_used
+      ] = line.split(',');
+      return {
+        timestamp,
+        date: new Date(timestamp),
+        core_limit:         +core_limit,
+        core_remaining:     +core_remaining,
+        core_used:          +core_used,
+        core_reset:         +core_reset,
+        search_limit:       +search_limit,
+        search_remaining:   +search_remaining,
+        search_used:        +search_used,
+        graphql_limit:      +graphql_limit,
+        graphql_remaining:  +graphql_remaining,
+        graphql_used:       +graphql_used,
+      };
+    }).filter(r => !isNaN(r.date.getTime()));
+  }
+
+  // ── Filter rows by selected range ────────────────────────────────────────────
+  function filterRows(rows) {
+    const hours = parseInt(document.getElementById('rangeSelect').value, 10);
+    if (hours === 0) return rows;
+    const cutoff = new Date(Date.now() - hours * 3600 * 1000);
+    return rows.filter(r => r.date >= cutoff);
+  }
+
+  // ── Compute deltas (calls used between consecutive points) ───────────────────
+  function computeDeltas(rows) {
+    return rows.map((r, i) => {
+      if (i === 0) return { date: r.date, delta: null };
+      const prev = rows[i - 1];
+      // If remaining went UP between points, a reset occurred → delta = limit - r.remaining
+      let delta;
+      if (r.core_remaining > prev.core_remaining) {
+        // reset happened: calls used = (prev_remaining) + (limit - r.remaining after reset)
+        delta = prev.core_remaining + (r.core_limit - r.core_remaining);
+      } else {
+        delta = prev.core_remaining - r.core_remaining;
+      }
+      return { date: r.date, delta: Math.max(0, delta) };
+    }).filter(d => d.delta !== null);
+  }
+
+  // ── Update stats cards ────────────────────────────────────────────────────────
+  function updateStats(rows) {
+    if (rows.length === 0) return;
+    const last = rows[rows.length - 1];
+    document.getElementById('statCoreRemaining').textContent = last.core_remaining.toLocaleString();
+    document.getElementById('statCoreLimit').textContent     = `of ${last.core_limit.toLocaleString()} limit`;
+    document.getElementById('statCoreUsed').textContent      = last.core_used.toLocaleString();
+    document.getElementById('statGraphqlRemaining').textContent = last.graphql_remaining.toLocaleString();
+    document.getElementById('statGraphqlLimit').textContent     = `of ${last.graphql_limit.toLocaleString()} limit`;
+    document.getElementById('statSearchRemaining').textContent  = last.search_remaining.toLocaleString();
+    document.getElementById('statSearchLimit').textContent      = `of ${last.search_limit.toLocaleString()} limit`;
+    document.getElementById('statPoints').textContent           = rows.length.toLocaleString();
+    document.getElementById('statLastUpdated').textContent      = last.date.toLocaleString();
+    document.getElementById('statsGrid').style.display = '';
+  }
+
+  // ── Chart helpers ─────────────────────────────────────────────────────────────
+  const chartDefaults = {
+    responsive: true,
+    maintainAspectRatio: false,
+    animation: false,
+    interaction: { intersect: false, mode: 'index' },
+    scales: {
+      x: {
+        type: 'time',
+        time: { tooltipFormat: 'PPpp' },
+        ticks: { color: '#8b949e', maxTicksLimit: 10 },
+        grid: { color: '#21262d' },
+      },
+      y: {
+        ticks: { color: '#8b949e' },
+        grid: { color: '#21262d' },
+      },
+    },
+    plugins: {
+      legend: { labels: { color: '#c9d1d9' } },
+      tooltip: {
+        backgroundColor: '#1c2128',
+        borderColor: '#30363d',
+        borderWidth: 1,
+        titleColor: '#f0f6fc',
+        bodyColor: '#c9d1d9',
+      },
+    },
+  };
+
+  function buildCoreChart(rows) {
+    const ctx = document.getElementById('coreChart').getContext('2d');
+    if (coreChart) coreChart.destroy();
+
+    const data = rows.map(r => ({ x: r.date, y: r.core_remaining }));
+
+    coreChart = new Chart(ctx, {
+      type: 'line',
+      data: {
+        datasets: [{
+          label: 'Core Remaining',
+          data,
+          borderColor: '#58a6ff',
+          backgroundColor: 'rgba(88,166,255,0.1)',
+          fill: true,
+          pointRadius: 3,
+          pointHoverRadius: 6,
+          tension: 0.2,
+        }],
+      },
+      options: {
+        ...chartDefaults,
+        onClick: (e, elements) => {
+          if (elements.length > 0) {
+            const idx = elements[0].index;
+            showRunsForPoint(rows[idx]);
+          }
+        },
+        plugins: {
+          ...chartDefaults.plugins,
+          tooltip: {
+            ...chartDefaults.plugins.tooltip,
+            callbacks: {
+              label: ctx => `Remaining: ${ctx.parsed.y.toLocaleString()}`,
+              footer: () => 'Click to see workflow runs',
+            },
+          },
+        },
+      },
+    });
+  }
+
+  function buildDeltaChart(rows) {
+    const ctx = document.getElementById('deltaChart').getContext('2d');
+    if (deltaChart) deltaChart.destroy();
+
+    const deltas = computeDeltas(rows);
+    const data   = deltas.map(d => ({ x: d.date, y: d.delta }));
+
+    deltaChart = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        datasets: [{
+          label: 'API Calls Used',
+          data,
+          backgroundColor: data.map(d => d.y > 500 ? 'rgba(248,81,73,0.8)' : d.y > 200 ? 'rgba(210,153,34,0.8)' : 'rgba(63,185,80,0.8)'),
+          borderRadius: 2,
+        }],
+      },
+      options: {
+        ...chartDefaults,
+        onClick: (e, elements) => {
+          if (elements.length > 0) {
+            const idx = elements[0].index;
+            showRunsForPoint(rows[idx + 1]); // deltas are offset by 1
+          }
+        },
+        plugins: {
+          ...chartDefaults.plugins,
+          tooltip: {
+            ...chartDefaults.plugins.tooltip,
+            callbacks: {
+              label: ctx => `API calls used: ${ctx.parsed.y.toLocaleString()}`,
+              footer: () => 'Click to see workflow runs',
+            },
+          },
+        },
+      },
+    });
+  }
+
+  // ── Show workflow runs for a clicked data point ───────────────────────────────
+  async function showRunsForPoint(row) {
+    const panel = document.getElementById('detailPanel');
+    panel.classList.add('visible');
+
+    const ts = row.date.toLocaleString();
+    document.getElementById('detailTitle').textContent = `Workflow Runs near ${ts}`;
+    document.getElementById('detailSubtitle').textContent =
+      `Core API remaining at this point: ${row.core_remaining.toLocaleString()} / ${row.core_limit.toLocaleString()}`;
+    document.getElementById('detailContent').innerHTML = '<div class="loading">Fetching workflow runs…</div>';
+    panel.scrollIntoView({ behavior: 'smooth' });
+
+    const pat = loadPAT();
+
+    // Try to load pre-collected runs snapshot from data branch
+    const fileTs = row.timestamp.replace(/:/g, '-');
+    try {
+      const resp = await fetch(`${RAW_BASE}/runs/${fileTs}.json`);
+      if (resp.ok) {
+        const runs = await resp.json();
+        renderRuns(runs, 'Workflow runs collected at this checkpoint (from stored data)');
+        return;
+      }
+    } catch (_) { /* fall through to live fetch */ }
+
+    if (!pat) {
+      document.getElementById('detailContent').innerHTML =
+        `<div class="error">No PAT configured and no cached data found for this time window.<br>
+        Enter your GitHub PAT above and click Save to enable live workflow run lookups.</div>`;
+      return;
+    }
+
+    // Live fetch: get recently active repos, then query runs around the data point time
+    try {
+      const windowStart = new Date(row.date.getTime() - 20 * 60 * 1000).toISOString();
+      const windowEnd   = new Date(row.date.getTime() + 20 * 60 * 1000).toISOString();
+
+      const reposResp = await ghFetch('https://api.github.com/user/repos?sort=pushed&direction=desc&per_page=20&type=owner', pat);
+      if (!reposResp.ok) throw new Error(`Repos fetch failed: ${reposResp.status}`);
+      const repos = await reposResp.json();
+
+      const allRuns = [];
+      await Promise.all(repos.slice(0, 20).map(async repo => {
+        try {
+          const r = await ghFetch(
+            `https://api.github.com/repos/${repo.full_name}/actions/runs?created=>=${windowStart}&per_page=10`,
+            pat
+          );
+          if (!r.ok) return;
+          const data = await r.json();
+          (data.workflow_runs || []).forEach(run => {
+            allRuns.push({
+              repo: repo.full_name,
+              id: run.id,
+              name: run.name,
+              status: run.status,
+              conclusion: run.conclusion,
+              created_at: run.created_at,
+              updated_at: run.updated_at,
+              html_url: run.html_url,
+            });
+          });
+        } catch (_) { /* skip repo on error */ }
+      }));
+
+      // Sort by created date descending
+      allRuns.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+      renderRuns(allRuns, `Live data: workflow runs between ${new Date(windowStart).toLocaleString()} and ${new Date(windowEnd).toLocaleString()}`);
+    } catch (err) {
+      document.getElementById('detailContent').innerHTML =
+        `<div class="error">Failed to fetch workflow runs: ${err.message}</div>`;
+    }
+  }
+
+  function ghFetch(url, pat) {
+    return fetch(url, {
+      headers: {
+        'Authorization': `Bearer ${pat}`,
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28',
+      },
+    });
+  }
+
+  function conclusionIcon(conclusion, status) {
+    if (status === 'in_progress') return '🔄';
+    switch (conclusion) {
+      case 'success':   return '✅';
+      case 'failure':   return '❌';
+      case 'cancelled': return '⛔';
+      case 'skipped':   return '⏭️';
+      default:          return '⚙️';
+    }
+  }
+
+  function conclusionClass(conclusion, status) {
+    if (status === 'in_progress') return 'conclusion-in_progress';
+    return `conclusion-${conclusion || 'unknown'}`;
+  }
+
+  function renderRuns(runs, subtitle) {
+    document.getElementById('detailSubtitle').textContent += ` — ${subtitle}`;
+
+    if (runs.length === 0) {
+      document.getElementById('detailContent').innerHTML =
+        '<p style="color:#8b949e;font-size:13px;">No workflow runs found in this time window.</p>';
+      return;
+    }
+
+    // Count runs per repo for a summary
+    const repoCounts = {};
+    runs.forEach(r => { repoCounts[r.repo] = (repoCounts[r.repo] || 0) + 1; });
+    const sortedRepos = Object.entries(repoCounts).sort((a, b) => b[1] - a[1]);
+
+    const summary = sortedRepos.map(([repo, count]) =>
+      `<span style="background:#21262d;border:1px solid #30363d;border-radius:4px;padding:2px 8px;font-size:12px;margin:2px;display:inline-block;">
+        <a href="https://github.com/${repo}/actions" target="_blank" style="color:#58a6ff;text-decoration:none;">${repo}</a>
+        <span style="color:#8b949e;"> ×${count}</span>
+      </span>`
+    ).join('');
+
+    const items = runs.map(run => `
+      <li>
+        <div class="icon ${conclusionClass(run.conclusion, run.status)}">${conclusionIcon(run.conclusion, run.status)}</div>
+        <div class="info">
+          <div class="repo"><a href="https://github.com/${run.repo}/actions" target="_blank">${run.repo}</a></div>
+          <div class="name"><a href="${run.html_url}" target="_blank">${run.name}</a></div>
+          <div class="meta">${run.status}${run.conclusion ? ` · ${run.conclusion}` : ''} · ${new Date(run.created_at).toLocaleString()}</div>
+        </div>
+      </li>
+    `).join('');
+
+    document.getElementById('detailContent').innerHTML = `
+      <div style="margin-bottom:16px;">
+        <div style="font-size:13px;color:#8b949e;margin-bottom:8px;">Most active repositories (${runs.length} runs total):</div>
+        <div>${summary}</div>
+      </div>
+      <ul class="runs-list">${items}</ul>
+    `;
+  }
+
+  // ── Main data load & render ───────────────────────────────────────────────────
+  async function loadAndRender() {
+    document.getElementById('statusText').textContent = 'Fetching rate limit data…';
+    try {
+      const resp = await fetch(`${RAW_BASE}/ratelimit.csv`);
+      if (!resp.ok) {
+        if (resp.status === 404) {
+          document.getElementById('statusText').textContent =
+            'No data yet — the workflow has not run yet. Check back after the first scheduled run.';
+          return;
+        }
+        throw new Error(`HTTP ${resp.status}`);
+      }
+      const text  = await resp.text();
+      allRows = parseCSV(text);
+
+      const filtered = filterRows(allRows);
+      document.getElementById('statusText').textContent =
+        `Loaded ${allRows.length.toLocaleString()} data points (showing ${filtered.length.toLocaleString()} in selected range). Click any data point for workflow run details.`;
+
+      updateStats(filtered);
+      buildCoreChart(filtered);
+      buildDeltaChart(filtered);
+    } catch (err) {
+      document.getElementById('statusText').textContent = `Error loading data: ${err.message}`;
+    }
+  }
+
+  // ── Init ──────────────────────────────────────────────────────────────────────
+  loadPAT();
+  loadAndRender();
+
+  document.getElementById('rangeSelect').addEventListener('change', () => {
+    const filtered = filterRows(allRows);
+    updateStats(filtered);
+    buildCoreChart(filtered);
+    buildDeltaChart(filtered);
+  });
+</script>
+</body>
+</html>
