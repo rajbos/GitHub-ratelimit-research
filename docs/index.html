@@ -623,7 +623,7 @@
       return;
     }
 
-    // Live fetch: get recently active repos, then query runs around the data point time
+    // Live fetch: get recently active repos (user + orgs), then query runs around the data point time
     try {
       const windowStart = new Date(row.date.getTime() - 20 * 60 * 1000).toISOString();
       const windowEnd   = new Date(row.date.getTime() + 20 * 60 * 1000).toISOString();
@@ -632,8 +632,32 @@
       if (!reposResp.ok) throw new Error(`Repos fetch failed: ${reposResp.status}`);
       const repos = await reposResp.json();
 
+      // Also fetch orgs the user belongs to and include their recently active repos
+      let orgRepos = [];
+      try {
+        const orgsResp = await ghFetch('https://api.github.com/user/orgs?per_page=30', pat);
+        if (orgsResp.ok) {
+          const orgs = await orgsResp.json();
+          const orgRepoResults = await Promise.all(orgs.map(async org => {
+            try {
+              const r = await ghFetch(
+                `https://api.github.com/orgs/${org.login}/repos?sort=pushed&direction=desc&per_page=10`,
+                pat
+              );
+              return r.ok ? r.json() : [];
+            } catch (_) { return []; }
+          }));
+          orgRepos = orgRepoResults.flat();
+        }
+      } catch (_) { /* org fetch is best-effort */ }
+
+      // Combine user and org repos, sort by most recently pushed, take top 20
+      const allRepos = [...repos, ...orgRepos]
+        .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+        .slice(0, 20);
+
       const allRuns = [];
-      await Promise.all(repos.slice(0, 20).map(async repo => {
+      await Promise.all(allRepos.map(async repo => {
         try {
           const r = await ghFetch(
             `https://api.github.com/repos/${repo.full_name}/actions/runs?created=>=${windowStart}&per_page=10`,
