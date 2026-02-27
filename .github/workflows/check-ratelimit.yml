@@ -124,9 +124,44 @@ jobs:
           # Store workflow runs snapshot for this time window
           cp /tmp/runs.json "runs/${TIMESTAMP_FILE}.json"
 
+      - name: Update repos summary
+        run: |
+          TIMESTAMP=$(date -u +"%Y-%m-%dT%H:%M:%SZ")
+
+          # Load existing summary or start fresh
+          if [ -f repos-summary.json ]; then
+            EXISTING=$(cat repos-summary.json)
+          else
+            EXISTING='{"last_updated":"","repos":{}}'
+          fi
+
+          # Merge new runs into repos-summary.json (public repos only, deduplicated by run ID)
+          echo "$EXISTING" | jq \
+            --argjson runs "$(cat /tmp/runs.json)" \
+            --argjson repos "$(cat /tmp/repos.json)" \
+            --arg ts "$TIMESTAMP" '
+            ([$repos[] | {key: .full_name, value: {html_url: .html_url, private: .private}}] | from_entries) as $repo_map |
+            reduce $runs[] as $run (
+              .;
+              ($repo_map[$run.repo]) as $repo_info |
+              if $repo_info != null and ($repo_info.private == false) then
+                .repos[$run.repo] //= {full_name: $run.repo, html_url: $repo_info.html_url, run_count: 0, total_minutes: 0, seen_run_ids: []} |
+                if (.repos[$run.repo].seen_run_ids | index($run.id)) == null then
+                  .repos[$run.repo].run_count += 1 |
+                  .repos[$run.repo].total_minutes += (
+                    (($run.updated_at | fromdateiso8601) - ($run.created_at | fromdateiso8601)) / 60 | floor
+                  ) |
+                  .repos[$run.repo].seen_run_ids += [$run.id]
+                else . end
+              else . end
+            ) |
+            .repos |= with_entries(.value.seen_run_ids = (.value.seen_run_ids[-200:])) |
+            .last_updated = $ts
+          ' > repos-summary.json
+
       - name: Commit and push to data branch
         run: |
-          git add ratelimit.csv runs/
+          git add ratelimit.csv runs/ repos-summary.json
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
