@@ -228,6 +228,45 @@
     #tokenStatus { font-size: 12px; }
     #tokenStatus.ok { color: #3fb950; }
     #tokenStatus.missing { color: #d29922; }
+
+    .repo-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 4px 10px;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      background: #21262d;
+    }
+    .repo-link:hover { background: #30363d; }
+    .repo-link svg { width: 16px; height: 16px; fill: #58a6ff; flex-shrink: 0; }
+
+    .repos-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .repos-table th {
+      text-align: left;
+      padding: 8px 12px;
+      color: #8b949e;
+      font-weight: 500;
+      border-bottom: 1px solid #30363d;
+    }
+    .repos-table td {
+      padding: 10px 12px;
+      border-bottom: 1px solid #21262d;
+      color: #c9d1d9;
+    }
+    .repos-table tr:last-child td { border-bottom: none; }
+    .repos-table tr:hover td { background: #1c2128; }
+    .repos-table a { color: #58a6ff; text-decoration: none; }
+    .repos-table a:hover { text-decoration: underline; }
+    .repos-table .num { text-align: right; color: #f0f6fc; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -240,6 +279,12 @@
     GitHub Rate Limit Monitor
   </h1>
   <div class="header-controls">
+    <a id="repoLink" class="repo-link" href="#" target="_blank" rel="noopener noreferrer">
+      <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+      </svg>
+      View repository
+    </a>
     <select id="rangeSelect">
       <option value="24">Last 24 hours</option>
       <option value="72">Last 3 days</option>
@@ -319,6 +364,11 @@
     <h2 id="detailTitle">Workflow Runs</h2>
     <div id="detailSubtitle" class="subtitle"></div>
     <div id="detailContent"></div>
+  </div>
+
+  <div id="reposSummaryPanel" class="chart-container" style="display:none; margin-top:24px;">
+    <h2>Repositories with Workflow Run Data (public only)</h2>
+    <div id="reposSummaryContent"></div>
   </div>
 </main>
 
@@ -711,9 +761,62 @@
     }
   }
 
+  // ── Repos summary ─────────────────────────────────────────────────────────────
+  async function loadReposSummary() {
+    try {
+      const resp = await fetch(`${RAW_BASE}/repos-summary.json`);
+      if (!resp.ok) return;
+      const data = await resp.json();
+      renderReposSummary(data);
+    } catch (err) {
+      console.debug('repos-summary.json not yet available:', err.message);
+    }
+  }
+
+  function renderReposSummary(data) {
+    const repos = Object.values(data.repos || {})
+      .sort((a, b) => b.run_count - a.run_count);
+
+    if (repos.length === 0) return;
+
+    const rows = repos.map(repo => `
+      <tr>
+        <td><a href="${repo.html_url}" target="_blank" rel="noopener noreferrer">${repo.full_name}</a></td>
+        <td class="num">${repo.run_count.toLocaleString()}</td>
+        <td class="num">${repo.total_minutes.toLocaleString()}</td>
+      </tr>
+    `).join('');
+
+    const lastUpdatedDate = data.last_updated ? new Date(data.last_updated) : null;
+    const lastUpdatedStr = lastUpdatedDate && !isNaN(lastUpdatedDate.getTime())
+      ? lastUpdatedDate.toLocaleString()
+      : 'unknown';
+
+    document.getElementById('reposSummaryContent').innerHTML = `
+      <table class="repos-table">
+        <thead>
+          <tr>
+            <th>Repository</th>
+            <th style="text-align:right;">Workflow Runs</th>
+            <th style="text-align:right;">Est. Action Minutes</th>
+          </tr>
+        </thead>
+        <tbody>${rows}</tbody>
+      </table>
+      <p style="font-size:12px;color:#8b949e;margin-top:12px;">
+        Last updated: ${lastUpdatedStr} &mdash;
+        Run counts reflect unique workflow runs seen in collected snapshots for public repositories.
+        Action minutes are estimated from run start/end times.
+      </p>
+    `;
+    document.getElementById('reposSummaryPanel').style.display = '';
+  }
+
   // ── Init ──────────────────────────────────────────────────────────────────────
+  document.getElementById('repoLink').href = `https://github.com/${OWNER}/${REPO}`;
   loadPAT();
   loadAndRender();
+  loadReposSummary();
 
   document.getElementById('rangeSelect').addEventListener('change', () => {
     const filtered = filterRows(allRows);
