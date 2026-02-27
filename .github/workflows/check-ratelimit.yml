@@ -88,8 +88,13 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
               "https://api.github.com/orgs/${org}/repos?sort=pushed&direction=desc&per_page=10")
-            jq --argjson repos "$ORG_REPOS" '. + $repos' /tmp/repos.json > /tmp/repos_tmp.json
-            mv /tmp/repos_tmp.json /tmp/repos.json
+            if echo "$ORG_REPOS" | jq -e 'type == "array"' > /dev/null 2>&1; then
+              jq --argjson repos "$ORG_REPOS" '. + $repos' /tmp/repos.json > /tmp/repos_tmp.json
+              mv /tmp/repos_tmp.json /tmp/repos.json
+            else
+              ORG_ERROR=$(echo "$ORG_REPOS" | jq -r '.message // "unknown error"')
+              echo "Skipping org ${org}: API returned non-array response (${ORG_ERROR})"
+            fi
           done
           echo "Total repos (user + orgs): $(jq length /tmp/repos.json)"
 
@@ -104,7 +109,7 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
               "https://api.github.com/repos/${repo}/actions/runs?created=>=${SINCE}&per_page=10" \
-              | jq --arg repo "$repo" '[.workflow_runs[] | {repo: $repo, id: .id, name: .name, workflow_id: .workflow_id, status: .status, conclusion: .conclusion, created_at: .created_at, updated_at: .updated_at, html_url: .html_url}]')
+              | jq --arg repo "$repo" '[(.workflow_runs // [])[] | {repo: $repo, id: .id, name: .name, workflow_id: .workflow_id, status: .status, conclusion: .conclusion, created_at: .created_at, updated_at: .updated_at, html_url: .html_url}]')
             jq --argjson runs "$RUNS" '. + $runs' /tmp/runs.json > /tmp/runs_tmp.json
             mv /tmp/runs_tmp.json /tmp/runs.json
           done
