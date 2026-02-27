@@ -72,6 +72,11 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
               "https://api.github.com/user/orgs?per_page=30&page=${page}")
+            if ! echo "$ORG_PAGE" | jq -e 'type == "array"' > /dev/null 2>&1; then
+              ORG_ERROR=$(echo "$ORG_PAGE" | jq -r '.message // "unknown error"')
+              echo "Orgs API returned non-array response on page ${page} (${ORG_ERROR}). Stopping pagination."
+              break
+            fi
             PAGE_COUNT=$(echo "$ORG_PAGE" | jq length)
             jq --argjson page "$ORG_PAGE" '. + $page' /tmp/orgs.json > /tmp/orgs_tmp.json
             mv /tmp/orgs_tmp.json /tmp/orgs.json
