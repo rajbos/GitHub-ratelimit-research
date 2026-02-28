@@ -170,18 +170,19 @@ jobs:
 
           # Load existing summary or start fresh
           if [ -f repos-summary.json ]; then
-            EXISTING=$(cat repos-summary.json)
+            cp repos-summary.json /tmp/existing-summary.json
           else
-            EXISTING='{"last_updated":"","repos":{}}'
+            echo '{"last_updated":"","repos":{}}' > /tmp/existing-summary.json
           fi
 
           # Merge new runs into repos-summary.json (public repos only, deduplicated by run ID)
-          echo "$EXISTING" | jq \
-            --argjson runs "$(cat /tmp/runs.json)" \
-            --argjson repos "$(cat /tmp/repos.json)" \
+          # Use --slurpfile to read large JSON files directly (avoids "Argument list too long" error)
+          jq \
+            --slurpfile runs /tmp/runs.json \
+            --slurpfile repos /tmp/repos.json \
             --arg ts "$TIMESTAMP" '
-            ([$repos[] | {key: .full_name, value: {html_url: .html_url, private: .private}}] | from_entries) as $repo_map |
-            reduce $runs[] as $run (
+            ([$repos[0][] | {key: .full_name, value: {html_url: .html_url, private: .private}}] | from_entries) as $repo_map |
+            reduce $runs[0][] as $run (
               .;
               ($repo_map[$run.repo]) as $repo_info |
               if $repo_info != null and ($repo_info.private == false) then
@@ -197,7 +198,7 @@ jobs:
             ) |
             .repos |= with_entries(.value.seen_run_ids = (.value.seen_run_ids[-200:])) |
             .last_updated = $ts
-          ' > repos-summary.json
+          ' /tmp/existing-summary.json > repos-summary.json
 
       - name: Commit and push to data branch
         run: |
