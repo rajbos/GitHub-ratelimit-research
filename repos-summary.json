@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-02-28T19:47:37Z",
+  "last_updated": "2026-02-28T20:02:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 40,
+      "run_count": 41,
       "total_minutes": 5,
       "seen_run_ids": [
         22505534592,
@@ -46,7 +46,8 @@
         22527046574,
         22527329854,
         22527539052,
-        22527748860
+        22527748860,
+        22527982112
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -220,14 +221,36 @@
     "actions-marketplace-validations/miguelfito_github-bump-and-tag-action": {
       "full_name": "actions-marketplace-validations/miguelfito_github-bump-and-tag-action",
       "html_url": "https://github.com/actions-marketplace-validations/miguelfito_github-bump-and-tag-action",
-      "run_count": 5,
+      "run_count": 7,
       "total_minutes": 0,
       "seen_run_ids": [
         22527743066,
         22527742838,
         22527742897,
         22527742422,
-        22527742104
+        22527742104,
+        22527755252,
+        22527754491
+      ]
+    },
+    "actions-marketplace-validations/crazy-matt_manage-stale-branches": {
+      "full_name": "actions-marketplace-validations/crazy-matt_manage-stale-branches",
+      "html_url": "https://github.com/actions-marketplace-validations/crazy-matt_manage-stale-branches",
+      "run_count": 3,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22527960727,
+        22527959886,
+        22527959934
+      ]
+    },
+    "actions-marketplace-validations/tchajed_setup-rocq": {
+      "full_name": "actions-marketplace-validations/tchajed_setup-rocq",
+      "html_url": "https://github.com/actions-marketplace-validations/tchajed_setup-rocq",
+      "run_count": 1,
+      "total_minutes": 1,
+      "seen_run_ids": [
+        22527856831
       ]
     }
   }
