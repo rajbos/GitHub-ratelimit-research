@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-01T08:23:22Z",
+  "last_updated": "2026-03-01T08:50:27Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 73,
-      "total_minutes": 5,
+      "run_count": 74,
+      "total_minutes": 12,
       "seen_run_ids": [
         22505534592,
         22505350438,
@@ -79,7 +79,8 @@
         22538772582,
         22538940481,
         22539081748,
-        22539412714
+        22539412714,
+        22539717787
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -797,6 +798,35 @@
       "seen_run_ids": [
         22539325604,
         22539325466
+      ]
+    },
+    "rajbos/github-azure-devops-marketplace-extension-news": {
+      "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
+      "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
+      "run_count": 10,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22539829530,
+        22539829516,
+        22539829520,
+        22539829514,
+        22539829623,
+        22539829519,
+        22539829067,
+        22539828672,
+        22539763855,
+        22539747522
+      ]
+    },
+    "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
+      "full_name": "actions-marketplace-validations/devops-actions_azure-appservice-settings",
+      "html_url": "https://github.com/actions-marketplace-validations/devops-actions_azure-appservice-settings",
+      "run_count": 3,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22539776206,
+        22539775711,
+        22539775716
       ]
     }
   }
