@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-01T08:03:03Z",
+  "last_updated": "2026-03-01T08:23:22Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 72,
+      "run_count": 73,
       "total_minutes": 5,
       "seen_run_ids": [
         22505534592,
@@ -78,7 +78,8 @@
         22538532353,
         22538772582,
         22538940481,
-        22539081748
+        22539081748,
+        22539412714
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -786,6 +787,16 @@
         22539011038,
         22539010695,
         22539010609
+      ]
+    },
+    "actions-marketplace-validations/nicksteffens_npm-oidc-release": {
+      "full_name": "actions-marketplace-validations/nicksteffens_npm-oidc-release",
+      "html_url": "https://github.com/actions-marketplace-validations/nicksteffens_npm-oidc-release",
+      "run_count": 2,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22539325604,
+        22539325466
       ]
     }
   }
