@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-01T12:24:37Z",
+  "last_updated": "2026-03-01T12:44:59Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 89,
+      "run_count": 90,
       "total_minutes": 19,
       "seen_run_ids": [
         22505534592,
@@ -95,14 +95,15 @@
         22542569561,
         22542771869,
         22543002473,
-        22543349408
+        22543349408,
+        22543678511
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 98,
-      "total_minutes": 60,
+      "run_count": 108,
+      "total_minutes": 63,
       "seen_run_ids": [
         22505261678,
         22505261680,
@@ -201,7 +202,17 @@
         22543323083,
         22543323086,
         22543310496,
-        22543310497
+        22543310497,
+        22543450400,
+        22543450398,
+        22543450410,
+        22543450422,
+        22543449863,
+        22543407984,
+        22543407986,
+        22543407974,
+        22543407973,
+        22543407917
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -1171,6 +1182,29 @@
       "seen_run_ids": [
         22543318738,
         22543318406
+      ]
+    },
+    "actions-marketplace-validations/esphome_build-action": {
+      "full_name": "actions-marketplace-validations/esphome_build-action",
+      "html_url": "https://github.com/actions-marketplace-validations/esphome_build-action",
+      "run_count": 3,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22543578911,
+        22543578744,
+        22543578354
+      ]
+    },
+    "actions-marketplace-validations/GrantBirki_json-yaml-validate": {
+      "full_name": "actions-marketplace-validations/GrantBirki_json-yaml-validate",
+      "html_url": "https://github.com/actions-marketplace-validations/GrantBirki_json-yaml-validate",
+      "run_count": 4,
+      "total_minutes": 2,
+      "seen_run_ids": [
+        22543418751,
+        22543418824,
+        22543418257,
+        22543418263
       ]
     }
   }
