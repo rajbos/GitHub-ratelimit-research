@@ -1,10 +1,10 @@
 {
-  "last_updated": "2026-03-01T17:04:04Z",
+  "last_updated": "2026-03-01T17:22:57Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 107,
+      "run_count": 108,
       "total_minutes": 25,
       "seen_run_ids": [
         22505534592,
@@ -113,7 +113,8 @@
         22547442053,
         22547763922,
         22547964256,
-        22548174054
+        22548174054,
+        22548513905
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -910,8 +911,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 14,
-      "total_minutes": 4,
+      "run_count": 23,
+      "total_minutes": 9,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -926,7 +927,16 @@
         22539897081,
         22540011114,
         22539974957,
-        22547512433
+        22547512433,
+        22548483625,
+        22548482839,
+        22548482714,
+        22548482724,
+        22548482194,
+        22548482177,
+        22548482178,
+        22548311257,
+        22548310541
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -1241,7 +1251,7 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 10,
+      "run_count": 18,
       "total_minutes": 8,
       "seen_run_ids": [
         22544016530,
@@ -1253,7 +1263,15 @@
         22543981155,
         22543981261,
         22543981172,
-        22543981236
+        22543981236,
+        22548472470,
+        22548472490,
+        22548472484,
+        22548472495,
+        22548472511,
+        22548472366,
+        22548413525,
+        22548413531
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -1297,6 +1315,20 @@
       "seen_run_ids": [
         22544231896,
         22544231802
+      ]
+    },
+    "rajbos/actions-marketplace": {
+      "full_name": "rajbos/actions-marketplace",
+      "html_url": "https://github.com/rajbos/actions-marketplace",
+      "run_count": 6,
+      "total_minutes": 15,
+      "seen_run_ids": [
+        22548387879,
+        22548387896,
+        22548287319,
+        22548287314,
+        22548262204,
+        22548262205
       ]
     }
   }
