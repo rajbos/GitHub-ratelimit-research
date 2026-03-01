@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-01T08:50:27Z",
+  "last_updated": "2026-03-01T08:58:01Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 74,
-      "total_minutes": 12,
+      "run_count": 75,
+      "total_minutes": 14,
       "seen_run_ids": [
         22505534592,
         22505350438,
@@ -80,7 +80,8 @@
         22538940481,
         22539081748,
         22539412714,
-        22539717787
+        22539717787,
+        22539920120
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -803,8 +804,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 10,
-      "total_minutes": 0,
+      "run_count": 11,
+      "total_minutes": 1,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -815,7 +816,8 @@
         22539829067,
         22539828672,
         22539763855,
-        22539747522
+        22539747522,
+        22539897081
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -827,6 +829,19 @@
         22539776206,
         22539775711,
         22539775716
+      ]
+    },
+    "actions-marketplace-validations/gacts_gitleaks": {
+      "full_name": "actions-marketplace-validations/gacts_gitleaks",
+      "html_url": "https://github.com/actions-marketplace-validations/gacts_gitleaks",
+      "run_count": 5,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22539864231,
+        22539864233,
+        22539863961,
+        22539863929,
+        22539864064
       ]
     }
   }
