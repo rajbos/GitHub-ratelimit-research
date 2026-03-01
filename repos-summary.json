@@ -1,11 +1,11 @@
 {
-  "last_updated": "2026-03-01T17:38:58Z",
+  "last_updated": "2026-03-01T17:53:14Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 109,
-      "total_minutes": 26,
+      "run_count": 110,
+      "total_minutes": 29,
       "seen_run_ids": [
         22505534592,
         22505350438,
@@ -115,13 +115,14 @@
         22547964256,
         22548174054,
         22548513905,
-        22548783099
+        22548783099,
+        22549020170
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 123,
+      "run_count": 131,
       "total_minutes": 79,
       "seen_run_ids": [
         22505261678,
@@ -246,7 +247,15 @@
         22548762432,
         22548762453,
         22548759697,
-        22548680619
+        22548680619,
+        22549023235,
+        22549023249,
+        22549023254,
+        22549019525,
+        22548976498,
+        22548976514,
+        22548976520,
+        22548976003
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -282,8 +291,8 @@
     "rajbos/GHAzDo-widget": {
       "full_name": "rajbos/GHAzDo-widget",
       "html_url": "https://github.com/rajbos/GHAzDo-widget",
-      "run_count": 15,
-      "total_minutes": 1,
+      "run_count": 25,
+      "total_minutes": 10,
       "seen_run_ids": [
         22520138797,
         22520138796,
@@ -299,7 +308,17 @@
         22538856992,
         22538855189,
         22538855199,
-        22538855001
+        22538855001,
+        22548964025,
+        22548964045,
+        22548963373,
+        22548963497,
+        22548956332,
+        22548956320,
+        22548956143,
+        22548936195,
+        22548936194,
+        22548935903
       ]
     },
     "actions-marketplace-validations/lpm0073_aws-ecr-create": {
@@ -925,8 +944,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 26,
-      "total_minutes": 13,
+      "run_count": 30,
+      "total_minutes": 36,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -953,7 +972,11 @@
         22548310541,
         22548607553,
         22548605702,
-        22548571569
+        22548571569,
+        22548880383,
+        22548879875,
+        22548879855,
+        22548879867
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -1362,6 +1385,24 @@
         22548729992,
         22548729994,
         22548661642
+      ]
+    },
+    "mcp-research/mcp-security-scans": {
+      "full_name": "mcp-research/mcp-security-scans",
+      "html_url": "https://github.com/mcp-research/mcp-security-scans",
+      "run_count": 10,
+      "total_minutes": 1,
+      "seen_run_ids": [
+        22548997121,
+        22548997113,
+        22548997129,
+        22548997132,
+        22548997137,
+        22548997138,
+        22548997139,
+        22548997141,
+        22548868558,
+        22548868575
       ]
     }
   }
