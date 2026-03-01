@@ -114,7 +114,7 @@ jobs:
               -H "Accept: application/vnd.github+json" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
               "https://api.github.com/repos/${repo}/actions/runs?created=>=${SINCE}&per_page=10" \
-              | jq --arg repo "$repo" '[(.workflow_runs // [])[] | {repo: $repo, id: .id, name: .name, workflow_id: .workflow_id, status: .status, conclusion: .conclusion, created_at: .created_at, updated_at: .updated_at, html_url: .html_url}]')
+              | jq --arg repo "$repo" '[(.workflow_runs // [])[] | {repo: $repo, id: .id, name: .name, workflow_id: .workflow_id, status: .status, conclusion: .conclusion, created_at: .created_at, updated_at: .updated_at, html_url: .html_url, actor_login: (.actor.login // "")}]')
             jq --argjson runs "$RUNS" '. + $runs' /tmp/runs.json > /tmp/runs_tmp.json
             mv /tmp/runs_tmp.json /tmp/runs.json
           done
@@ -185,7 +185,8 @@ jobs:
             reduce $runs[0][] as $run (
               .;
               ($repo_map[$run.repo]) as $repo_info |
-              if $repo_info != null and ($repo_info.private == false) then
+              (($run.actor_login == "dependabot[bot]") or (($run.name | ascii_downcase) == "codeql")) as $is_automated_run |
+              if $repo_info != null and ($repo_info.private == false) and ($is_automated_run | not) then
                 .repos[$run.repo] //= {full_name: $run.repo, html_url: $repo_info.html_url, run_count: 0, total_minutes: 0, seen_run_ids: []} |
                 if (.repos[$run.repo].seen_run_ids | index($run.id)) == null then
                   .repos[$run.repo].run_count += 1 |
