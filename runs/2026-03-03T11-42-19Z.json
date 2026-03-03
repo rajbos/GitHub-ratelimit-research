@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "UnclesTavern/CopilotAdventures",
+    "id": 22620836296,
+    "name": "Daily Copilot Token Consumption Report",
+    "workflow_id": 238452145,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-03T11:25:15Z",
+    "updated_at": "2026-03-03T11:31:55Z",
+    "html_url": "https://github.com/UnclesTavern/CopilotAdventures/actions/runs/22620836296",
+    "actor_login": "UncleBats"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 22621377200,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-03-03T11:41:36Z",
+    "updated_at": "2026-03-03T11:41:40Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/22621377200",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 22620784132,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-03T11:23:42Z",
+    "updated_at": "2026-03-03T11:24:31Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/22620784132",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/github-copilot-model-notifier",
+    "id": 22620809353,
+    "name": "Lint",
+    "workflow_id": 240921038,
+    "status": "completed",
+    "conclusion": "action_required",
+    "created_at": "2026-03-03T11:24:28Z",
+    "updated_at": "2026-03-03T11:24:28Z",
+    "html_url": "https://github.com/rajbos/github-copilot-model-notifier/actions/runs/22620809353",
+    "actor_login": "Copilot"
+  },
+  {
+    "repo": "rajbos/github-copilot-model-notifier",
+    "id": 22620808707,
+    "name": "Check GitHub Copilot Models",
+    "workflow_id": 240919636,
+    "status": "completed",
+    "conclusion": "action_required",
+    "created_at": "2026-03-03T11:24:27Z",
+    "updated_at": "2026-03-03T11:24:27Z",
+    "html_url": "https://github.com/rajbos/github-copilot-model-notifier/actions/runs/22620808707",
+    "actor_login": "Copilot"
+  }
+]
