@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-03T09:05:46Z",
+  "last_updated": "2026-03-03T09:27:55Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 210,
+      "run_count": 211,
       "total_minutes": 47,
       "seen_run_ids": [
-        22520675345,
         22520985787,
         22521323085,
         22521650453,
@@ -206,23 +205,16 @@
         22613962433,
         22614525124,
         22615150125,
-        22615755427
+        22615755427,
+        22616635063
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 200,
-      "total_minutes": 167,
+      "run_count": 208,
+      "total_minutes": 171,
       "seen_run_ids": [
-        22505261678,
-        22505261680,
-        22505261684,
-        22505261675,
-        22519941512,
-        22519941508,
-        22519941517,
-        22519941523,
         22519941045,
         22519926228,
         22520138966,
@@ -414,7 +406,15 @@
         22573073972,
         22587613045,
         22588440064,
-        22612984737
+        22612984737,
+        22616423950,
+        22616423968,
+        22616423953,
+        22616378973,
+        22616378993,
+        22616378963,
+        22616378046,
+        22616378024
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -1727,7 +1727,7 @@
     "UnclesTavern/CopilotAdventures": {
       "full_name": "UnclesTavern/CopilotAdventures",
       "html_url": "https://github.com/UnclesTavern/CopilotAdventures",
-      "run_count": 27,
+      "run_count": 28,
       "total_minutes": 47,
       "seen_run_ids": [
         22565790815,
@@ -1756,7 +1756,8 @@
         22615763332,
         22615621097,
         22615593720,
-        22615475460
+        22615475460,
+        22616014990
       ]
     },
     "rajbos/rajbos": {
@@ -1778,6 +1779,15 @@
         22571439276,
         22571438201,
         22571434947
+      ]
+    },
+    "rajbos/github-copilot-model-notifier": {
+      "full_name": "rajbos/github-copilot-model-notifier",
+      "html_url": "https://github.com/rajbos/github-copilot-model-notifier",
+      "run_count": 1,
+      "total_minutes": 14,
+      "seen_run_ids": [
+        22616069515
       ]
     }
   }
