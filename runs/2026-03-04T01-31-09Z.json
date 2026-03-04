@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "actions-marketplace-validations/fish-shop_install-plugin-manager",
+    "id": 22650709613,
+    "name": "github_actions in / for fish-shop/workflows/.github/workflows/codeql-analysis.yml, fish-shop/workflows/.github/workflows/dependency-review.yml, fish-shop/workflows/.github/workflows/gitleaks.yml, fish-shop/workflows/.github/workflows/markdown-links.yml, fish-shop/workflows/.github/workflows/openssf-scorecard.yml, fish-shop/workflows/.github/workflows/release-tags.yml, actions/checkout, fish-shop/install-fish-shell - Update #1267406818",
+    "workflow_id": 213103256,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-04T01:22:25Z",
+    "updated_at": "2026-03-04T01:23:19Z",
+    "html_url": "https://github.com/actions-marketplace-validations/fish-shop_install-plugin-manager/actions/runs/22650709613",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/fish-shop_install-plugin-manager",
+    "id": 22650708759,
+    "name": "github_actions in /. - Update #1267406798",
+    "workflow_id": 213103256,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-04T01:22:24Z",
+    "updated_at": "2026-03-04T01:22:50Z",
+    "html_url": "https://github.com/actions-marketplace-validations/fish-shop_install-plugin-manager/actions/runs/22650708759",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 22650928137,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-03-04T01:30:43Z",
+    "updated_at": "2026-03-04T01:30:46Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/22650928137",
+    "actor_login": "rajbos"
+  }
+]
