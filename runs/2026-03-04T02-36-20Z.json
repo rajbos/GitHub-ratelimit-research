@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "actions-marketplace-validations/fish-shop_install-plugin-manager",
+    "id": 22652233247,
+    "name": "github_actions in / for fish-shop/workflows/.github/workflows/codeql-analysis.yml, fish-shop/workflows/.github/workflows/dependency-review.yml, fish-shop/workflows/.github/workflows/gitleaks.yml, fish-shop/workflows/.github/workflows/markdown-links.yml, fish-shop/workflows/.github/workflows/openssf-scorecard.yml, fish-shop/workflows/.github/workflows/release-tags.yml, fish-shop/install-fish-shell - Update #1267453595",
+    "workflow_id": 213103256,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-04T02:24:01Z",
+    "updated_at": "2026-03-04T02:24:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/fish-shop_install-plugin-manager/actions/runs/22652233247",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 22652513546,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-03-04T02:35:48Z",
+    "updated_at": "2026-03-04T02:35:51Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/22652513546",
+    "actor_login": "rajbos"
+  }
+]
