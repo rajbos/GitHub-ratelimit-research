@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-05T02:36:18Z",
+  "last_updated": "2026-03-05T03:34:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 326,
+      "run_count": 327,
       "total_minutes": 56,
       "seen_run_ids": [
-        22554163212,
         22554479128,
         22554708597,
         22554926035,
@@ -206,7 +205,8 @@
         22695609683,
         22696866080,
         22697964753,
-        22699599601
+        22699599601,
+        22700990616
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1815,7 +1815,7 @@
     "UnclesTavern/CopilotAdventures": {
       "full_name": "UnclesTavern/CopilotAdventures",
       "html_url": "https://github.com/UnclesTavern/CopilotAdventures",
-      "run_count": 60,
+      "run_count": 61,
       "total_minutes": 98,
       "seen_run_ids": [
         22565790815,
@@ -1877,7 +1877,8 @@
         22680845639,
         22685444209,
         22689077209,
-        22693494379
+        22693494379,
+        22700568052
       ]
     },
     "rajbos/rajbos": {
@@ -1962,6 +1963,15 @@
         22624615078,
         22624581718,
         22624581726
+      ]
+    },
+    "ps-developers-sandbox/njlps-training": {
+      "full_name": "ps-developers-sandbox/njlps-training",
+      "html_url": "https://github.com/ps-developers-sandbox/njlps-training",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22700634381
       ]
     }
   }
