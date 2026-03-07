@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-07T19:22:19Z",
+  "last_updated": "2026-03-07T19:35:53Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 502,
+      "run_count": 503,
       "total_minutes": 73,
       "seen_run_ids": [
-        22684108812,
         22685078915,
         22685670587,
         22686344262,
@@ -206,19 +205,16 @@
         22804929556,
         22805142165,
         22805295600,
-        22805563317
+        22805563317,
+        22805782389
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 301,
+      "run_count": 305,
       "total_minutes": 247,
       "seen_run_ids": [
-        22543450422,
-        22543449863,
-        22543407984,
-        22543407986,
         22543407974,
         22543407973,
         22543407917,
@@ -414,7 +410,11 @@
         22800632881,
         22800632880,
         22800632232,
-        22800584762
+        22800584762,
+        22805764337,
+        22805764331,
+        22805764328,
+        22805763944
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -1692,14 +1692,9 @@
     "mcp-research/mcp-security-scans": {
       "full_name": "mcp-research/mcp-security-scans",
       "html_url": "https://github.com/mcp-research/mcp-security-scans",
-      "run_count": 195,
-      "total_minutes": 110,
+      "run_count": 205,
+      "total_minutes": 114,
       "seen_run_ids": [
-        22548997121,
-        22548997113,
-        22548997129,
-        22548997132,
-        22548997137,
         22548997138,
         22548997139,
         22548997141,
@@ -1889,7 +1884,17 @@
         22805536500,
         22805536298,
         22805535599,
-        22805499684
+        22805499684,
+        22805777986,
+        22805778006,
+        22805777997,
+        22805764590,
+        22805764591,
+        22805764589,
+        22805671598,
+        22805667432,
+        22805667417,
+        22805667427
       ]
     },
     "devops-actions/.github": {
@@ -1978,7 +1983,7 @@
     "rajbos/rajbos": {
       "full_name": "rajbos/rajbos",
       "html_url": "https://github.com/rajbos/rajbos",
-      "run_count": 10,
+      "run_count": 12,
       "total_minutes": 0,
       "seen_run_ids": [
         22569559140,
@@ -1990,7 +1995,9 @@
         22805435014,
         22805435015,
         22805418762,
-        22805418411
+        22805418411,
+        22805575730,
+        22805575724
       ]
     },
     "devops-actions/actionlint": {
