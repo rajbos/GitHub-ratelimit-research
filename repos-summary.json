@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-07T19:35:53Z",
+  "last_updated": "2026-03-07T19:48:30Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 503,
+      "run_count": 504,
       "total_minutes": 73,
       "seen_run_ids": [
-        22685078915,
         22685670587,
         22686344262,
         22687008753,
@@ -206,7 +205,8 @@
         22805142165,
         22805295600,
         22805563317,
-        22805782389
+        22805782389,
+        22805985063
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,7 +420,7 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 72,
+      "run_count": 73,
       "total_minutes": 54,
       "seen_run_ids": [
         22505285722,
@@ -494,7 +494,8 @@
         22804643689,
         22805019602,
         22805166143,
-        22805382012
+        22805382012,
+        22805844131
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -1692,19 +1693,9 @@
     "mcp-research/mcp-security-scans": {
       "full_name": "mcp-research/mcp-security-scans",
       "html_url": "https://github.com/mcp-research/mcp-security-scans",
-      "run_count": 205,
-      "total_minutes": 114,
+      "run_count": 215,
+      "total_minutes": 115,
       "seen_run_ids": [
-        22548997138,
-        22548997139,
-        22548997141,
-        22548868558,
-        22548868575,
-        22549615792,
-        22549559061,
-        22549559063,
-        22549559072,
-        22549559074,
         22549559083,
         22549559059,
         22549559092,
@@ -1894,7 +1885,17 @@
         22805671598,
         22805667432,
         22805667417,
-        22805667427
+        22805667427,
+        22805986012,
+        22805985996,
+        22805986004,
+        22805985988,
+        22805961030,
+        22805961031,
+        22805961026,
+        22805961029,
+        22805961045,
+        22805961023
       ]
     },
     "devops-actions/.github": {
