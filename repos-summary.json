@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-08T08:43:32Z",
+  "last_updated": "2026-03-08T08:55:23Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 530,
+      "run_count": 531,
       "total_minutes": 73,
       "seen_run_ids": [
-        22704307963,
         22704955868,
         22705523119,
         22706436666,
@@ -206,7 +205,8 @@
         22816825553,
         22817001456,
         22817302273,
-        22817590097
+        22817590097,
+        22817778613
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1722,19 +1722,9 @@
     "mcp-research/mcp-security-scans": {
       "full_name": "mcp-research/mcp-security-scans",
       "html_url": "https://github.com/mcp-research/mcp-security-scans",
-      "run_count": 242,
+      "run_count": 252,
       "total_minutes": 122,
       "seen_run_ids": [
-        22551811030,
-        22551811026,
-        22551811025,
-        22551811035,
-        22551767972,
-        22551742698,
-        22552008689,
-        22552353808,
-        22552267390,
-        22552267383,
         22552267366,
         22552267370,
         22552267377,
@@ -1924,7 +1914,17 @@
         22806660755,
         22814113962,
         22814896741,
-        22816457411
+        22816457411,
+        22817771100,
+        22817703313,
+        22817703334,
+        22817703339,
+        22817703317,
+        22817703332,
+        22817703322,
+        22817703338,
+        22817703337,
+        22817703014
       ]
     },
     "devops-actions/.github": {
