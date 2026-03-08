@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-08T10:03:14Z",
+  "last_updated": "2026-03-08T10:22:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 536,
+      "run_count": 537,
       "total_minutes": 73,
       "seen_run_ids": [
-        22708353635,
         22708985364,
         22709669970,
         22710313207,
@@ -206,7 +205,8 @@
         22818215549,
         22818469387,
         22818648682,
-        22818813500
+        22818813500,
+        22819117549
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1722,19 +1722,9 @@
     "mcp-research/mcp-security-scans": {
       "full_name": "mcp-research/mcp-security-scans",
       "html_url": "https://github.com/mcp-research/mcp-security-scans",
-      "run_count": 261,
+      "run_count": 271,
       "total_minutes": 122,
       "seen_run_ids": [
-        22552478954,
-        22552478833,
-        22552478830,
-        22552478826,
-        22552478831,
-        22552478839,
-        22552428582,
-        22552428591,
-        22552906409,
-        22552678680,
         22552644703,
         22552644694,
         22552644708,
@@ -1924,7 +1914,17 @@
         22817814759,
         22817814737,
         22817814743,
-        22817814216
+        22817814216,
+        22819123629,
+        22819051896,
+        22819051900,
+        22819051897,
+        22819051913,
+        22819051902,
+        22819051916,
+        22819051901,
+        22819051911,
+        22819051927
       ]
     },
     "devops-actions/.github": {
@@ -2121,14 +2121,15 @@
     "rajbos/rajbos.github.io": {
       "full_name": "rajbos/rajbos.github.io",
       "html_url": "https://github.com/rajbos/rajbos.github.io",
-      "run_count": 5,
+      "run_count": 6,
       "total_minutes": 9,
       "seen_run_ids": [
         22806116906,
         22806460276,
         22806409480,
         22806265976,
-        22806254753
+        22806254753,
+        22819036594
       ]
     }
   }
