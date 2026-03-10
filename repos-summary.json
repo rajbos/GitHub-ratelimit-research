@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-03-10T21:23:55Z",
+  "last_updated": "2026-03-10T21:39:19Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 699,
-      "total_minutes": 82,
+      "run_count": 701,
+      "total_minutes": 87,
       "seen_run_ids": [
-        22805142165,
-        22805295600,
         22805563317,
         22805782389,
         22805985063,
@@ -206,22 +204,17 @@
         22923382689,
         22923913014,
         22924934762,
-        22924437927
+        22924437927,
+        22925485046,
+        22925012070
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 346,
-      "total_minutes": 284,
+      "run_count": 353,
+      "total_minutes": 288,
       "seen_run_ids": [
-        22551180739,
-        22551180727,
-        22551180732,
-        22551175294,
-        22551175295,
-        22551175309,
-        22551394490,
         22551394480,
         22551394479,
         22551282694,
@@ -414,7 +407,14 @@
         22871866561,
         22874667537,
         22874667548,
-        22874667551
+        22874667551,
+        22925455803,
+        22925455782,
+        22925455783,
+        22925455753,
+        22925387347,
+        22925387374,
+        22925387366
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -1746,13 +1746,9 @@
     "mcp-research/mcp-security-scans": {
       "full_name": "mcp-research/mcp-security-scans",
       "html_url": "https://github.com/mcp-research/mcp-security-scans",
-      "run_count": 296,
-      "total_minutes": 131,
+      "run_count": 300,
+      "total_minutes": 132,
       "seen_run_ids": [
-        22553312543,
-        22553312544,
-        22554161934,
-        22554161935,
         22554161936,
         22554161941,
         22554161940,
@@ -1948,7 +1944,11 @@
         22919304457,
         22919304548,
         22919302688,
-        22919192050
+        22919192050,
+        22925359513,
+        22925359494,
+        22925359493,
+        22925359491
       ]
     },
     "devops-actions/.github": {
