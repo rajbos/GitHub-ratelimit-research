@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-12T09:09:20Z",
+  "last_updated": "2026-03-12T09:29:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 789,
+      "run_count": 790,
       "total_minutes": 111,
       "seen_run_ids": [
-        22832990441,
         22833888216,
         22834687558,
         22836023445,
@@ -206,7 +205,8 @@
         22992040271,
         22992674104,
         22993577038,
-        22994258976
+        22994258976,
+        22995196818
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2263,6 +2263,17 @@
         22907026773,
         22907026200,
         22910215699
+      ]
+    },
+    "robs-tests/team-rules": {
+      "full_name": "robs-tests/team-rules",
+      "html_url": "https://github.com/robs-tests/team-rules",
+      "run_count": 3,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        22994724446,
+        22994716968,
+        22994689708
       ]
     }
   }
