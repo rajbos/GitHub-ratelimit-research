@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-12T12:26:33Z",
+  "last_updated": "2026-03-12T12:47:10Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 800,
+      "run_count": 801,
       "total_minutes": 111,
       "seen_run_ids": [
-        22843062060,
         22843742232,
         22844410709,
         22845285072,
@@ -206,7 +205,8 @@
         23000165442,
         23000562248,
         23001079645,
-        23001870875
+        23001870875,
+        23002658790
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2274,6 +2274,23 @@
         22994724446,
         22994716968,
         22994689708
+      ]
+    },
+    "GHAS-examples/WebGoat.NETCore-Demo": {
+      "full_name": "GHAS-examples/WebGoat.NETCore-Demo",
+      "html_url": "https://github.com/GHAS-examples/WebGoat.NETCore-Demo",
+      "run_count": 9,
+      "total_minutes": 8,
+      "seen_run_ids": [
+        23002123768,
+        23002123595,
+        23002123772,
+        23002120765,
+        23002121255,
+        23002121175,
+        23002121234,
+        23002120747,
+        23002120652
       ]
     }
   }
