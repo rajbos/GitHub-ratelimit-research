@@ -107,13 +107,18 @@ jobs:
               if [ "$ORG_REPO_COUNT" -ge 151 ]; then
                 echo "Skipping org ${org}: has more than 150 repos (${ORG_REPO_COUNT}+)"
               else
-                jq --argjson repos "$ORG_REPOS" '. + $repos' /tmp/repos.json > /tmp/repos_tmp.json
+                echo "$ORG_REPOS" > /tmp/org_repos_tmp.json
+                jq -s '.[0] + .[1]' /tmp/repos.json /tmp/org_repos_tmp.json > /tmp/repos_tmp.json
                 mv /tmp/repos_tmp.json /tmp/repos.json
               fi
             else
-              echo "Raw ORG_REPOS response for org ${org}: $ORG_REPOS"
               ORG_ERROR=$(echo "$ORG_REPOS" | jq -r '.message // "unknown error"')
-              echo "Skipping org ${org}: API returned non-array response (${ORG_ERROR})"
+              if echo "$ORG_ERROR" | grep -qi "saml\|sso\|single sign-on\|enforcement"; then
+                echo "::warning::Skipping org ${org}: SSO/SAML enforcement active - PAT needs to be authorized for this org"
+              else
+                echo "Raw ORG_REPOS response for org ${org}: $ORG_REPOS"
+                echo "Skipping org ${org}: API returned non-array response (${ORG_ERROR})"
+              fi
             fi
           done
           echo "Total repos (user + orgs): $(jq length /tmp/repos.json)"
