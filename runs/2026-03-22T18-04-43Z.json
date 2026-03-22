@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/Azure_setup-helm",
+    "id": 23409103613,
+    "name": "npm_and_yarn in / for @actions/core, @actions/exec, @actions/io, @actions/tool-cache, semver, @types/node, prettier - Update #1288229374",
+    "workflow_id": 213740767,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-22T18:02:16Z",
+    "updated_at": "2026-03-22T18:03:41Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Azure_setup-helm/actions/runs/23409103613",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Azure_setup-helm",
+    "id": 23409103250,
+    "name": "npm_and_yarn in /. - Update #1288229358",
+    "workflow_id": 213740767,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-22T18:02:15Z",
+    "updated_at": "2026-03-22T18:02:55Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Azure_setup-helm/actions/runs/23409103250",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/marcofranssen_setup-kubectl",
+    "id": 23408907785,
+    "name": "github_actions in /. - Update #1288226474",
+    "workflow_id": 249864599,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-22T17:51:42Z",
+    "updated_at": "2026-03-22T17:52:21Z",
+    "html_url": "https://github.com/actions-marketplace-validations/marcofranssen_setup-kubectl/actions/runs/23408907785",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/marcofranssen_setup-kubectl",
+    "id": 23408907773,
+    "name": "npm_and_yarn in /. - Update #1288226469",
+    "workflow_id": 249864599,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-22T17:51:42Z",
+    "updated_at": "2026-03-22T17:52:53Z",
+    "html_url": "https://github.com/actions-marketplace-validations/marcofranssen_setup-kubectl/actions/runs/23408907773",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 23409136543,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-03-22T18:03:56Z",
+    "updated_at": "2026-03-22T18:03:59Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/23409136543",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 23408902743,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-03-22T17:51:25Z",
+    "updated_at": "2026-03-22T17:52:30Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/23408902743",
+    "actor_login": "rajbos"
+  }
+]
