@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-22T14:40:59Z",
+  "last_updated": "2026-03-22T14:53:24Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1385,
+      "run_count": 1386,
       "total_minutes": 172,
       "seen_run_ids": [
-        23267532244,
         23310706599,
         23310529984,
         23312152706,
@@ -206,24 +205,16 @@
         23404551609,
         23404757255,
         23405050266,
-        23405367124
+        23405367124,
+        23405592509
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 700,
+      "run_count": 709,
       "total_minutes": 597,
       "seen_run_ids": [
-        23164463977,
-        23193456773,
-        23204598228,
-        23204598275,
-        23204598244,
-        23204597967,
-        23204369736,
-        23204369754,
-        23204369791,
         23204176146,
         23212353985,
         23212353958,
@@ -414,13 +405,22 @@
         23405332189,
         23405332187,
         23405332188,
-        23405332194
+        23405332194,
+        23405465319,
+        23405465316,
+        23405465325,
+        23405465335,
+        23405465320,
+        23405449251,
+        23405449256,
+        23405449260,
+        23405385932
       ]
     },
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 107,
+      "run_count": 108,
       "total_minutes": 92,
       "seen_run_ids": [
         22505285722,
@@ -529,7 +529,8 @@
         23377148011,
         23405317436,
         23405317441,
-        23405237010
+        23405237010,
+        23405452365
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
