@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-22T15:04:47Z",
+  "last_updated": "2026-03-22T15:23:01Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1387,
+      "run_count": 1388,
       "total_minutes": 172,
       "seen_run_ids": [
-        23310529984,
         23312152706,
         23313206824,
         23314144253,
@@ -206,23 +205,16 @@
         23405050266,
         23405367124,
         23405592509,
-        23405798218
+        23405798218,
+        23406144768
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 709,
-      "total_minutes": 597,
+      "run_count": 717,
+      "total_minutes": 607,
       "seen_run_ids": [
-        23204176146,
-        23212353985,
-        23212353958,
-        23212353984,
-        23212348908,
-        23212321408,
-        23212321422,
-        23212321418,
         23212113242,
         23215135126,
         23215135098,
@@ -414,13 +406,21 @@
         23405449251,
         23405449256,
         23405449260,
-        23405385932
+        23405385932,
+        23405909024,
+        23405909010,
+        23405909015,
+        23405909069,
+        23405863132,
+        23405864016,
+        23405863123,
+        23405863125
       ]
     },
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 118,
+      "run_count": 121,
       "total_minutes": 92,
       "seen_run_ids": [
         22505285722,
@@ -540,7 +540,10 @@
         23405663475,
         23405659963,
         23405659968,
-        23405659969
+        23405659969,
+        23406035837,
+        23406035875,
+        23405951889
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
