@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-28T17:10:47Z",
+  "last_updated": "2026-03-28T17:23:22Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1722,
+      "run_count": 1723,
       "total_minutes": 209,
       "seen_run_ids": [
-        23518335567,
         23519546551,
         23520549902,
         23522188437,
@@ -206,16 +205,16 @@
         23689283204,
         23689629810,
         23689884408,
-        23690120457
+        23690120457,
+        23690352096
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1011,
-      "total_minutes": 949,
+      "run_count": 1012,
+      "total_minutes": 955,
       "seen_run_ids": [
-        23602597381,
         23602597411,
         23602597385,
         23602597359,
@@ -414,7 +413,8 @@
         23690000610,
         23690000630,
         23690000625,
-        23690000061
+        23690000061,
+        23690143546
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -1420,8 +1420,8 @@
     "devops-actions/load-used-actions": {
       "full_name": "devops-actions/load-used-actions",
       "html_url": "https://github.com/devops-actions/load-used-actions",
-      "run_count": 30,
-      "total_minutes": 0,
+      "run_count": 36,
+      "total_minutes": 1,
       "seen_run_ids": [
         22538534937,
         22538529686,
@@ -1452,7 +1452,13 @@
         23689867589,
         23689863652,
         23689796084,
-        23689796089
+        23689796089,
+        23690326243,
+        23690168609,
+        23690168567,
+        23690168579,
+        23690168480,
+        23690163501
       ]
     },
     "actions-marketplace-validations/devops-actions_json-to-file": {
@@ -2813,6 +2819,15 @@
         23462780357,
         23462780367,
         23462780358
+      ]
+    },
+    "devex-metrics/devex-metrics": {
+      "full_name": "devex-metrics/devex-metrics",
+      "html_url": "https://github.com/devex-metrics/devex-metrics",
+      "run_count": 1,
+      "total_minutes": 9,
+      "seen_run_ids": [
+        23690122938
       ]
     }
   }
