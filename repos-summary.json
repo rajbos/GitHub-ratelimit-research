@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-30T19:07:01Z",
+  "last_updated": "2026-03-30T19:35:42Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1766,
+      "run_count": 1767,
       "total_minutes": 220,
       "seen_run_ids": [
-        23566240364,
         23566979477,
         23567896961,
         23568439853,
@@ -206,22 +205,16 @@
         23759098668,
         23760383761,
         23761368053,
-        23762587646
+        23762587646,
+        23763798117
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1053,
-      "total_minutes": 970,
+      "run_count": 1060,
+      "total_minutes": 978,
       "seen_run_ids": [
-        23610513127,
-        23610513163,
-        23610513115,
-        23610513113,
-        23610510735,
-        23610510734,
-        23611964235,
         23611964242,
         23611964281,
         23611964297,
@@ -414,7 +407,14 @@
         23756446410,
         23756444422,
         23756424822,
-        23758390306
+        23758390306,
+        23763283106,
+        23763283067,
+        23763283109,
+        23763283112,
+        23763283120,
+        23763283096,
+        23763272771
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -2920,10 +2920,20 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 1,
-      "total_minutes": 0,
+      "run_count": 11,
+      "total_minutes": 1,
       "seen_run_ids": [
-        23757011128
+        23757011128,
+        23763827226,
+        23763825917,
+        23763808774,
+        23763808247,
+        23763289328,
+        23763287406,
+        23763182868,
+        23763180468,
+        23763138604,
+        23763136275
       ]
     }
   }
