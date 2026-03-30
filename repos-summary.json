@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-30T20:00:50Z",
+  "last_updated": "2026-03-30T20:22:26Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1768,
+      "run_count": 1769,
       "total_minutes": 220,
       "seen_run_ids": [
-        23567896961,
         23568439853,
         23569054988,
         23569861223,
@@ -206,20 +205,16 @@
         23761368053,
         23762587646,
         23763798117,
-        23764899038
+        23764899038,
+        23765842831
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1060,
-      "total_minutes": 978,
+      "run_count": 1065,
+      "total_minutes": 985,
       "seen_run_ids": [
-        23611964242,
-        23611964281,
-        23611964297,
-        23611964308,
-        23611960949,
         23611960935,
         23611960990,
         23611960984,
@@ -414,7 +409,12 @@
         23763283112,
         23763283120,
         23763283096,
-        23763272771
+        23763272771,
+        23765691904,
+        23765691897,
+        23765691884,
+        23765691887,
+        23765691913
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -2272,8 +2272,8 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 20,
-      "total_minutes": 2,
+      "run_count": 30,
+      "total_minutes": 3,
       "seen_run_ids": [
         22559016838,
         22836024613,
@@ -2294,7 +2294,17 @@
         23753353043,
         23753353021,
         23753353012,
-        23753352190
+        23753352190,
+        23765384976,
+        23765384957,
+        23765383811,
+        23765245643,
+        23765218868,
+        23765186975,
+        23765187007,
+        23765186996,
+        23765186990,
+        23765185443
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -2920,7 +2930,7 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 19,
+      "run_count": 22,
       "total_minutes": 4,
       "seen_run_ids": [
         23757011128,
@@ -2941,7 +2951,10 @@
         23764454906,
         23764090360,
         23764065223,
-        23764064505
+        23764064505,
+        23765661101,
+        23765661142,
+        23765655896
       ]
     }
   }
