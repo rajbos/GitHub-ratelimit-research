@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-03-31T18:37:42Z",
+  "last_updated": "2026-03-31T19:07:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 1813,
+      "run_count": 1814,
       "total_minutes": 223,
       "seen_run_ids": [
-        23619876627,
         23620261841,
         23620950945,
         23621613735,
@@ -206,7 +205,8 @@
         23810326455,
         23811486911,
         23812643659,
-        23813539996
+        23813539996,
+        23814693960
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -566,8 +566,8 @@
     "devops-actions/load-available-actions": {
       "full_name": "devops-actions/load-available-actions",
       "html_url": "https://github.com/devops-actions/load-available-actions",
-      "run_count": 28,
-      "total_minutes": 19,
+      "run_count": 38,
+      "total_minutes": 34,
       "seen_run_ids": [
         22519643796,
         22519643782,
@@ -596,7 +596,17 @@
         23084958224,
         23084958136,
         23625297604,
-        23625297591
+        23625297591,
+        23814439841,
+        23814440049,
+        23814440120,
+        23814440072,
+        23814439840,
+        23814438498,
+        23814438488,
+        23814438934,
+        23814438989,
+        23814438484
       ]
     },
     "rajbos/GHAzDo-widget": {
@@ -727,8 +737,8 @@
     "devops-actions/load-runner-info": {
       "full_name": "devops-actions/load-runner-info",
       "html_url": "https://github.com/devops-actions/load-runner-info",
-      "run_count": 36,
-      "total_minutes": 11,
+      "run_count": 46,
+      "total_minutes": 13,
       "seen_run_ids": [
         22520356865,
         22520356820,
@@ -765,7 +775,17 @@
         23090389108,
         23090389155,
         23090389160,
-        23090389176
+        23090389176,
+        23814650562,
+        23814650605,
+        23814650601,
+        23814649668,
+        23814649622,
+        23814443865,
+        23814443798,
+        23814443816,
+        23814443789,
+        23814440334
       ]
     },
     "devops-actions/github-actions-marketplace-news": {
@@ -1129,7 +1149,7 @@
     "devops-actions/issue-comment-tag": {
       "full_name": "devops-actions/issue-comment-tag",
       "html_url": "https://github.com/devops-actions/issue-comment-tag",
-      "run_count": 19,
+      "run_count": 28,
       "total_minutes": 0,
       "seen_run_ids": [
         22533335214,
@@ -1150,7 +1170,16 @@
         23086129260,
         23086129335,
         23086129336,
-        23086128976
+        23086128976,
+        23814617747,
+        23814617865,
+        23814617725,
+        23814617614,
+        23814617611,
+        23814432337,
+        23814432268,
+        23814432110,
+        23814432311
       ]
     },
     "actions-marketplace-validations/natescherer_changelog-management-action": {
@@ -1657,8 +1686,8 @@
     "devops-actions/json-to-file": {
       "full_name": "devops-actions/json-to-file",
       "html_url": "https://github.com/devops-actions/json-to-file",
-      "run_count": 9,
-      "total_minutes": 2,
+      "run_count": 17,
+      "total_minutes": 3,
       "seen_run_ids": [
         22540906191,
         22540906183,
@@ -1668,7 +1697,15 @@
         22540906074,
         22540905439,
         22540876716,
-        22540876705
+        22540876705,
+        23814624951,
+        23814624917,
+        23814625001,
+        23814624905,
+        23814435729,
+        23814435724,
+        23814435704,
+        23814435934
       ]
     },
     "actions-marketplace-validations/issue-ops_labeler": {
@@ -1912,8 +1949,8 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 61,
-      "total_minutes": 26,
+      "run_count": 68,
+      "total_minutes": 27,
       "seen_run_ids": [
         22544016530,
         22544016572,
@@ -1975,7 +2012,14 @@
         23090283665,
         23090283674,
         23090283649,
-        23090283581
+        23090283581,
+        23814635731,
+        23814635742,
+        23814635668,
+        23814635391,
+        23814564464,
+        23814564389,
+        23814564400
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -2962,6 +3006,15 @@
         23782602701,
         23782602362,
         23782602366
+      ]
+    },
+    "rajbos/create-github-app-from-manifest": {
+      "full_name": "rajbos/create-github-app-from-manifest",
+      "html_url": "https://github.com/rajbos/create-github-app-from-manifest",
+      "run_count": 1,
+      "total_minutes": 1,
+      "seen_run_ids": [
+        23814681595
       ]
     }
   }
