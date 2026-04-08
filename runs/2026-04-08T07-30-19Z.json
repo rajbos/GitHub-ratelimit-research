@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/baynezy_ChangeLogger.Action",
+    "id": 24123263133,
+    "name": "nuget in /test/ChangeLogger.Action.UnitTests for Verify.Xunit, Xunit.OpenCategories - Update #1312962974",
+    "workflow_id": 208400400,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-08T07:24:38Z",
+    "updated_at": "2026-04-08T07:26:58Z",
+    "html_url": "https://github.com/actions-marketplace-validations/baynezy_ChangeLogger.Action/actions/runs/24123263133",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/baynezy_ChangeLogger.Action",
+    "id": 24123262240,
+    "name": "docker in /src/ChangeLogger.Action - Update #1312962940",
+    "workflow_id": 208400400,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-08T07:24:36Z",
+    "updated_at": "2026-04-08T07:25:15Z",
+    "html_url": "https://github.com/actions-marketplace-validations/baynezy_ChangeLogger.Action/actions/runs/24123262240",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/baynezy_ChangeLogger.Action",
+    "id": 24123262375,
+    "name": "nuget in /. - Update #1312962938",
+    "workflow_id": 208400400,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-08T07:24:36Z",
+    "updated_at": "2026-04-08T07:28:13Z",
+    "html_url": "https://github.com/actions-marketplace-validations/baynezy_ChangeLogger.Action/actions/runs/24123262375",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/dmolik_sync-s3-action",
+    "id": 24122814378,
+    "name": "docker in /. - Update #1312939140",
+    "workflow_id": 247791050,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-08T07:11:53Z",
+    "updated_at": "2026-04-08T07:12:30Z",
+    "html_url": "https://github.com/actions-marketplace-validations/dmolik_sync-s3-action/actions/runs/24122814378",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/dmolik_sync-s3-action",
+    "id": 24122814111,
+    "name": "pip in /. - Update #1312939137",
+    "workflow_id": 247791050,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-08T07:11:53Z",
+    "updated_at": "2026-04-08T07:13:23Z",
+    "html_url": "https://github.com/actions-marketplace-validations/dmolik_sync-s3-action/actions/runs/24122814111",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 24123422094,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-04-08T07:29:09Z",
+    "updated_at": "2026-04-08T07:29:13Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/24123422094",
+    "actor_login": "rajbos"
+  }
+]
