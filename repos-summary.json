@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-10T15:32:26Z",
+  "last_updated": "2026-04-10T16:04:26Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2316,
+      "run_count": 2317,
       "total_minutes": 267,
       "seen_run_ids": [
-        24020655592,
         24022695159,
         24023844121,
         24024816545,
@@ -206,23 +205,16 @@
         24247614409,
         24248651152,
         24249621266,
-        24250692734
+        24250692734,
+        24252067257
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1228,
-      "total_minutes": 1197,
+      "run_count": 1236,
+      "total_minutes": 1200,
       "seen_run_ids": [
-        23742331133,
-        23742331107,
-        23742331085,
-        23742331119,
-        23742331097,
-        23742331113,
-        23742331094,
-        23742210967,
         23743554967,
         23743554961,
         23743554952,
@@ -414,7 +406,15 @@
         24250351723,
         24250351718,
         24250351747,
-        24250351732
+        24250351732,
+        24251971954,
+        24251971957,
+        24251971945,
+        24251971946,
+        24251971964,
+        24251924821,
+        24251924671,
+        24251924664
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -2432,7 +2432,7 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 38,
+      "run_count": 41,
       "total_minutes": 5,
       "seen_run_ids": [
         22559016838,
@@ -2472,7 +2472,10 @@
         24016823206,
         24016811527,
         24016792258,
-        24205557534
+        24205557534,
+        24251263920,
+        24251263843,
+        24251263038
       ]
     },
     "UnclesTavern/CopilotAdventures": {
