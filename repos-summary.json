@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-10T21:00:38Z",
+  "last_updated": "2026-04-10T21:18:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2329,
+      "run_count": 2330,
       "total_minutes": 271,
       "seen_run_ids": [
-        24032956181,
         24034251714,
         24035398941,
         24036372685,
@@ -206,19 +205,16 @@
         24261588061,
         24262285169,
         24263300587,
-        24263916729
+        24263916729,
+        24264603640
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1303,
-      "total_minutes": 1299,
+      "run_count": 1307,
+      "total_minutes": 1300,
       "seen_run_ids": [
-        23870899936,
-        23870899934,
-        23870899964,
-        23886977401,
         23886977403,
         23886977414,
         23886977427,
@@ -414,7 +410,11 @@
         24262975331,
         24263623410,
         24263623399,
-        24263623392
+        24263623392,
+        24264557961,
+        24264557957,
+        24264557962,
+        24264557978
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -670,7 +670,7 @@
     "rajbos/GHAzDo-widget": {
       "full_name": "rajbos/GHAzDo-widget",
       "html_url": "https://github.com/rajbos/GHAzDo-widget",
-      "run_count": 119,
+      "run_count": 122,
       "total_minutes": 65,
       "seen_run_ids": [
         22520138797,
@@ -791,7 +791,10 @@
         24263801316,
         24263799963,
         24263784006,
-        24263783998
+        24263783998,
+        24264621847,
+        24264621831,
+        24264612492
       ]
     },
     "actions-marketplace-validations/lpm0073_aws-ecr-create": {
@@ -3109,8 +3112,8 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 9,
-      "total_minutes": 29,
+      "run_count": 14,
+      "total_minutes": 31,
       "seen_run_ids": [
         23690122938,
         23692344270,
@@ -3120,7 +3123,12 @@
         23819433448,
         24249090305,
         24263109590,
-        24263352792
+        24263352792,
+        24264080866,
+        24264042850,
+        24264032806,
+        24264024482,
+        24264015973
       ]
     },
     "rajbos/demo-repo-march": {
