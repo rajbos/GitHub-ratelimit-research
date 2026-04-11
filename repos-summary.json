@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-11T20:05:55Z",
+  "last_updated": "2026-04-11T20:23:59Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2391,
+      "run_count": 2392,
       "total_minutes": 273,
       "seen_run_ids": [
-        24101658245,
         24102826708,
         24103697339,
         24104724887,
@@ -206,20 +205,16 @@
         24289810393,
         24290104311,
         24290345001,
-        24290520154
+        24290520154,
+        24290850451
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1413,
-      "total_minutes": 1394,
+      "run_count": 1418,
+      "total_minutes": 1400,
       "seen_run_ids": [
-        24233619038,
-        24233618988,
-        24233536034,
-        24233536049,
-        24233536066,
         24233536037,
         24250434143,
         24250434163,
@@ -414,7 +409,12 @@
         24290283484,
         24290283490,
         24290283496,
-        24290283489
+        24290283489,
+        24290679685,
+        24290679676,
+        24290679673,
+        24290679682,
+        24290679675
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -3292,8 +3292,8 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 136,
-      "total_minutes": 96,
+      "run_count": 141,
+      "total_minutes": 100,
       "seen_run_ids": [
         23690122938,
         23692344270,
@@ -3430,7 +3430,12 @@
         24290423993,
         24290423827,
         24290406853,
-        24290406555
+        24290406555,
+        24290677258,
+        24290677259,
+        24290676873,
+        24290584946,
+        24290583788
       ]
     },
     "rajbos/demo-repo-march": {
