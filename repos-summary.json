@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-11T13:23:40Z",
+  "last_updated": "2026-04-11T13:47:00Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2368,
+      "run_count": 2369,
       "total_minutes": 272,
       "seen_run_ids": [
-        24070571342,
         24072307494,
         24073474499,
         24074815956,
@@ -206,23 +205,16 @@
         24282113966,
         24282434697,
         24282766056,
-        24283370268
+        24283370268,
+        24283769798
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1315,
-      "total_minutes": 1309,
+      "run_count": 1323,
+      "total_minutes": 1316,
       "seen_run_ids": [
-        23976368560,
-        23976368557,
-        23976368555,
-        23976368561,
-        23976365689,
-        23976365690,
-        23976365700,
-        23976365687,
         23976545761,
         23976545768,
         23976545786,
@@ -414,7 +406,15 @@
         24265146447,
         24265146460,
         24265146458,
-        24265146467
+        24265146467,
+        24283593398,
+        24283593405,
+        24283593403,
+        24283593399,
+        24283540959,
+        24283540966,
+        24283540962,
+        24283540949
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -900,7 +900,7 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 103,
+      "run_count": 104,
       "total_minutes": 382,
       "seen_run_ids": [
         22521632532,
@@ -1005,7 +1005,8 @@
         24215593599,
         24247291974,
         24266202578,
-        24276658564
+        24276658564,
+        24283688345
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
@@ -2511,8 +2512,8 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 67,
-      "total_minutes": 7,
+      "run_count": 77,
+      "total_minutes": 8,
       "seen_run_ids": [
         22559016838,
         22836024613,
@@ -2580,7 +2581,17 @@
         24281495972,
         24281496116,
         24281408214,
-        24281408050
+        24281408050,
+        24283766874,
+        24283752368,
+        24283752370,
+        24283752382,
+        24283752378,
+        24283752013,
+        24283742291,
+        24283572068,
+        24283571989,
+        24283568540
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -3223,8 +3234,8 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 58,
-      "total_minutes": 63,
+      "run_count": 67,
+      "total_minutes": 67,
       "seen_run_ids": [
         23690122938,
         23692344270,
@@ -3283,7 +3294,16 @@
         24281372202,
         24281371130,
         24281593674,
-        24281593173
+        24281593173,
+        24283714261,
+        24283713640,
+        24283634202,
+        24283633317,
+        24283597112,
+        24283597120,
+        24283596981,
+        24283479949,
+        24283478378
       ]
     },
     "rajbos/demo-repo-march": {
