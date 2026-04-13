@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-13T20:09:46Z",
+  "last_updated": "2026-04-13T20:34:16Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2495,
+      "run_count": 2496,
       "total_minutes": 284,
       "seen_run_ids": [
-        24227091403,
         24228343409,
         24229448650,
         24230912432,
@@ -206,7 +205,8 @@
         24360519257,
         24361744300,
         24363218284,
-        24364379791
+        24364379791,
+        24365456795
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1025,8 +1025,8 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 103,
-      "total_minutes": 32,
+      "run_count": 113,
+      "total_minutes": 33,
       "seen_run_ids": [
         22521363794,
         22521356105,
@@ -1130,7 +1130,17 @@
         24364288397,
         24364288257,
         24364288351,
-        24363582503
+        24363582503,
+        24365454650,
+        24365450486,
+        24365450469,
+        24365446926,
+        24365446512,
+        24365430422,
+        24365098328,
+        24365098289,
+        24365098268,
+        24365098292
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -3353,14 +3363,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 209,
-      "total_minutes": 156,
+      "run_count": 214,
+      "total_minutes": 161,
       "seen_run_ids": [
-        24264080866,
-        24264042850,
-        24264032806,
-        24264024482,
-        24264015973,
         24265373277,
         24265369688,
         24265799852,
@@ -3555,7 +3560,12 @@
         24357365236,
         24357363711,
         24358156683,
-        24358155755
+        24358155755,
+        24364786700,
+        24364786695,
+        24364785818,
+        24364680314,
+        24364678967
       ]
     },
     "rajbos/demo-repo-march": {
