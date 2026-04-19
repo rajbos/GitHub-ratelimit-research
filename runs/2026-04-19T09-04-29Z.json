@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge",
+    "id": 24625347149,
+    "name": "nuget in /src/BlazorMerge for Microsoft.Extensions.DependencyInjection, Microsoft.Extensions.Hosting - Update #1328975947",
+    "workflow_id": 223570710,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T08:58:31Z",
+    "updated_at": "2026-04-19T08:59:50Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge/actions/runs/24625347149",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge",
+    "id": 24625347004,
+    "name": "nuget in /test/BlazorMerge.UnitTests for Microsoft.NET.Test.Sdk - Update #1328975943",
+    "workflow_id": 223570710,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T08:58:31Z",
+    "updated_at": "2026-04-19T08:59:55Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge/actions/runs/24625347004",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/yc-actions_yc-api-gateway-deploy",
+    "id": 24625298920,
+    "name": "github_actions in / for actions/upload-artifact - Update #1328975507",
+    "workflow_id": 250163698,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T08:55:40Z",
+    "updated_at": "2026-04-19T08:56:12Z",
+    "html_url": "https://github.com/actions-marketplace-validations/yc-actions_yc-api-gateway-deploy/actions/runs/24625298920",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 24625436972,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-04-19T09:03:26Z",
+    "updated_at": "2026-04-19T09:03:29Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/24625436972",
+    "actor_login": "rajbos"
+  }
+]
