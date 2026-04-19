@@ -1,0 +1,110 @@
+[
+  {
+    "repo": "Xebia-Xpirit-Assessments/assessment-KaiWaldrant",
+    "id": 24640252268,
+    "name": "github_actions in /. - Update #1329194914",
+    "workflow_id": 263236627,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-04-19T22:05:34Z",
+    "updated_at": "2026-04-19T22:06:10Z",
+    "html_url": "https://github.com/Xebia-Xpirit-Assessments/assessment-KaiWaldrant/actions/runs/24640252268",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640228067,
+    "name": "docker in /docker for dependabot/dependabot-updater-bazel, dependabot/dependabot-updater-bun, dependabot/dependabot-updater-bundler, dependabot/dependabot-updater-cargo, dependabot/dependabot-updater-composer, dependabot/dependabot-updater-devcontainers, dependabot/dependabot-updater-docker, dependabot/dependabot-updater-docker-compose, dependabot/dependabot-updater-dotnet-sdk, dependabot/dependabot-updater-elm, dependabot/dependabot-updater-github-actions, dependabot/dependabot-updater-gitsubmodule, dep...",
+    "workflow_id": 223591135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-04-19T22:04:26Z",
+    "updated_at": "2026-04-19T22:04:30Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640228067",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640228171,
+    "name": "npm_and_yarn in / for commander, dockerode, node-forge, tar-stream - Update #1329193139",
+    "workflow_id": 223591135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T22:04:26Z",
+    "updated_at": "2026-04-19T22:05:30Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640228171",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640227933,
+    "name": "npm_and_yarn in / for @eslint/eslintrc, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, eslint-plugin-jest, globals, jest, jest-circus, lint-staged, prettier, ts-jest - Update #1329193145",
+    "workflow_id": 223591135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T22:04:25Z",
+    "updated_at": "2026-04-19T22:06:24Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640227933",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640227631,
+    "name": "docker in /docker - Update #1329193125",
+    "workflow_id": 223591135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T22:04:24Z",
+    "updated_at": "2026-04-19T22:04:56Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640227631",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640227576,
+    "name": "npm_and_yarn in /. - Update #1329193124",
+    "workflow_id": 223591135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T22:04:24Z",
+    "updated_at": "2026-04-19T22:05:11Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640227576",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_dependabot-action",
+    "id": 24640227509,
+    "name": "github_actions in /. - Update #1329193123",
+    "workflow_id": 223591135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T22:04:24Z",
+    "updated_at": "2026-04-19T22:05:09Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_dependabot-action/actions/runs/24640227509",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 24640349891,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-04-19T22:10:39Z",
+    "updated_at": "2026-04-19T22:10:42Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/24640349891",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 24640084706,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-04-19T21:56:43Z",
+    "updated_at": "2026-04-19T21:57:58Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/24640084706",
+    "actor_login": "rajbos"
+  }
+]
