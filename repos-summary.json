@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-20T06:50:25Z",
+  "last_updated": "2026-04-20T07:33:43Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2792,
+      "run_count": 2793,
       "total_minutes": 304,
       "seen_run_ids": [
-        24495767298,
         24497189798,
         24498813800,
         24500242406,
@@ -206,7 +205,8 @@
         24643407135,
         24644292830,
         24645812088,
-        24650845932
+        24650845932,
+        24654165312
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1342,7 +1342,7 @@
     "rajbos/github-fork-updater": {
       "full_name": "rajbos/github-fork-updater",
       "html_url": "https://github.com/rajbos/github-fork-updater",
-      "run_count": 16,
+      "run_count": 26,
       "total_minutes": 26,
       "seen_run_ids": [
         22531882664,
@@ -1360,7 +1360,17 @@
         23407988693,
         23407945377,
         23407945385,
-        23826736743
+        23826736743,
+        24654187301,
+        24654187376,
+        24654187383,
+        24654187714,
+        24654185393,
+        24654185476,
+        24654185637,
+        24654185743,
+        24654185049,
+        24654184936
       ]
     },
     "devops-actions/issue-comment-tag": {
@@ -3756,6 +3766,16 @@
         24140654691,
         24140487699,
         24140486928
+      ]
+    },
+    "rajbos/github-copilot-premium-reqs-usage-fork": {
+      "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
+      "run_count": 2,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        24653953148,
+        24653953171
       ]
     }
   }
