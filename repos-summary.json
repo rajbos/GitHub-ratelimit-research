@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-22T19:53:41Z",
+  "last_updated": "2026-04-22T20:17:09Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2886,
+      "run_count": 2887,
       "total_minutes": 310,
       "seen_run_ids": [
-        24602266047,
         24602692042,
         24603003098,
         24603403993,
@@ -206,20 +205,16 @@
         24795046996,
         24796476428,
         24798209496,
-        24799373517
+        24799373517,
+        24800434760
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1765,
-      "total_minutes": 1750,
+      "run_count": 1770,
+      "total_minutes": 1760,
       "seen_run_ids": [
-        24314372357,
-        24333188238,
-        24333188300,
-        24333188285,
-        24333188252,
         24333188277,
         24333186314,
         24333186346,
@@ -414,7 +409,12 @@
         24799181148,
         24799181131,
         24799181130,
-        24799181181
+        24799181181,
+        24799574947,
+        24799574933,
+        24799574939,
+        24799574910,
+        24799574983
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -922,7 +922,7 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 133,
+      "run_count": 135,
       "total_minutes": 499,
       "seen_run_ids": [
         22521632532,
@@ -1057,7 +1057,9 @@
         24790560593,
         24790534280,
         24790279742,
-        24798125259
+        24798125259,
+        24800166768,
+        24800118779
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
