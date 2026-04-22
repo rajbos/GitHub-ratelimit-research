@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T10:53:12Z",
+  "last_updated": "2026-04-22T11:23:18Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
@@ -922,8 +922,8 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 122,
-      "total_minutes": 479,
+      "run_count": 128,
+      "total_minutes": 497,
       "seen_run_ids": [
         22521632532,
         22529232426,
@@ -1046,7 +1046,13 @@
         24630764704,
         24639857231,
         24707668285,
-        24748703785
+        24748703785,
+        24775138592,
+        24775131461,
+        24775122193,
+        24774863424,
+        24774862819,
+        24774852250
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
@@ -1322,8 +1328,8 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 29,
-      "total_minutes": 18,
+      "run_count": 39,
+      "total_minutes": 20,
       "seen_run_ids": [
         22531584064,
         22531568711,
@@ -1353,7 +1359,17 @@
         22643679824,
         22657728601,
         23890229767,
-        23890217055
+        23890217055,
+        24775542376,
+        24775541309,
+        24775541565,
+        24775540899,
+        24775518175,
+        24775514643,
+        24775513468,
+        24775513683,
+        24775513198,
+        24775511344
       ]
     },
     "rajbos/github-fork-updater": {
@@ -1985,7 +2001,7 @@
     "devops-actions/json-to-file": {
       "full_name": "devops-actions/json-to-file",
       "html_url": "https://github.com/devops-actions/json-to-file",
-      "run_count": 61,
+      "run_count": 71,
       "total_minutes": 11,
       "seen_run_ids": [
         22540906191,
@@ -2048,7 +2064,17 @@
         24349813064,
         24349813391,
         24349803686,
-        24349803592
+        24349803592,
+        24774846172,
+        24774846177,
+        24774845971,
+        24774845975,
+        24774845989,
+        24774831476,
+        24774831514,
+        24774831504,
+        24774831480,
+        24774831431
       ]
     },
     "actions-marketplace-validations/issue-ops_labeler": {
@@ -3694,7 +3720,7 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 28,
+      "run_count": 31,
       "total_minutes": 4,
       "seen_run_ids": [
         23757011128,
@@ -3724,7 +3750,10 @@
         23766543442,
         23782602701,
         23782602362,
-        23782602366
+        23782602366,
+        24775552077,
+        24775552079,
+        24775551356
       ]
     },
     "rajbos/create-github-app-from-manifest": {
