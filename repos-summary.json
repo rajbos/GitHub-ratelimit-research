@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-23T17:10:46Z",
+  "last_updated": "2026-04-23T17:45:27Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2919,
+      "run_count": 2920,
       "total_minutes": 317,
       "seen_run_ids": [
-        24613763642,
         24614068737,
         24614533472,
         24614771144,
@@ -206,7 +205,8 @@
         24842381418,
         24844973082,
         24846682568,
-        24848112679
+        24848112679,
+        24849958999
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3140,16 +3140,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 306,
-      "total_minutes": 315,
+      "run_count": 313,
+      "total_minutes": 325,
       "seen_run_ids": [
-        23383444531,
-        23383444523,
-        23383443755,
-        23383438563,
-        23383438537,
-        23383799458,
-        23383784635,
         23383784443,
         23408279301,
         23408279298,
@@ -3342,7 +3335,14 @@
         24688036024,
         24688027581,
         24688027523,
-        24688026792
+        24688026792,
+        24849425618,
+        24849425654,
+        24849424220,
+        24849154640,
+        24849154642,
+        24849153864,
+        24849152671
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -3503,19 +3503,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 220,
-      "total_minutes": 164,
+      "run_count": 230,
+      "total_minutes": 175,
       "seen_run_ids": [
-        24279540626,
-        24279530366,
-        24279529418,
-        24279520264,
-        24279519759,
-        24279436298,
-        24279436082,
-        24279423067,
-        24279422627,
-        24279745735,
         24279619113,
         24279618899,
         24280133319,
@@ -3705,7 +3695,17 @@
         24387441686,
         24387439153,
         24632829731,
-        24632829512
+        24632829512,
+        24849830899,
+        24849830859,
+        24849830187,
+        24849357826,
+        24849357846,
+        24849357101,
+        24849269253,
+        24849268317,
+        24849247484,
+        24849245335
       ]
     },
     "rajbos/demo-repo-march": {
