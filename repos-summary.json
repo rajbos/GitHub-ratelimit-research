@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-23T13:31:02Z",
+  "last_updated": "2026-04-23T14:13:47Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2914,
+      "run_count": 2915,
       "total_minutes": 310,
       "seen_run_ids": [
-        24612181247,
         24612502892,
         24612847577,
         24613153568,
@@ -206,24 +205,16 @@
         24833502703,
         24834663398,
         24836116513,
-        24838060891
+        24838060891,
+        24840211906
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1775,
-      "total_minutes": 1766,
+      "run_count": 1784,
+      "total_minutes": 1770,
       "seen_run_ids": [
-        24342416443,
-        24342416413,
-        24342416427,
-        24342414020,
-        24342414015,
-        24349494599,
-        24349494535,
-        24349494567,
-        24349494625,
         24349494605,
         24349494710,
         24349494582,
@@ -414,7 +405,16 @@
         24835280632,
         24835280702,
         24835280737,
-        24835280720
+        24835280720,
+        24840040524,
+        24840040460,
+        24840040491,
+        24840040416,
+        24840000710,
+        24840000866,
+        24839992744,
+        24839993073,
+        24839799087
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -922,8 +922,8 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 141,
-      "total_minutes": 512,
+      "run_count": 145,
+      "total_minutes": 522,
       "seen_run_ids": [
         22521632532,
         22529232426,
@@ -1065,7 +1065,11 @@
         24819396279,
         24819277504,
         24819255618,
-        24820413527
+        24820413527,
+        24840123233,
+        24839953246,
+        24839514305,
+        24839497733
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
