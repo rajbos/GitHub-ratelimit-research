@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-24T13:30:44Z",
+  "last_updated": "2026-04-24T14:11:39Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2952,
+      "run_count": 2953,
       "total_minutes": 317,
       "seen_run_ids": [
-        24628907958,
         24629408891,
         24630147397,
         24630603701,
@@ -206,20 +205,16 @@
         24887895060,
         24888964273,
         24890271936,
-        24892086259
+        24892086259,
+        24893952040
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1839,
+      "run_count": 1844,
       "total_minutes": 1821,
       "seen_run_ids": [
-        24601324003,
-        24601324004,
-        24601855071,
-        24601855070,
-        24601855077,
         24601855079,
         24601854846,
         24601832832,
@@ -414,7 +409,12 @@
         24889701557,
         24889701562,
         24889701622,
-        24889701566
+        24889701566,
+        24893947102,
+        24893947132,
+        24893947099,
+        24893947243,
+        24893938731
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -922,8 +922,8 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 147,
-      "total_minutes": 533,
+      "run_count": 148,
+      "total_minutes": 539,
       "seen_run_ids": [
         22521632532,
         22529232426,
@@ -1071,7 +1071,8 @@
         24839514305,
         24839497733,
         24860414350,
-        24874720209
+        24874720209,
+        24893440045
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
