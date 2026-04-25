@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-25T10:49:53Z",
+  "last_updated": "2026-04-25T11:14:22Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2988,
+      "run_count": 2989,
       "total_minutes": 322,
       "seen_run_ids": [
-        24643407135,
         24644292830,
         24645812088,
         24650845932,
@@ -206,7 +205,8 @@
         24927866651,
         24928367517,
         24928845379,
-        24929189502
+        24929189502,
+        24929605865
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2739,8 +2739,8 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 83,
-      "total_minutes": 9,
+      "run_count": 93,
+      "total_minutes": 10,
       "seen_run_ids": [
         22559016838,
         22836024613,
@@ -2824,7 +2824,17 @@
         24645666556,
         24645666567,
         24645665668,
-        24645641840
+        24645641840,
+        24929591274,
+        24929591275,
+        24929591273,
+        24929591276,
+        24929590737,
+        24929421286,
+        24929421092,
+        24929406980,
+        24929406976,
+        24929406985
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -2954,8 +2964,8 @@
     "devops-actions/actionlint": {
       "full_name": "devops-actions/actionlint",
       "html_url": "https://github.com/devops-actions/actionlint",
-      "run_count": 78,
-      "total_minutes": 5,
+      "run_count": 85,
+      "total_minutes": 6,
       "seen_run_ids": [
         22571439276,
         22571438201,
@@ -3034,7 +3044,14 @@
         24929112531,
         24929111865,
         24929110431,
-        24929110417
+        24929110417,
+        24929324705,
+        24929324716,
+        24929324720,
+        24929324682,
+        24929324693,
+        24929324425,
+        24929324422
       ]
     },
     "rajbos/github-copilot-model-notifier": {
