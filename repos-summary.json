@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-25T17:03:46Z",
+  "last_updated": "2026-04-25T17:27:25Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3005,
+      "run_count": 3006,
       "total_minutes": 334,
       "seen_run_ids": [
-        24678531575,
         24679734762,
         24681043392,
         24682327164,
@@ -206,20 +205,16 @@
         24934804124,
         24935207222,
         24935652930,
-        24936015687
+        24936015687,
+        24936459778
       ]
     },
     "rajbos/github-copilot-token-usage": {
       "full_name": "rajbos/github-copilot-token-usage",
       "html_url": "https://github.com/rajbos/github-copilot-token-usage",
-      "run_count": 1880,
-      "total_minutes": 1871,
+      "run_count": 1885,
+      "total_minutes": 1886,
       "seen_run_ids": [
-        24683028371,
-        24683028388,
-        24683028380,
-        24687643379,
-        24687643392,
         24687643391,
         24687643413,
         24687513561,
@@ -414,7 +409,12 @@
         24928776908,
         24928776910,
         24928776902,
-        24928776907
+        24928776907,
+        24936193885,
+        24936193886,
+        24936193882,
+        24936193879,
+        24936193876
       ]
     },
     "rajbos/actions-marketplace-checks": {
@@ -2375,8 +2375,8 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 86,
-      "total_minutes": 34,
+      "run_count": 95,
+      "total_minutes": 36,
       "seen_run_ids": [
         22544016530,
         22544016572,
@@ -2463,7 +2463,16 @@
         24286132620,
         24286083238,
         24286083245,
-        24286083225
+        24286083225,
+        24936102969,
+        24936102970,
+        24936102952,
+        24936102971,
+        24936102959,
+        24936102862,
+        24936100216,
+        24936100183,
+        24936100215
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -3566,13 +3575,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 262,
-      "total_minutes": 229,
+      "run_count": 266,
+      "total_minutes": 235,
       "seen_run_ids": [
-        24283597112,
-        24283597120,
-        24283596981,
-        24283479949,
         24283478378,
         24285301151,
         24285300919,
@@ -3768,7 +3773,11 @@
         24925576199,
         24925575902,
         24925527155,
-        24925526724
+        24925526724,
+        24936209460,
+        24936209182,
+        24936189864,
+        24936188894
       ]
     },
     "rajbos/demo-repo-march": {
