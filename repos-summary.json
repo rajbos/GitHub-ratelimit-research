@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-25T10:30:08Z",
+  "last_updated": "2026-04-25T10:49:53Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 2987,
+      "run_count": 2988,
       "total_minutes": 322,
       "seen_run_ids": [
-        24642283568,
         24643407135,
         24644292830,
         24645812088,
@@ -206,7 +205,8 @@
         24927433439,
         24927866651,
         24928367517,
-        24928845379
+        24928845379,
+        24929189502
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2954,7 +2954,7 @@
     "devops-actions/actionlint": {
       "full_name": "devops-actions/actionlint",
       "html_url": "https://github.com/devops-actions/actionlint",
-      "run_count": 68,
+      "run_count": 78,
       "total_minutes": 5,
       "seen_run_ids": [
         22571439276,
@@ -3024,7 +3024,17 @@
         24363829404,
         24363829573,
         24363829427,
-        24363828377
+        24363828377,
+        24929112522,
+        24929112444,
+        24929112454,
+        24929112528,
+        24929112530,
+        24929112443,
+        24929112531,
+        24929111865,
+        24929110431,
+        24929110417
       ]
     },
     "rajbos/github-copilot-model-notifier": {
