@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-04-25T23:59:22Z",
+  "last_updated": "2026-04-26T01:02:19Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3032,
+      "run_count": 3033,
       "total_minutes": 334,
       "seen_run_ids": [
-        24715824938,
         24717374399,
         24718439369,
         24719662771,
@@ -206,7 +205,8 @@
         24942881312,
         24943131276,
         24943458084,
-        24943736861
+        24943736861,
+        24944789446
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3886,11 +3886,12 @@
     "mcp-research/mcp-security-scans-original": {
       "full_name": "mcp-research/mcp-security-scans-original",
       "html_url": "https://github.com/mcp-research/mcp-security-scans-original",
-      "run_count": 2,
+      "run_count": 3,
       "total_minutes": 0,
       "seen_run_ids": [
         23843613616,
-        24747110355
+        24747110355,
+        24944803013
       ]
     },
     "devops-actions/azure-appservice-settings": {
