@@ -19,6 +19,54 @@ jobs:
         with:
           egress-policy: audit
 
+      - name: Validate PAT
+        id: validate-pat
+        run: |
+          if [ -z "${{ secrets.PAT }}" ]; then
+            echo "::error::The PAT secret is not configured. Please set the PAT secret in repository settings."
+            ISSUE_TITLE="⚠️ Rate limit monitor: PAT secret is missing or expired"
+            EXISTING=$(curl -s \
+              -H "Authorization: Bearer ${{ github.token }}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/search/issues?q=repo:${{ github.repository }}+is:issue+is:open+%22PAT+secret+is+missing+or+expired%22+in:title" | \
+              jq -r '.total_count // 0')
+            if [ "$EXISTING" = "0" ]; then
+              curl -s -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                https://api.github.com/repos/${{ github.repository }}/issues \
+                -d "{\"title\":\"$ISSUE_TITLE\",\"body\":\"The \`PAT\` secret required by the rate limit monitoring workflow is **not configured**.\n\nPlease [add the PAT secret](https://github.com/${{ github.repository }}/settings/secrets/actions) to restore monitoring.\"}" || true
+            fi
+            exit 1
+          fi
+          HTTP_STATUS=$(curl -s -o /dev/null -w "%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/user)
+          if [ "$HTTP_STATUS" != "200" ]; then
+            echo "::error::The PAT secret is invalid or expired (HTTP $HTTP_STATUS). Please renew it in repository settings."
+            ISSUE_TITLE="⚠️ Rate limit monitor: PAT secret is missing or expired"
+            EXISTING=$(curl -s \
+              -H "Authorization: Bearer ${{ github.token }}" \
+              -H "Accept: application/vnd.github+json" \
+              -H "X-GitHub-Api-Version: 2022-11-28" \
+              "https://api.github.com/search/issues?q=repo:${{ github.repository }}+is:issue+is:open+%22PAT+secret+is+missing+or+expired%22+in:title" | \
+              jq -r '.total_count // 0')
+            if [ "$EXISTING" = "0" ]; then
+              curl -s -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                https://api.github.com/repos/${{ github.repository }}/issues \
+                -d "{\"title\":\"$ISSUE_TITLE\",\"body\":\"The \`PAT\` secret required by the rate limit monitoring workflow is **expired or invalid** (HTTP $HTTP_STATUS).\n\nPlease [update the PAT secret](https://github.com/${{ github.repository }}/settings/secrets/actions) to restore monitoring.\"}" || true
+            fi
+            exit 1
+          fi
+          echo "PAT is valid."
+
       - name: Checkout repository
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
