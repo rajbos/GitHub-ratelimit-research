@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-05T14:28:12Z",
+  "last_updated": "2026-05-05T16:49:43Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3322,
+      "run_count": 3323,
       "total_minutes": 370,
       "seen_run_ids": [
-        25067305924,
         25069322727,
         25071268961,
         25072630509,
@@ -206,7 +205,8 @@
         25373550546,
         25374679480,
         25377494731,
-        25382429357
+        25382429357,
+        25389841473
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,7 +420,7 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 175,
+      "run_count": 176,
       "total_minutes": 148,
       "seen_run_ids": [
         22505285722,
@@ -597,7 +597,8 @@
         24215074235,
         24215533374,
         24217143636,
-        24218174136
+        24218174136,
+        25389585652
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
