@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/github_super-linter",
+    "id": 25464864123,
+    "name": "npm_and_yarn in /dependencies - Update #1352101772",
+    "workflow_id": 211446451,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-05-06T22:32:31Z",
+    "updated_at": "2026-05-06T22:32:36Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_super-linter/actions/runs/25464864123",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_super-linter",
+    "id": 25464864091,
+    "name": "docker in /. - Update #1352101775",
+    "workflow_id": 211446451,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-05-06T22:32:31Z",
+    "updated_at": "2026-05-06T22:32:37Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_super-linter/actions/runs/25464864091",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_super-linter",
+    "id": 25464863889,
+    "name": "github_actions in /. - Update #1352101777",
+    "workflow_id": 211446451,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-05-06T22:32:31Z",
+    "updated_at": "2026-05-06T22:33:08Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_super-linter/actions/runs/25464863889",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_super-linter",
+    "id": 25464864177,
+    "name": "pip in /dependencies/python - Update #1352101776",
+    "workflow_id": 211446451,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-05-06T22:32:31Z",
+    "updated_at": "2026-05-06T22:33:19Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_super-linter/actions/runs/25464864177",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_super-linter",
+    "id": 25464864157,
+    "name": "bundler in /dependencies - Update #1352101773",
+    "workflow_id": 211446451,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-05-06T22:32:31Z",
+    "updated_at": "2026-05-06T22:33:39Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_super-linter/actions/runs/25464864157",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 25464919287,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-05-06T22:33:53Z",
+    "updated_at": "2026-05-06T22:33:56Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/25464919287",
+    "actor_login": "rajbos"
+  }
+]
