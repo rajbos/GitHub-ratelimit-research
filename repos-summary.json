@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-10T12:38:13Z",
+  "last_updated": "2026-05-10T13:08:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3489,
+      "run_count": 3490,
       "total_minutes": 373,
       "seen_run_ids": [
-        25325426743,
         25327704720,
         25329649545,
         25331558905,
@@ -206,7 +205,8 @@
         25627326070,
         25627868142,
         25628430599,
-        25628915223
+        25628915223,
+        25629533737
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3736,13 +3736,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 326,
-      "total_minutes": 337,
+      "run_count": 330,
+      "total_minutes": 338,
       "seen_run_ids": [
-        24290206583,
-        24290206579,
-        24290206425,
-        24290145945,
         24290145227,
         24290423979,
         24290423993,
@@ -3938,7 +3934,11 @@
         25627105854,
         25627025644,
         25627025653,
-        25627025418
+        25627025418,
+        25629548142,
+        25629524934,
+        25629524898,
+        25629524754
       ]
     },
     "rajbos/demo-repo-march": {
@@ -4119,16 +4119,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 353,
-      "total_minutes": 457,
+      "run_count": 360,
+      "total_minutes": 465,
       "seen_run_ids": [
-        25291243226,
-        25291243228,
-        25291243220,
-        25291243217,
-        25302716528,
-        25307261569,
-        25309638074,
         25309636764,
         25309636788,
         25309636831,
@@ -4321,7 +4314,14 @@
         25628537360,
         25628537366,
         25628532669,
-        25628532315
+        25628532315,
+        25629215972,
+        25629215983,
+        25629215984,
+        25629215963,
+        25629215979,
+        25629215960,
+        25629215966
       ]
     }
   }
