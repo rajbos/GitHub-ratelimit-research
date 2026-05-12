@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-12T15:49:12Z",
+  "last_updated": "2026-05-12T16:41:51Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3553,
+      "run_count": 3554,
       "total_minutes": 373,
       "seen_run_ids": [
-        25450068099,
         25451811892,
         25453568344,
         25455459952,
@@ -206,7 +205,8 @@
         25731828365,
         25739035557,
         25742477736,
-        25745664453
+        25745664453,
+        25748516427
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3739,19 +3739,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 356,
-      "total_minutes": 407,
+      "run_count": 366,
+      "total_minutes": 420,
       "seen_run_ids": [
-        24292039828,
-        24292039649,
-        24292446449,
-        24292445338,
-        24292435209,
-        24292434884,
-        24292321983,
-        24292321604,
-        24292572929,
-        24292572931,
         24292572676,
         24292528672,
         24292527954,
@@ -3941,7 +3931,17 @@
         25723838870,
         25723837864,
         25723659936,
-        25723658475
+        25723658475,
+        25748489810,
+        25748489769,
+        25748489019,
+        25747956149,
+        25747956062,
+        25747955513,
+        25747886258,
+        25747884498,
+        25747552578,
+        25747550536
       ]
     },
     "rajbos/demo-repo-march": {
@@ -4048,7 +4048,7 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 39,
+      "run_count": 44,
       "total_minutes": 2,
       "seen_run_ids": [
         23890358224,
@@ -4089,7 +4089,12 @@
         24286130559,
         24286082177,
         24286082186,
-        24285989847
+        24285989847,
+        25748361476,
+        25748361570,
+        25748361483,
+        25748361252,
+        25748359644
       ]
     },
     "rajbos/demo-actions": {
