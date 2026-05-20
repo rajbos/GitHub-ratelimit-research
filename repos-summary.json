@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-20T17:48:20Z",
+  "last_updated": "2026-05-20T18:44:08Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3788,
+      "run_count": 3789,
       "total_minutes": 379,
       "seen_run_ids": [
-        25829466684,
         25830644236,
         25831639276,
         25832626539,
@@ -206,7 +205,8 @@
         26168633783,
         26173425624,
         26176650449,
-        26179793228
+        26179793228,
+        26182718609
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3578,12 +3578,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 393,
-      "total_minutes": 378,
+      "run_count": 396,
+      "total_minutes": 379,
       "seen_run_ids": [
-        24260592109,
-        24260591586,
-        24260462974,
         24260461686,
         24260334574,
         24292439243,
@@ -3780,7 +3777,10 @@
         25916480933,
         25916478272,
         25916477935,
-        26149225009
+        26149225009,
+        26182629458,
+        26182629502,
+        26182628021
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -4352,18 +4352,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 631,
-      "total_minutes": 807,
+      "run_count": 640,
+      "total_minutes": 808,
       "seen_run_ids": [
-        25877131284,
-        25877131230,
-        25876937756,
-        25879807480,
-        25879807500,
-        25879807516,
-        25879807470,
-        25879807294,
-        25879803020,
         25879660744,
         25879657587,
         25879657619,
@@ -4554,7 +4545,16 @@
         26179903956,
         26179898146,
         26179896448,
-        26179896446
+        26179896446,
+        26182694618,
+        26182694407,
+        26182694364,
+        26182694625,
+        26182694496,
+        26182694495,
+        26182478003,
+        26182477172,
+        26182477173
       ]
     }
   }
