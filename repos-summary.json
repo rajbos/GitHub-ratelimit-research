@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-23T20:15:32Z",
+  "last_updated": "2026-05-23T20:35:38Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3877,
+      "run_count": 3878,
       "total_minutes": 411,
       "seen_run_ids": [
-        25969289594,
         25969747404,
         25970365276,
         25971026860,
@@ -206,7 +205,8 @@
         26340033398,
         26340664421,
         26341455480,
-        26341980057
+        26341980057,
+        26342882160
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -638,7 +638,7 @@
     "devops-actions/load-available-actions": {
       "full_name": "devops-actions/load-available-actions",
       "html_url": "https://github.com/devops-actions/load-available-actions",
-      "run_count": 89,
+      "run_count": 99,
       "total_minutes": 63,
       "seen_run_ids": [
         22519643796,
@@ -729,7 +729,17 @@
         26342453773,
         26342453717,
         26342453215,
-        26342453298
+        26342453298,
+        26342914795,
+        26342914821,
+        26342914834,
+        26342914810,
+        26342914670,
+        26342914668,
+        26342913618,
+        26342913653,
+        26342913654,
+        26342913605
       ]
     },
     "rajbos/GHAzDo-widget": {
@@ -3177,7 +3187,7 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 105,
+      "run_count": 107,
       "total_minutes": 10,
       "seen_run_ids": [
         22559016838,
@@ -3284,7 +3294,9 @@
         26011912591,
         26011889867,
         26083977678,
-        26083965708
+        26083965708,
+        26342696549,
+        26342696405
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -3991,7 +4003,7 @@
     "devops-actions/secure-action-inputs": {
       "full_name": "devops-actions/secure-action-inputs",
       "html_url": "https://github.com/devops-actions/secure-action-inputs",
-      "run_count": 44,
+      "run_count": 52,
       "total_minutes": 12,
       "seen_run_ids": [
         23454907907,
@@ -4037,7 +4049,15 @@
         26342461537,
         26342461534,
         26342461555,
-        26342394704
+        26342394704,
+        26342757413,
+        26342757408,
+        26342757402,
+        26342701846,
+        26342701718,
+        26342701890,
+        26342701851,
+        26342701853
       ]
     },
     "devex-metrics/devex-metrics": {
@@ -4388,8 +4408,8 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 51,
-      "total_minutes": 4,
+      "run_count": 60,
+      "total_minutes": 5,
       "seen_run_ids": [
         23890358224,
         23890358249,
@@ -4441,7 +4461,16 @@
         26334433432,
         26334433430,
         26334433319,
-        26334425319
+        26334425319,
+        26342844588,
+        26342844593,
+        26342844622,
+        26342844606,
+        26342844522,
+        26342844012,
+        26342844049,
+        26342793574,
+        26342793567
       ]
     },
     "rajbos/demo-actions": {
@@ -4475,17 +4504,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 965,
-      "total_minutes": 1101,
+      "run_count": 973,
+      "total_minutes": 1102,
       "seen_run_ids": [
-        26312597275,
-        26312596942,
-        26312596979,
-        26312596955,
-        26313644397,
-        26313644340,
-        26313644263,
-        26313644332,
         26313642337,
         26313642425,
         26313642418,
@@ -4677,7 +4698,15 @@
         26342435629,
         26342435631,
         26342435630,
-        26342435633
+        26342435633,
+        26342889450,
+        26342888765,
+        26342888758,
+        26342888757,
+        26342886702,
+        26342886295,
+        26342886337,
+        26342886297
       ]
     },
     "rajbos-actions/github-show-actions": {
