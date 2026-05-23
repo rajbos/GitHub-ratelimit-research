@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-23T13:08:48Z",
+  "last_updated": "2026-05-23T13:51:34Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3864,
+      "run_count": 3865,
       "total_minutes": 391,
       "seen_run_ids": [
-        25961085530,
         25961494969,
         25962091435,
         25962723965,
@@ -206,7 +205,8 @@
         26331867168,
         26332374788,
         26332913748,
-        26333524470
+        26333524470,
+        26334441644
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 264,
+      "run_count": 265,
       "total_minutes": 261,
       "seen_run_ids": [
-        22804313040,
         22804313041,
         22804313042,
         22804313043,
@@ -622,7 +621,8 @@
         26333497837,
         26333496793,
         26333496795,
-        26333217446
+        26333217446,
+        26334155600
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -638,8 +638,8 @@
     "devops-actions/load-available-actions": {
       "full_name": "devops-actions/load-available-actions",
       "html_url": "https://github.com/devops-actions/load-available-actions",
-      "run_count": 69,
-      "total_minutes": 59,
+      "run_count": 79,
+      "total_minutes": 62,
       "seen_run_ids": [
         22519643796,
         22519643782,
@@ -709,7 +709,17 @@
         25991477714,
         25991477756,
         25991477007,
-        25991477034
+        25991477034,
+        26334432617,
+        26334432488,
+        26334432587,
+        26334432510,
+        26334432589,
+        26334432600,
+        26334432606,
+        26334431927,
+        26334431950,
+        26334424167
       ]
     },
     "rajbos/GHAzDo-widget": {
@@ -1490,12 +1500,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 229,
-      "total_minutes": 111,
+      "run_count": 232,
+      "total_minutes": 112,
       "seen_run_ids": [
-        24775542376,
-        24775541309,
-        24775541565,
         24775540899,
         24775518175,
         24775514643,
@@ -1692,7 +1699,10 @@
         26189876135,
         26189876167,
         26189876132,
-        26189872923
+        26189872923,
+        26334425657,
+        26334419422,
+        26334419407
       ]
     },
     "rajbos/github-fork-updater": {
@@ -2675,8 +2685,8 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 109,
-      "total_minutes": 39,
+      "run_count": 118,
+      "total_minutes": 44,
       "seen_run_ids": [
         22544016530,
         22544016572,
@@ -2786,7 +2796,16 @@
         26080281670,
         26080281747,
         26080281637,
-        26080281639
+        26080281639,
+        26334434580,
+        26334434578,
+        26334434577,
+        26334434579,
+        26334434593,
+        26334434469,
+        26334426587,
+        26334426607,
+        26334426577
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -4176,8 +4195,8 @@
     "devops-actions/action-get-tag": {
       "full_name": "devops-actions/action-get-tag",
       "html_url": "https://github.com/devops-actions/action-get-tag",
-      "run_count": 29,
-      "total_minutes": 5,
+      "run_count": 39,
+      "total_minutes": 7,
       "seen_run_ids": [
         23752682232,
         23752682185,
@@ -4207,7 +4226,17 @@
         26083935042,
         26083934884,
         26083935005,
-        26083829928
+        26083829928,
+        26334431453,
+        26334431434,
+        26334431545,
+        26334431553,
+        26334431529,
+        26334431567,
+        26334431414,
+        26334431568,
+        26334422762,
+        26334422781
       ]
     },
     "devops-actions/load-dependents-count": {
@@ -4275,8 +4304,8 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 44,
-      "total_minutes": 2,
+      "run_count": 51,
+      "total_minutes": 4,
       "seen_run_ids": [
         23890358224,
         23890358249,
@@ -4321,7 +4350,14 @@
         25748361570,
         25748361483,
         25748361252,
-        25748359644
+        25748359644,
+        26334433417,
+        26334433431,
+        26334433402,
+        26334433432,
+        26334433430,
+        26334433319,
+        26334425319
       ]
     },
     "rajbos/demo-actions": {
@@ -4355,17 +4391,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 850,
-      "total_minutes": 999,
+      "run_count": 858,
+      "total_minutes": 1009,
       "seen_run_ids": [
-        26192187198,
-        26192187148,
-        26192187171,
-        26192187172,
-        26191837836,
-        26191837766,
-        26191837739,
-        26206848171,
         26206848117,
         26206848173,
         26206848125,
@@ -4557,7 +4585,15 @@
         26333444782,
         26333444783,
         26333444779,
-        26333444780
+        26333444780,
+        26334372090,
+        26334372052,
+        26334372053,
+        26334372043,
+        26334309004,
+        26334308987,
+        26334308986,
+        26334309007
       ]
     },
     "rajbos-actions/github-show-actions": {
