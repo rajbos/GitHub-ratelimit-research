@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-23T07:58:54Z",
+  "last_updated": "2026-05-23T08:49:05Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3855,
+      "run_count": 3856,
       "total_minutes": 380,
       "seen_run_ids": [
-        25954011510,
         25955060717,
         25956143206,
         25957085742,
@@ -206,7 +205,8 @@
         26324013604,
         26325318471,
         26326579275,
-        26327510886
+        26327510886,
+        26328485140
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3944,11 +3944,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 392,
-      "total_minutes": 461,
+      "run_count": 394,
+      "total_minutes": 465,
       "seen_run_ids": [
-        24310574510,
-        24310530082,
         24310530526,
         24311359969,
         24311359690,
@@ -4146,7 +4144,9 @@
         26309312052,
         26309310686,
         26312315104,
-        26312314354
+        26312314354,
+        26328192522,
+        26328192289
       ]
     },
     "rajbos/demo-repo-march": {
@@ -4355,13 +4355,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 781,
-      "total_minutes": 946,
+      "run_count": 785,
+      "total_minutes": 950,
       "seen_run_ids": [
-        26079896931,
-        26079896926,
-        26083875314,
-        26083715918,
         26083711109,
         26083711039,
         26083711020,
@@ -4557,7 +4553,11 @@
         26314366122,
         26314366166,
         26314366167,
-        26314366169
+        26314366169,
+        26328404644,
+        26328404653,
+        26328404654,
+        26328404677
       ]
     },
     "rajbos-actions/github-show-actions": {
