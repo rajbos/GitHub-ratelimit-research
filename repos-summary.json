@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-25T20:08:06Z",
+  "last_updated": "2026-05-25T20:44:38Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3929,
+      "run_count": 3930,
       "total_minutes": 423,
       "seen_run_ids": [
-        26009982285,
         26012306544,
         26021258738,
         26025108304,
@@ -206,7 +205,8 @@
         26413970234,
         26415272386,
         26416548598,
-        26417815694
+        26417815694,
+        26419047929
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 271,
+      "run_count": 272,
       "total_minutes": 264,
       "seen_run_ids": [
-        22805382012,
         22805844131,
         22806055323,
         22806347571,
@@ -622,7 +621,8 @@
         26335488335,
         26417819537,
         26417388911,
-        26417388928
+        26417388928,
+        26418863081
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -4432,7 +4432,7 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 47,
+      "run_count": 48,
       "total_minutes": 9,
       "seen_run_ids": [
         23757011128,
@@ -4481,7 +4481,8 @@
         26356221577,
         26356216978,
         26356215996,
-        26356216008
+        26356216008,
+        26418686267
       ]
     },
     "rajbos/create-github-app-from-manifest": {
