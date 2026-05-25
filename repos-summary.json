@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-05-25T19:30:23Z",
+  "last_updated": "2026-05-25T20:08:06Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 3928,
+      "run_count": 3929,
       "total_minutes": 423,
       "seen_run_ids": [
-        26006602628,
         26009982285,
         26012306544,
         26021258738,
@@ -206,7 +205,8 @@
         26412419762,
         26413970234,
         26415272386,
-        26416548598
+        26416548598,
+        26417815694
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,12 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 268,
-      "total_minutes": 261,
+      "run_count": 271,
+      "total_minutes": 264,
       "seen_run_ids": [
-        22804643689,
-        22805019602,
-        22805166143,
         22805382012,
         22805844131,
         22806055323,
@@ -622,7 +619,10 @@
         26334155600,
         26335055238,
         26335800525,
-        26335488335
+        26335488335,
+        26417819537,
+        26417388911,
+        26417388928
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -1567,19 +1567,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 252,
-      "total_minutes": 115,
+      "run_count": 262,
+      "total_minutes": 119,
       "seen_run_ids": [
-        24778642725,
-        24939547841,
-        24939547593,
-        24939547404,
-        24939547500,
-        25392963294,
-        25392963145,
-        25392962339,
-        25392962005,
-        25392961719,
         25394637897,
         25396844536,
         25396844585,
@@ -1769,7 +1759,17 @@
         26341880223,
         26341880217,
         26341880209,
-        26341879861
+        26341879861,
+        26417425391,
+        26417425406,
+        26417425408,
+        26417424955,
+        26417373885,
+        26417373927,
+        26417373864,
+        26417373436,
+        26417373863,
+        26417253249
       ]
     },
     "rajbos/github-fork-updater": {
@@ -4147,12 +4147,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 403,
-      "total_minutes": 472,
+      "run_count": 406,
+      "total_minutes": 476,
       "seen_run_ids": [
-        24357411016,
-        24357408791,
-        24357365236,
         24357363711,
         24358156683,
         24358155755,
@@ -4349,7 +4346,10 @@
         26356483441,
         26356482702,
         26356482374,
-        26356230861
+        26356230861,
+        26417366849,
+        26417366834,
+        26417366453
       ]
     },
     "rajbos/demo-repo-march": {
