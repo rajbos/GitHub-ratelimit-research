@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-06-01T09:05:46Z",
+  "last_updated": "2026-06-01T10:59:37Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 4099,
+      "run_count": 4100,
       "total_minutes": 431,
       "seen_run_ids": [
-        26363399564,
         26364238473,
         26364840318,
         26365487717,
@@ -206,7 +205,8 @@
         26733970910,
         26736899836,
         26740677494,
-        26745514121
+        26745514121,
+        26750746024
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4908,13 +4908,14 @@
     "rob-demo/examples": {
       "full_name": "rob-demo/examples",
       "html_url": "https://github.com/rob-demo/examples",
-      "run_count": 4,
+      "run_count": 5,
       "total_minutes": 0,
       "seen_run_ids": [
         26745183653,
         26745044378,
         26744957320,
-        26744801282
+        26744801282,
+        26749941662
       ]
     }
   }
