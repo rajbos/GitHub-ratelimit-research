@@ -1,0 +1,110 @@
+[
+  {
+    "repo": "devops-actions/github-actions-marketplace-news",
+    "id": 27331196859,
+    "name": "Deploy Hugo site to Pages",
+    "workflow_id": 65214408,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-06-11T07:31:17Z",
+    "updated_at": "2026-06-11T07:32:34Z",
+    "html_url": "https://github.com/devops-actions/github-actions-marketplace-news/actions/runs/27331196859",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "actions-marketplace-validations/azurystudio_log",
+    "id": 27330750149,
+    "name": "npm_and_yarn in /. - Update #1407929609",
+    "workflow_id": 247794610,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:22:01Z",
+    "updated_at": "2026-06-11T07:22:58Z",
+    "html_url": "https://github.com/actions-marketplace-validations/azurystudio_log/actions/runs/27330750149",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/igun_github-tag-action",
+    "id": 27330339842,
+    "name": "github_actions in /. - Update #1407923556",
+    "workflow_id": 239217948,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:13:10Z",
+    "updated_at": "2026-06-11T07:14:02Z",
+    "html_url": "https://github.com/actions-marketplace-validations/igun_github-tag-action/actions/runs/27330339842",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330327102,
+    "name": "npm_and_yarn in / for @types/node - Update #1407923199",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:12:54Z",
+    "updated_at": "2026-06-11T07:13:55Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330327102",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330327260,
+    "name": "github_actions in / for actions/checkout, actions/setup-node, actions/upload-artifact, taiki-e/install-action, dependabot/fetch-metadata, cachix/install-nix-action, zizmorcore/zizmor-action - Update #1407923204",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:12:54Z",
+    "updated_at": "2026-06-11T07:14:21Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330327260",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330327114,
+    "name": "npm_and_yarn in / for @actions/glob, smol-toml - Update #1407923211",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:12:54Z",
+    "updated_at": "2026-06-11T07:13:51Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330327114",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330326306,
+    "name": "npm_and_yarn in /. - Update #1407923172",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:12:53Z",
+    "updated_at": "2026-06-11T07:13:39Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330326306",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330326201,
+    "name": "github_actions in /. - Update #1407923183",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-11T07:12:52Z",
+    "updated_at": "2026-06-11T07:13:23Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330326201",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Swatinem_rust-cache",
+    "id": 27330326242,
+    "name": "cargo in /tests, /tests/wasm-workspace - Update #1407923178",
+    "workflow_id": 212934322,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-06-11T07:12:52Z",
+    "updated_at": "2026-06-11T07:13:26Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Swatinem_rust-cache/actions/runs/27330326242",
+    "actor_login": "dependabot[bot]"
+  }
+]
