@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-06-23T18:51:04Z",
+  "last_updated": "2026-06-23T19:34:10Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 4557,
+      "run_count": 4558,
       "total_minutes": 477,
       "seen_run_ids": [
-        27491349591,
         27493322129,
         27495275691,
         27496686298,
@@ -206,7 +205,8 @@
         28040405484,
         28043586554,
         28046146606,
-        28049189808
+        28049189808,
+        28051702536
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4598,7 +4598,7 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 87,
+      "run_count": 93,
       "total_minutes": 5,
       "seen_run_ids": [
         23890358224,
@@ -4687,7 +4687,13 @@
         26387039830,
         26387039910,
         26387039859,
-        26387039831
+        26387039831,
+        28051451339,
+        28051451340,
+        28051451354,
+        28051451365,
+        28051451406,
+        28051450326
       ]
     },
     "rajbos/demo-actions": {
