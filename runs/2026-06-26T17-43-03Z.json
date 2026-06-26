@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "actions-marketplace-validations/farshadpasbani_interlock",
+    "id": 28254604582,
+    "name": "npm_and_yarn in /. - Update #1436549032",
+    "workflow_id": 302863855,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-06-26T17:32:20Z",
+    "updated_at": "2026-06-26T17:33:01Z",
+    "html_url": "https://github.com/actions-marketplace-validations/farshadpasbani_interlock/actions/runs/28254604582",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/farshadpasbani_interlock",
+    "id": 28254604619,
+    "name": "github_actions in /. - Update #1436549042",
+    "workflow_id": 302863855,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-26T17:32:20Z",
+    "updated_at": "2026-06-26T17:33:16Z",
+    "html_url": "https://github.com/actions-marketplace-validations/farshadpasbani_interlock/actions/runs/28254604619",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/abashev_palantir-java-format-action",
+    "id": 28254527545,
+    "name": "github_actions in /. - Update #1436547237",
+    "workflow_id": 302863254,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-26T17:30:51Z",
+    "updated_at": "2026-06-26T17:31:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/abashev_palantir-java-format-action/actions/runs/28254527545",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 28254529093,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-06-26T17:30:53Z",
+    "updated_at": "2026-06-26T17:42:01Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/28254529093",
+    "actor_login": "rajbos"
+  }
+]
