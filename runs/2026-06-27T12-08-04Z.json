@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "actions-marketplace-validations/pydantic_logfire-auth-action",
+    "id": 28288371748,
+    "name": "github_actions in /. - Update #1437005748",
+    "workflow_id": 295178626,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-27T11:51:53Z",
+    "updated_at": "2026-06-27T11:52:15Z",
+    "html_url": "https://github.com/actions-marketplace-validations/pydantic_logfire-auth-action/actions/runs/28288371748",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/pydantic_logfire-auth-action",
+    "id": 28288371758,
+    "name": "npm_and_yarn in /. - Update #1437005766",
+    "workflow_id": 295178626,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-27T11:51:53Z",
+    "updated_at": "2026-06-27T11:52:32Z",
+    "html_url": "https://github.com/actions-marketplace-validations/pydantic_logfire-auth-action/actions/runs/28288371758",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/pydantic_logfire-auth-action",
+    "id": 28288372086,
+    "name": "github_actions in / for actions/checkout, pnpm/action-setup, github/codeql-action - Update #1437005833",
+    "workflow_id": 295178626,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-06-27T11:51:53Z",
+    "updated_at": "2026-06-27T11:52:51Z",
+    "html_url": "https://github.com/actions-marketplace-validations/pydantic_logfire-auth-action/actions/runs/28288372086",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/pydantic_logfire-auth-action",
+    "id": 28288371945,
+    "name": "npm_and_yarn in / for @types/node, @vitest/coverage-v8, esbuild, eslint, prettier, typescript-eslint, vitest - Update #1437005808",
+    "workflow_id": 295178626,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-06-27T11:51:53Z",
+    "updated_at": "2026-06-27T11:55:27Z",
+    "html_url": "https://github.com/actions-marketplace-validations/pydantic_logfire-auth-action/actions/runs/28288371945",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 28288705288,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-06-27T12:06:44Z",
+    "updated_at": "2026-06-27T12:06:47Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/28288705288",
+    "actor_login": "rajbos"
+  }
+]
