@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-06-28T20:41:21Z",
+  "last_updated": "2026-06-28T21:07:05Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 4704,
+      "run_count": 4705,
       "total_minutes": 510,
       "seen_run_ids": [
-        27902865799,
         27904037653,
         27905445572,
         27906572020,
@@ -206,7 +205,8 @@
         28332872937,
         28333827944,
         28334568595,
-        28335313007
+        28335313007,
+        28335989834
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1094,10 +1094,9 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 206,
+      "run_count": 207,
       "total_minutes": 675,
       "seen_run_ids": [
-        22535802465,
         22537393156,
         22544337681,
         22552960929,
@@ -1296,7 +1295,8 @@
         28204671975,
         28246353208,
         28303596506,
-        28326246116
+        28326246116,
+        28335947847
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
@@ -2880,8 +2880,8 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 137,
-      "total_minutes": 51,
+      "run_count": 142,
+      "total_minutes": 52,
       "seen_run_ids": [
         22544016530,
         22544016572,
@@ -3019,7 +3019,12 @@
         26343197616,
         26343197583,
         26343197615,
-        26343197566
+        26343197566,
+        28335918464,
+        28335918481,
+        28335918534,
+        28335918482,
+        28335918319
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -4542,7 +4547,7 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 48,
+      "run_count": 51,
       "total_minutes": 9,
       "seen_run_ids": [
         23757011128,
@@ -4592,7 +4597,10 @@
         26356216978,
         26356215996,
         26356216008,
-        26418686267
+        26418686267,
+        28335895887,
+        28335896149,
+        28335896164
       ]
     },
     "rajbos/create-github-app-from-manifest": {
