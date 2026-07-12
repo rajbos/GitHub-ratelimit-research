@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-12T10:03:15Z",
+  "last_updated": "2026-07-12T10:44:28Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 4756,
+      "run_count": 4757,
       "total_minutes": 516,
       "seen_run_ids": [
-        28049189808,
         28051702536,
         28054722913,
         28057126236,
@@ -206,7 +205,8 @@
         29184947579,
         29186245636,
         29187416182,
-        29188455771
+        29188455771,
+        29189578896
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2444,8 +2444,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 70,
-      "total_minutes": 82,
+      "run_count": 79,
+      "total_minutes": 107,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -2516,7 +2516,16 @@
         25819474144,
         26301023355,
         26733498349,
-        26733493453
+        26733493453,
+        29189542231,
+        29189468299,
+        29189440429,
+        29189345420,
+        29189275752,
+        29189275762,
+        29189275733,
+        29189275862,
+        29189275714
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -4829,15 +4838,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 1642,
-      "total_minutes": 1760,
+      "run_count": 1648,
+      "total_minutes": 1813,
       "seen_run_ids": [
-        27571179869,
-        27576021086,
-        27576019029,
-        27576019028,
-        27576019013,
-        27575143423,
         27575143434,
         27575143710,
         27771662016,
@@ -5031,7 +5034,13 @@
         29188322811,
         29188322841,
         29188233759,
-        29188233757
+        29188233757,
+        29189129207,
+        29189129216,
+        29189129206,
+        29189129198,
+        29189129195,
+        29189129197
       ]
     },
     "rajbos-actions/github-show-actions": {
