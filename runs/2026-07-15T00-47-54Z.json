@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/nyx-sec_nyx",
+    "id": 29379807622,
+    "name": "cargo in /. - Update #1461161426",
+    "workflow_id": 301320731,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-15T00:43:23Z",
+    "updated_at": "2026-07-15T00:43:54Z",
+    "html_url": "https://github.com/actions-marketplace-validations/nyx-sec_nyx/actions/runs/29379807622",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/nyx-sec_nyx",
+    "id": 29379807585,
+    "name": "npm_and_yarn in /frontend - Update #1461161424",
+    "workflow_id": 301320731,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-15T00:43:23Z",
+    "updated_at": "2026-07-15T00:44:04Z",
+    "html_url": "https://github.com/actions-marketplace-validations/nyx-sec_nyx/actions/runs/29379807585",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/nyx-sec_nyx",
+    "id": 29379807658,
+    "name": "npm_and_yarn in /frontend for @tanstack/react-query, react-router-dom, @types/react, @vitejs/plugin-react, @vitest/coverage-v8, eslint, eslint-plugin-react-refresh, globals, prettier, typescript-eslint, vite, vitest - Update #1461161479",
+    "workflow_id": 301320731,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-15T00:43:23Z",
+    "updated_at": "2026-07-15T00:45:27Z",
+    "html_url": "https://github.com/actions-marketplace-validations/nyx-sec_nyx/actions/runs/29379807658",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/nyx-sec_nyx",
+    "id": 29379807626,
+    "name": "cargo in / for ignore, tree-sitter, crossbeam-channel, console, bytesize, bitflags, indicatif, smallvec, rustc-hash, uuid, bytes, h2, http, prost, z3 - Update #1461161482",
+    "workflow_id": 301320731,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-15T00:43:23Z",
+    "updated_at": "2026-07-15T00:47:39Z",
+    "html_url": "https://github.com/actions-marketplace-validations/nyx-sec_nyx/actions/runs/29379807626",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/actions-marketplace",
+    "id": 29379862650,
+    "name": "Get available action data",
+    "workflow_id": 10263440,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-15T00:44:38Z",
+    "updated_at": "2026-07-15T00:46:29Z",
+    "html_url": "https://github.com/rajbos/actions-marketplace/actions/runs/29379862650",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 29379959143,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-07-15T00:46:45Z",
+    "updated_at": "2026-07-15T00:46:48Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/29379959143",
+    "actor_login": "rajbos"
+  }
+]
