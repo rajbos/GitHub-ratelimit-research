@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "actions-marketplace-validations/bridgedai-devsecops_release-gate-action",
+    "id": 29667372825,
+    "name": "github_actions in /. - Update #1466303491",
+    "workflow_id": 295936976,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-19T00:41:57Z",
+    "updated_at": "2026-07-19T00:42:49Z",
+    "html_url": "https://github.com/actions-marketplace-validations/bridgedai-devsecops_release-gate-action/actions/runs/29667372825",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/bridgedai-devsecops_release-gate-action",
+    "id": 29667372815,
+    "name": "npm_and_yarn in /. - Update #1466303489",
+    "workflow_id": 295936976,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-07-19T00:41:57Z",
+    "updated_at": "2026-07-19T00:42:42Z",
+    "html_url": "https://github.com/actions-marketplace-validations/bridgedai-devsecops_release-gate-action/actions/runs/29667372815",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 29667725643,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-07-19T00:54:36Z",
+    "updated_at": "2026-07-19T00:54:40Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/29667725643",
+    "actor_login": "rajbos"
+  }
+]
