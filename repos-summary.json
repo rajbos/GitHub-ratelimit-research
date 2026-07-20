@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-20T02:14:25Z",
+  "last_updated": "2026-07-20T02:47:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5040,
-      "total_minutes": 555,
+      "run_count": 5041,
+      "total_minutes": 565,
       "seen_run_ids": [
-        29359380532,
         29361880869,
         29363633290,
         29365443329,
@@ -206,7 +205,8 @@
         29705436211,
         29706278321,
         29707249166,
-        29708101975
+        29708101975,
+        29712914534
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3431,8 +3431,8 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 141,
-      "total_minutes": 18,
+      "run_count": 147,
+      "total_minutes": 19,
       "seen_run_ids": [
         22559016838,
         22836024613,
@@ -3574,7 +3574,13 @@
         29219768110,
         29219768102,
         29219766524,
-        29219696164
+        29219696164,
+        29713117692,
+        29713117695,
+        29713117738,
+        29713117759,
+        29713116484,
+        29713084276
       ]
     },
     "UnclesTavern/CopilotAdventures": {
