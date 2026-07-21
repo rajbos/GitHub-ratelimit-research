@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-21T07:07:12Z",
+  "last_updated": "2026-07-21T07:58:48Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5076,
+      "run_count": 5077,
       "total_minutes": 565,
       "seen_run_ids": [
-        29439413733,
         29441237256,
         29443255981,
         29445390879,
@@ -206,7 +205,8 @@
         29799685206,
         29802773660,
         29806109931,
-        29809214369
+        29809214369,
+        29812416779
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5198,6 +5198,15 @@
         28370876543,
         28370874955,
         28370740363
+      ]
+    },
+    "ps-developers-sandbox/gh-training-developers-foodies": {
+      "full_name": "ps-developers-sandbox/gh-training-developers-foodies",
+      "html_url": "https://github.com/ps-developers-sandbox/gh-training-developers-foodies",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        29812447493
       ]
     }
   }
