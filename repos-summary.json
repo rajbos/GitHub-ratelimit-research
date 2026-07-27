@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-27T03:00:54Z",
+  "last_updated": "2026-07-27T04:22:49Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5283,
+      "run_count": 5284,
       "total_minutes": 605,
       "seen_run_ids": [
-        29833432250,
         29836647650,
         29840055182,
         29843581915,
@@ -206,7 +205,8 @@
         30227248882,
         30228815903,
         30230835213,
-        30233472682
+        30233472682,
+        30236866915
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3476,8 +3476,8 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 152,
-      "total_minutes": 19,
+      "run_count": 158,
+      "total_minutes": 20,
       "seen_run_ids": [
         22559016838,
         22836024613,
@@ -3630,7 +3630,13 @@
         30232749464,
         30232749507,
         30232749439,
-        30232748098
+        30232748098,
+        30236146261,
+        30236146266,
+        30236146270,
+        30236146271,
+        30236144707,
+        30236130172
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -4001,7 +4007,7 @@
     "rajbos/rajbos.github.io": {
       "full_name": "rajbos/rajbos.github.io",
       "html_url": "https://github.com/rajbos/rajbos.github.io",
-      "run_count": 63,
+      "run_count": 64,
       "total_minutes": 17,
       "seen_run_ids": [
         22806116906,
@@ -4066,7 +4072,8 @@
         25969664729,
         25969513407,
         29494759527,
-        29494721997
+        29494721997,
+        30236748410
       ]
     },
     "rajbos/Jarvis": {
@@ -4961,10 +4968,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2194,
+      "run_count": 2195,
       "total_minutes": 2635,
       "seen_run_ids": [
-        29842790099,
         29853971410,
         29853971140,
         29853971215,
@@ -5163,7 +5169,8 @@
         30220526783,
         30220526764,
         30220526762,
-        30220526769
+        30220526769,
+        30236609193
       ]
     },
     "rajbos-actions/github-show-actions": {
