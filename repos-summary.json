@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-27T20:28:26Z",
+  "last_updated": "2026-07-27T20:55:10Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5301,
+      "run_count": 5302,
       "total_minutes": 619,
       "seen_run_ids": [
-        29876587024,
         29878126150,
         29879844869,
         29881725356,
@@ -206,7 +205,8 @@
         30295145123,
         30297387629,
         30300092753,
-        30302663021
+        30302663021,
+        30304554707
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,19 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 386,
-      "total_minutes": 361,
+      "run_count": 396,
+      "total_minutes": 378,
       "seen_run_ids": [
-        25452943438,
-        25455499552,
-        25454705847,
-        25454704246,
-        25454694378,
-        25454694404,
-        25454694393,
-        25454670431,
-        25457008523,
-        25458753800,
         25460728783,
         25459800317,
         25461495147,
@@ -622,7 +612,17 @@
         30228652298,
         30228543980,
         30230433337,
-        30230265088
+        30230265088,
+        30304357921,
+        30304357961,
+        30304357826,
+        30304357798,
+        30304337370,
+        30304337540,
+        30304337549,
+        30304337686,
+        30304115843,
+        30303333570
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -1349,7 +1349,7 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 170,
+      "run_count": 179,
       "total_minutes": 54,
       "seen_run_ids": [
         22521363794,
@@ -1521,7 +1521,16 @@
         29274129555,
         29274129610,
         29274129532,
-        29274128120
+        29274128120,
+        30304557947,
+        30304558012,
+        30304558009,
+        30304558023,
+        30304557969,
+        30304557961,
+        30304557102,
+        30304542303,
+        30304541463
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -1673,19 +1682,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 471,
-      "total_minutes": 197,
+      "run_count": 481,
+      "total_minutes": 207,
       "seen_run_ids": [
-        26667771066,
-        26667771044,
-        26667771064,
-        26709988368,
-        26709977131,
-        26709977139,
-        26709977146,
-        26709977160,
-        26709977184,
-        26709977247,
         26709976412,
         26709976417,
         26709976392,
@@ -1875,7 +1874,17 @@
         30247831012,
         30247830960,
         30247830894,
-        30247830606
+        30247830606,
+        30303944021,
+        30303944060,
+        30303944099,
+        30303943457,
+        30303944010,
+        30303914878,
+        30303914765,
+        30303915236,
+        30303914649,
+        30303914466
       ]
     },
     "rajbos/github-fork-updater": {
@@ -4844,8 +4853,8 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 93,
-      "total_minutes": 5,
+      "run_count": 102,
+      "total_minutes": 6,
       "seen_run_ids": [
         23890358224,
         23890358249,
@@ -4939,7 +4948,16 @@
         28051451354,
         28051451365,
         28051451406,
-        28051450326
+        28051450326,
+        30304323156,
+        30304323151,
+        30304323147,
+        30304323154,
+        30304323153,
+        30304323159,
+        30304322918,
+        30304305769,
+        30304305776
       ]
     },
     "rajbos/demo-actions": {
@@ -4973,17 +4991,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2228,
-      "total_minutes": 2684,
+      "run_count": 2236,
+      "total_minutes": 2693,
       "seen_run_ids": [
-        29957112208,
-        29957112220,
-        29957112067,
-        29957112149,
-        29957112111,
-        29957112182,
-        29957095955,
-        29957095844,
         29957035317,
         29960756254,
         29960752976,
@@ -5175,7 +5185,15 @@
         30276293384,
         30276293159,
         30276293315,
-        30276293369
+        30276293369,
+        30304370426,
+        30304370436,
+        30304370425,
+        30304370428,
+        30304370520,
+        30303810975,
+        30303811078,
+        30303811115
       ]
     },
     "rajbos-actions/github-show-actions": {
