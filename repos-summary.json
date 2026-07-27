@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-27T20:55:10Z",
+  "last_updated": "2026-07-27T21:23:27Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5302,
+      "run_count": 5303,
       "total_minutes": 619,
       "seen_run_ids": [
-        29878126150,
         29879844869,
         29881725356,
         29883575510,
@@ -206,7 +205,8 @@
         30297387629,
         30300092753,
         30302663021,
-        30304554707
+        30304554707,
+        30306577008
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 396,
+      "run_count": 397,
       "total_minutes": 378,
       "seen_run_ids": [
-        25460728783,
         25459800317,
         25461495147,
         26000775624,
@@ -622,7 +621,8 @@
         30304337549,
         30304337686,
         30304115843,
-        30303333570
+        30303333570,
+        30305950663
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -964,8 +964,8 @@
     "devops-actions/load-runner-info": {
       "full_name": "devops-actions/load-runner-info",
       "html_url": "https://github.com/devops-actions/load-runner-info",
-      "run_count": 169,
-      "total_minutes": 80,
+      "run_count": 176,
+      "total_minutes": 86,
       "seen_run_ids": [
         22520356865,
         22520356820,
@@ -1135,7 +1135,14 @@
         29274142414,
         29274142755,
         29274140320,
-        29589428060
+        29589428060,
+        30306110486,
+        30306110540,
+        30306110521,
+        30306110108,
+        30306110351,
+        30306110496,
+        30306110050
       ]
     },
     "devops-actions/github-actions-marketplace-news": {
@@ -1349,8 +1356,8 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 179,
-      "total_minutes": 54,
+      "run_count": 184,
+      "total_minutes": 55,
       "seen_run_ids": [
         22521363794,
         22521356105,
@@ -1530,7 +1537,12 @@
         30304557961,
         30304557102,
         30304542303,
-        30304541463
+        30304541463,
+        30306101253,
+        30306101113,
+        30306101193,
+        30306100977,
+        30306098933
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -1940,8 +1952,8 @@
     "devops-actions/issue-comment-tag": {
       "full_name": "devops-actions/issue-comment-tag",
       "html_url": "https://github.com/devops-actions/issue-comment-tag",
-      "run_count": 70,
-      "total_minutes": 11,
+      "run_count": 76,
+      "total_minutes": 14,
       "seen_run_ids": [
         22533335214,
         22533326394,
@@ -2012,7 +2024,13 @@
         29163618586,
         29163618584,
         29163618457,
-        29163618444
+        29163618444,
+        30306105028,
+        30306105064,
+        30306104964,
+        30306104704,
+        30306105091,
+        30306104605
       ]
     },
     "actions-marketplace-validations/natescherer_changelog-management-action": {
@@ -2284,8 +2302,8 @@
     "devops-actions/load-used-actions": {
       "full_name": "devops-actions/load-used-actions",
       "html_url": "https://github.com/devops-actions/load-used-actions",
-      "run_count": 129,
-      "total_minutes": 24,
+      "run_count": 139,
+      "total_minutes": 30,
       "seen_run_ids": [
         22538534937,
         22538529686,
@@ -2415,7 +2433,17 @@
         29163777527,
         29163777535,
         29163777504,
-        29163777501
+        29163777501,
+        30306116470,
+        30306116804,
+        30306116255,
+        30306116454,
+        30306116009,
+        30306115866,
+        30305269345,
+        30305269498,
+        30305269062,
+        30305268753
       ]
     },
     "actions-marketplace-validations/devops-actions_json-to-file": {
@@ -3017,8 +3045,8 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 147,
-      "total_minutes": 54,
+      "run_count": 155,
+      "total_minutes": 59,
       "seen_run_ids": [
         22544016530,
         22544016572,
@@ -3166,7 +3194,15 @@
         29163624959,
         29163624928,
         29163624919,
-        29163624802
+        29163624802,
+        30306128049,
+        30306127974,
+        30306128040,
+        30306128032,
+        30306127581,
+        30305872374,
+        30305871997,
+        30305871839
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -4410,8 +4446,8 @@
     "devops-actions/secure-action-inputs": {
       "full_name": "devops-actions/secure-action-inputs",
       "html_url": "https://github.com/devops-actions/secure-action-inputs",
-      "run_count": 71,
-      "total_minutes": 14,
+      "run_count": 78,
+      "total_minutes": 17,
       "seen_run_ids": [
         23454907907,
         23458483763,
@@ -4483,7 +4519,14 @@
         29163622481,
         29274149379,
         29274148172,
-        29274147369
+        29274147369,
+        30306122007,
+        30306122210,
+        30306122111,
+        30305419809,
+        30305419586,
+        30305419797,
+        30305419675
       ]
     },
     "devex-metrics/devex-metrics": {
@@ -4853,7 +4896,7 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 102,
+      "run_count": 107,
       "total_minutes": 6,
       "seen_run_ids": [
         23890358224,
@@ -4957,7 +5000,12 @@
         30304323159,
         30304322918,
         30304305769,
-        30304305776
+        30304305776,
+        30306089878,
+        30306089816,
+        30306089975,
+        30306089701,
+        30306089499
       ]
     },
     "rajbos/demo-actions": {
@@ -4991,18 +5039,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2236,
+      "run_count": 2245,
       "total_minutes": 2693,
       "seen_run_ids": [
-        29957035317,
-        29960756254,
-        29960752976,
-        29960584294,
-        29960559487,
-        29960557552,
-        29960557538,
-        29960557485,
-        29960557578,
         29960557542,
         29992180306,
         30003605486,
@@ -5193,7 +5232,16 @@
         30304370520,
         30303810975,
         30303811078,
-        30303811115
+        30303811115,
+        30306615213,
+        30306615201,
+        30306615170,
+        30306615183,
+        30306615231,
+        30306615209,
+        30306615163,
+        30306455334,
+        30306453039
       ]
     },
     "rajbos-actions/github-show-actions": {
