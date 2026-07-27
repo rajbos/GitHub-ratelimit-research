@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-27T00:22:12Z",
+  "last_updated": "2026-07-27T01:03:04Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5280,
+      "run_count": 5281,
       "total_minutes": 605,
       "seen_run_ids": [
-        29825803023,
         29828485553,
         29831268022,
         29833432250,
@@ -206,7 +205,8 @@
         30223798051,
         30224927824,
         30225953873,
-        30227248882
+        30227248882,
+        30228815903
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,12 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 381,
-      "total_minutes": 358,
+      "run_count": 384,
+      "total_minutes": 361,
       "seen_run_ids": [
-        25453372842,
-        25453372828,
-        25453372835,
         25453372858,
         25453372866,
         25452943438,
@@ -622,7 +619,10 @@
         30223563818,
         30224623803,
         30225700627,
-        30226773813
+        30226773813,
+        30228759682,
+        30228652298,
+        30228543980
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -3206,8 +3206,8 @@
     "rajbos/actions-marketplace": {
       "full_name": "rajbos/actions-marketplace",
       "html_url": "https://github.com/rajbos/actions-marketplace",
-      "run_count": 53,
-      "total_minutes": 107,
+      "run_count": 54,
+      "total_minutes": 109,
       "seen_run_ids": [
         22548387879,
         22548387896,
@@ -3261,7 +3261,8 @@
         29791419727,
         29881307362,
         29970225569,
-        30057216962
+        30057216962,
+        30228534143
       ]
     },
     "mcp-research/mcp-security-scans": {
