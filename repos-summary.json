@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-29T17:42:07Z",
+  "last_updated": "2026-07-29T18:35:18Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5360,
+      "run_count": 5361,
       "total_minutes": 627,
       "seen_run_ids": [
-        30038043721,
         30040104262,
         30042122136,
         30043656238,
@@ -206,7 +205,8 @@
         30469577400,
         30471909599,
         30474034571,
-        30476452211
+        30476452211,
+        30480426066
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,19 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 407,
-      "total_minutes": 382,
+      "run_count": 417,
+      "total_minutes": 386,
       "seen_run_ids": [
-        26000774923,
-        26000774914,
-        26001498885,
-        26001498919,
-        26001498905,
-        26001400311,
-        26001087357,
-        26001914681,
-        26001914684,
-        26001914677,
         26001914676,
         26001907889,
         26001907886,
@@ -622,7 +612,17 @@
         30316438856,
         30318619568,
         30318507954,
-        30318379388
+        30318379388,
+        30480561142,
+        30480120115,
+        30480117551,
+        30480117169,
+        30480113962,
+        30480113907,
+        30480113151,
+        30480113148,
+        30480112631,
+        30480112688
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -5073,18 +5073,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2290,
-      "total_minutes": 2729,
+      "run_count": 2299,
+      "total_minutes": 2747,
       "seen_run_ids": [
-        30200776578,
-        30200776580,
-        30202352533,
-        30201910880,
-        30201895633,
-        30201894679,
-        30201894691,
-        30201894697,
-        30201774205,
         30201774196,
         30203177513,
         30203177516,
@@ -5275,7 +5266,16 @@
         30466485973,
         30466486094,
         30466485929,
-        30466346244
+        30466346244,
+        30480131095,
+        30480130800,
+        30480130706,
+        30480130883,
+        30480130384,
+        30480130461,
+        30480117387,
+        30480112001,
+        30479747703
       ]
     },
     "rajbos-actions/github-show-actions": {
