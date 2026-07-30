@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-07-30T18:01:07Z",
+  "last_updated": "2026-07-30T18:45:24Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 5389,
+      "run_count": 5390,
       "total_minutes": 641,
       "seen_run_ids": [
-        30107575117,
         30110766257,
         30113179306,
         30115352415,
@@ -206,7 +205,8 @@
         30544176959,
         30556005400,
         30566133821,
-        30568477480
+        30568477480,
+        30571712284
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5380,6 +5380,15 @@
       "total_minutes": 0,
       "seen_run_ids": [
         29812447493
+      ]
+    },
+    "Technical-Bootcamp/2026-07-30-Spec-Kit_Proto-Type-bootcamp-pagelsr": {
+      "full_name": "Technical-Bootcamp/2026-07-30-Spec-Kit_Proto-Type-bootcamp-pagelsr",
+      "html_url": "https://github.com/Technical-Bootcamp/2026-07-30-Spec-Kit_Proto-Type-bootcamp-pagelsr",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        30570318303
       ]
     }
   }
