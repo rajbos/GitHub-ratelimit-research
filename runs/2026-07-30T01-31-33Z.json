@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "actions-marketplace-validations/its-me_action.zizmor",
+    "id": 30505029627,
+    "name": "github_actions in /. - Update #1494282717",
+    "workflow_id": 310033338,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-07-30T01:13:21Z",
+    "updated_at": "2026-07-30T01:17:26Z",
+    "html_url": "https://github.com/actions-marketplace-validations/its-me_action.zizmor/actions/runs/30505029627",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 30505834806,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-07-30T01:30:32Z",
+    "updated_at": "2026-07-30T01:30:35Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/30505834806",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/actions-marketplace-checks",
+    "id": 30505183959,
+    "name": "Get repo info",
+    "workflow_id": 215184281,
+    "status": "pending",
+    "conclusion": null,
+    "created_at": "2026-07-30T01:16:37Z",
+    "updated_at": "2026-07-30T01:16:38Z",
+    "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/30505183959",
+    "actor_login": "rajbos"
+  }
+]
