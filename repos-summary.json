@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-17T04:00:48Z",
+  "last_updated": "2026-08-17T04:20:28Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6245,
+      "run_count": 6246,
       "total_minutes": 702,
       "seen_run_ids": [
-        31836666039,
         31837653453,
         31838905278,
         31839913950,
@@ -206,7 +205,8 @@
         31988567745,
         31989970931,
         31991376717,
-        31992921151
+        31992921151,
+        31994049034
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3577,7 +3577,7 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 174,
+      "run_count": 180,
       "total_minutes": 22,
       "seen_run_ids": [
         22559016838,
@@ -3753,7 +3753,13 @@
         31354417899,
         31354417896,
         31354414749,
-        31354399148
+        31354399148,
+        31993283054,
+        31993283061,
+        31993283081,
+        31993283085,
+        31993281501,
+        31993263850
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -5129,10 +5135,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2435,
-      "total_minutes": 2956,
+      "run_count": 2436,
+      "total_minutes": 2957,
       "seen_run_ids": [
-        30303811115,
         30306615213,
         30306615201,
         30306615170,
@@ -5331,7 +5336,8 @@
         31936445430,
         31936445435,
         31936442438,
-        31936414791
+        31936414791,
+        31993929668
       ]
     },
     "rajbos-actions/github-show-actions": {
