@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-17T10:23:28Z",
+  "last_updated": "2026-08-17T10:42:11Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6262,
+      "run_count": 6263,
       "total_minutes": 709,
       "seen_run_ids": [
-        31853505665,
         31854545001,
         31855922231,
         31857516235,
@@ -206,7 +205,8 @@
         32013191719,
         32018010716,
         32016637594,
-        32019851786
+        32019851786,
+        32021305015
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3577,7 +3577,7 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 180,
+      "run_count": 187,
       "total_minutes": 22,
       "seen_run_ids": [
         22559016838,
@@ -3759,7 +3759,14 @@
         31993283081,
         31993283085,
         31993281501,
-        31993263850
+        31993263850,
+        32021318586,
+        32021318230,
+        32021303404,
+        32021303392,
+        32021302873,
+        32021286657,
+        32021286244
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -4032,7 +4039,7 @@
     "rajbos/github-copilot-model-notifier": {
       "full_name": "rajbos/github-copilot-model-notifier",
       "html_url": "https://github.com/rajbos/github-copilot-model-notifier",
-      "run_count": 81,
+      "run_count": 89,
       "total_minutes": 34,
       "seen_run_ids": [
         22616069515,
@@ -4115,7 +4122,15 @@
         31784055644,
         31784045434,
         31873635869,
-        31873632250
+        31873632250,
+        32021373637,
+        32021372579,
+        32021222998,
+        32020983625,
+        32020740613,
+        32020198709,
+        32020197476,
+        32020174477
       ]
     },
     "UnclesTavern/devdaytest": {
@@ -5135,18 +5150,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2453,
-      "total_minutes": 3022,
+      "run_count": 2462,
+      "total_minutes": 3033,
       "seen_run_ids": [
-        30452302202,
-        30452124440,
-        30455376345,
-        30454086529,
-        30454086709,
-        30454086397,
-        30454087220,
-        30454086353,
-        30454086402,
         30454086299,
         30454086329,
         30459788264,
@@ -5337,7 +5343,16 @@
         32012069176,
         32012069146,
         32012069153,
-        32012069178
+        32012069178,
+        32020886930,
+        32020886988,
+        32020886982,
+        32020886950,
+        32020886932,
+        32020646470,
+        32020646101,
+        32020646060,
+        32020646027
       ]
     },
     "rajbos-actions/github-show-actions": {
