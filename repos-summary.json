@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-17T10:55:25Z",
+  "last_updated": "2026-08-17T11:05:48Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6264,
+      "run_count": 6265,
       "total_minutes": 709,
       "seen_run_ids": [
-        31855922231,
         31857516235,
         31858908374,
         31859990739,
@@ -206,7 +205,8 @@
         32016637594,
         32019851786,
         32021305015,
-        32022322184
+        32022322184,
+        32023175883
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1377,18 +1377,9 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 200,
-      "total_minutes": 58,
+      "run_count": 209,
+      "total_minutes": 59,
       "seen_run_ids": [
-        22521363794,
-        22521356105,
-        22521356150,
-        22521356139,
-        22586672755,
-        22586656424,
-        22597698518,
-        22597698503,
-        22597698424,
         22597697890,
         22613609712,
         22618756607,
@@ -1579,7 +1570,16 @@
         30475316294,
         30475315565,
         30475313003,
-        30555675179
+        30555675179,
+        32022739886,
+        32022739929,
+        32022739920,
+        32022739911,
+        32022739046,
+        32022709633,
+        32022709786,
+        32022709632,
+        32022709662
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -3929,8 +3929,8 @@
     "devops-actions/actionlint": {
       "full_name": "devops-actions/actionlint",
       "html_url": "https://github.com/devops-actions/actionlint",
-      "run_count": 108,
-      "total_minutes": 10,
+      "run_count": 117,
+      "total_minutes": 11,
       "seen_run_ids": [
         22571439276,
         22571438201,
@@ -4039,7 +4039,16 @@
         29274106731,
         29274106096,
         29274103881,
-        29274103574
+        29274103574,
+        32022628620,
+        32022628567,
+        32022628624,
+        32022626950,
+        32022628078,
+        32022627818,
+        32022628004,
+        32022626943,
+        32022627967
       ]
     },
     "rajbos/github-copilot-model-notifier": {
