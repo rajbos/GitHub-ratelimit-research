@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-18T05:22:56Z",
+  "last_updated": "2026-08-18T05:40:49Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6318,
+      "run_count": 6319,
       "total_minutes": 746,
       "seen_run_ids": [
-        31894373182,
         31895267814,
         31896032036,
         31896632213,
@@ -206,7 +205,8 @@
         32100094093,
         32100996931,
         32101813804,
-        32102601426
+        32102601426,
+        32103732510
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5446,11 +5446,12 @@
     "rob-demo/WebGoat.NETCore-DevSum": {
       "full_name": "rob-demo/WebGoat.NETCore-DevSum",
       "html_url": "https://github.com/rob-demo/WebGoat.NETCore-DevSum",
-      "run_count": 2,
+      "run_count": 3,
       "total_minutes": 0,
       "seen_run_ids": [
         26804692173,
-        26804688541
+        26804688541,
+        32102944127
       ]
     },
     "devops-actions/mcp-dependencies": {
