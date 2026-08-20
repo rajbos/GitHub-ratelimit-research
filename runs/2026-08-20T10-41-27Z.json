@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/lcollins_spotbugs-github-action",
+    "id": 32359458954,
+    "name": "npm_and_yarn in / for @actions/core, @actions/exec, @actions/github, @actions/glob, @actions/io, fast-xml-parser, html-to-text, ramda, @types/ramda, @types/node, @types/ramda, @typescript-eslint/eslint-plugin, @typescript-eslint/parser, @vercel/ncc, eslint, eslint-plugin-jest, jest, @types/jest, jest-circus, js-yaml, prettier, ts-jest, typescript - Update #1533859935",
+    "workflow_id": 213588026,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-08-20T10:32:49Z",
+    "updated_at": "2026-08-20T10:35:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/lcollins_spotbugs-github-action/actions/runs/32359458954",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/lcollins_spotbugs-github-action",
+    "id": 32359459514,
+    "name": "github_actions in / for actions/checkout, github/codeql-action/init, github/codeql-action/analyze - Update #1533859940",
+    "workflow_id": 213588026,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-20T10:32:49Z",
+    "updated_at": "2026-08-20T10:36:33Z",
+    "html_url": "https://github.com/actions-marketplace-validations/lcollins_spotbugs-github-action/actions/runs/32359459514",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/lcollins_spotbugs-github-action",
+    "id": 32359457611,
+    "name": "github_actions in /. - Update #1533859904",
+    "workflow_id": 213588026,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-20T10:32:48Z",
+    "updated_at": "2026-08-20T10:33:16Z",
+    "html_url": "https://github.com/actions-marketplace-validations/lcollins_spotbugs-github-action/actions/runs/32359457611",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/lcollins_spotbugs-github-action",
+    "id": 32359457663,
+    "name": "npm_and_yarn in /. - Update #1533859897",
+    "workflow_id": 213588026,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-20T10:32:48Z",
+    "updated_at": "2026-08-20T10:33:32Z",
+    "html_url": "https://github.com/actions-marketplace-validations/lcollins_spotbugs-github-action/actions/runs/32359457663",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 32360052364,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-08-20T10:40:14Z",
+    "updated_at": "2026-08-20T10:40:17Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/32360052364",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 32358590157,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-20T10:22:08Z",
+    "updated_at": "2026-08-20T10:23:15Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/32358590157",
+    "actor_login": "rajbos"
+  }
+]
