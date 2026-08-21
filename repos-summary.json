@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-21T20:51:46Z",
+  "last_updated": "2026-08-21T21:04:59Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6624,
+      "run_count": 6625,
       "total_minutes": 823,
       "seen_run_ids": [
-        32245790673,
         32247169541,
         32248451345,
         32249583299,
@@ -206,7 +205,8 @@
         32521553679,
         32523136182,
         32524505294,
-        32525598222
+        32525598222,
+        32526679917
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5184,8 +5184,8 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 19,
-      "total_minutes": 3,
+      "run_count": 27,
+      "total_minutes": 17,
       "seen_run_ids": [
         24653953148,
         24653953171,
@@ -5205,23 +5205,23 @@
         32524998146,
         32524998213,
         32524998172,
-        32524982979
+        32524982979,
+        32526191212,
+        32526191040,
+        32526189336,
+        32526189292,
+        32525939923,
+        32525939827,
+        32525933224,
+        32525933228
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2618,
-      "total_minutes": 3160,
+      "run_count": 2626,
+      "total_minutes": 3162,
       "seen_run_ids": [
-        31558066019,
-        31874467223,
-        31874467504,
-        31874466839,
-        31874466952,
-        31874466238,
-        31874466341,
-        31874464461,
         31874434898,
         31936445404,
         31936445415,
@@ -5413,7 +5413,15 @@
         32525133502,
         32525133468,
         32525133430,
-        32525133556
+        32525133556,
+        32526764195,
+        32526764185,
+        32526764184,
+        32526764225,
+        32526764261,
+        32526743375,
+        32526535187,
+        32526530167
       ]
     },
     "rajbos-actions/github-show-actions": {
