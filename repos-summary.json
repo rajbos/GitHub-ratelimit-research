@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-21T21:04:59Z",
+  "last_updated": "2026-08-21T21:22:16Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6625,
+      "run_count": 6626,
       "total_minutes": 823,
       "seen_run_ids": [
-        32247169541,
         32248451345,
         32249583299,
         32250739849,
@@ -206,7 +205,8 @@
         32523136182,
         32524505294,
         32525598222,
-        32526679917
+        32526679917,
+        32528094634
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,17 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 492,
+      "run_count": 500,
       "total_minutes": 498,
       "seen_run_ids": [
-        29776061425,
-        29776061345,
-        29776061402,
-        29776061462,
-        29776061429,
-        29775374704,
-        29777447463,
-        29777447838,
         29777445660,
         29777445421,
         29777445878,
@@ -622,7 +614,15 @@
         32162543284,
         32162543176,
         32164347183,
-        32165832433
+        32165832433,
+        32527725875,
+        32527725829,
+        32527639078,
+        32527639090,
+        32527566398,
+        32527566290,
+        32527541014,
+        32527186042
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -3937,8 +3937,8 @@
     "devops-actions/actionlint": {
       "full_name": "devops-actions/actionlint",
       "html_url": "https://github.com/devops-actions/actionlint",
-      "run_count": 117,
-      "total_minutes": 11,
+      "run_count": 127,
+      "total_minutes": 12,
       "seen_run_ids": [
         22571439276,
         22571438201,
@@ -4056,7 +4056,17 @@
         32022627818,
         32022628004,
         32022626943,
-        32022627967
+        32022627967,
+        32527569953,
+        32527569315,
+        32527568243,
+        32527569365,
+        32527569418,
+        32527569373,
+        32527569302,
+        32527549454,
+        32527549471,
+        32527549065
       ]
     },
     "rajbos/github-copilot-model-notifier": {
@@ -5184,7 +5194,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 27,
+      "run_count": 28,
       "total_minutes": 17,
       "seen_run_ids": [
         24653953148,
@@ -5213,23 +5223,16 @@
         32525939923,
         32525939827,
         32525933224,
-        32525933228
+        32525933228,
+        32527257620
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2626,
-      "total_minutes": 3162,
+      "run_count": 2634,
+      "total_minutes": 3163,
       "seen_run_ids": [
-        31874434898,
-        31936445404,
-        31936445415,
-        31936445420,
-        31936445431,
-        31936445430,
-        31936445435,
-        31936442438,
         31936414791,
         31993929668,
         32008488706,
@@ -5421,7 +5424,15 @@
         32526764261,
         32526743375,
         32526535187,
-        32526530167
+        32526530167,
+        32527942700,
+        32527941178,
+        32527941166,
+        32527941168,
+        32527940474,
+        32527906745,
+        32527903591,
+        32527903583
       ]
     },
     "rajbos-actions/github-show-actions": {
