@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-21T20:38:30Z",
+  "last_updated": "2026-08-21T20:51:46Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6623,
+      "run_count": 6624,
       "total_minutes": 823,
       "seen_run_ids": [
-        32244794636,
         32245790673,
         32247169541,
         32248451345,
@@ -206,7 +205,8 @@
         32520411202,
         32521553679,
         32523136182,
-        32524505294
+        32524505294,
+        32525598222
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5184,8 +5184,8 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 9,
-      "total_minutes": 2,
+      "run_count": 19,
+      "total_minutes": 3,
       "seen_run_ids": [
         24653953148,
         24653953171,
@@ -5195,24 +5195,25 @@
         32499741254,
         32499741172,
         32499228521,
-        32499228600
+        32499228600,
+        32525638101,
+        32525069114,
+        32525069042,
+        32525069062,
+        32525050165,
+        32525050190,
+        32524998146,
+        32524998213,
+        32524998172,
+        32524982979
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2609,
-      "total_minutes": 3152,
+      "run_count": 2618,
+      "total_minutes": 3160,
       "seen_run_ids": [
-        31371799831,
-        31371799840,
-        31371799852,
-        31371797875,
-        31371731807,
-        31442329056,
-        31442247129,
-        31455684892,
-        31546364810,
         31558066019,
         31874467223,
         31874467504,
@@ -5403,7 +5404,16 @@
         32524460372,
         32524457298,
         32524457261,
-        32524457272
+        32524457272,
+        32525146725,
+        32525141693,
+        32525142040,
+        32525135533,
+        32525133412,
+        32525133502,
+        32525133468,
+        32525133430,
+        32525133556
       ]
     },
     "rajbos-actions/github-show-actions": {
