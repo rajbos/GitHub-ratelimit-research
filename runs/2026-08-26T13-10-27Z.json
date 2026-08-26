@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "actions-marketplace-validations/github_codeql-action",
+    "id": 32971730325,
+    "name": "github_actions in /.github/workflows for ruby/setup-ruby, actions/create-github-app-token - Update #1541699153",
+    "workflow_id": 222512540,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-26T13:00:56Z",
+    "updated_at": "2026-08-26T13:07:44Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_codeql-action/actions/runs/32971730325",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_codeql-action",
+    "id": 32971728706,
+    "name": "github_actions in /.github/actions, /.github/workflows - Update #1541699135",
+    "workflow_id": 222512540,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-26T13:00:55Z",
+    "updated_at": "2026-08-26T13:01:51Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_codeql-action/actions/runs/32971728706",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/github_codeql-action",
+    "id": 32971728840,
+    "name": "npm_and_yarn in /., /pr-checks - Update #1541699133",
+    "workflow_id": 222512540,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-08-26T13:00:55Z",
+    "updated_at": "2026-08-26T13:05:10Z",
+    "html_url": "https://github.com/actions-marketplace-validations/github_codeql-action/actions/runs/32971728840",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 32972540735,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-08-26T13:09:21Z",
+    "updated_at": "2026-08-26T13:09:25Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/32972540735",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 32972225253,
+    "name": "github_actions in /. - Update #1541705945",
+    "workflow_id": 253687506,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-08-26T13:06:08Z",
+    "updated_at": "2026-08-26T13:08:18Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/32972225253",
+    "actor_login": "dependabot[bot]"
+  }
+]
