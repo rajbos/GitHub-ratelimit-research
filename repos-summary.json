@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-27T23:42:56Z",
+  "last_updated": "2026-08-28T02:19:47Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 6998,
+      "run_count": 6999,
       "total_minutes": 884,
       "seen_run_ids": [
-        32666288509,
         32667233088,
         32667988240,
         32668676965,
@@ -206,7 +205,8 @@
         33045605176,
         33059423083,
         33075271200,
-        33127186077
+        33127186077,
+        33135535315
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1191,10 +1191,9 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 271,
-      "total_minutes": 851,
+      "run_count": 272,
+      "total_minutes": 856,
       "seen_run_ids": [
-        23633916744,
         23668869330,
         23678900598,
         23686691119,
@@ -1393,7 +1392,8 @@
         32787278177,
         32816334452,
         32908418042,
-        32939243749
+        32939243749,
+        33134862399
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
