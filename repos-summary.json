@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-29T19:46:53Z",
+  "last_updated": "2026-08-29T20:02:40Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7087,
+      "run_count": 7088,
       "total_minutes": 893,
       "seen_run_ids": [
-        32806638143,
         32808031413,
         32808933833,
         32810063582,
@@ -206,7 +205,8 @@
         33269798320,
         33270458955,
         33271054205,
-        33271695046
+        33271695046,
+        33272386134
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,19 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 565,
-      "total_minutes": 527,
+      "run_count": 575,
+      "total_minutes": 529,
       "seen_run_ids": [
-        30219012740,
-        30219012737,
-        30219012722,
-        30219012727,
-        30219012718,
-        30219003494,
-        30219003508,
-        30219003515,
-        30219003493,
-        30220472623,
         30221479374,
         30222557812,
         30223563818,
@@ -622,7 +612,17 @@
         33271698727,
         33271696531,
         33271696347,
-        33271696363
+        33271696363,
+        33271951650,
+        33271948848,
+        33271948849,
+        33271948805,
+        33271948810,
+        33271945932,
+        33271945940,
+        33271945935,
+        33271945931,
+        33271933625
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -5220,8 +5220,8 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 49,
-      "total_minutes": 39,
+      "run_count": 54,
+      "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
         24653953171,
@@ -5271,7 +5271,12 @@
         33271433046,
         33271433057,
         33271424523,
-        33271424526
+        33271424526,
+        33272286930,
+        33272286912,
+        33272286023,
+        33272285990,
+        33271749202
       ]
     },
     "rajbos/ai-engineering-fluency": {
