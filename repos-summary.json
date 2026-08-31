@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-31T06:47:31Z",
+  "last_updated": "2026-08-31T07:10:07Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
@@ -999,8 +999,8 @@
     "devops-actions/load-runner-info": {
       "full_name": "devops-actions/load-runner-info",
       "html_url": "https://github.com/devops-actions/load-runner-info",
-      "run_count": 188,
-      "total_minutes": 89,
+      "run_count": 196,
+      "total_minutes": 91,
       "seen_run_ids": [
         22520356865,
         22520356820,
@@ -1189,7 +1189,15 @@
         30704972995,
         31040971488,
         31112880758,
-        31190251224
+        31190251224,
+        33366883435,
+        33366883365,
+        33366882769,
+        33366883355,
+        33366883299,
+        33366882756,
+        33366882761,
+        33366881920
       ]
     },
     "devops-actions/github-actions-marketplace-news": {
@@ -1403,15 +1411,9 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 209,
-      "total_minutes": 59,
+      "run_count": 215,
+      "total_minutes": 62,
       "seen_run_ids": [
-        22597697890,
-        22613609712,
-        22618756607,
-        22618756537,
-        22618756597,
-        22618756427,
         22864969169,
         22864965414,
         22864954381,
@@ -1605,7 +1607,13 @@
         32022709633,
         32022709786,
         32022709632,
-        32022709662
+        32022709662,
+        33366951301,
+        33366951363,
+        33366951817,
+        33366951443,
+        33366950861,
+        33366950140
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -1757,19 +1765,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 535,
-      "total_minutes": 231,
+      "run_count": 545,
+      "total_minutes": 235,
       "seen_run_ids": [
-        28159201126,
-        28158851889,
-        28158852308,
-        28158851890,
-        28158851850,
-        28158852013,
-        29274126958,
-        29274124742,
-        29526669699,
-        29526669569,
         29526669742,
         29526670043,
         29526669483,
@@ -1959,7 +1957,17 @@
         32508744167,
         32508744446,
         32508743679,
-        32508744101
+        32508744101,
+        33366944237,
+        33366944197,
+        33366944169,
+        33366943845,
+        33366861260,
+        33366861252,
+        33366861297,
+        33366860788,
+        33366856168,
+        33366856266
       ]
     },
     "rajbos/github-fork-updater": {
@@ -4628,7 +4636,7 @@
     "devops-actions/secure-action-inputs": {
       "full_name": "devops-actions/secure-action-inputs",
       "html_url": "https://github.com/devops-actions/secure-action-inputs",
-      "run_count": 85,
+      "run_count": 87,
       "total_minutes": 17,
       "seen_run_ids": [
         23454907907,
@@ -4715,7 +4723,9 @@
         32127457890,
         32127376443,
         32127376439,
-        32127376411
+        32127376411,
+        33366924516,
+        33366924557
       ]
     },
     "devex-metrics/devex-metrics": {
@@ -5006,8 +5016,8 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 58,
-      "total_minutes": 10,
+      "run_count": 60,
+      "total_minutes": 11,
       "seen_run_ids": [
         23757011128,
         23763827226,
@@ -5066,7 +5076,9 @@
         32244838417,
         32244838259,
         32244832461,
-        32244832490
+        32244832490,
+        33366901001,
+        33366901026
       ]
     },
     "rajbos/create-github-app-from-manifest": {
@@ -5304,18 +5316,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2847,
-      "total_minutes": 3376,
+      "run_count": 2856,
+      "total_minutes": 3378,
       "seen_run_ids": [
-        32530427474,
-        32546028660,
-        32548511798,
-        32628258752,
-        32628253521,
-        32628253507,
-        32628253527,
-        32628253589,
-        32628253608,
         32628253727,
         32628220692,
         32691083947,
@@ -5506,7 +5509,16 @@
         33364877158,
         33364877100,
         33364877227,
-        33364842862
+        33364842862,
+        33367109216,
+        33367096134,
+        33367087044,
+        33367087090,
+        33367087035,
+        33367087059,
+        33367087088,
+        33366545682,
+        33366545622
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -5585,10 +5597,12 @@
     "devops-actions/mcp-dependencies": {
       "full_name": "devops-actions/mcp-dependencies",
       "html_url": "https://github.com/devops-actions/mcp-dependencies",
-      "run_count": 1,
-      "total_minutes": 1,
+      "run_count": 3,
+      "total_minutes": 3,
       "seen_run_ids": [
-        27092768803
+        27092768803,
+        33366987698,
+        33366970165
       ]
     },
     "rajbos/game-center": {
