@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-08-31T08:03:42Z",
+  "last_updated": "2026-08-31T08:34:58Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7205,
+      "run_count": 7206,
       "total_minutes": 906,
       "seen_run_ids": [
-        33216143605,
         33217083237,
         33218015852,
         33218964437,
@@ -206,7 +205,8 @@
         33360918563,
         33361665827,
         33368832357,
-        33370035884
+        33370035884,
+        33373497800
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4328,19 +4328,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 592,
-      "total_minutes": 477,
+      "run_count": 602,
+      "total_minutes": 486,
       "seen_run_ids": [
-        26149225009,
-        26182629458,
-        26182629502,
-        26182628021,
-        26185048416,
-        26184420340,
-        26184419287,
-        26184419317,
-        26301710492,
-        26301710495,
         26301709917,
         26307093424,
         26329190745,
@@ -4530,7 +4520,17 @@
         33369964028,
         33369879469,
         33369878490,
-        33369878718
+        33369878718,
+        33373171655,
+        33373171631,
+        33373171146,
+        33372769014,
+        33372769021,
+        33372765908,
+        33372606817,
+        33372606782,
+        33372603637,
+        33372354956
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5259,7 +5259,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 58,
+      "run_count": 62,
       "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
@@ -5319,23 +5319,19 @@
         33301566045,
         33301565956,
         33301566020,
-        33301558542
+        33301558542,
+        33373495541,
+        33373495539,
+        33373495638,
+        33373477948
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 2870,
-      "total_minutes": 3389,
+      "run_count": 2878,
+      "total_minutes": 3411,
       "seen_run_ids": [
-        32872759374,
-        33126149745,
-        33220346521,
-        33255619023,
-        33255618435,
-        33255618283,
-        33255618294,
-        33255618269,
         33255586326,
         33255586057,
         33255585045,
@@ -5527,7 +5523,15 @@
         33370040767,
         33370040831,
         33370040762,
-        33370038228
+        33370038228,
+        33372915860,
+        33372914685,
+        33372914709,
+        33372914754,
+        33372913602,
+        33372777215,
+        33372777006,
+        33372775455
       ]
     },
     "rajbos-actions/github-show-actions": {
