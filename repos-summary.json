@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-04T17:03:13Z",
+  "last_updated": "2026-09-04T17:20:51Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7539,
+      "run_count": 7540,
       "total_minutes": 936,
       "seen_run_ids": [
-        33596044073,
         33597253751,
         33601319327,
         33600044842,
@@ -206,7 +205,8 @@
         33894974427,
         33895741356,
         33896919900,
-        33898371573
+        33898371573,
+        33899977449
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5766,6 +5766,20 @@
       "total_minutes": 0,
       "seen_run_ids": [
         31592980533
+      ]
+    },
+    "Xebia-Xpirit-Assessments/assessment-joostvoskuil": {
+      "full_name": "Xebia-Xpirit-Assessments/assessment-joostvoskuil",
+      "html_url": "https://github.com/Xebia-Xpirit-Assessments/assessment-joostvoskuil",
+      "run_count": 6,
+      "total_minutes": 8,
+      "seen_run_ids": [
+        33899110583,
+        33899110792,
+        33899110600,
+        33899109626,
+        33899109507,
+        33899041386
       ]
     }
   }
