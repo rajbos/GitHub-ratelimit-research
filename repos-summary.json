@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-04T08:04:10Z",
+  "last_updated": "2026-09-04T08:31:40Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7507,
+      "run_count": 7508,
       "total_minutes": 936,
       "seen_run_ids": [
-        33551398147,
         33552931624,
         33554965950,
         33555899831,
@@ -206,7 +205,8 @@
         33848662350,
         33849372648,
         33850255645,
-        33851536431
+        33851536431,
+        33853774970
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4201,7 +4201,7 @@
     "rajbos/github-copilot-model-notifier": {
       "full_name": "rajbos/github-copilot-model-notifier",
       "html_url": "https://github.com/rajbos/github-copilot-model-notifier",
-      "run_count": 98,
+      "run_count": 100,
       "total_minutes": 34,
       "seen_run_ids": [
         22616069515,
@@ -4301,7 +4301,9 @@
         32561413038,
         32561408665,
         33607579924,
-        33607567236
+        33607567236,
+        33852382705,
+        33852371418
       ]
     },
     "UnclesTavern/devdaytest": {
@@ -5351,7 +5353,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 74,
+      "run_count": 78,
       "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
@@ -5427,7 +5429,11 @@
         33733780213,
         33733780355,
         33733780382,
-        33733760974
+        33733760974,
+        33853741844,
+        33853741965,
+        33853741895,
+        33853725018
       ]
     },
     "rajbos/ai-engineering-fluency": {
