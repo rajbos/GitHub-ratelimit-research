@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-05T14:32:07Z",
+  "last_updated": "2026-09-05T14:47:07Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7621,
+      "run_count": 7622,
       "total_minutes": 937,
       "seen_run_ids": [
-        33731244925,
         33733823765,
         33735452164,
         33736642795,
@@ -206,7 +205,8 @@
         33969835482,
         33970578149,
         33971474376,
-        33972032547
+        33972032547,
+        33972773256
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5196,7 +5196,7 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 148,
+      "run_count": 153,
       "total_minutes": 7,
       "seen_run_ids": [
         23890358224,
@@ -5346,7 +5346,12 @@
         33959071115,
         33959071099,
         33959071125,
-        33959070892
+        33959070892,
+        33972699510,
+        33972699477,
+        33972699518,
+        33972699160,
+        33972699501
       ]
     },
     "rajbos/demo-actions": {
@@ -5460,18 +5465,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 3412,
-      "total_minutes": 3992,
+      "run_count": 3421,
+      "total_minutes": 3997,
       "seen_run_ids": [
-        33730386430,
-        33730386377,
-        33730386356,
-        33730386384,
-        33730386363,
-        33732440590,
-        33732439429,
-        33732439379,
-        33732439420,
         33732439408,
         33732439403,
         33732437212,
@@ -5662,7 +5658,16 @@
         33971150164,
         33971829044,
         33971828998,
-        33971828675
+        33971828675,
+        33972790859,
+        33972790871,
+        33972790907,
+        33972790886,
+        33972790846,
+        33972791022,
+        33972790852,
+        33972543723,
+        33972539862
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -5792,8 +5797,8 @@
     "Xebia-Xpirit-Assessments/assessment-joostvoskuil": {
       "full_name": "Xebia-Xpirit-Assessments/assessment-joostvoskuil",
       "html_url": "https://github.com/Xebia-Xpirit-Assessments/assessment-joostvoskuil",
-      "run_count": 170,
-      "total_minutes": 217,
+      "run_count": 174,
+      "total_minutes": 229,
       "seen_run_ids": [
         33899110583,
         33899110792,
@@ -5964,7 +5969,11 @@
         33971626934,
         33971543729,
         33971543899,
-        33971544064
+        33971544064,
+        33972808722,
+        33972793707,
+        33972482918,
+        33972180632
       ]
     }
   }
