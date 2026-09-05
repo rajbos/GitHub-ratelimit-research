@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-05T13:32:07Z",
+  "last_updated": "2026-09-05T13:46:50Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7617,
+      "run_count": 7618,
       "total_minutes": 937,
       "seen_run_ids": [
-        33726366642,
         33728118133,
         33729008376,
         33729834404,
@@ -206,7 +205,8 @@
         33967102983,
         33967708451,
         33968540797,
-        33969110136
+        33969110136,
+        33969835482
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5460,18 +5460,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 3391,
-      "total_minutes": 3968,
+      "run_count": 3400,
+      "total_minutes": 3979,
       "seen_run_ids": [
-        33727718654,
-        33729046468,
-        33729042508,
-        33729040065,
-        33729040151,
-        33729040207,
-        33729040156,
-        33729040233,
-        33729040279,
         33729040089,
         33729803243,
         33729800554,
@@ -5662,7 +5653,16 @@
         33967705138,
         33967705123,
         33967704029,
-        33967554093
+        33967554093,
+        33969285197,
+        33969284630,
+        33969284666,
+        33969284642,
+        33969284644,
+        33969284643,
+        33969284637,
+        33969284640,
+        33969284669
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -5792,8 +5792,8 @@
     "Xebia-Xpirit-Assessments/assessment-joostvoskuil": {
       "full_name": "Xebia-Xpirit-Assessments/assessment-joostvoskuil",
       "html_url": "https://github.com/Xebia-Xpirit-Assessments/assessment-joostvoskuil",
-      "run_count": 148,
-      "total_minutes": 192,
+      "run_count": 158,
+      "total_minutes": 207,
       "seen_run_ids": [
         33899110583,
         33899110792,
@@ -5942,7 +5942,17 @@
         33967877342,
         33967877338,
         33967876501,
-        33968857992
+        33968857992,
+        33969740271,
+        33969715832,
+        33969711072,
+        33969705286,
+        33969480012,
+        33969479976,
+        33969479995,
+        33969480103,
+        33969474515,
+        33969471431
       ]
     }
   }
