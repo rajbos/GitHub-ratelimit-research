@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-05T14:02:32Z",
+  "last_updated": "2026-09-05T14:20:41Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7619,
+      "run_count": 7620,
       "total_minutes": 937,
       "seen_run_ids": [
-        33729008376,
         33729834404,
         33731244925,
         33733823765,
@@ -206,7 +205,8 @@
         33968540797,
         33969110136,
         33969835482,
-        33970578149
+        33970578149,
+        33971474376
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5460,18 +5460,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 3400,
-      "total_minutes": 3979,
+      "run_count": 3409,
+      "total_minutes": 3992,
       "seen_run_ids": [
-        33729040089,
-        33729803243,
-        33729800554,
-        33729798611,
-        33729798658,
-        33729798629,
-        33729798632,
-        33729798636,
-        33730964470,
         33730963064,
         33730963154,
         33730393481,
@@ -5662,7 +5653,16 @@
         33969284643,
         33969284637,
         33969284640,
-        33969284669
+        33969284669,
+        33971150652,
+        33971150698,
+        33971150638,
+        33971150733,
+        33971150615,
+        33971150627,
+        33971150679,
+        33971149600,
+        33971150164
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -5792,8 +5792,8 @@
     "Xebia-Xpirit-Assessments/assessment-joostvoskuil": {
       "full_name": "Xebia-Xpirit-Assessments/assessment-joostvoskuil",
       "html_url": "https://github.com/Xebia-Xpirit-Assessments/assessment-joostvoskuil",
-      "run_count": 164,
-      "total_minutes": 210,
+      "run_count": 166,
+      "total_minutes": 217,
       "seen_run_ids": [
         33899110583,
         33899110792,
@@ -5958,7 +5958,9 @@
         33970468765,
         33970468740,
         33970468858,
-        33970468533
+        33970468533,
+        33971066042,
+        33970708428
       ]
     }
   }
