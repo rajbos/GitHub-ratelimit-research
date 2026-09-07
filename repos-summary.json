@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-07T08:04:46Z",
+  "last_updated": "2026-09-07T08:36:05Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7771,
+      "run_count": 7772,
       "total_minutes": 952,
       "seen_run_ids": [
-        33937952410,
         33939226533,
         33939863275,
         33940165230,
@@ -206,7 +205,8 @@
         34094153849,
         34096056717,
         34097464672,
-        34098551552
+        34098551552,
+        34101337753
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5376,7 +5376,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 86,
+      "run_count": 90,
       "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
@@ -5464,20 +5464,19 @@
         34021860578,
         34021860570,
         34021860628,
-        34021851583
+        34021851583,
+        34101318758,
+        34101318761,
+        34101318774,
+        34101300039
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 3661,
-      "total_minutes": 4215,
+      "run_count": 3666,
+      "total_minutes": 4222,
       "seen_run_ids": [
-        33988691426,
-        33988690877,
-        33988690862,
-        33988690861,
-        33988521278,
         33988517225,
         33988517160,
         33989875240,
@@ -5672,7 +5671,12 @@
         34098528428,
         34098528530,
         34098523687,
-        34098483222
+        34098483222,
+        34099935922,
+        34099933980,
+        34099933978,
+        34099933988,
+        34099933111
       ]
     },
     "rajbos-actions/github-show-actions": {
