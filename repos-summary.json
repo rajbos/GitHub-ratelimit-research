@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-08T16:03:40Z",
+  "last_updated": "2026-09-08T16:28:35Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 7884,
+      "run_count": 7885,
       "total_minutes": 957,
       "seen_run_ids": [
-        34020756239,
         34021870929,
         34022335786,
         34022756800,
@@ -206,7 +205,8 @@
         34242139677,
         34246870471,
         34245562708,
-        34248608956
+        34248608956,
+        34251145400
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5207,8 +5207,8 @@
     "rajbos/create-github-app-from-manifest": {
       "full_name": "rajbos/create-github-app-from-manifest",
       "html_url": "https://github.com/rajbos/create-github-app-from-manifest",
-      "run_count": 7,
-      "total_minutes": 7,
+      "run_count": 9,
+      "total_minutes": 9,
       "seen_run_ids": [
         23814681595,
         34221339652,
@@ -5216,7 +5216,9 @@
         34227298587,
         34229144795,
         34228805224,
-        34233194239
+        34233194239,
+        34249347835,
+        34249314749
       ]
     },
     "mcp-research/mcp-security-scans-original": {
