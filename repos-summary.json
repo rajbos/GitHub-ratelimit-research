@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-10T14:46:55Z",
+  "last_updated": "2026-09-10T15:03:43Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8055,
+      "run_count": 8056,
       "total_minutes": 960,
       "seen_run_ids": [
-        34201003695,
         34200098899,
         34199646253,
         34202400177,
@@ -206,7 +205,8 @@
         34484657723,
         34488670743,
         34491196510,
-        34489776737
+        34489776737,
+        34492966175
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5526,18 +5526,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 3961,
-      "total_minutes": 4559,
+      "run_count": 3970,
+      "total_minutes": 4579,
       "seen_run_ids": [
-        34137145113,
-        34137145127,
-        34137145149,
-        34139044357,
-        34139044009,
-        34139044097,
-        34139044190,
-        34139044192,
-        34139044120,
         34139044033,
         34138938751,
         34138938793,
@@ -5728,7 +5719,16 @@
         34489373585,
         34489373640,
         34489373914,
-        34489371464
+        34489371464,
+        34491430886,
+        34491430800,
+        34491430782,
+        34491430835,
+        34491430792,
+        34491430772,
+        34491430817,
+        34491430791,
+        34491426336
       ]
     },
     "rajbos-actions/github-show-actions": {
