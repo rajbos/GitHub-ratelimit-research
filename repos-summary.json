@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-11T12:04:30Z",
+  "last_updated": "2026-09-11T12:34:44Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8134,
+      "run_count": 8135,
       "total_minutes": 962,
       "seen_run_ids": [
-        34317428386,
         34319926232,
         34321345886,
         34322265117,
@@ -206,7 +205,8 @@
         34593598511,
         34594393475,
         34595581113,
-        34596979327
+        34596979327,
+        34599533275
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5533,18 +5533,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 4147,
-      "total_minutes": 4757,
+      "run_count": 4156,
+      "total_minutes": 4765,
       "seen_run_ids": [
-        34234513981,
-        34234514109,
-        34234514057,
-        34234513221,
-        34234456466,
-        34489373780,
-        34489373848,
-        34489373521,
-        34489373798,
         34489373663,
         34489373585,
         34489373640,
@@ -5735,7 +5726,16 @@
         34596998005,
         34596997911,
         34596997417,
-        34596982504
+        34596982504,
+        34599200324,
+        34599200078,
+        34599200235,
+        34599200127,
+        34599200100,
+        34599200203,
+        34599200089,
+        34599200094,
+        34599195204
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6073,7 +6073,7 @@
     "XpiritCommunityEvents/HOLAgentFramework": {
       "full_name": "XpiritCommunityEvents/HOLAgentFramework",
       "html_url": "https://github.com/XpiritCommunityEvents/HOLAgentFramework",
-      "run_count": 14,
+      "run_count": 17,
       "total_minutes": 0,
       "seen_run_ids": [
         34036751407,
@@ -6089,7 +6089,10 @@
         34395352036,
         34395352224,
         34395352008,
-        34468612834
+        34468612834,
+        34599393165,
+        34598956817,
+        34598690285
       ]
     }
   }
