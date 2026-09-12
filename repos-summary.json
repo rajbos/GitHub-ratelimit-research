@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-12T15:20:49Z",
+  "last_updated": "2026-09-12T15:31:53Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8237,
+      "run_count": 8238,
       "total_minutes": 968,
       "seen_run_ids": [
-        34463902160,
         34465799750,
         34467738904,
         34466642101,
@@ -206,7 +205,8 @@
         34699529777,
         34700232252,
         34700978476,
-        34701886347
+        34701886347,
+        34702448035
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5541,19 +5541,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 4348,
-      "total_minutes": 4959,
+      "run_count": 4358,
+      "total_minutes": 4963,
       "seen_run_ids": [
-        34599200078,
-        34599200235,
-        34599200127,
-        34599200100,
-        34599200203,
-        34599200089,
-        34599200094,
-        34599195204,
-        34601051654,
-        34601043335,
         34600712660,
         34600711080,
         34600710178,
@@ -5743,7 +5733,17 @@
         34701932781,
         34701932780,
         34701932811,
-        34701932845
+        34701932845,
+        34702366601,
+        34702362298,
+        34702348155,
+        34702335559,
+        34702331230,
+        34702181690,
+        34702177555,
+        34702177560,
+        34702177553,
+        34702177565
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6101,6 +6101,17 @@
         34599393165,
         34598956817,
         34598690285
+      ]
+    },
+    "devex-metrics/github-community-analysis": {
+      "full_name": "devex-metrics/github-community-analysis",
+      "html_url": "https://github.com/devex-metrics/github-community-analysis",
+      "run_count": 3,
+      "total_minutes": 2,
+      "seen_run_ids": [
+        34702255753,
+        34702140846,
+        34702103313
       ]
     }
   }
