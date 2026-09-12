@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-12T15:31:53Z",
+  "last_updated": "2026-09-12T15:46:37Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8238,
+      "run_count": 8239,
       "total_minutes": 968,
       "seen_run_ids": [
-        34465799750,
         34467738904,
         34466642101,
         34469145065,
@@ -206,7 +205,8 @@
         34700232252,
         34700978476,
         34701886347,
-        34702448035
+        34702448035,
+        34703192152
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5541,18 +5541,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 4358,
+      "run_count": 4367,
       "total_minutes": 4963,
       "seen_run_ids": [
-        34600712660,
-        34600711080,
-        34600710178,
-        34600710304,
-        34600710082,
-        34600710167,
-        34600709858,
-        34600710292,
-        34618982921,
         34618971990,
         34618972029,
         34618971976,
@@ -5743,7 +5734,16 @@
         34702177555,
         34702177560,
         34702177553,
-        34702177565
+        34702177565,
+        34703222993,
+        34703223009,
+        34703223038,
+        34703223084,
+        34703223263,
+        34703223003,
+        34703222919,
+        34703222058,
+        34703221962
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6106,12 +6106,14 @@
     "devex-metrics/github-community-analysis": {
       "full_name": "devex-metrics/github-community-analysis",
       "html_url": "https://github.com/devex-metrics/github-community-analysis",
-      "run_count": 3,
+      "run_count": 5,
       "total_minutes": 2,
       "seen_run_ids": [
         34702255753,
         34702140846,
-        34702103313
+        34702103313,
+        34702917730,
+        34702917368
       ]
     }
   }
