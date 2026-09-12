@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-12T16:05:24Z",
+  "last_updated": "2026-09-12T16:23:35Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8240,
+      "run_count": 8241,
       "total_minutes": 970,
       "seen_run_ids": [
-        34466642101,
         34469145065,
         34470859536,
         34473008079,
@@ -206,7 +205,8 @@
         34701886347,
         34702448035,
         34703192152,
-        34704005432
+        34704005432,
+        34705022768
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4851,19 +4851,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 586,
-      "total_minutes": 795,
+      "run_count": 596,
+      "total_minutes": 816,
       "seen_run_ids": [
-        25956952648,
-        25956952260,
-        26309312052,
-        26309310686,
-        26312315104,
-        26312314354,
-        26328192522,
-        26328192289,
-        26329075182,
-        26329074711,
         26356488582,
         26356488410,
         26356483623,
@@ -5053,7 +5043,17 @@
         34701251588,
         34701251954,
         34703651364,
-        34703648896
+        34703648896,
+        34704911327,
+        34704908821,
+        34704767213,
+        34704767048,
+        34704767167,
+        34704495730,
+        34704495697,
+        34704495097,
+        34704469615,
+        34704465804
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5541,18 +5541,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 4376,
-      "total_minutes": 4985,
+      "run_count": 4385,
+      "total_minutes": 5011,
       "seen_run_ids": [
-        34620326744,
-        34620326438,
-        34620327056,
-        34620326348,
-        34620326799,
-        34620326914,
-        34620322002,
-        34620320599,
-        34626899799,
         34626899427,
         34626899067,
         34626899158,
@@ -5743,7 +5734,16 @@
         34703940674,
         34703940650,
         34703939608,
-        34703924096
+        34703924096,
+        34704668143,
+        34704666312,
+        34704666311,
+        34704666315,
+        34704666553,
+        34704666299,
+        34704666498,
+        34704666516,
+        34704663019
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6106,8 +6106,8 @@
     "devex-metrics/github-community-analysis": {
       "full_name": "devex-metrics/github-community-analysis",
       "html_url": "https://github.com/devex-metrics/github-community-analysis",
-      "run_count": 7,
-      "total_minutes": 3,
+      "run_count": 14,
+      "total_minutes": 5,
       "seen_run_ids": [
         34702255753,
         34702140846,
@@ -6115,7 +6115,14 @@
         34702917730,
         34702917368,
         34703517447,
-        34703517055
+        34703517055,
+        34704649823,
+        34704649797,
+        34704527753,
+        34704528131,
+        34704527742,
+        34704382327,
+        34704305528
       ]
     }
   }
