@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-13T19:31:43Z",
+  "last_updated": "2026-09-13T19:46:49Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8340,
+      "run_count": 8341,
       "total_minutes": 1037,
       "seen_run_ids": [
-        34607757386,
         34609918347,
         34610842620,
         34612088513,
@@ -206,7 +205,8 @@
         34775630227,
         34776402239,
         34777239136,
-        34777905793
+        34777905793,
+        34778671303
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5546,15 +5546,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 4808,
+      "run_count": 4814,
       "total_minutes": 5327,
       "seen_run_ids": [
-        34753800422,
-        34753800117,
-        34753390369,
-        34753387863,
-        34753387848,
-        34753387857,
         34755102798,
         34755102859,
         34755102795,
@@ -5748,7 +5742,13 @@
         34777829604,
         34777829774,
         34777408261,
-        34777405851
+        34777405851,
+        34778454071,
+        34778454078,
+        34778454046,
+        34778445938,
+        34778445948,
+        34778446123
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6111,7 +6111,7 @@
     "devex-metrics/github-community-analysis": {
       "full_name": "devex-metrics/github-community-analysis",
       "html_url": "https://github.com/devex-metrics/github-community-analysis",
-      "run_count": 26,
+      "run_count": 30,
       "total_minutes": 7,
       "seen_run_ids": [
         34702255753,
@@ -6139,7 +6139,11 @@
         34709601435,
         34709601462,
         34709278394,
-        34709278353
+        34709278353,
+        34778573160,
+        34778573120,
+        34778548875,
+        34778516382
       ]
     }
   }
