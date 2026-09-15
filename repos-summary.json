@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-15T07:36:53Z",
+  "last_updated": "2026-09-15T08:33:03Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8463,
+      "run_count": 8464,
       "total_minutes": 1058,
       "seen_run_ids": [
-        34721597731,
         34722447787,
         34722960482,
         34723639300,
@@ -206,7 +205,8 @@
         34939315969,
         34940919722,
         34942504803,
-        34942222551
+        34942222551,
+        34947444449
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5428,7 +5428,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 118,
+      "run_count": 122,
       "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
@@ -5548,24 +5548,19 @@
         34823393906,
         34823393873,
         34823393870,
-        34823376002
+        34823376002,
+        34947388686,
+        34947388731,
+        34947388765,
+        34947371736
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 5263,
-      "total_minutes": 5990,
+      "run_count": 5272,
+      "total_minutes": 5993,
       "seen_run_ids": [
-        34845134818,
-        34845134747,
-        34845134772,
-        34845134802,
-        34845134801,
-        34845134888,
-        34846703794,
-        34846697096,
-        34846697028,
         34846697036,
         34846697007,
         34846696968,
@@ -5756,7 +5751,16 @@
         34942357047,
         34942318890,
         34942312625,
-        34942312601
+        34942312601,
+        34947199894,
+        34947192265,
+        34947192214,
+        34947192291,
+        34947192276,
+        34947192177,
+        34947192218,
+        34947192282,
+        34947192245
       ]
     },
     "rajbos-actions/github-show-actions": {
