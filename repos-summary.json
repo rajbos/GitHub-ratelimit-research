@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-15T12:53:16Z",
+  "last_updated": "2026-09-15T13:25:58Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8469,
+      "run_count": 8470,
       "total_minutes": 1066,
       "seen_run_ids": [
-        34725620662,
         34729511553,
         34730946467,
         34731751974,
@@ -206,7 +205,8 @@
         34957768258,
         34962897933,
         34963760588,
-        34969563163
+        34969563163,
+        34974819258
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5428,7 +5428,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 122,
+      "run_count": 123,
       "total_minutes": 41,
       "seen_run_ids": [
         24653953148,
@@ -5552,24 +5552,16 @@
         34947388686,
         34947388731,
         34947388765,
-        34947371736
+        34947371736,
+        34973491318
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 5325,
-      "total_minutes": 6015,
+      "run_count": 5334,
+      "total_minutes": 6023,
       "seen_run_ids": [
-        34861267603,
-        34861267610,
-        34861267771,
-        34861267564,
-        34861267613,
-        34861267651,
-        34862160719,
-        34862155742,
-        34862155226,
         34862155244,
         34862155977,
         34862155378,
@@ -5760,7 +5752,16 @@
         34968547820,
         34968547712,
         34968547700,
-        34968544927
+        34968544927,
+        34974381847,
+        34974371509,
+        34974371539,
+        34974371592,
+        34974371589,
+        34974371514,
+        34974371582,
+        34974371604,
+        34974371635
       ]
     },
     "rajbos-actions/github-show-actions": {
