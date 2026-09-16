@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-16T15:23:23Z",
+  "last_updated": "2026-09-16T15:33:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8551,
+      "run_count": 8552,
       "total_minutes": 1068,
       "seen_run_ids": [
-        34787022983,
         34787748783,
         34788487285,
         34789363934,
@@ -206,7 +205,8 @@
         35109386691,
         35110801846,
         35112549563,
-        35114868965
+        35114868965,
+        35116024466
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3715,11 +3715,9 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 221,
+      "run_count": 223,
       "total_minutes": 26,
       "seen_run_ids": [
-        23765384957,
-        23765383811,
         23765245643,
         23765218868,
         23765186975,
@@ -3917,7 +3915,9 @@
         35104785170,
         35104784921,
         35104784920,
-        35104782846
+        35104782846,
+        35116045206,
+        35116043736
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -4756,7 +4756,7 @@
     "devops-actions/secure-action-inputs": {
       "full_name": "devops-actions/secure-action-inputs",
       "html_url": "https://github.com/devops-actions/secure-action-inputs",
-      "run_count": 93,
+      "run_count": 96,
       "total_minutes": 23,
       "seen_run_ids": [
         23454907907,
@@ -4851,7 +4851,10 @@
         33480572021,
         34197604465,
         34197604487,
-        34197604572
+        34197604572,
+        35115362710,
+        35115362611,
+        35115362608
       ]
     },
     "devex-metrics/devex-metrics": {
@@ -5560,18 +5563,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 5552,
+      "run_count": 5561,
       "total_minutes": 6187,
       "seen_run_ids": [
-        35012975943,
-        35012964033,
-        35012960085,
-        35012960847,
-        35012959934,
-        35012959919,
-        35012959924,
-        35012959942,
-        35012959861,
         35013862046,
         35013858299,
         35013858256,
@@ -5762,7 +5756,16 @@
         35103884704,
         35105802596,
         35106986527,
-        35106974512
+        35106974512,
+        35116106054,
+        35116105851,
+        35116105905,
+        35116106119,
+        35116106126,
+        35116106030,
+        35116106195,
+        35116103439,
+        35116102216
       ]
     },
     "rajbos-actions/github-show-actions": {
