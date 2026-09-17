@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-17T10:03:19Z",
+  "last_updated": "2026-09-17T10:25:16Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8619,
+      "run_count": 8620,
       "total_minutes": 1071,
       "seen_run_ids": [
-        34886260703,
         34887348348,
         34888856462,
         34890483267,
@@ -206,7 +205,8 @@
         35205136387,
         35206176832,
         35207058314,
-        35208346273
+        35208346273,
+        35210297119
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4861,11 +4861,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 710,
-      "total_minutes": 1087,
+      "run_count": 712,
+      "total_minutes": 1097,
       "seen_run_ids": [
-        30194844287,
-        30194844083,
         30582700754,
         30582700548,
         30691932831,
@@ -5063,7 +5061,9 @@
         34939004899,
         34938936517,
         34938930427,
-        34940043038
+        34940043038,
+        35208799230,
+        35208791146
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5564,18 +5564,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 5660,
-      "total_minutes": 6318,
+      "run_count": 5669,
+      "total_minutes": 6328,
       "seen_run_ids": [
-        35086388090,
-        35086332494,
-        35086327093,
-        35086327064,
-        35086327060,
-        35086327097,
-        35086327096,
-        35086327017,
-        35086327032,
         35088127346,
         35088121927,
         35088121935,
@@ -5766,7 +5757,16 @@
         35207972666,
         35207714824,
         35207713801,
-        35207088940
+        35207088940,
+        35209185493,
+        35209180889,
+        35209180864,
+        35209180842,
+        35209180830,
+        35209180798,
+        35209180823,
+        35209180891,
+        35209180860
       ]
     },
     "rajbos-actions/github-show-actions": {
