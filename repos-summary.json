@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-18T16:46:56Z",
+  "last_updated": "2026-09-18T17:03:10Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 8732,
+      "run_count": 8733,
       "total_minutes": 1072,
       "seen_run_ids": [
-        35084818507,
         35085652167,
         35086731186,
         35088153398,
@@ -206,7 +205,8 @@
         35365988141,
         35368187893,
         35369152940,
-        35370363125
+        35370363125,
+        35371941428
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4458,16 +4458,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 789,
-      "total_minutes": 642,
+      "run_count": 796,
+      "total_minutes": 646,
       "seen_run_ids": [
-        33369879469,
-        33369878490,
-        33369878718,
-        33373171655,
-        33373171631,
-        33373171146,
-        33372769014,
         33372769021,
         33372765908,
         33372606817,
@@ -4660,7 +4653,14 @@
         35367842826,
         35369569195,
         35369569209,
-        35369566292
+        35369566292,
+        35371935261,
+        35371935169,
+        35371932795,
+        35371805006,
+        35371556578,
+        35371556413,
+        35371433391
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -4879,12 +4879,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 748,
-      "total_minutes": 1136,
+      "run_count": 751,
+      "total_minutes": 1144,
       "seen_run_ids": [
-        33367580091,
-        33367580480,
-        33367579267,
         33421419781,
         33421417222,
         33432330487,
@@ -5081,7 +5078,10 @@
         35367802870,
         35367793081,
         35370388993,
-        35370379964
+        35370379964,
+        35371646830,
+        35370828604,
+        35370822875
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5582,19 +5582,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 5913,
-      "total_minutes": 6458,
+      "run_count": 5923,
+      "total_minutes": 6476,
       "seen_run_ids": [
-        35221529410,
-        35223536795,
-        35223528723,
-        35223528834,
-        35223528881,
-        35223528796,
-        35223528737,
-        35223528652,
-        35223528833,
-        35223497109,
         35224604312,
         35224604301,
         35224604335,
@@ -5784,7 +5774,17 @@
         35368324177,
         35368314026,
         35368314021,
-        35368314012
+        35368314012,
+        35371351581,
+        35371340222,
+        35371309013,
+        35371281010,
+        35371268306,
+        35371226956,
+        35371226907,
+        35371226926,
+        35371226958,
+        35371226977
       ]
     },
     "rajbos-actions/github-show-actions": {
