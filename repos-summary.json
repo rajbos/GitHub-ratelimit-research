@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-23T18:51:38Z",
+  "last_updated": "2026-09-23T19:03:15Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9172,
+      "run_count": 9173,
       "total_minutes": 1097,
       "seen_run_ids": [
-        35597308848,
         35600144483,
         35601926383,
         35603014490,
@@ -206,7 +205,8 @@
         35899768742,
         35902769629,
         35904450954,
-        35905253782
+        35905253782,
+        35906556085
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4465,13 +4465,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 893,
-      "total_minutes": 743,
+      "run_count": 897,
+      "total_minutes": 744,
       "seen_run_ids": [
-        34144043654,
-        34144044145,
-        34145111030,
-        34145111000,
         34145109284,
         34146865935,
         34146865958,
@@ -4667,7 +4663,11 @@
         35896196323,
         35896195148,
         35896388448,
-        35896387178
+        35896387178,
+        35905439202,
+        35905439102,
+        35905436788,
+        35904757152
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5599,18 +5599,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 6659,
-      "total_minutes": 7204,
+      "run_count": 6668,
+      "total_minutes": 7205,
       "seen_run_ids": [
-        35645224934,
-        35645225232,
-        35645224957,
-        35645224969,
-        35645140461,
-        35644838366,
-        35646780330,
-        35646765445,
-        35646765294,
         35646765308,
         35646765410,
         35646765511,
@@ -5801,7 +5792,16 @@
         35897382337,
         35897382425,
         35897382341,
-        35897377083
+        35897377083,
+        35906380158,
+        35906366036,
+        35906365992,
+        35906366002,
+        35906365995,
+        35906366017,
+        35906365991,
+        35906366114,
+        35906343419
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6202,6 +6202,18 @@
         34778573120,
         34778548875,
         34778516382
+      ]
+    },
+    "rajbos/mcp-registry-demo": {
+      "full_name": "rajbos/mcp-registry-demo",
+      "html_url": "https://github.com/rajbos/mcp-registry-demo",
+      "run_count": 4,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        35906577820,
+        35906577868,
+        35905935638,
+        35905912275
       ]
     }
   }
