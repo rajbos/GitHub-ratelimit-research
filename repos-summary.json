@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-24T08:04:05Z",
+  "last_updated": "2026-09-24T08:33:43Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9219,
+      "run_count": 9220,
       "total_minutes": 1097,
       "seen_run_ids": [
-        35677424849,
         35678018070,
         35679805441,
         35680941288,
@@ -206,7 +205,8 @@
         35969339020,
         35970530639,
         35971604280,
-        35972976742
+        35972976742,
+        35975848937
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4470,11 +4470,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 923,
-      "total_minutes": 758,
+      "run_count": 925,
+      "total_minutes": 759,
       "seen_run_ids": [
-        34214887650,
-        34214887642,
         34214884940,
         34214315843,
         34214315969,
@@ -4672,7 +4670,9 @@
         35961979337,
         35964115530,
         35964115588,
-        35964113649
+        35964113649,
+        35974018137,
+        35974017859
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5463,7 +5463,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 133,
+      "run_count": 137,
       "total_minutes": 42,
       "seen_run_ids": [
         24653953148,
@@ -5598,24 +5598,19 @@
         35837550394,
         35837517369,
         35884414100,
-        35884413946
+        35884413946,
+        35975782315,
+        35975782594,
+        35975782540,
+        35975762852
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 6763,
-      "total_minutes": 7261,
+      "run_count": 6772,
+      "total_minutes": 7266,
       "seen_run_ids": [
-        35824141337,
-        35824141354,
-        35824141388,
-        35824141380,
-        35824141508,
-        35824136287,
-        35829757319,
-        35829755203,
-        35829755295,
         35829755275,
         35829755308,
         35829755260,
@@ -5806,7 +5801,16 @@
         35972084762,
         35972084649,
         35972085487,
-        35972083669
+        35972083669,
+        35975070329,
+        35975064726,
+        35975060132,
+        35975060133,
+        35975060055,
+        35975059942,
+        35975060064,
+        35975059945,
+        35975058820
       ]
     },
     "rajbos-actions/github-show-actions": {
