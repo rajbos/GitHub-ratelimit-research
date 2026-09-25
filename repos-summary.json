@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-25T13:47:45Z",
+  "last_updated": "2026-09-25T14:04:12Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9324,
+      "run_count": 9325,
       "total_minutes": 1109,
       "seen_run_ids": [
-        35825025938,
         35827719512,
         35829307089,
         35831395916,
@@ -206,7 +205,8 @@
         36135720652,
         36141786227,
         36140715660,
-        36143110146
+        36143110146,
+        36144859421
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4471,11 +4471,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 929,
-      "total_minutes": 762,
+      "run_count": 931,
+      "total_minutes": 764,
       "seen_run_ids": [
-        34215946813,
-        34215877770,
         34215878071,
         34247229170,
         34247228276,
@@ -4673,7 +4671,9 @@
         35978631751,
         36142155009,
         36142155038,
-        36142151049
+        36142151049,
+        36144480606,
+        36144480349
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -4892,14 +4892,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 784,
-      "total_minutes": 1197,
+      "run_count": 789,
+      "total_minutes": 1224,
       "seen_run_ids": [
-        34703651364,
-        34703648896,
-        34704911327,
-        34704908821,
-        34704767213,
         34704767048,
         34704767167,
         34704495730,
@@ -5094,7 +5089,12 @@
         36140793717,
         36141428223,
         36141427715,
-        36141370994
+        36141370994,
+        36143996939,
+        36143988394,
+        36143723274,
+        36143304479,
+        36143292984
       ]
     },
     "rajbos/demo-repo-march": {
@@ -6243,10 +6243,11 @@
     "devex-metrics/repo-landscape-cli": {
       "full_name": "devex-metrics/repo-landscape-cli",
       "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
-      "run_count": 1,
+      "run_count": 2,
       "total_minutes": 0,
       "seen_run_ids": [
-        36142760003
+        36142760003,
+        36144783924
       ]
     }
   }
