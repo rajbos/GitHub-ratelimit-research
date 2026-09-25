@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-25T13:35:43Z",
+  "last_updated": "2026-09-25T13:47:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9323,
+      "run_count": 9324,
       "total_minutes": 1109,
       "seen_run_ids": [
-        35823823652,
         35825025938,
         35827719512,
         35829307089,
@@ -206,7 +205,8 @@
         36132750131,
         36135720652,
         36141786227,
-        36140715660
+        36140715660,
+        36143110146
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4471,12 +4471,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 926,
-      "total_minutes": 760,
+      "run_count": 929,
+      "total_minutes": 762,
       "seen_run_ids": [
-        34214315843,
-        34214315969,
-        34215946708,
         34215946813,
         34215877770,
         34215878071,
@@ -4673,7 +4670,10 @@
         35964113649,
         35974018137,
         35974017859,
-        35978631751
+        35978631751,
+        36142155009,
+        36142155038,
+        36142151049
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -6228,6 +6228,25 @@
         35906577868,
         35905935638,
         35905912275
+      ]
+    },
+    "devex-metrics/repo-landscape-template": {
+      "full_name": "devex-metrics/repo-landscape-template",
+      "html_url": "https://github.com/devex-metrics/repo-landscape-template",
+      "run_count": 2,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        36143027501,
+        36142985655
+      ]
+    },
+    "devex-metrics/repo-landscape-cli": {
+      "full_name": "devex-metrics/repo-landscape-cli",
+      "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        36142760003
       ]
     }
   }
