@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-25T13:03:52Z",
+  "last_updated": "2026-09-25T13:25:20Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
@@ -4892,11 +4892,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 779,
+      "run_count": 781,
       "total_minutes": 1197,
       "seen_run_ids": [
-        34701330674,
-        34701328980,
         34701292856,
         34701251588,
         34701251954,
@@ -5094,7 +5092,9 @@
         35874631100,
         35876926768,
         35876881637,
-        35876880518
+        35876880518,
+        36140806268,
+        36140793717
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5613,18 +5613,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 6967,
-      "total_minutes": 7464,
+      "run_count": 6976,
+      "total_minutes": 7466,
       "seen_run_ids": [
-        35975060055,
-        35975059942,
-        35975060064,
-        35975059945,
-        35975058820,
-        35977050240,
-        35977044107,
-        35977044156,
-        35977044106,
         35977043982,
         35977044066,
         35977044090,
@@ -5815,7 +5806,16 @@
         36135729697,
         36135729517,
         36135729554,
-        36135729877
+        36135729877,
+        36140477067,
+        36140473916,
+        36140474151,
+        36140474076,
+        36140473895,
+        36140473850,
+        36140473189,
+        36140456336,
+        36140200630
       ]
     },
     "rajbos-actions/github-show-actions": {
