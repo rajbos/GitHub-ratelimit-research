@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-27T20:03:26Z",
+  "last_updated": "2026-09-27T20:24:21Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9523,
+      "run_count": 9524,
       "total_minutes": 1131,
       "seen_run_ids": [
-        36143110146,
         36144859421,
         36147472636,
         36148724202,
@@ -206,7 +205,8 @@
         36343901832,
         36344626974,
         36345547744,
-        36346515994
+        36346515994,
+        36347834858
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4908,13 +4908,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 792,
-      "total_minutes": 1225,
+      "run_count": 796,
+      "total_minutes": 1240,
       "seen_run_ids": [
-        34704495697,
-        34704495097,
-        34704469615,
-        34704465804,
         34705316894,
         34705316830,
         34705316460,
@@ -5110,7 +5106,11 @@
         36143292984,
         36149268680,
         36149255944,
-        36346242778
+        36346242778,
+        36347209249,
+        36347204718,
+        36346852017,
+        36346844623
       ]
     },
     "rajbos/demo-repo-march": {
@@ -6270,12 +6270,14 @@
     "devex-metrics/repo-landscape-cli": {
       "full_name": "devex-metrics/repo-landscape-cli",
       "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
-      "run_count": 3,
+      "run_count": 5,
       "total_minutes": 0,
       "seen_run_ids": [
         36142760003,
         36144783924,
-        36346425466
+        36346425466,
+        36347015512,
+        36346883210
       ]
     }
   }
