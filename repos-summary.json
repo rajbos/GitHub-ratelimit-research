@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-27T21:46:52Z",
+  "last_updated": "2026-09-27T22:23:49Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9530,
+      "run_count": 9531,
       "total_minutes": 1131,
       "seen_run_ids": [
-        36158207981,
         36160822188,
         36163138416,
         36162166617,
@@ -206,7 +205,8 @@
         36350179062,
         36351408454,
         36352065612,
-        36352904984
+        36352904984,
+        36355080166
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5641,10 +5641,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 7007,
+      "run_count": 7008,
       "total_minutes": 7498,
       "seen_run_ids": [
-        35985651891,
         35987532883,
         35987523307,
         35987523318,
@@ -5843,7 +5842,8 @@
         36310256903,
         36310256951,
         36310256965,
-        36310256923
+        36310256923,
+        36354551958
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6261,7 +6261,7 @@
     "devex-metrics/repo-landscape-template": {
       "full_name": "devex-metrics/repo-landscape-template",
       "html_url": "https://github.com/devex-metrics/repo-landscape-template",
-      "run_count": 10,
+      "run_count": 13,
       "total_minutes": 0,
       "seen_run_ids": [
         36143027501,
@@ -6273,7 +6273,10 @@
         36352187938,
         36352185176,
         36352182934,
-        36352180839
+        36352180839,
+        36354028136,
+        36353987409,
+        36353975888
       ]
     },
     "devex-metrics/repo-landscape-cli": {
