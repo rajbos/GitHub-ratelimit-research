@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-28T08:10:07Z",
+  "last_updated": "2026-09-28T08:42:48Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9555,
+      "run_count": 9556,
       "total_minutes": 1136,
       "seen_run_ids": [
-        36196396200,
         36197204786,
         36198220073,
         36199330197,
@@ -206,7 +205,8 @@
         36384741410,
         36391112924,
         36394141190,
-        36395618791
+        36395618791,
+        36398875454
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4911,15 +4911,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 817,
-      "total_minutes": 1268,
+      "run_count": 823,
+      "total_minutes": 1280,
       "seen_run_ids": [
-        34709170308,
-        34709167084,
-        34709165098,
-        34708756195,
-        34708670340,
-        34708668043,
         34709538381,
         34709538430,
         34709538264,
@@ -5113,7 +5107,13 @@
         36352448055,
         36352447684,
         36388457469,
-        36388447165
+        36388447165,
+        36398822111,
+        36398821937,
+        36398417779,
+        36398407356,
+        36397808274,
+        36397796973
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5485,7 +5485,7 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 149,
+      "run_count": 153,
       "total_minutes": 42,
       "seen_run_ids": [
         24653953148,
@@ -5636,7 +5636,11 @@
         36306323566,
         36306323586,
         36306323601,
-        36306314166
+        36306314166,
+        36398787802,
+        36398787798,
+        36398787994,
+        36398766918
       ]
     },
     "rajbos/ai-engineering-fluency": {
