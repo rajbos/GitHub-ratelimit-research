@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-09-29T14:27:19Z",
+  "last_updated": "2026-09-29T14:40:25Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9652,
+      "run_count": 9653,
       "total_minutes": 1139,
       "seen_run_ids": [
-        36281512269,
         36284480109,
         36286231726,
         36287142518,
@@ -206,7 +205,8 @@
         36576623414,
         36578129907,
         36579585822,
-        36582638518
+        36582638518,
+        36584226268
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4937,11 +4937,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 899,
-      "total_minutes": 1330,
+      "run_count": 901,
+      "total_minutes": 1335,
       "seen_run_ids": [
-        34873097499,
-        34873089252,
         34876082667,
         34877234911,
         34877222303,
@@ -5139,7 +5137,9 @@
         36573895922,
         36573881652,
         36577373748,
-        36577361187
+        36577361187,
+        36582968704,
+        36582953863
       ]
     },
     "rajbos/demo-repo-march": {
