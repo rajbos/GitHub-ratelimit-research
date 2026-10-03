@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-03T06:46:00Z",
+  "last_updated": "2026-10-03T07:08:49Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 9952,
+      "run_count": 9953,
       "total_minutes": 1146,
       "seen_run_ids": [
-        36769814322,
         36772619549,
         36773905212,
         36775121894,
@@ -206,7 +205,8 @@
         37100153455,
         37101153580,
         37101945292,
-        37104057258
+        37104057258,
+        37105315755
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1804,10 +1804,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 609,
+      "run_count": 610,
       "total_minutes": 260,
       "seen_run_ids": [
-        30203416126,
         30203416128,
         30203415363,
         30203410816,
@@ -2006,7 +2005,8 @@
         35627584182,
         35627579836,
         35627577892,
-        35627577983
+        35627577983,
+        37105270459
       ]
     },
     "rajbos/github-fork-updater": {
@@ -5395,8 +5395,8 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 153,
-      "total_minutes": 7,
+      "run_count": 160,
+      "total_minutes": 11,
       "seen_run_ids": [
         23890358224,
         23890358249,
@@ -5550,7 +5550,14 @@
         33972699477,
         33972699518,
         33972699160,
-        33972699501
+        33972699501,
+        37105290644,
+        37105290611,
+        37105290609,
+        37105290332,
+        37105290670,
+        37105284651,
+        37105284642
       ]
     },
     "rajbos/demo-actions": {
