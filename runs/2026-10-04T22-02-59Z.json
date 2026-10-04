@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager",
+    "id": 37237797662,
+    "name": "npm_and_yarn in / for @types/node, eslint, markdownlint-cli2, prettier, tsx, typescript-eslint - Update #1608189569",
+    "workflow_id": 345838994,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-04T21:52:04Z",
+    "updated_at": "2026-10-04T21:53:34Z",
+    "html_url": "https://github.com/actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager/actions/runs/37237797662",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager",
+    "id": 37237796558,
+    "name": "github_actions in / for actions/checkout, gh-workflow/multiarch-image-publish, joshjohanning/ensure-immutable-actions, github/codeql-action/init, github/codeql-action/analyze - Update #1608189552",
+    "workflow_id": 345838994,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-04T21:52:03Z",
+    "updated_at": "2026-10-04T21:56:37Z",
+    "html_url": "https://github.com/actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager/actions/runs/37237796558",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager",
+    "id": 37237794399,
+    "name": "npm_and_yarn in /*, /. - Update #1608189425",
+    "workflow_id": 345838994,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-04T21:52:01Z",
+    "updated_at": "2026-10-04T21:52:55Z",
+    "html_url": "https://github.com/actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager/actions/runs/37237794399",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager",
+    "id": 37237794438,
+    "name": "github_actions in /. - Update #1608189417",
+    "workflow_id": 345838994,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-04T21:52:01Z",
+    "updated_at": "2026-10-04T21:52:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/ghcr-manager_ghcr-cleanup-manager/actions/runs/37237794438",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 37238424099,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-04T22:01:49Z",
+    "updated_at": "2026-10-04T22:01:53Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/37238424099",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 37237631853,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-04T21:49:30Z",
+    "updated_at": "2026-10-04T21:50:35Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/37237631853",
+    "actor_login": "rajbos"
+  }
+]
