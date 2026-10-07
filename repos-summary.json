@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-07T21:36:53Z",
+  "last_updated": "2026-10-07T21:49:50Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 10198,
+      "run_count": 10199,
       "total_minutes": 1191,
       "seen_run_ids": [
-        37250150921,
         37252807349,
         37254605767,
         37256915256,
@@ -206,7 +205,8 @@
         37684947422,
         37686477427,
         37689154745,
-        37690517696
+        37690517696,
+        37691990583
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4581,11 +4581,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1125,
-      "total_minutes": 954,
+      "run_count": 1127,
+      "total_minutes": 963,
       "seen_run_ids": [
-        35978631751,
-        36142155009,
         36142155038,
         36142151049,
         36144480606,
@@ -4783,7 +4781,9 @@
         37681421084,
         37689692684,
         37689692554,
-        37689690148
+        37689690148,
+        37690665041,
+        37690666226
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5784,18 +5784,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 8417,
-      "total_minutes": 8506,
+      "run_count": 8426,
+      "total_minutes": 8515,
       "seen_run_ids": [
-        37477350604,
-        37477350581,
-        37587167323,
-        37587165641,
-        37587165597,
-        37586711642,
-        37586704108,
-        37586704139,
-        37586704054,
         37586704119,
         37586704190,
         37586704181,
@@ -5986,7 +5977,16 @@
         37690537199,
         37690536584,
         37690368213,
-        37690359337
+        37690359337,
+        37691519509,
+        37691510507,
+        37691510396,
+        37691510453,
+        37691510403,
+        37691510466,
+        37691510430,
+        37691510410,
+        37691510386
       ]
     },
     "rajbos-actions/github-show-actions": {
