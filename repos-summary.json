@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-09T00:07:59Z",
+  "last_updated": "2026-10-09T01:06:52Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 10282,
+      "run_count": 10283,
       "total_minutes": 1198,
       "seen_run_ids": [
-        37451156995,
         37452414281,
         37453689128,
         37456088936,
@@ -206,7 +205,8 @@
         37859187996,
         37860264583,
         37861449661,
-        37863067774
+        37863067774,
+        37868064140
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3483,8 +3483,8 @@
     "rajbos/actions-marketplace": {
       "full_name": "rajbos/actions-marketplace",
       "html_url": "https://github.com/rajbos/actions-marketplace",
-      "run_count": 109,
-      "total_minutes": 213,
+      "run_count": 110,
+      "total_minutes": 215,
       "seen_run_ids": [
         22548387879,
         22548387896,
@@ -3594,7 +3594,8 @@
         37249891967,
         37396694408,
         37554890790,
-        37710632643
+        37710632643,
+        37867743579
       ]
     },
     "mcp-research/mcp-security-scans": {
@@ -5791,18 +5792,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 8688,
-      "total_minutes": 8743,
+      "run_count": 8697,
+      "total_minutes": 8754,
       "seen_run_ids": [
-        37784557604,
-        37784406041,
-        37787130329,
-        37787116837,
-        37787116726,
-        37787116683,
-        37787116796,
-        37787116879,
-        37787116908,
         37787077285,
         37786295604,
         37787870562,
@@ -5993,7 +5985,16 @@
         37861550561,
         37861550537,
         37861550536,
-        37861544146
+        37861544146,
+        37866973163,
+        37866966206,
+        37866966179,
+        37866966197,
+        37866966249,
+        37866966181,
+        37866966195,
+        37866966215,
+        37866963275
       ]
     },
     "rajbos-actions/github-show-actions": {
