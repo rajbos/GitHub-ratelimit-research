@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "devex-metrics/github-community-analysis",
+    "id": 38056550665,
+    "name": "Dependency Review",
+    "workflow_id": 356608840,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:39:20Z",
+    "updated_at": "2026-10-10T13:39:34Z",
+    "html_url": "https://github.com/devex-metrics/github-community-analysis/actions/runs/38056550665",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "devex-metrics/github-community-analysis",
+    "id": 38056550662,
+    "name": "CodeQL",
+    "workflow_id": 356608839,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:39:20Z",
+    "updated_at": "2026-10-10T13:40:33Z",
+    "html_url": "https://github.com/devex-metrics/github-community-analysis/actions/runs/38056550662",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "devex-metrics/github-community-analysis",
+    "id": 38056545839,
+    "name": "Analyze GitHub Discussions",
+    "workflow_id": 356584828,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:39:15Z",
+    "updated_at": "2026-10-10T13:39:44Z",
+    "html_url": "https://github.com/devex-metrics/github-community-analysis/actions/runs/38056545839",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "devex-metrics/github-community-analysis",
+    "id": 38056175731,
+    "name": "github_actions in / for actions/checkout, github/codeql-action/init, github/codeql-action/autobuild, github/codeql-action/analyze, ossf/scorecard-action, actions/upload-artifact, github/codeql-action/upload-sarif - Update #1620599825",
+    "workflow_id": 356586581,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:33:30Z",
+    "updated_at": "2026-10-10T13:39:15Z",
+    "html_url": "https://github.com/devex-metrics/github-community-analysis/actions/runs/38056175731",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "devex-metrics/github-community-analysis",
+    "id": 38056172141,
+    "name": "github_actions in /. - Update #1620599768",
+    "workflow_id": 356586581,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:33:27Z",
+    "updated_at": "2026-10-10T13:34:15Z",
+    "html_url": "https://github.com/devex-metrics/github-community-analysis/actions/runs/38056172141",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 38057074198,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-10T13:47:21Z",
+    "updated_at": "2026-10-10T13:47:24Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/38057074198",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 38056258592,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-10T13:34:47Z",
+    "updated_at": "2026-10-10T13:35:56Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/38056258592",
+    "actor_login": "rajbos"
+  }
+]
