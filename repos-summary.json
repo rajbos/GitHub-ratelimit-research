@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-12T20:03:39Z",
+  "last_updated": "2026-10-12T20:28:44Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 10514,
+      "run_count": 10515,
       "total_minutes": 1225,
       "seen_run_ids": [
-        37931033879,
         37933630160,
         37936437247,
         37938253630,
@@ -206,7 +205,8 @@
         38297245274,
         38298616840,
         38300130057,
-        38301606254
+        38301606254,
+        38304318915
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6497,10 +6497,11 @@
     "xebia/ai-assisted-se-claude-exercise": {
       "full_name": "xebia/ai-assisted-se-claude-exercise",
       "html_url": "https://github.com/xebia/ai-assisted-se-claude-exercise",
-      "run_count": 1,
+      "run_count": 2,
       "total_minutes": 6,
       "seen_run_ids": [
-        38244738295
+        38244738295,
+        38302939470
       ]
     }
   }
