@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-13T20:27:06Z",
+  "last_updated": "2026-10-13T20:39:06Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 10587,
+      "run_count": 10588,
       "total_minutes": 1232,
       "seen_run_ids": [
-        38096227310,
         38095468126,
         38097350597,
         38100835918,
@@ -206,7 +205,8 @@
         38454190822,
         38457455318,
         38459628026,
-        38462717136
+        38462717136,
+        38464298205
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4605,19 +4605,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1230,
-      "total_minutes": 1071,
+      "run_count": 1240,
+      "total_minutes": 1077,
       "seen_run_ids": [
-        36740057695,
-        36739283628,
-        36739116288,
-        36743077417,
-        36747681389,
-        36747681485,
-        36747676284,
-        36751055488,
-        36751055319,
-        36751929691,
         36751929405,
         36751928192,
         36751827131,
@@ -4807,7 +4797,17 @@
         38459312073,
         38459308002,
         38461725895,
-        38461725695
+        38461725695,
+        38464463926,
+        38464428029,
+        38464427931,
+        38464427938,
+        38464425767,
+        38463379260,
+        38463377976,
+        38463023923,
+        38463023885,
+        38463021385
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5830,18 +5830,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 9619,
-      "total_minutes": 9478,
+      "run_count": 9628,
+      "total_minutes": 9481,
       "seen_run_ids": [
-        38216209666,
-        38216207096,
-        38216204701,
-        38216204818,
-        38216204705,
-        38216204692,
-        38216204827,
-        38216204715,
-        38215359989,
         38357214561,
         38361533717,
         38361473429,
@@ -6032,7 +6023,16 @@
         38462755656,
         38462755826,
         38462756577,
-        38462755779
+        38462755779,
+        38463926553,
+        38463155632,
+        38463036026,
+        38463035978,
+        38463035939,
+        38463037214,
+        38463036002,
+        38463036010,
+        38463035977
       ]
     },
     "rajbos-actions/github-show-actions": {
