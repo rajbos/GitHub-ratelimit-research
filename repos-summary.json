@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-14T11:25:16Z",
+  "last_updated": "2026-10-14T11:36:29Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 10639,
+      "run_count": 10640,
       "total_minutes": 1232,
       "seen_run_ids": [
-        38157906387,
         38159325376,
         38160181344,
         38161068710,
@@ -206,7 +205,8 @@
         38550649744,
         38552082077,
         38553742097,
-        38556267103
+        38556267103,
+        38557584940
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1034,17 +1034,9 @@
     "devops-actions/load-runner-info": {
       "full_name": "devops-actions/load-runner-info",
       "html_url": "https://github.com/devops-actions/load-runner-info",
-      "run_count": 243,
+      "run_count": 251,
       "total_minutes": 103,
       "seen_run_ids": [
-        23814443816,
-        23814443789,
-        23814440334,
-        23867536043,
-        23867536027,
-        23867535906,
-        23867536035,
-        23867447915,
         23867447769,
         23889222685,
         23889222725,
@@ -1236,7 +1228,15 @@
         36536721721,
         36881018746,
         37795777415,
-        38208472569
+        38208472569,
+        38557682667,
+        38557682533,
+        38557682250,
+        38557681081,
+        38557681094,
+        38557681107,
+        38557682195,
+        38557680206
       ]
     },
     "devops-actions/github-actions-marketplace-news": {
@@ -1450,15 +1450,9 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 248,
+      "run_count": 254,
       "total_minutes": 75,
       "seen_run_ids": [
-        23112239347,
-        23112239357,
-        23112239295,
-        23112239040,
-        23114165438,
-        23163528982,
         23163528798,
         23163528964,
         23163528190,
@@ -1652,7 +1646,13 @@
         36536657647,
         36536656382,
         37486332509,
-        38437859740
+        38437859740,
+        38557643529,
+        38557644437,
+        38557643823,
+        38557644345,
+        38557644464,
+        38557644504
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -5322,7 +5322,7 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 72,
+      "run_count": 76,
       "total_minutes": 18,
       "seen_run_ids": [
         23757011128,
@@ -5396,7 +5396,11 @@
         36308758843,
         36308758686,
         36536677024,
-        36536676569
+        36536676569,
+        38557664055,
+        38557663969,
+        38557653888,
+        38557653997
       ]
     },
     "rajbos/create-github-app-from-manifest": {
@@ -5832,18 +5836,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 9710,
-      "total_minutes": 9549,
+      "run_count": 9719,
+      "total_minutes": 9551,
       "seen_run_ids": [
-        38424684631,
-        38424664524,
-        38424638142,
-        38424636884,
-        38424636646,
-        38424636643,
-        38424636365,
-        38426235262,
-        38426132229,
         38425985342,
         38425977555,
         38425977653,
@@ -6034,7 +6029,16 @@
         38536159135,
         38536159119,
         38536159208,
-        38536154050
+        38536154050,
+        38557600211,
+        38557601222,
+        38557596750,
+        38557597769,
+        38557597592,
+        38557597810,
+        38557597763,
+        38557590886,
+        38557589810
       ]
     },
     "rajbos-actions/github-show-actions": {
