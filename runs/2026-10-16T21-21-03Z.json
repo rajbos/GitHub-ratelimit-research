@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge",
+    "id": 38967753886,
+    "name": "nuget in /test/BlazorMerge.UnitTests for xunit.runner.visualstudio, xunit.v3 - Update #1632197643",
+    "workflow_id": 223570710,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-16T21:12:35Z",
+    "updated_at": "2026-10-16T21:14:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge/actions/runs/38967753886",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge",
+    "id": 38967752735,
+    "name": "nuget in /. - Update #1632197603",
+    "workflow_id": 223570710,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-16T21:12:35Z",
+    "updated_at": "2026-10-16T21:16:16Z",
+    "html_url": "https://github.com/actions-marketplace-validations/Afterlife-Guide_AppSettings.Merge/actions/runs/38967752735",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/dipjyotimetia_deep-agent-action",
+    "id": 38967820257,
+    "name": "github_actions in /. - Update #1632199337",
+    "workflow_id": 324414946,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-16T21:13:09Z",
+    "updated_at": "2026-10-16T21:15:43Z",
+    "html_url": "https://github.com/actions-marketplace-validations/dipjyotimetia_deep-agent-action/actions/runs/38967820257",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/dipjyotimetia_deep-agent-action",
+    "id": 38967820512,
+    "name": "npm_and_yarn in /. - Update #1632199344",
+    "workflow_id": 324414946,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-16T21:13:09Z",
+    "updated_at": "2026-10-16T21:13:57Z",
+    "html_url": "https://github.com/actions-marketplace-validations/dipjyotimetia_deep-agent-action/actions/runs/38967820512",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 38968593109,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-16T21:19:44Z",
+    "updated_at": "2026-10-16T21:19:47Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/38968593109",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 38966477536,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-16T21:01:50Z",
+    "updated_at": "2026-10-16T21:03:28Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/38966477536",
+    "actor_login": "rajbos"
+  }
+]
