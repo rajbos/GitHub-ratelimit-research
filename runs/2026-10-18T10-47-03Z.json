@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "actions-marketplace-validations/shellharbor_watchdog",
+    "id": 39120285568,
+    "name": "composer in /. - Update #1634056287",
+    "workflow_id": 368512378,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-18T10:42:05Z",
+    "updated_at": "2026-10-18T10:42:32Z",
+    "html_url": "https://github.com/actions-marketplace-validations/shellharbor_watchdog/actions/runs/39120285568",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/shellharbor_watchdog",
+    "id": 39120285184,
+    "name": "github_actions in /. - Update #1634056288",
+    "workflow_id": 368512378,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T10:42:05Z",
+    "updated_at": "2026-10-18T10:46:47Z",
+    "html_url": "https://github.com/actions-marketplace-validations/shellharbor_watchdog/actions/runs/39120285184",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/copilot-billing-preview",
+    "id": 39120517023,
+    "name": "CI / Deploy",
+    "workflow_id": 275912370,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T10:45:34Z",
+    "updated_at": "2026-10-18T10:46:14Z",
+    "html_url": "https://github.com/xebia/copilot-billing-preview/actions/runs/39120517023",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/copilot-billing-preview",
+    "id": 39120437239,
+    "name": "npm_and_yarn in /. for source-map-js - Update #1634058260",
+    "workflow_id": 275912500,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T10:44:24Z",
+    "updated_at": "2026-10-18T10:45:27Z",
+    "html_url": "https://github.com/xebia/copilot-billing-preview/actions/runs/39120437239",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39120534383,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-18T10:45:50Z",
+    "updated_at": "2026-10-18T10:45:53Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39120534383",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39119640213,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T10:32:11Z",
+    "updated_at": "2026-10-18T10:33:32Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39119640213",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "xebia/ai-assisted-se-claude-exercise",
+    "id": 39119601694,
+    "name": "npm_and_yarn in /bookstore-web for source-map-js - Update #1634046561",
+    "workflow_id": 388353665,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T10:31:37Z",
+    "updated_at": "2026-10-18T10:32:38Z",
+    "html_url": "https://github.com/xebia/ai-assisted-se-claude-exercise/actions/runs/39119601694",
+    "actor_login": "dependabot[bot]"
+  }
+]
