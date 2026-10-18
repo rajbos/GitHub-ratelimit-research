@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "actions-marketplace-validations/omarmhaimdat_pepe",
+    "id": 39094949288,
+    "name": "github_actions in / for actions/cache, actions/checkout, github/codeql-action/init, github/codeql-action/analyze, actions/setup-node, actions/setup-python - Update #1633742126",
+    "workflow_id": 382055526,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-18T03:49:11Z",
+    "updated_at": "2026-10-18T03:49:16Z",
+    "html_url": "https://github.com/actions-marketplace-validations/omarmhaimdat_pepe/actions/runs/39094949288",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/omarmhaimdat_pepe",
+    "id": 39094949100,
+    "name": "cargo in / for serde_json - Update #1633742128",
+    "workflow_id": 382055526,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:49:11Z",
+    "updated_at": "2026-10-18T03:49:59Z",
+    "html_url": "https://github.com/actions-marketplace-validations/omarmhaimdat_pepe/actions/runs/39094949100",
+    "actor_login": "dependabot[bot]"
+  }
+]
