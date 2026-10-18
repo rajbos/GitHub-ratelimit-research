@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/yukikotani231_sqlsift",
+    "id": 39095100950,
+    "name": "github_actions in / for actions/checkout, dtolnay/rust-toolchain, actions/setup-node, github/codeql-action/upload-sarif, github/codeql-action/init, github/codeql-action/analyze, actions/upload-pages-artifact, actions/deploy-pages, actions/upload-artifact, azure/login, actions/download-artifact, release-plz/action - Update #1633743730",
+    "workflow_id": 386738048,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:51:49Z",
+    "updated_at": "2026-10-18T03:56:46Z",
+    "html_url": "https://github.com/actions-marketplace-validations/yukikotani231_sqlsift/actions/runs/39095100950",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/figueiredoluiz_vitest-dedup",
+    "id": 39095244736,
+    "name": "cargo in / for serde_json - Update #1633746537",
+    "workflow_id": 383664535,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:54:19Z",
+    "updated_at": "2026-10-18T03:55:18Z",
+    "html_url": "https://github.com/actions-marketplace-validations/figueiredoluiz_vitest-dedup/actions/runs/39095244736",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/omarmhaimdat_pepe",
+    "id": 39094949288,
+    "name": "github_actions in / for actions/cache, actions/checkout, github/codeql-action/init, github/codeql-action/analyze, actions/setup-node, actions/setup-python - Update #1633742126",
+    "workflow_id": 382055526,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:49:11Z",
+    "updated_at": "2026-10-18T03:54:09Z",
+    "html_url": "https://github.com/actions-marketplace-validations/omarmhaimdat_pepe/actions/runs/39094949288",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/omarmhaimdat_pepe",
+    "id": 39094949100,
+    "name": "cargo in / for serde_json - Update #1633742128",
+    "workflow_id": 382055526,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:49:11Z",
+    "updated_at": "2026-10-18T03:49:59Z",
+    "html_url": "https://github.com/actions-marketplace-validations/omarmhaimdat_pepe/actions/runs/39094949100",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39095691645,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-18T04:02:09Z",
+    "updated_at": "2026-10-18T04:02:12Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39095691645",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39095020962,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-18T03:50:25Z",
+    "updated_at": "2026-10-18T03:51:47Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39095020962",
+    "actor_login": "rajbos"
+  }
+]
