@@ -1,0 +1,62 @@
+[
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39295170066,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-19T17:33:46Z",
+    "updated_at": "2026-10-19T17:33:48Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39295170066",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39293451883,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-19T17:21:46Z",
+    "updated_at": "2026-10-19T17:23:21Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39293451883",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "actions-marketplace-validations/rodri-oliveira-dev_adr-guard",
+    "id": 39292618683,
+    "name": "github_actions in / for actions/setup-node, actions/upload-artifact, actions/download-artifact - Update #1637565944",
+    "workflow_id": 363907634,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-19T17:15:55Z",
+    "updated_at": "2026-10-19T17:20:34Z",
+    "html_url": "https://github.com/actions-marketplace-validations/rodri-oliveira-dev_adr-guard/actions/runs/39292618683",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/rodri-oliveira-dev_adr-guard",
+    "id": 39292616187,
+    "name": "nuget in / for xunit.v3 - Update #1637565925",
+    "workflow_id": 363907634,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-19T17:15:54Z",
+    "updated_at": "2026-10-19T17:17:43Z",
+    "html_url": "https://github.com/actions-marketplace-validations/rodri-oliveira-dev_adr-guard/actions/runs/39292616187",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/rodri-oliveira-dev_adr-guard",
+    "id": 39292615593,
+    "name": "github_actions in / for actions/checkout - Update #1637565919",
+    "workflow_id": 363907634,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-19T17:15:53Z",
+    "updated_at": "2026-10-19T17:16:44Z",
+    "html_url": "https://github.com/actions-marketplace-validations/rodri-oliveira-dev_adr-guard/actions/runs/39292615593",
+    "actor_login": "dependabot[bot]"
+  }
+]
