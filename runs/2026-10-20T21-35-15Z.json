@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 39501348257,
+    "name": "review(renovate) #368 chore(deps): update helm release loki to v18.17.1",
+    "workflow_id": 375320471,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-20T21:33:39Z",
+    "updated_at": "2026-10-20T21:33:44Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/39501348257",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 39501246752,
+    "name": "Cluster triage approve",
+    "workflow_id": 378795730,
+    "status": "completed",
+    "conclusion": "skipped",
+    "created_at": "2026-10-20T21:32:54Z",
+    "updated_at": "2026-10-20T21:33:03Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/39501246752",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 39501241276,
+    "name": "Validate manifests",
+    "workflow_id": 353801478,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-20T21:32:51Z",
+    "updated_at": "2026-10-20T21:33:36Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/39501241276",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/GitHubPartnership-EMEA",
+    "id": 39500806409,
+    "name": "Refresh dashboards",
+    "workflow_id": 367010169,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-20T21:29:41Z",
+    "updated_at": "2026-10-20T21:30:24Z",
+    "html_url": "https://github.com/xebia/GitHubPartnership-EMEA/actions/runs/39500806409",
+    "actor_login": "DennisThie"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39501346961,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-20T21:33:38Z",
+    "updated_at": "2026-10-20T21:33:42Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39501346961",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39499921387,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-20T21:23:11Z",
+    "updated_at": "2026-10-20T21:24:52Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39499921387",
+    "actor_login": "rajbos"
+  }
+]
