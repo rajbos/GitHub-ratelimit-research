@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-22T06:05:17Z",
+  "last_updated": "2026-10-22T06:39:39Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11298,
+      "run_count": 11299,
       "total_minutes": 1300,
       "seen_run_ids": [
-        39320656577,
         39322307514,
         39324223718,
         39326903745,
@@ -206,7 +205,8 @@
         39727851881,
         39729009587,
         39730248216,
-        39731624607
+        39731624607,
+        39735169229
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1804,10 +1804,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 631,
+      "run_count": 632,
       "total_minutes": 271,
       "seen_run_ids": [
-        30207437079,
         30207437284,
         30207437087,
         30207437065,
@@ -2006,7 +2005,8 @@
         38360460158,
         38360460027,
         38360458904,
-        39555506145
+        39555506145,
+        39733282081
       ]
     },
     "rajbos/github-fork-updater": {
@@ -6148,8 +6148,8 @@
     "devops-actions/mcp-dependencies": {
       "full_name": "devops-actions/mcp-dependencies",
       "html_url": "https://github.com/devops-actions/mcp-dependencies",
-      "run_count": 8,
-      "total_minutes": 4,
+      "run_count": 10,
+      "total_minutes": 5,
       "seen_run_ids": [
         27092768803,
         33366987698,
@@ -6158,7 +6158,9 @@
         37197981050,
         37197980731,
         37197980067,
-        37197978023
+        37197978023,
+        39733294057,
+        39733293919
       ]
     },
     "rajbos/game-center": {
