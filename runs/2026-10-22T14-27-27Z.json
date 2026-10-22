@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/whatsnew-fyi_upgrade-notes-action",
+    "id": 39795273116,
+    "name": "npm_and_yarn in / for @types/node, typescript - Update #1645427718",
+    "workflow_id": 385567436,
+    "status": "queued",
+    "conclusion": null,
+    "created_at": "2026-10-22T14:23:39Z",
+    "updated_at": "2026-10-22T14:23:39Z",
+    "html_url": "https://github.com/actions-marketplace-validations/whatsnew-fyi_upgrade-notes-action/actions/runs/39795273116",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/whatsnew-fyi_upgrade-notes-action",
+    "id": 39795272190,
+    "name": "npm_and_yarn in /. - Update #1645427542",
+    "workflow_id": 385567436,
+    "status": "queued",
+    "conclusion": null,
+    "created_at": "2026-10-22T14:23:38Z",
+    "updated_at": "2026-10-22T14:23:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/whatsnew-fyi_upgrade-notes-action/actions/runs/39795272190",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/feedbacks-app",
+    "id": 39793178342,
+    "name": "API CI",
+    "workflow_id": 275932240,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-22T14:08:47Z",
+    "updated_at": "2026-10-22T14:13:54Z",
+    "html_url": "https://github.com/xebia/feedbacks-app/actions/runs/39793178342",
+    "actor_login": "jakubigla"
+  },
+  {
+    "repo": "xebia/feedbacks-app",
+    "id": 39793178269,
+    "name": "Repo CI",
+    "workflow_id": 342882917,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-22T14:08:47Z",
+    "updated_at": "2026-10-22T14:17:30Z",
+    "html_url": "https://github.com/xebia/feedbacks-app/actions/runs/39793178269",
+    "actor_login": "jakubigla"
+  },
+  {
+    "repo": "xebia/feedbacks-app",
+    "id": 39793178097,
+    "name": "Web CI",
+    "workflow_id": 275915217,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-22T14:08:47Z",
+    "updated_at": "2026-10-22T14:21:56Z",
+    "html_url": "https://github.com/xebia/feedbacks-app/actions/runs/39793178097",
+    "actor_login": "jakubigla"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 39795574317,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "queued",
+    "conclusion": null,
+    "created_at": "2026-10-22T14:25:42Z",
+    "updated_at": "2026-10-22T14:25:42Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/39795574317",
+    "actor_login": "rajbos"
+  }
+]
