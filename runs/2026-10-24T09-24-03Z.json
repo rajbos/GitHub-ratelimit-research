@@ -1,0 +1,50 @@
+[
+  {
+    "repo": "xebia/github-copilot-metrics",
+    "id": 40080887421,
+    "name": "Get Copilot data",
+    "workflow_id": 79199574,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-24T09:10:12Z",
+    "updated_at": "2026-10-24T09:11:20Z",
+    "html_url": "https://github.com/xebia/github-copilot-metrics/actions/runs/40080887421",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "xebia/github-copilot-metrics",
+    "id": 40080676752,
+    "name": "pages build and deployment",
+    "workflow_id": 147948151,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-24T09:07:00Z",
+    "updated_at": "2026-10-24T09:07:50Z",
+    "html_url": "https://github.com/xebia/github-copilot-metrics/actions/runs/40080676752",
+    "actor_login": "github-pages[bot]"
+  },
+  {
+    "repo": "xebia/github-copilot-metrics",
+    "id": 40080647417,
+    "name": "Single report",
+    "workflow_id": 147946422,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-24T09:06:32Z",
+    "updated_at": "2026-10-24T09:07:01Z",
+    "html_url": "https://github.com/xebia/github-copilot-metrics/actions/runs/40080647417",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 40081714172,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-24T09:22:45Z",
+    "updated_at": "2026-10-24T09:22:48Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/40081714172",
+    "actor_login": "rajbos"
+  }
+]
