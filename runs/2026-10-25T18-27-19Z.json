@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action",
+    "id": 40220113780,
+    "name": "npm_and_yarn in / for @azure/identity, yaml, @commitlint/cli, @commitlint/config-conventional, @types/node, esbuild, eslint, typescript-eslint - Update #1651807634",
+    "workflow_id": 345725078,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-10-25T18:12:10Z",
+    "updated_at": "2026-10-25T18:13:51Z",
+    "html_url": "https://github.com/actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action/actions/runs/40220113780",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action",
+    "id": 40220113373,
+    "name": "github_actions in / for actions/checkout, actions/setup-node, actions/upload-artifact, actions/cache, github/codeql-action/init, github/codeql-action/analyze, actions/download-artifact, softprops/action-gh-release - Update #1651807616",
+    "workflow_id": 345725078,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-25T18:12:10Z",
+    "updated_at": "2026-10-25T18:15:03Z",
+    "html_url": "https://github.com/actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action/actions/runs/40220113373",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action",
+    "id": 40220110432,
+    "name": "github_actions in /. - Update #1651807546",
+    "workflow_id": 345725078,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-25T18:12:07Z",
+    "updated_at": "2026-10-25T18:12:36Z",
+    "html_url": "https://github.com/actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action/actions/runs/40220110432",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action",
+    "id": 40220110388,
+    "name": "npm_and_yarn in /. - Update #1651807545",
+    "workflow_id": 345725078,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-25T18:12:07Z",
+    "updated_at": "2026-10-25T18:12:50Z",
+    "html_url": "https://github.com/actions-marketplace-validations/postman-cs_postman-azure-spec-discovery-action/actions/runs/40220110388",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 40221193567,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-25T18:25:41Z",
+    "updated_at": "2026-10-25T18:25:44Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/40221193567",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "actions-marketplace-validations/michen00_freeze-pr-links",
+    "id": 40220140141,
+    "name": "pre_commit in / for https://github.com/astral-sh/ruff-pre-commit, https://github.com/michen00/markdown-prose-hooks-py - Update #1651809037",
+    "workflow_id": 396225650,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-25T18:12:30Z",
+    "updated_at": "2026-10-25T18:13:28Z",
+    "html_url": "https://github.com/actions-marketplace-validations/michen00_freeze-pr-links/actions/runs/40220140141",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/michen00_freeze-pr-links",
+    "id": 40220138107,
+    "name": "pre_commit in /. - Update #1651809003",
+    "workflow_id": 396225650,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-25T18:12:29Z",
+    "updated_at": "2026-10-25T18:13:05Z",
+    "html_url": "https://github.com/actions-marketplace-validations/michen00_freeze-pr-links/actions/runs/40220138107",
+    "actor_login": "dependabot[bot]"
+  }
+]
