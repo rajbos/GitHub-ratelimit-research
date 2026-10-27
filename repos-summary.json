@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-27T14:31:11Z",
+  "last_updated": "2026-10-27T14:49:21Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11717,
+      "run_count": 11718,
       "total_minutes": 1338,
       "seen_run_ids": [
-        40131225645,
         40132425268,
         40133816990,
         40134666911,
@@ -206,7 +205,8 @@
         40512584053,
         40515928979,
         40517471143,
-        40521590276
+        40521590276,
+        40524585093
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5880,19 +5880,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10453,
-      "total_minutes": 10012,
+      "run_count": 10463,
+      "total_minutes": 10022,
       "seen_run_ids": [
-        39587315839,
-        39587315744,
-        39587315767,
-        39587315790,
-        39587315716,
-        39587315721,
-        39588129889,
-        39709297317,
-        39836293134,
-        39836285707,
         39836285826,
         39836285786,
         39836285804,
@@ -6082,7 +6072,17 @@
         40454318076,
         40456098998,
         40519647238,
-        40519366862
+        40519366862,
+        40524484141,
+        40523594467,
+        40523421270,
+        40523407062,
+        40523407066,
+        40523407044,
+        40523407019,
+        40523407031,
+        40523407100,
+        40523406922
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6531,7 +6531,7 @@
     "devex-metrics/repo-landscape-cli": {
       "full_name": "devex-metrics/repo-landscape-cli",
       "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
-      "run_count": 15,
+      "run_count": 16,
       "total_minutes": 0,
       "seen_run_ids": [
         36142760003,
@@ -6548,7 +6548,8 @@
         36484563547,
         36484376372,
         40454235967,
-        40453829346
+        40453829346,
+        40522768440
       ]
     },
     "rajbos/typescript-demo": {
