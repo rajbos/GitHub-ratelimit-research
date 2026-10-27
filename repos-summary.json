@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-27T18:32:45Z",
+  "last_updated": "2026-10-27T18:47:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11733,
+      "run_count": 11734,
       "total_minutes": 1340,
       "seen_run_ids": [
-        40152252297,
         40154898818,
         40156164995,
         40156733021,
@@ -206,7 +205,8 @@
         40553628816,
         40556124905,
         40558999094,
-        40560751951
+        40560751951,
+        40562954123
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5880,15 +5880,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10463,
-      "total_minutes": 10022,
+      "run_count": 10469,
+      "total_minutes": 10040,
       "seen_run_ids": [
-        39836285826,
-        39836285786,
-        39836285804,
-        39836285756,
-        39836285706,
-        39836285720,
         39836285772,
         39837323529,
         39844686992,
@@ -6082,7 +6076,13 @@
         40523407019,
         40523407031,
         40523407100,
-        40523406922
+        40523406922,
+        40562207382,
+        40561167476,
+        40561159473,
+        40561160445,
+        40561160359,
+        40561160367
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6531,7 +6531,7 @@
     "devex-metrics/repo-landscape-cli": {
       "full_name": "devex-metrics/repo-landscape-cli",
       "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
-      "run_count": 16,
+      "run_count": 17,
       "total_minutes": 0,
       "seen_run_ids": [
         36142760003,
@@ -6549,7 +6549,8 @@
         36484376372,
         40454235967,
         40453829346,
-        40522768440
+        40522768440,
+        40562517721
       ]
     },
     "rajbos/typescript-demo": {
