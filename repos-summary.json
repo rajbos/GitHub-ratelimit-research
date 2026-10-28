@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-28T12:03:58Z",
+  "last_updated": "2026-10-28T12:26:56Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11800,
+      "run_count": 11801,
       "total_minutes": 1342,
       "seen_run_ids": [
-        40227574419,
         40228825636,
         40230414264,
         40231345779,
@@ -206,7 +205,8 @@
         40678826597,
         40680548837,
         40684581593,
-        40682442659
+        40682442659,
+        40687662724
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6612,6 +6612,15 @@
         40644553169,
         40664947273,
         40664947111
+      ]
+    },
+    "githubpartners/microsoft-learn": {
+      "full_name": "githubpartners/microsoft-learn",
+      "html_url": "https://github.com/githubpartners/microsoft-learn",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        40685706974
       ]
     }
   }
