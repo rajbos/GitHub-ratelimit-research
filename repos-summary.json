@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-28T06:29:30Z",
+  "last_updated": "2026-10-28T06:44:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11777,
+      "run_count": 11778,
       "total_minutes": 1340,
       "seen_run_ids": [
-        40200340119,
         40201847658,
         40202766385,
         40203767428,
@@ -206,7 +205,8 @@
         40638425994,
         40639873184,
         40641473481,
-        40644024491
+        40644024491,
+        40645583458
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6597,15 +6597,19 @@
     "xebia/github-universe-led-cap": {
       "full_name": "xebia/github-universe-led-cap",
       "html_url": "https://github.com/xebia/github-universe-led-cap",
-      "run_count": 6,
-      "total_minutes": 11,
+      "run_count": 10,
+      "total_minutes": 16,
       "seen_run_ids": [
         40640463710,
         40640344935,
         40640344992,
         40640344895,
         40643335828,
-        40643335868
+        40643335868,
+        40644627615,
+        40644553330,
+        40644553290,
+        40644553169
       ]
     }
   }
