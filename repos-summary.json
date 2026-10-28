@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-28T12:26:56Z",
+  "last_updated": "2026-10-28T12:37:51Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11801,
+      "run_count": 11802,
       "total_minutes": 1342,
       "seen_run_ids": [
-        40228825636,
         40230414264,
         40231345779,
         40232308379,
@@ -206,7 +205,8 @@
         40680548837,
         40684581593,
         40682442659,
-        40687662724
+        40687662724,
+        40689186253
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6586,12 +6586,15 @@
     "xebia/ai-assisted-se-claude-exercise": {
       "full_name": "xebia/ai-assisted-se-claude-exercise",
       "html_url": "https://github.com/xebia/ai-assisted-se-claude-exercise",
-      "run_count": 3,
-      "total_minutes": 6,
+      "run_count": 6,
+      "total_minutes": 8,
       "seen_run_ids": [
         38244738295,
         38302939470,
-        40125457597
+        40125457597,
+        40687960745,
+        40687825601,
+        40687773816
       ]
     },
     "xebia/github-universe-led-cap": {
