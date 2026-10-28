@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-28T21:47:29Z",
+  "last_updated": "2026-10-28T22:02:52Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11839,
+      "run_count": 11840,
       "total_minutes": 1343,
       "seen_run_ids": [
-        40306231336,
         40308888282,
         40310552673,
         40312002705,
@@ -206,7 +205,8 @@
         40768302630,
         40770558031,
         40772558536,
-        40774637853
+        40774637853,
+        40776688479
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6601,8 +6601,8 @@
     "xebia/github-universe-led-cap": {
       "full_name": "xebia/github-universe-led-cap",
       "html_url": "https://github.com/xebia/github-universe-led-cap",
-      "run_count": 37,
-      "total_minutes": 56,
+      "run_count": 41,
+      "total_minutes": 63,
       "seen_run_ids": [
         40640463710,
         40640344935,
@@ -6640,7 +6640,11 @@
         40766742020,
         40766742068,
         40774613264,
-        40774613666
+        40774613666,
+        40776226890,
+        40776135261,
+        40776135306,
+        40776135458
       ]
     },
     "githubpartners/microsoft-learn": {
