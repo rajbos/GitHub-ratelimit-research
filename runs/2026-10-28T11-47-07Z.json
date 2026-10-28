@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/stacklet_sinistral-action",
+    "id": 40682603448,
+    "name": "github_actions in / for astral-sh/setup-uv, actions/checkout, github/codeql-action/init, github/codeql-action/analyze - Update #1660390871",
+    "workflow_id": 346233725,
+    "status": "queued",
+    "conclusion": null,
+    "created_at": "2026-10-28T11:46:58Z",
+    "updated_at": "2026-10-28T11:46:58Z",
+    "html_url": "https://github.com/actions-marketplace-validations/stacklet_sinistral-action/actions/runs/40682603448",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/hypersdk_zyvor-argus",
+    "id": 40682228739,
+    "name": "docker in /docker - Update #1660384601",
+    "workflow_id": 337515678,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:44:02Z",
+    "updated_at": "2026-10-28T11:44:44Z",
+    "html_url": "https://github.com/actions-marketplace-validations/hypersdk_zyvor-argus/actions/runs/40682228739",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/hypersdk_zyvor-argus",
+    "id": 40682228374,
+    "name": "cargo in /desktop/src-tauri - Update #1660384625",
+    "workflow_id": 337515678,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:44:02Z",
+    "updated_at": "2026-10-28T11:44:59Z",
+    "html_url": "https://github.com/actions-marketplace-validations/hypersdk_zyvor-argus/actions/runs/40682228374",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/hypersdk_zyvor-argus",
+    "id": 40682228561,
+    "name": "npm_and_yarn in /desktop - Update #1660384616",
+    "workflow_id": 337515678,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:44:02Z",
+    "updated_at": "2026-10-28T11:44:59Z",
+    "html_url": "https://github.com/actions-marketplace-validations/hypersdk_zyvor-argus/actions/runs/40682228561",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/hypersdk_zyvor-argus",
+    "id": 40682228507,
+    "name": "npm_and_yarn in /. - Update #1660384633",
+    "workflow_id": 337515678,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:44:02Z",
+    "updated_at": "2026-10-28T11:45:02Z",
+    "html_url": "https://github.com/actions-marketplace-validations/hypersdk_zyvor-argus/actions/runs/40682228507",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/hypersdk_zyvor-argus",
+    "id": 40682228412,
+    "name": "pip in /. - Update #1660384618",
+    "workflow_id": 337515678,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-28T11:44:02Z",
+    "updated_at": "2026-10-28T11:45:45Z",
+    "html_url": "https://github.com/actions-marketplace-validations/hypersdk_zyvor-argus/actions/runs/40682228412",
+    "actor_login": "dependabot[bot]"
+  }
+]
