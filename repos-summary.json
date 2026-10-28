@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-10-28T05:47:18Z",
+  "last_updated": "2026-10-28T06:04:01Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 11775,
+      "run_count": 11776,
       "total_minutes": 1340,
       "seen_run_ids": [
-        40198065952,
         40199092757,
         40200340119,
         40201847658,
@@ -206,7 +205,8 @@
         40635579110,
         40637231893,
         40638425994,
-        40639873184
+        40639873184,
+        40641473481
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4645,14 +4645,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1489,
-      "total_minutes": 1303,
+      "run_count": 1494,
+      "total_minutes": 1311,
       "seen_run_ids": [
-        39022391082,
-        39022249642,
-        39022164125,
-        39022164137,
-        39022164071,
         39022164158,
         39023396571,
         39023396658,
@@ -4847,7 +4842,12 @@
         40386983388,
         40386026469,
         40386026416,
-        40621165765
+        40621165765,
+        40640525405,
+        40640524413,
+        40640524844,
+        40640488914,
+        40640488439
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5881,18 +5881,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10631,
-      "total_minutes": 10130,
+      "run_count": 10640,
+      "total_minutes": 10132,
       "seen_run_ids": [
-        40389667333,
-        40389667062,
-        40390979436,
-        40433529907,
-        40453117405,
-        40453112511,
-        40453112659,
-        40453112499,
-        40453112649,
         40453111825,
         40454947097,
         40454323360,
@@ -6083,7 +6074,16 @@
         40639209527,
         40639209347,
         40639209366,
-        40639209376
+        40639209376,
+        40641462286,
+        40641446789,
+        40641443919,
+        40641444022,
+        40641444249,
+        40641444015,
+        40641444165,
+        40641444074,
+        40641440957
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6592,6 +6592,18 @@
         38244738295,
         38302939470,
         40125457597
+      ]
+    },
+    "xebia/github-universe-led-cap": {
+      "full_name": "xebia/github-universe-led-cap",
+      "html_url": "https://github.com/xebia/github-universe-led-cap",
+      "run_count": 4,
+      "total_minutes": 7,
+      "seen_run_ids": [
+        40640463710,
+        40640344935,
+        40640344992,
+        40640344895
       ]
     }
   }
