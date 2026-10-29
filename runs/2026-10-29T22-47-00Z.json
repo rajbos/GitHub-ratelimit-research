@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "actions-marketplace-validations/cisoventures_vulngate",
+    "id": 40968020976,
+    "name": "github_actions in /. - Update #1664220611",
+    "workflow_id": 328280584,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-29T22:43:33Z",
+    "updated_at": "2026-10-29T22:43:38Z",
+    "html_url": "https://github.com/actions-marketplace-validations/cisoventures_vulngate/actions/runs/40968020976",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/cisoventures_vulngate",
+    "id": 40968021265,
+    "name": "pip in /. - Update #1664220625",
+    "workflow_id": 328280584,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-29T22:43:33Z",
+    "updated_at": "2026-10-29T22:44:25Z",
+    "html_url": "https://github.com/actions-marketplace-validations/cisoventures_vulngate/actions/runs/40968021265",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 40968285594,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-29T22:45:40Z",
+    "updated_at": "2026-10-29T22:45:43Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/40968285594",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 40966434661,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-29T22:30:51Z",
+    "updated_at": "2026-10-29T22:32:43Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/40966434661",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "Technical-Bootcamp/2026-09-25-sandpcodeql-7-bootcamp-g-satheesh-nj",
+    "id": 40966047101,
+    "name": "Dependency review",
+    "workflow_id": 367028255,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-29T22:27:46Z",
+    "updated_at": "2026-10-29T22:27:57Z",
+    "html_url": "https://github.com/Technical-Bootcamp/2026-09-25-sandpcodeql-7-bootcamp-g-satheesh-nj/actions/runs/40966047101",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/yalongwastaken_git-koi",
+    "id": 40967036348,
+    "name": "github_actions in /. - Update #1664209235",
+    "workflow_id": 401139897,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-29T22:35:31Z",
+    "updated_at": "2026-10-29T22:38:19Z",
+    "html_url": "https://github.com/actions-marketplace-validations/yalongwastaken_git-koi/actions/runs/40967036348",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/yalongwastaken_git-koi",
+    "id": 40967024359,
+    "name": "cargo in /. - Update #1664209036",
+    "workflow_id": 401139897,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-29T22:35:26Z",
+    "updated_at": "2026-10-29T22:36:10Z",
+    "html_url": "https://github.com/actions-marketplace-validations/yalongwastaken_git-koi/actions/runs/40967024359",
+    "actor_login": "dependabot[bot]"
+  }
+]
