@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "actions-marketplace-validations/heronlabs_action-ecr-publish",
+    "id": 41193913926,
+    "name": "github_actions in / for actions/checkout, github/codeql-action/init, github/codeql-action/analyze, heronlabs/action-tag-release-build - Update #1667726790",
+    "workflow_id": 347387684,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-31T10:43:34Z",
+    "updated_at": "2026-10-31T10:46:02Z",
+    "html_url": "https://github.com/actions-marketplace-validations/heronlabs_action-ecr-publish/actions/runs/41193913926",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/danoszz_penthera",
+    "id": 41193617689,
+    "name": "github_actions in / for github/codeql-action/upload-sarif, actions/checkout, github/codeql-action/init, github/codeql-action/analyze - Update #1667719706",
+    "workflow_id": 390901641,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-31T10:39:05Z",
+    "updated_at": "2026-10-31T10:44:02Z",
+    "html_url": "https://github.com/actions-marketplace-validations/danoszz_penthera/actions/runs/41193617689",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/netdryrun_Netdryrun",
+    "id": 41193944783,
+    "name": "github_actions in / for actions/setup-python, actions/upload-artifact, actions/checkout, github/codeql-action/init, github/codeql-action/analyze, actions/configure-pages, actions/upload-pages-artifact, actions/deploy-pages, actions/download-artifact, actions/attest-build-provenance, github/codeql-action/upload-sarif - Update #1667727315",
+    "workflow_id": 398945999,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-10-31T10:44:03Z",
+    "updated_at": "2026-10-31T10:44:08Z",
+    "html_url": "https://github.com/actions-marketplace-validations/netdryrun_Netdryrun/actions/runs/41193944783",
+    "actor_login": "dependabot[bot]"
+  }
+]
