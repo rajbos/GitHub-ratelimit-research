@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-01T20:47:15Z",
+  "last_updated": "2026-11-01T21:02:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12204,
+      "run_count": 12205,
       "total_minutes": 1387,
       "seen_run_ids": [
-        41097281452,
         41099470274,
         41101333260,
         41103227546,
@@ -206,7 +205,8 @@
         41344652817,
         41345946376,
         41347243984,
-        41348502233
+        41348502233,
+        41349791114
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 907,
+      "run_count": 908,
       "total_minutes": 831,
       "seen_run_ids": [
-        35526054471,
         35526054476,
         35526054494,
         35525733598,
@@ -622,7 +621,8 @@
         39312139275,
         39318494046,
         39319913495,
-        41347654108
+        41347654108,
+        41349268282
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -5895,15 +5895,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10656,
-      "total_minutes": 10142,
+      "run_count": 10662,
+      "total_minutes": 10151,
       "seen_run_ids": [
-        40523407062,
-        40523407066,
-        40523407044,
-        40523407019,
-        40523407031,
-        40523407100,
         40523406922,
         40562207382,
         40561167476,
@@ -6097,7 +6091,13 @@
         41268905186,
         41268905193,
         41268902686,
-        41268881103
+        41268881103,
+        41349563378,
+        41348890404,
+        41348886362,
+        41348886325,
+        41348886344,
+        41348885435
       ]
     },
     "rajbos-actions/github-show-actions": {
