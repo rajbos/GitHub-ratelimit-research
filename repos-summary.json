@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-11-02T13:19:01Z",
+  "last_updated": "2026-11-02T13:47:14Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12266,
+      "run_count": 12268,
       "total_minutes": 1388,
       "seen_run_ids": [
-        41191006031,
-        41189996431,
         41192019422,
         41193045435,
         41195073299,
@@ -206,7 +204,9 @@
         41447319664,
         41445454423,
         41449409654,
-        41451680197
+        41451680197,
+        41455747400,
+        41453638149
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5897,15 +5897,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10684,
+      "run_count": 10690,
       "total_minutes": 10163,
       "seen_run_ids": [
-        40570530784,
-        40570530651,
-        40570530904,
-        40570530888,
-        40573889507,
-        40573885137,
         40573883779,
         40573884968,
         40573885112,
@@ -6099,7 +6093,13 @@
         41449416300,
         41449416323,
         41449416350,
-        41450390998
+        41450390998,
+        41455821202,
+        41455472167,
+        41455429215,
+        41455167794,
+        41454482265,
+        41454482275
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6606,7 +6606,7 @@
     "xebia/ai-assisted-se-claude-exercise": {
       "full_name": "xebia/ai-assisted-se-claude-exercise",
       "html_url": "https://github.com/xebia/ai-assisted-se-claude-exercise",
-      "run_count": 8,
+      "run_count": 9,
       "total_minutes": 10,
       "seen_run_ids": [
         38244738295,
@@ -6616,7 +6616,8 @@
         40687825601,
         40687773816,
         40697534050,
-        41090637210
+        41090637210,
+        41454323631
       ]
     },
     "xebia/github-universe-led-cap": {
