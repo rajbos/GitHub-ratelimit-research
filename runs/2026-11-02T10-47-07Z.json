@@ -1,0 +1,122 @@
+[
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 41431231492,
+    "name": "review(renovate) #418 chore(deps): update openmetadata (chart + server + ingestion images) to v2.0.7",
+    "workflow_id": 375320471,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:44:39Z",
+    "updated_at": "2026-11-02T10:46:46Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/41431231492",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 41431216708,
+    "name": "review(renovate) #415 chore(deps): update helm release kube-prometheus-stack to v92.16.1",
+    "workflow_id": 375320471,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:44:32Z",
+    "updated_at": "2026-11-02T10:46:56Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/41431216708",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 41431126458,
+    "name": "Cluster triage approve",
+    "workflow_id": 378795730,
+    "status": "completed",
+    "conclusion": "skipped",
+    "created_at": "2026-11-02T10:43:50Z",
+    "updated_at": "2026-11-02T10:43:51Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/41431126458",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 41431117185,
+    "name": "Validate manifests",
+    "workflow_id": 353801478,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:43:46Z",
+    "updated_at": "2026-11-02T10:44:29Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/41431117185",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-daedalus",
+    "id": 41431080827,
+    "name": "Validate manifests",
+    "workflow_id": 353801478,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:43:29Z",
+    "updated_at": "2026-11-02T10:44:35Z",
+    "html_url": "https://github.com/xebia/xdnl-daedalus/actions/runs/41431080827",
+    "actor_login": "renovate[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/cybrking_thr8",
+    "id": 41430016334,
+    "name": "npm_and_yarn in / for @vercel/ncc, jest - Update #1673640428",
+    "workflow_id": 343895612,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:35:24Z",
+    "updated_at": "2026-11-02T10:36:34Z",
+    "html_url": "https://github.com/actions-marketplace-validations/cybrking_thr8/actions/runs/41430016334",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/cybrking_thr8",
+    "id": 41430015101,
+    "name": "npm_and_yarn in / for @actions/core, @actions/github - Update #1673640412",
+    "workflow_id": 343895612,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:35:23Z",
+    "updated_at": "2026-11-02T10:36:16Z",
+    "html_url": "https://github.com/actions-marketplace-validations/cybrking_thr8/actions/runs/41430015101",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/cybrking_thr8",
+    "id": 41430011876,
+    "name": "npm_and_yarn in /. - Update #1673640313",
+    "workflow_id": 343895612,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-02T10:35:22Z",
+    "updated_at": "2026-11-02T10:36:12Z",
+    "html_url": "https://github.com/actions-marketplace-validations/cybrking_thr8/actions/runs/41430011876",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41431365172,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-02T10:45:37Z",
+    "updated_at": "2026-11-02T10:45:40Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41431365172",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41429364826,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-02T10:30:36Z",
+    "updated_at": "2026-11-02T10:31:31Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41429364826",
+    "actor_login": "rajbos"
+  }
+]
