@@ -1,0 +1,98 @@
+[
+  {
+    "repo": "actions-marketplace-validations/MykytaStel_hexscope",
+    "id": 41555536204,
+    "name": "github_actions in / for actions/checkout, Swatinem/rust-cache, github/codeql-action/init, github/codeql-action/analyze - Update #1676057856",
+    "workflow_id": 388993974,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T00:49:09Z",
+    "updated_at": "2026-11-03T00:49:14Z",
+    "html_url": "https://github.com/actions-marketplace-validations/MykytaStel_hexscope/actions/runs/41555536204",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/MykytaStel_hexscope",
+    "id": 41555536289,
+    "name": "npm_and_yarn in / for lucide, postcss, vite - Update #1676057873",
+    "workflow_id": 388993974,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T00:49:09Z",
+    "updated_at": "2026-11-03T00:50:22Z",
+    "html_url": "https://github.com/actions-marketplace-validations/MykytaStel_hexscope/actions/runs/41555536289",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/yukikotani231_sqlsift",
+    "id": 41555717404,
+    "name": "github_actions in / for actions/checkout, taiki-e/install-action, github/codeql-action/init, github/codeql-action/analyze, release-plz/action - Update #1676059611",
+    "workflow_id": 386738048,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T00:50:40Z",
+    "updated_at": "2026-11-03T00:50:45Z",
+    "html_url": "https://github.com/actions-marketplace-validations/yukikotani231_sqlsift/actions/runs/41555717404",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/actions-marketplace",
+    "id": 41553649489,
+    "name": "Get available action data",
+    "workflow_id": 10263440,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T00:33:00Z",
+    "updated_at": "2026-11-03T00:48:10Z",
+    "html_url": "https://github.com/rajbos/actions-marketplace/actions/runs/41553649489",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "actions-marketplace-validations/devantler-tech_setup-agent-skills-action",
+    "id": 41555570144,
+    "name": "github_actions in / for actions/checkout, github/codeql-action/init, github/codeql-action/analyze, devantler-tech/.github/.github/workflows/create-release.yaml - Update #1676058190",
+    "workflow_id": 399236696,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T00:49:26Z",
+    "updated_at": "2026-11-03T00:49:31Z",
+    "html_url": "https://github.com/actions-marketplace-validations/devantler-tech_setup-agent-skills-action/actions/runs/41555570144",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/LucaCappelletti94_cargo-echoes",
+    "id": 41555493539,
+    "name": "github_actions in / for actions/checkout, taiki-e/install-action, github/codeql-action/init, github/codeql-action/analyze - Update #1676057437",
+    "workflow_id": 393889716,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T00:48:48Z",
+    "updated_at": "2026-11-03T00:48:53Z",
+    "html_url": "https://github.com/actions-marketplace-validations/LucaCappelletti94_cargo-echoes/actions/runs/41555493539",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41555630869,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T00:49:57Z",
+    "updated_at": "2026-11-03T00:50:00Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41555630869",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41553968735,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-03T00:35:40Z",
+    "updated_at": "2026-11-03T00:35:55Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41553968735",
+    "actor_login": "rajbos"
+  }
+]
