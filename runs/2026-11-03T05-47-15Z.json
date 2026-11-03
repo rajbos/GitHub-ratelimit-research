@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/guardana_guardana",
+    "id": 41585578898,
+    "name": "github_actions in / for github/codeql-action/init, github/codeql-action/analyze - Update #1676664357",
+    "workflow_id": 347385724,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T05:43:36Z",
+    "updated_at": "2026-11-03T05:43:41Z",
+    "html_url": "https://github.com/actions-marketplace-validations/guardana_guardana/actions/runs/41585578898",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/guardana_guardana",
+    "id": 41585576380,
+    "name": "docker in /deploy/docker - Update #1676664275",
+    "workflow_id": 347385724,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T05:43:34Z",
+    "updated_at": "2026-11-03T05:44:08Z",
+    "html_url": "https://github.com/actions-marketplace-validations/guardana_guardana/actions/runs/41585576380",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/guardana_guardana",
+    "id": 41585576153,
+    "name": "uv in /. - Update #1676664273",
+    "workflow_id": 347385724,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-03T05:43:34Z",
+    "updated_at": "2026-11-03T05:46:22Z",
+    "html_url": "https://github.com/actions-marketplace-validations/guardana_guardana/actions/runs/41585576153",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/xtract",
+    "id": 41584233566,
+    "name": "uv in /. for certifi - Update #1676635280",
+    "workflow_id": 387654934,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T05:29:49Z",
+    "updated_at": "2026-11-03T05:31:13Z",
+    "html_url": "https://github.com/xebia/xtract/actions/runs/41584233566",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41585801038,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T05:45:53Z",
+    "updated_at": "2026-11-03T05:45:56Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41585801038",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41584354065,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-03T05:30:59Z",
+    "updated_at": "2026-11-03T05:31:13Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41584354065",
+    "actor_login": "rajbos"
+  }
+]
