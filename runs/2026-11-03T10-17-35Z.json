@@ -1,0 +1,86 @@
+[
+  {
+    "repo": "xebia/xdnl-reline",
+    "id": 41617581710,
+    "name": "ci",
+    "workflow_id": 376456081,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T10:14:22Z",
+    "updated_at": "2026-11-03T10:14:35Z",
+    "html_url": "https://github.com/xebia/xdnl-reline/actions/runs/41617581710",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-reline",
+    "id": 41616779419,
+    "name": "uv in / for pydantic, pydantic-settings, typer, python-dotenv, oracledb, openlineage-python, marimo, pandas, mcp, pytest, hypothesis, ruff, mypy, pre-commit - Update #1677255277",
+    "workflow_id": 376456208,
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-03T10:08:40Z",
+    "updated_at": "2026-11-03T10:14:16Z",
+    "html_url": "https://github.com/xebia/xdnl-reline/actions/runs/41616779419",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-reline",
+    "id": 41616595952,
+    "name": "Configured Graph Update: uv in /. #1677253355",
+    "workflow_id": 377263820,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T10:07:21Z",
+    "updated_at": "2026-11-03T10:08:27Z",
+    "html_url": "https://github.com/xebia/xdnl-reline/actions/runs/41616595952",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "xebia/xdnl-reline",
+    "id": 41616588018,
+    "name": "ci",
+    "workflow_id": 376456081,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T10:07:18Z",
+    "updated_at": "2026-11-03T10:07:32Z",
+    "html_url": "https://github.com/xebia/xdnl-reline/actions/runs/41616588018",
+    "actor_login": "XE-RvdD"
+  },
+  {
+    "repo": "xebia/ProdDiscoveryFrontend",
+    "id": 41617040739,
+    "name": "npm_and_yarn in /product-discovery-studio for zod - Update #1677258155",
+    "workflow_id": 297196406,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T10:10:31Z",
+    "updated_at": "2026-11-03T10:12:00Z",
+    "html_url": "https://github.com/xebia/ProdDiscoveryFrontend/actions/runs/41617040739",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41617797616,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-03T10:15:51Z",
+    "updated_at": "2026-11-03T10:15:54Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41617797616",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41615698388,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-03T10:00:59Z",
+    "updated_at": "2026-11-03T10:02:30Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41615698388",
+    "actor_login": "rajbos"
+  }
+]
