@@ -158,6 +158,8 @@ jobs:
           restore-keys: repo-list-
 
       - name: Fetch recently active repositories
+        env:
+          RUNS_EXCLUDE_ORGS: ${{ vars.RUNS_EXCLUDE_ORGS }}
         run: |
           CACHE_DIR=/tmp/repo-list-cache
           mkdir -p "$CACHE_DIR"
@@ -232,7 +234,13 @@ jobs:
           if [ -f "${CACHE_DIR}/orgs.json" ]; then
             ORGS=$(jq -r '.[].login' "${CACHE_DIR}/orgs.json")
           fi
+          # Orgs in RUNS_EXCLUDE_ORGS (comma or space separated) would otherwise take run lookup slots
+          EXCLUDED_ORGS=" $(echo "${RUNS_EXCLUDE_ORGS:-}" | tr ',' ' ' | tr '[:upper:]' '[:lower:]' | xargs) "
           for org in $ORGS; do
+            if [[ "$EXCLUDED_ORGS" == *" ${org,,} "* ]]; then
+              echo "Skipping ${org}: listed in RUNS_EXCLUDE_ORGS"
+              continue
+            fi
             fetch_listing "org-${org}" "https://api.github.com/orgs/${org}/repos?sort=pushed&direction=desc&per_page=20" "$REPO_FIELDS"
             if [ -f "${CACHE_DIR}/org-${org}.json" ]; then
               LISTINGS+=("${CACHE_DIR}/org-${org}.json")
