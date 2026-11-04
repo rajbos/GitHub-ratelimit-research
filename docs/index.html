@@ -732,7 +732,7 @@
 
     const summary = sortedRepos.map(([repo, count]) =>
       `<span style="background:#21262d;border:1px solid #30363d;border-radius:4px;padding:2px 8px;font-size:12px;margin:2px;display:inline-block;">
-        <a href="https://github.com/${repo}/actions" target="_blank" style="color:#58a6ff;text-decoration:none;">${repo}</a>
+        ${repo.includes('/') ? `<a href="https://github.com/${repo}/actions" target="_blank" style="color:#58a6ff;text-decoration:none;">${repo}</a>` : repo}
         <span style="color:#8b949e;"> ×${count}</span>
       </span>`
     ).join('');
@@ -741,8 +741,8 @@
       <li>
         <div class="icon ${conclusionClass(run.conclusion, run.status)}">${conclusionIcon(run.conclusion, run.status)}</div>
         <div class="info">
-          <div class="repo"><a href="https://github.com/${run.repo}/actions" target="_blank">${run.repo}</a></div>
-          <div class="name"><a href="${run.html_url}" target="_blank">${run.name}</a></div>
+          <div class="repo">${run.repo.includes('/') ? `<a href="https://github.com/${run.repo}/actions" target="_blank">${run.repo}</a>` : run.repo}</div>
+          <div class="name">${run.html_url ? `<a href="${run.html_url}" target="_blank">${run.name}</a>` : run.name}</div>
           <div class="meta">${run.status}${run.conclusion ? ` · ${run.conclusion}` : ''} · ${new Date(run.created_at).toLocaleString()}</div>
         </div>
       </li>

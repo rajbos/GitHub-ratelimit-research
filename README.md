@@ -24,6 +24,14 @@ Create a [fine-grained PAT](https://github.com/settings/tokens) (or classic PAT)
 
 In your repository settings → *Secrets and variables* → *Actions*, create a secret named **`PAT`** containing your token.
 
+Also create a secret named **`SNAPSHOT_LABEL_KEY`** containing a random value, for example the output of `openssl rand -hex 32`. Snapshots on the `data` branch are public, so private and internal repos appear as `private-<12 hex characters>`, with no workflow names, run links or human actors. Without this secret, runs of those repos are left out of the snapshots.
+
+To find out which repo a label stands for:
+
+```bash
+printf '%s' 'owner/repo' | openssl dgst -sha256 -hmac "$SNAPSHOT_LABEL_KEY" -r | cut -c1-12
+```
+
 ### 3. Enable GitHub Pages
 
 In your repository settings → *Pages*, set the source to **Deploy from a branch**, branch **`main`**, folder **`/docs`**.
