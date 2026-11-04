@@ -249,9 +249,10 @@ jobs:
           if [ -z "${SNAPSHOT_LABEL_KEY}" ]; then
             echo "::warning::SNAPSHOT_LABEL_KEY is not set: runs of non-public repos are left out of this snapshot"
           else
-            for repo in $(jq -r --slurpfile public /tmp/public-repos.json '([.[].repo] | unique) - $public[0] | .[]' /tmp/runs.json); do
-              LABEL="private-$(printf '%s' "$repo" | openssl dgst -sha256 -hmac "$SNAPSHOT_LABEL_KEY" -r | cut -c1-12)"
-              jq --arg repo "$repo" --arg label "$LABEL" '. + {($repo): $label}' /tmp/repo-labels.json > /tmp/repo-labels_tmp.json
+            # Workflow IDs get a label too: old snapshots pair the real IDs with repo names
+            for key in $(jq -r --slurpfile public /tmp/public-repos.json '[.[] | select(([.repo] - $public[0]) != []) | .repo, "\(.repo)#\(.workflow_id)"] | unique | .[]' /tmp/runs.json); do
+              LABEL=$(printf '%s' "$key" | openssl dgst -sha256 -hmac "$SNAPSHOT_LABEL_KEY" -r | cut -c1-12)
+              jq --arg key "$key" --arg label "$LABEL" '. + {($key): $label}' /tmp/repo-labels.json > /tmp/repo-labels_tmp.json
               mv /tmp/repo-labels_tmp.json /tmp/repo-labels.json
             done
           fi
@@ -264,10 +265,10 @@ jobs:
             [.[] |
               if $is_public[.repo] then .
               elif $labels[0][.repo] then {
-                repo: $labels[0][.repo],
+                repo: "private-\($labels[0][.repo])",
                 id,
-                name: (if ((.name // "") | ascii_downcase) == "codeql" then "CodeQL" else "workflow-\(.workflow_id)" end),
-                workflow_id,
+                name: (if ((.name // "") | ascii_downcase) == "codeql" then "CodeQL" else "workflow-\($labels[0]["\(.repo)#\(.workflow_id)"])" end),
+                workflow_id: $labels[0]["\(.repo)#\(.workflow_id)"],
                 status,
                 conclusion,
                 created_at,
@@ -277,7 +278,7 @@ jobs:
               }
               else empty end
             ]' /tmp/runs.json > /tmp/runs-public.json
-          echo "Snapshot has $(jq length /tmp/runs-public.json) of $(jq length /tmp/runs.json) runs, $(jq length /tmp/repo-labels.json) non-public repos pseudonymised"
+          echo "Snapshot has $(jq length /tmp/runs-public.json) of $(jq length /tmp/runs.json) runs, $(jq '[.[] | select(.repo | contains("/") | not)] | length' /tmp/runs-public.json) of them pseudonymised"
 
       - name: Switch to data branch
         run: |
