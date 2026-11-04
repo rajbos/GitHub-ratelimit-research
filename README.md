@@ -10,7 +10,8 @@ A tool that samples your GitHub API rate limit every 15 minutes, stores the data
   - A time-series chart of API calls remaining over time.
   - A bar chart of API calls consumed per 15-minute window (highlighted in red/yellow when high).
   - Time range selector (24 h, 3 d, 7 d, 30 d, all time).
-  - Click any data point to see which workflow runs were active during that window.
+  - Time window selection on both charts: drag across the bars, click a bar for its whole hour, double-click for just that bar, use the presets, or enter exact times. The window defaults to the latest hour and the charts can zoom to it.
+  - Analysis of the selected window: workflows ranked by how their activity lines up with API usage, a filterable list of runs, and bars that light up for the workflow or filter you pick.
 
 ## Setup
 
@@ -54,5 +55,15 @@ Every 15 minutes:
 ```
 
 The website fetches the CSV from the `data` branch raw URL and renders it with [Chart.js](https://www.chartjs.org/).
-When you click a data point the site loads the pre-collected workflow-runs snapshot for that checkpoint,
-or (if you provide your PAT in the dashboard) queries the GitHub API live.
+When you select a time window the site loads the pre-collected workflow-runs snapshots for that window and removes duplicate runs.
+If the snapshots leave gaps and you saved your PAT in the dashboard, you can fill those gaps from the GitHub API.
+
+### Reading the workflow estimates
+
+The rate limit API only reports totals, so the dashboard estimates. It splits the calls in each bar across the runs active in it, weighted by run time, and compares a workflow's average calls per bar when active and when idle.
+Treat the result as a list of suspects to check, not as a measurement:
+
+- Runs that use `GITHUB_TOKEN` do not count against this quota, while calls made outside Actions with the same account do.
+- Only the 20 most recently pushed repos are sampled, with at most 10 runs per repo per snapshot.
+- Each snapshot looks back 20 minutes, so runs that started and finished in a longer gap between samples are missing. The dashboard warns you when this affects the selected window.
+- When a quota reset falls inside a bar, calls made just before the reset are not known, so that bar shows a lower bound.

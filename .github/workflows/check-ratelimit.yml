@@ -83,7 +83,7 @@ jobs:
           echo "Rate limit fetched:"
           cat /tmp/ratelimit.json
 
-      - name: Create issue on low rate limit
+      - name: Create or update issue on low rate limit
         run: |
           CORE_REMAINING=$(jq -r '.resources.core.remaining' /tmp/ratelimit.json)
           echo "Core remaining: ${CORE_REMAINING}"
@@ -92,17 +92,54 @@ jobs:
             exit 0
           fi
           if [ "${CORE_REMAINING}" -lt 1000 ]; then
-            echo "Rate limit is low (${CORE_REMAINING} remaining). Creating an issue."
-            ISSUE_BODY=$(jq -n \
-              --arg title "⚠️ GitHub rate limit is low: ${CORE_REMAINING} remaining" \
-              --arg body "@${{ vars.NOTIFY_USER }} The GitHub API rate limit is running low.\n\n**Core remaining:** ${CORE_REMAINING}\n\nPlease investigate to avoid disruptions." \
-              '{title: $title, body: $body}')
-            curl -s -X POST \
-              -H "Authorization: Bearer ${{ secrets.PAT }}" \
+            ISSUE_TITLE="⚠️ GitHub rate limit is low"
+            ISSUE_TEXT=$(jq -rn \
+              --arg user "${{ vars.NOTIFY_USER }}" \
+              --arg remaining "${CORE_REMAINING}" \
+              '"@\($user) The GitHub API rate limit is running low.\n\n**Core remaining:** \($remaining)\n\nPlease investigate to avoid disruptions."')
+
+            # Use github.token for all issue calls: the PAT is the quota that is running out
+            SEARCH_RESPONSE=$(curl -s -G \
+              -H "Authorization: Bearer ${{ github.token }}" \
               -H "Accept: application/vnd.github+json" \
               -H "X-GitHub-Api-Version: 2022-11-28" \
-              https://api.github.com/repos/${{ github.repository }}/issues \
-              -d "${ISSUE_BODY}"
+              --data-urlencode "q=repo:${{ github.repository }} is:issue is:open in:title \"GitHub rate limit is low\"" \
+              --data-urlencode "sort=created" \
+              --data-urlencode "order=desc" \
+              --data-urlencode "per_page=100" \
+              https://api.github.com/search/issues || true)
+            if ! echo "$SEARCH_RESPONSE" | jq -e '.items | type == "array"' > /dev/null 2>&1; then
+              echo "Raw issue search response: $SEARCH_RESPONSE"
+              echo "::warning::Could not search for an existing issue. Skipping notification to avoid a duplicate."
+              exit 0
+            fi
+
+            # Match the exact title: older issues have the remaining count in their title
+            EXISTING=$(echo "$SEARCH_RESPONSE" | jq -c --arg title "$ISSUE_TITLE" '[.items[] | select(.title == $title)][0] // empty')
+            if [ -z "$EXISTING" ]; then
+              echo "Rate limit is low (${CORE_REMAINING} remaining). Creating an issue."
+              curl -s -X POST \
+                -H "Authorization: Bearer ${{ github.token }}" \
+                -H "Accept: application/vnd.github+json" \
+                -H "X-GitHub-Api-Version: 2022-11-28" \
+                https://api.github.com/repos/${{ github.repository }}/issues \
+                -d "$(jq -n --arg title "$ISSUE_TITLE" --arg body "$ISSUE_TEXT" '{title: $title, body: $body}')"
+            else
+              ISSUE_NUMBER=$(echo "$EXISTING" | jq -r '.number')
+              ISSUE_AGE=$(( $(date -u +%s) - $(echo "$EXISTING" | jq -r '.updated_at | fromdateiso8601') ))
+              # The core quota resets hourly, so one comment per hour is enough
+              if [ "$ISSUE_AGE" -lt 3600 ]; then
+                echo "Rate limit is low (${CORE_REMAINING} remaining). Issue #${ISSUE_NUMBER} was updated ${ISSUE_AGE}s ago, not notifying again."
+              else
+                echo "Rate limit is low (${CORE_REMAINING} remaining). Commenting on issue #${ISSUE_NUMBER}."
+                curl -s -X POST \
+                  -H "Authorization: Bearer ${{ github.token }}" \
+                  -H "Accept: application/vnd.github+json" \
+                  -H "X-GitHub-Api-Version: 2022-11-28" \
+                  https://api.github.com/repos/${{ github.repository }}/issues/${ISSUE_NUMBER}/comments \
+                  -d "$(jq -n --arg body "$ISSUE_TEXT" '{body: $body}')"
+              fi
+            fi
           else
             echo "Rate limit is sufficient (${CORE_REMAINING} remaining). No action needed."
           fi
