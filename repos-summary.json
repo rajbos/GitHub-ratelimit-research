@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-11-04T22:46:24Z",
+  "last_updated": "2026-11-04T23:01:37Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12493,
+      "run_count": 12495,
       "total_minutes": 1404,
       "seen_run_ids": [
-        41522140147,
-        41519892194,
         41524439369,
         41526757607,
         41531252384,
@@ -206,7 +204,9 @@
         41920438289,
         41919077743,
         41923723362,
-        41925932966
+        41925932966,
+        41930243603,
+        41928086797
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -853,7 +853,7 @@
     "rajbos/GHAzDo-widget": {
       "full_name": "rajbos/GHAzDo-widget",
       "html_url": "https://github.com/rajbos/GHAzDo-widget",
-      "run_count": 164,
+      "run_count": 167,
       "total_minutes": 94,
       "seen_run_ids": [
         22520138797,
@@ -1019,7 +1019,10 @@
         33275461165,
         33275430274,
         33275402828,
-        33275380753
+        33275380753,
+        41928714812,
+        41928690401,
+        41928669484
       ]
     },
     "actions-marketplace-validations/lpm0073_aws-ecr-create": {
@@ -3873,11 +3876,9 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 276,
+      "run_count": 278,
       "total_minutes": 38,
       "seen_run_ids": [
-        24283568540,
-        24645666553,
         24645666555,
         24645666556,
         24645666567,
@@ -4075,7 +4076,9 @@
         41797294134,
         41797131431,
         41797131353,
-        41797131323
+        41797131323,
+        41926069229,
+        41926069701
       ]
     },
     "UnclesTavern/CopilotAdventures": {
@@ -5110,16 +5113,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 948,
-      "total_minutes": 1365,
+      "run_count": 955,
+      "total_minutes": 1372,
       "seen_run_ids": [
-        35371646830,
-        35370828604,
-        35370822875,
-        35427993203,
-        35427993104,
-        35427990188,
-        35427987411,
         35427985142,
         35428863028,
         35428858300,
@@ -5312,7 +5308,14 @@
         40566926858,
         40566916465,
         40566673722,
-        40566647679
+        40566647679,
+        41928997474,
+        41928623063,
+        41928537074,
+        41928457834,
+        41928405459,
+        41928212436,
+        41927998088
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5929,27 +5932,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 10845,
-      "total_minutes": 10283,
+      "run_count": 10863,
+      "total_minutes": 10302,
       "seen_run_ids": [
-        40891194014,
-        40892664875,
-        41268905201,
-        41268905252,
-        41268905222,
-        41268905204,
-        41268905227,
-        41268905186,
-        41268905193,
-        41268902686,
-        41268881103,
-        41349563378,
-        41348890404,
-        41348886362,
-        41348886325,
-        41348886344,
-        41348885435,
-        41350928013,
         41350523143,
         41350518552,
         41350518544,
@@ -6131,7 +6116,25 @@
         41924512348,
         41924512212,
         41924512238,
-        41924505725
+        41924505725,
+        41929992285,
+        41929208740,
+        41929201177,
+        41929197649,
+        41929197648,
+        41929197578,
+        41929197655,
+        41929197567,
+        41929197627,
+        41929197552,
+        41929197594,
+        41929196634,
+        41929187476,
+        41928058358,
+        41928055629,
+        41928055797,
+        41928054592,
+        41926491318
       ]
     },
     "rajbos-actions/github-show-actions": {
