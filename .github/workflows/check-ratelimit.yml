@@ -133,8 +133,9 @@ jobs:
             else
               ISSUE_NUMBER=$(echo "$EXISTING" | jq -r '.number')
               ISSUE_AGE=$(( $(date -u +%s) - $(echo "$EXISTING" | jq -r '.updated_at | fromdateiso8601') ))
-              # The core quota resets hourly, so one comment per hour is enough
-              if [ "$ISSUE_AGE" -lt 3600 ]; then
+              # The core quota resets hourly, so one comment per hour is enough. Allow 50 minutes
+              # rather than 60: scheduled runs drift by seconds, so a low run an hour later can land just under 60
+              if [ "$ISSUE_AGE" -lt 3000 ]; then
                 echo "Rate limit is low (${CORE_REMAINING} remaining). Issue #${ISSUE_NUMBER} was updated ${ISSUE_AGE}s ago, not notifying again."
               else
                 echo "Rate limit is low (${CORE_REMAINING} remaining). Commenting on issue #${ISSUE_NUMBER}."
