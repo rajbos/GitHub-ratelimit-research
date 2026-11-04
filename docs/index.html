@@ -543,8 +543,8 @@
   const snapshotCache = new Map();  // CSV timestamp → Promise of a runs array, or null when missing
   const liveRuns = new Map();       // run id → run fetched live with the PAT
 
-  const SNAPSHOT_LOOKBACK_MS = 20 * 60 * 1000;  // the workflow collects runs created in the last 20 minutes
-  const SNAPSHOT_REPO_RUN_CAP = 10;             // the workflow stores at most 10 runs per repo per snapshot
+  const SNAPSHOT_LOOKBACK_MS = 20 * 60 * 1000;  // older snapshots collect runs created in the last 20 minutes
+  const LEGACY_SNAPSHOT_REPO_RUN_CAP = 10;      // older snapshots store at most 10 runs per repo
   const MAX_SNAPSHOTS_WITHOUT_ASKING = 400;
   const MAX_RUNS_LISTED = 200;
   const SUSPECT_MIN_LIFT = 1.5;  // calls when active vs idle, before a workflow counts as standing out
@@ -942,20 +942,31 @@
   }
 
   // ── Workflow runs for the selected window ─────────────────────────────────────
+  // Older snapshots are a bare array of runs; newer ones wrap the runs with collection details.
+  function normalizeSnapshot(data) {
+    if (Array.isArray(data)) return { runs: data, since: null, truncated: null, failed: false };
+    if (!data || !Array.isArray(data.runs)) return null;
+    return {
+      runs: data.runs,
+      since: data.since ? new Date(data.since).getTime() : null,
+      truncated: data.truncated || [],
+      failed: (data.errors || []).length > 0,
+    };
+  }
+
   async function fetchSnapshotFile(fileTs) {
     const resp = await fetch(`${RAW_BASE}/runs/${fileTs}.json`);
     if (!resp.ok) return resp.status === 404 ? undefined : null;
-    const runs = await resp.json();
-    return Array.isArray(runs) ? runs : null;
+    return normalizeSnapshot(await resp.json());
   }
 
   function fetchSnapshot(row) {
     if (!snapshotCache.has(row.timestamp)) {
       const load = (async () => {
         try {
-          const runs = await fetchSnapshotFile(row.timestamp.replace(/:/g, '-'));
-          if (runs !== undefined) return runs;
-          // The workflow names the file with a second call to `date`, which can tick over.
+          const snapshot = await fetchSnapshotFile(row.timestamp.replace(/:/g, '-'));
+          if (snapshot !== undefined) return snapshot;
+          // Older rows named the file with a second call to `date`, which can tick over.
           const nextSecond = new Date(row.date.getTime() + 1000).toISOString().replace('.000', '');
           const retried = await fetchSnapshotFile(nextSecond.replace(/:/g, '-'));
           return retried === undefined ? null : retried;
@@ -1004,12 +1015,12 @@
     };
   }
 
-  function coveredMs(snapshotTimes, spanStart, spanEnd) {
+  function coveredMs(snapshotSpans, spanStart, spanEnd) {
     let covered = 0;
     let cursor = spanStart;
-    snapshotTimes.forEach(t => {
-      const from = Math.max(t - SNAPSHOT_LOOKBACK_MS, cursor);
-      const to = Math.min(t, spanEnd);
+    snapshotSpans.forEach(span => {
+      const from = Math.max(span.since, cursor);
+      const to = Math.min(span.t, spanEnd);
       if (to > from) {
         covered += to - from;
         cursor = to;
@@ -1025,20 +1036,26 @@
     let cappedRepoSnapshots = 0;
     let missingSnapshots = 0;
     let emptyAtLowQuota = 0;
+    let failedSnapshots = 0;
 
-    snapshots.forEach((runs, i) => {
+    snapshots.forEach((snapshot, i) => {
       const row = snapshotRows[i];
-      if (runs === null) {
+      if (snapshot === null) {
         missingSnapshots++;
         return;
       }
-      if (runs.length === 0 && row.core_remaining < 50) emptyAtLowQuota++;
+      const { runs } = snapshot;
+      if (snapshot.failed) failedSnapshots++;
+      // Older snapshots do not record failures or truncation, so those have to be inferred.
+      if (snapshot.truncated === null && runs.length === 0 && row.core_remaining < 50) emptyAtLowQuota++;
       const perRepo = {};
       runs.forEach(run => {
         perRepo[run.repo] = (perRepo[run.repo] || 0) + 1;
         runsById.set(run.id, normalizeRun(run, row.date.getTime()));
       });
-      cappedRepoSnapshots += Object.values(perRepo).filter(n => n >= SNAPSHOT_REPO_RUN_CAP).length;
+      cappedRepoSnapshots += snapshot.truncated === null
+        ? Object.values(perRepo).filter(n => n >= LEGACY_SNAPSHOT_REPO_RUN_CAP).length
+        : snapshot.truncated.length;
     });
     liveRuns.forEach((run, id) => runsById.set(id, normalizeRun(run, Date.now())));
 
@@ -1104,8 +1121,12 @@
 
     runs.sort((a, b) => b.start - a.start);
 
-    const snapshotTimes = snapshotRows.filter((_, i) => snapshots[i] !== null).map(r => r.date.getTime());
-    const coverage = spanEnd > spanStart ? coveredMs(snapshotTimes, spanStart, spanEnd) / (spanEnd - spanStart) : 1;
+    // A snapshot with failed lookups did not cover its window; the next good one reaches back over it.
+    const snapshotSpans = snapshotRows
+      .map((r, i) => ({ t: r.date.getTime(), snapshot: snapshots[i] }))
+      .filter(({ snapshot }) => snapshot !== null && !snapshot.failed)
+      .map(({ t, snapshot }) => ({ t, since: snapshot.since ?? t - SNAPSHOT_LOOKBACK_MS }));
+    const coverage = spanEnd > spanStart ? coveredMs(snapshotSpans, spanStart, spanEnd) / (spanEnd - spanStart) : 1;
 
     return {
       bars: windowBars,
@@ -1119,6 +1140,7 @@
       cappedRepoSnapshots,
       missingSnapshots,
       emptyAtLowQuota,
+      failedSnapshots,
       snapshotCount: snapshotRows.length,
     };
   }
@@ -1273,7 +1295,7 @@
     const hasPAT = Boolean(localStorage.getItem('gh_pat'));
 
     if (coverage < 100) {
-      notes.push(`<li class="warn">Run snapshots cover ${coverage}% of this window. Each one only looks back 20 minutes, so runs that started and finished in a longer gap between samples are missing.</li>`);
+      notes.push(`<li class="warn">Run snapshots cover ${coverage}% of this window. Older snapshots only look back 20 minutes, and a snapshot with failed lookups covers nothing until a later one reaches back over it, so some runs in those gaps are missing.</li>`);
     }
     if (analysis.missingSnapshots > 0) {
       notes.push(`<li class="warn">${analysis.missingSnapshots.toLocaleString()} of ${analysis.snapshotCount.toLocaleString()} snapshots could not be loaded.</li>`);
@@ -1281,12 +1303,15 @@
     if (analysis.emptyAtLowQuota > 0) {
       notes.push(`<li class="warn">${analysis.emptyAtLowQuota.toLocaleString()} ${analysis.emptyAtLowQuota === 1 ? 'snapshot is' : 'snapshots are'} empty while the quota was nearly used up. The monitor probably could not list runs at that moment, and runs from then are missing.</li>`);
     }
+    if (analysis.failedSnapshots > 0) {
+      notes.push(`<li class="warn">${analysis.failedSnapshots.toLocaleString()} ${analysis.failedSnapshots === 1 ? 'snapshot' : 'snapshots'} recorded failed run lookups, usually because the quota was used up. Runs from then may be missing unless a later snapshot picked them up.</li>`);
+    }
     if (analysis.cappedRepoSnapshots > 0) {
-      notes.push(`<li class="warn">A repo hit the limit of ${SNAPSHOT_REPO_RUN_CAP} stored runs per snapshot ${analysis.cappedRepoSnapshots.toLocaleString()} ${analysis.cappedRepoSnapshots === 1 ? 'time' : 'times'}, so busy repos may have more runs than shown.</li>`);
+      notes.push(`<li class="warn">A repo had more runs than a snapshot stores ${analysis.cappedRepoSnapshots.toLocaleString()} ${analysis.cappedRepoSnapshots === 1 ? 'time' : 'times'}, so busy repos may have more runs than shown.</li>`);
     }
     notes.push('<li>Estimated calls split each bar across the runs active in it, weighted by run time. This shows which runs line up with usage, not what they actually spent. Runs using <code>GITHUB_TOKEN</code> do not count against this quota, and calls made outside Actions with the same account do. Only the 20 most recently pushed repos are sampled.</li>');
 
-    const incomplete = coverage < 100 || analysis.missingSnapshots > 0 || analysis.emptyAtLowQuota > 0 || analysis.cappedRepoSnapshots > 0;
+    const incomplete = coverage < 100 || analysis.missingSnapshots > 0 || analysis.emptyAtLowQuota > 0 || analysis.failedSnapshots > 0 || analysis.cappedRepoSnapshots > 0;
     let liveAction = '';
     if (incomplete && hasPAT) {
       liveAction = '<button type="button" class="secondary" data-action="fetch-live">Fill gaps from the GitHub API (spends at least 20 of your calls)</button>';

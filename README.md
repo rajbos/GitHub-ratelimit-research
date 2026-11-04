@@ -64,6 +64,6 @@ The rate limit API only reports totals, so the dashboard estimates. It splits th
 Treat the result as a list of suspects to check, not as a measurement:
 
 - Runs that use `GITHUB_TOKEN` do not count against this quota, while calls made outside Actions with the same account do.
-- Only the 20 most recently pushed repos are sampled, with at most 10 runs per repo per snapshot.
-- Each snapshot looks back 20 minutes, so runs that started and finished in a longer gap between samples are missing. The dashboard warns you when this affects the selected window.
+- Only the 20 most recently pushed repos are sampled, with at most 100 runs per repo per snapshot (10 in older snapshots).
+- Each snapshot looks back to the previous sample, by up to 6 hours, and records any failed lookups so the next one can cover that window. Older snapshots only look back 20 minutes, so runs that started and finished in a longer gap are missing. The dashboard warns you when this affects the selected window.
 - When a quota reset falls inside a bar, calls made just before the reset are not known, so that bar shows a lower bound.
