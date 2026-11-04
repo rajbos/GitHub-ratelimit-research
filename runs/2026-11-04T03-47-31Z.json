@@ -1,0 +1,74 @@
+[
+  {
+    "repo": "actions-marketplace-validations/danoszz_penthera",
+    "id": 41768841965,
+    "name": "github_actions in / for github/codeql-action/upload-sarif, actions/checkout, github/codeql-action/init, github/codeql-action/analyze - Update #1679525046",
+    "workflow_id": 390901641,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-04T03:43:14Z",
+    "updated_at": "2026-11-04T03:43:19Z",
+    "html_url": "https://github.com/actions-marketplace-validations/danoszz_penthera/actions/runs/41768841965",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/danoszz_penthera",
+    "id": 41768841968,
+    "name": "npm_and_yarn in / for rolldown - Update #1679525175",
+    "workflow_id": 390901641,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-04T03:43:14Z",
+    "updated_at": "2026-11-04T03:43:58Z",
+    "html_url": "https://github.com/actions-marketplace-validations/danoszz_penthera/actions/runs/41768841968",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/danoszz_penthera",
+    "id": 41768842098,
+    "name": "docker in / for node - Update #1679525119",
+    "workflow_id": 390901641,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-04T03:43:14Z",
+    "updated_at": "2026-11-04T03:43:56Z",
+    "html_url": "https://github.com/actions-marketplace-validations/danoszz_penthera/actions/runs/41768842098",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "actions-marketplace-validations/arminazimi_evergreen",
+    "id": 41768633463,
+    "name": "github_actions in / for actions/checkout, github/codeql-action/init, github/codeql-action/analyze - Update #1679520280",
+    "workflow_id": 402258146,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-04T03:41:05Z",
+    "updated_at": "2026-11-04T03:47:19Z",
+    "html_url": "https://github.com/actions-marketplace-validations/arminazimi_evergreen/actions/runs/41768633463",
+    "actor_login": "dependabot[bot]"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41769104117,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "in_progress",
+    "conclusion": null,
+    "created_at": "2026-11-04T03:45:52Z",
+    "updated_at": "2026-11-04T03:45:55Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41769104117",
+    "actor_login": "rajbos"
+  },
+  {
+    "repo": "rajbos/GitHub-ratelimit-research",
+    "id": 41767595823,
+    "name": "Check GitHub Rate Limit",
+    "workflow_id": 239218135,
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-11-04T03:30:58Z",
+    "updated_at": "2026-11-04T03:32:31Z",
+    "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/41767595823",
+    "actor_login": "rajbos"
+  }
+]
