@@ -267,6 +267,111 @@
     .repos-table a { color: #58a6ff; text-decoration: none; }
     .repos-table a:hover { text-decoration: underline; }
     .repos-table .num { text-align: right; color: #f0f6fc; font-weight: 600; }
+
+    #coreChart, #deltaChart { cursor: crosshair; touch-action: pan-y; }
+
+    .window-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 8px 12px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
+    }
+
+    .button-group { display: inline-flex; }
+    .button-group button { border-radius: 0; margin-left: -1px; }
+    .button-group button:first-child { border-radius: 6px 0 0 6px; margin-left: 0; }
+    .button-group button:last-child { border-radius: 0 6px 6px 0; }
+    .button-group button.active { background: #1f6feb; border-color: #58a6ff; color: #fff; }
+
+    .window-toolbar button { padding: 4px 10px; font-size: 13px; }
+    .window-toolbar button:disabled { opacity: 0.45; cursor: not-allowed; }
+    .window-toolbar label { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: #8b949e; }
+
+    input[type="datetime-local"] {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #c9d1d9;
+      border-radius: 6px;
+      padding: 3px 8px;
+      font-size: 13px;
+      color-scheme: dark;
+    }
+
+    .window-hint { font-size: 12px; color: #8b949e; margin-bottom: 12px; }
+
+    .detail-panel .stats-grid { margin-bottom: 16px; }
+    .detail-panel .stat-card { background: #0d1117; padding: 12px; }
+    .detail-panel .stat-card .value { font-size: 20px; }
+
+    .suspect-summary {
+      border-left: 3px solid #d29922;
+      background: #1c2128;
+      border-radius: 0 6px 6px 0;
+      padding: 10px 14px;
+      font-size: 13px;
+      margin-bottom: 12px;
+    }
+    .suspect-summary strong { color: #f0f6fc; }
+
+    .analysis-notes {
+      font-size: 12px;
+      color: #8b949e;
+      margin-bottom: 16px;
+      line-height: 1.5;
+    }
+    .analysis-notes ul { padding-left: 16px; }
+    .analysis-notes .warn { color: #d29922; }
+    .analysis-notes button { padding: 3px 10px; font-size: 12px; margin-top: 6px; }
+
+    .run-filters {
+      display: flex;
+      align-items: center;
+      gap: 8px 12px;
+      flex-wrap: wrap;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+    .run-filters input[type="text"] { width: 260px; max-width: 100%; font-family: inherit; cursor: text; }
+    .run-filters label { display: inline-flex; align-items: center; gap: 6px; }
+
+    .section-title { font-size: 13px; font-weight: 600; color: #f0f6fc; margin: 16px 0 8px; }
+
+    .table-scroll { overflow-x: auto; }
+    .workflow-table th button {
+      background: none;
+      border: none;
+      padding: 0;
+      font: inherit;
+      color: inherit;
+    }
+    .workflow-table th button:hover { color: #f0f6fc; background: none; }
+    .workflow-table th.num { text-align: right; white-space: nowrap; }
+    .workflow-table td.num { white-space: nowrap; }
+    .workflow-table tbody tr { cursor: pointer; }
+    .workflow-table tbody tr:focus { outline: 2px solid #58a6ff; outline-offset: -2px; }
+    .workflow-table tr.focused td { background: rgba(31,111,235,0.2); }
+    .workflow-table .wf-name { color: #f0f6fc; }
+    .workflow-table .wf-repo { font-size: 12px; color: #8b949e; }
+
+    .tag {
+      background: #21262d;
+      border: 1px solid #30363d;
+      border-radius: 4px;
+      padding: 0 6px;
+      font-size: 11px;
+      color: #8b949e;
+      margin-left: 4px;
+      white-space: nowrap;
+    }
+    button.tag { cursor: pointer; font-size: 12px; padding: 2px 8px; margin: 2px; font-weight: 400; }
+    button.tag:hover { background: #30363d; }
+    button.tag span { color: #58a6ff; }
+
+    @media (max-width: 600px) {
+      main { padding: 16px; }
+      .chart-container, .detail-panel { padding: 12px; }
+    }
   </style>
 </head>
 <body>
@@ -303,9 +408,8 @@
 <main>
   <div class="tip">
     <strong>How to use:</strong> This dashboard shows your GitHub API rate limit usage sampled every 15 minutes.
-    Click any data point to see which workflow runs were active during that window.
-    Enter your GitHub PAT above to enable fetching live workflow run details when clicking a data point.
-    Data is stored in the <code>data</code> branch of this repository.
+    Select a time window on either chart to rank the workflows that were active in it and find what could be behind high usage.
+    Data is stored in the <code>data</code> branch of this repository. Saving a GitHub PAT above lets you fill gaps in that data from the GitHub API.
   </div>
 
   <div id="statusBar" class="status-bar">
@@ -355,14 +459,51 @@
 
   <div class="chart-container">
     <h2>Core API — Calls Used Per 15-Minute Window</h2>
+    <div class="window-toolbar">
+      <div class="button-group" role="group" aria-label="Time window length">
+        <button type="button" class="secondary" data-preset="15">15 min</button>
+        <button type="button" class="secondary" data-preset="60">1 hour</button>
+        <button type="button" class="secondary" data-preset="360">6 hours</button>
+        <button type="button" class="secondary" data-preset="1440">24 hours</button>
+        <button type="button" class="secondary" data-preset="0">Full range</button>
+      </div>
+      <div class="button-group" role="group" aria-label="Move time window">
+        <button type="button" class="secondary" id="windowPrev" aria-label="Previous window">◀</button>
+        <button type="button" class="secondary" id="windowNext" aria-label="Next window">▶</button>
+      </div>
+      <label>From <input type="datetime-local" id="windowFrom" /></label>
+      <label>To <input type="datetime-local" id="windowTo" /></label>
+      <div class="button-group" role="group" aria-label="Chart zoom">
+        <button type="button" class="secondary" id="zoomIn">Zoom to window</button>
+        <button type="button" class="secondary" id="zoomReset" disabled>Reset zoom</button>
+      </div>
+    </div>
+    <p class="window-hint">Drag across the bars to select a time window. Click a bar to select its whole hour, or double-click to select only that bar.</p>
     <div class="chart-wrapper">
       <canvas id="deltaChart"></canvas>
     </div>
   </div>
 
   <div id="detailPanel" class="detail-panel">
-    <h2 id="detailTitle">Workflow Runs</h2>
+    <h2 id="detailTitle">Selected time window</h2>
     <div id="detailSubtitle" class="subtitle"></div>
+    <div id="windowStats"></div>
+    <div id="suspectSummary"></div>
+    <div id="analysisNotes" class="analysis-notes"></div>
+    <div class="run-filters">
+      <input type="text" id="runFilterText" placeholder="Filter by repo, workflow or actor" aria-label="Filter by repo, workflow or actor" />
+      <select id="runFilterResult" aria-label="Filter by run result">
+        <option value="">Any result</option>
+        <option value="success">Success</option>
+        <option value="failure">Failure</option>
+        <option value="cancelled">Cancelled</option>
+        <option value="skipped">Skipped</option>
+        <option value="unfinished">Not finished when last seen</option>
+      </select>
+      <label><input type="checkbox" id="runFilterHideMonitor" checked /> Hide this monitor</label>
+      <label><input type="checkbox" id="runFilterHideAutomated" /> Hide Dependabot and CodeQL</label>
+      <button type="button" class="secondary" id="runFilterClear">Clear filters</button>
+    </div>
     <div id="detailContent"></div>
   </div>
 
@@ -383,8 +524,31 @@
 
   // ── State ────────────────────────────────────────────────────────────────────
   let allRows   = [];   // parsed CSV rows
+  let allBars   = [];   // calls used between each pair of consecutive rows
+  let rangeRows = [];   // rows inside the selected range
+  let bars      = [];   // bars inside the selected range
   let coreChart = null;
   let deltaChart = null;
+
+  let selection = null;      // { from, to } in ms; a bar is selected when from < bar.t <= to
+  let windowPreset = 60;     // active preset length in minutes (0 = full range, null = custom)
+  let viewRange = null;      // { min, max } in ms when the charts are zoomed
+  let dragState = null;      // { chart, startX, x } while dragging out a selection
+  let analysis = null;       // result of buildAnalysis for the current selection
+  let analysisToken = 0;     // identifies the newest analysis, so stale loads are dropped
+  let allowLargeWindow = false;
+  let focusedWorkflow = null;
+  let workflowSort = { column: 'estimated', desc: true };
+
+  const snapshotCache = new Map();  // CSV timestamp → Promise of a runs array, or null when missing
+  const liveRuns = new Map();       // run id → run fetched live with the PAT
+
+  const SNAPSHOT_LOOKBACK_MS = 20 * 60 * 1000;  // older snapshots collect runs created in the last 20 minutes
+  const LEGACY_SNAPSHOT_REPO_RUN_CAP = 10;      // older snapshots store at most 10 runs per repo
+  const MAX_SNAPSHOTS_WITHOUT_ASKING = 400;
+  const MAX_RUNS_LISTED = 200;
+  const SUSPECT_MIN_LIFT = 1.5;  // calls when active vs idle, before a workflow counts as standing out
+  const MONITOR_WORKFLOW_NAME = 'Check GitHub Rate Limit';
 
   // ── PAT storage ──────────────────────────────────────────────────────────────
   function loadPAT() {
@@ -449,19 +613,22 @@
 
   // ── Compute deltas (calls used between consecutive points) ───────────────────
   function computeDeltas(rows) {
-    return rows.map((r, i) => {
-      if (i === 0) return { date: r.date, delta: null };
-      const prev = rows[i - 1];
-      // If remaining went UP between points, a reset occurred → delta = limit - r.remaining
-      let delta;
-      if (r.core_remaining > prev.core_remaining) {
-        // reset happened: calls used = (prev_remaining) + (limit - r.remaining after reset)
-        delta = prev.core_remaining + (r.core_limit - r.core_remaining);
-      } else {
-        delta = prev.core_remaining - r.core_remaining;
-      }
-      return { date: r.date, delta: Math.max(0, delta) };
-    }).filter(d => d.delta !== null);
+    return rows.slice(1).map((r, i) => {
+      const prev = rows[i];
+      // core_used restarts when a new quota window begins. Calls made between the
+      // previous sample and that reset are unknown, so the delta is a lower bound.
+      const newQuotaWindow = r.core_used < prev.core_used ||
+        (r.core_reset !== prev.core_reset && r.date.getTime() / 1000 >= prev.core_reset);
+      const delta = newQuotaWindow ? r.core_used : r.core_used - prev.core_used;
+      return {
+        date: r.date,
+        t: r.date.getTime(),
+        startT: prev.date.getTime(),
+        delta: Math.max(0, delta),
+        lowerBound: newQuotaWindow,
+        rowIndex: i + 1,
+      };
+    }).filter(b => Number.isFinite(b.delta));
   }
 
   // ── Update stats cards ────────────────────────────────────────────────────────
@@ -510,6 +677,54 @@
     },
   };
 
+  // Each chart gets its own scale objects, so zooming one never leaks into chartDefaults.
+  function chartOptions(tooltipCallbacks, showLegend = true) {
+    return {
+      ...chartDefaults,
+      scales: {
+        ...chartDefaults.scales,
+        x: { ...chartDefaults.scales.x, ...(viewRange || {}) },
+      },
+      plugins: {
+        ...chartDefaults.plugins,
+        legend: { ...chartDefaults.plugins.legend, display: showLegend },
+        tooltip: { ...chartDefaults.plugins.tooltip, callbacks: tooltipCallbacks },
+      },
+    };
+  }
+
+  // Shades the selected time window (or the selection being dragged) on a chart.
+  const selectionOverlay = {
+    id: 'selectionOverlay',
+    afterDatasetsDraw(chart) {
+      const { ctx, chartArea: area, scales: { x } } = chart;
+      let left, right;
+      if (dragState && dragState.chart === chart) {
+        left = Math.min(dragState.startX, dragState.x);
+        right = Math.max(dragState.startX, dragState.x);
+      } else if (selection) {
+        left = Math.max(x.getPixelForValue(selection.from), area.left);
+        right = Math.min(x.getPixelForValue(selection.to), area.right);
+      } else {
+        return;
+      }
+      if (right < area.left || left > area.right || right < left) return;
+      ctx.save();
+      ctx.fillStyle = 'rgba(88,166,255,0.12)';
+      ctx.fillRect(left, area.top, right - left, area.bottom - area.top);
+      ctx.strokeStyle = 'rgba(88,166,255,0.7)';
+      ctx.beginPath();
+      ctx.moveTo(left, area.top);
+      ctx.lineTo(left, area.bottom);
+      ctx.moveTo(right, area.top);
+      ctx.lineTo(right, area.bottom);
+      ctx.stroke();
+      ctx.restore();
+    },
+  };
+
+  const CHART_ACTIONS_FOOTER = 'Drag: select window · Click: whole hour · Double-click: this bar';
+
   function buildCoreChart(rows) {
     const ctx = document.getElementById('coreChart').getContext('2d');
     if (coreChart) coreChart.destroy();
@@ -518,6 +733,7 @@
 
     coreChart = new Chart(ctx, {
       type: 'line',
+      plugins: [selectionOverlay],
       data: {
         datasets: [{
           label: 'Core Remaining',
@@ -530,165 +746,774 @@
           tension: 0.2,
         }],
       },
-      options: {
-        ...chartDefaults,
-        onClick: (e, elements) => {
-          if (elements.length > 0) {
-            const idx = elements[0].index;
-            showRunsForPoint(rows[idx]);
-          }
-        },
-        plugins: {
-          ...chartDefaults.plugins,
-          tooltip: {
-            ...chartDefaults.plugins.tooltip,
-            callbacks: {
-              label: ctx => `Remaining: ${ctx.parsed.y.toLocaleString()}`,
-              footer: () => 'Click to see workflow runs',
-            },
-          },
-        },
-      },
+      options: chartOptions({
+        label: ctx => `Remaining: ${ctx.parsed.y.toLocaleString()}`,
+        footer: () => CHART_ACTIONS_FOOTER,
+      }),
     });
   }
 
-  function buildDeltaChart(rows) {
+  function barColor(calls, dimmed) {
+    const alpha = dimmed ? 0.3 : 0.85;
+    if (calls > 500) return `rgba(248,81,73,${alpha})`;
+    if (calls > 200) return `rgba(210,153,34,${alpha})`;
+    return `rgba(63,185,80,${alpha})`;
+  }
+
+  // Dims bars outside the window, and bars in the window with no run matching the filters.
+  function deltaBarColors() {
+    const highlighted = highlightedBarTimes();
+    return bars.map(b => {
+      const selected = isBarSelected(b);
+      return barColor(b.delta, !selected || (highlighted !== null && !highlighted.has(b.t)));
+    });
+  }
+
+  function paintDeltaBars() {
+    if (!deltaChart) return;
+    deltaChart.data.datasets[0].backgroundColor = deltaBarColors();
+    deltaChart.update('none');
+  }
+
+  function buildDeltaChart() {
     const ctx = document.getElementById('deltaChart').getContext('2d');
     if (deltaChart) deltaChart.destroy();
 
-    const deltas = computeDeltas(rows);
-    const data   = deltas.map(d => ({ x: d.date, y: d.delta }));
-
     deltaChart = new Chart(ctx, {
       type: 'bar',
+      plugins: [selectionOverlay],
       data: {
         datasets: [{
           label: 'API Calls Used',
-          data,
-          backgroundColor: data.map(d => d.y > 500 ? 'rgba(248,81,73,0.8)' : d.y > 200 ? 'rgba(210,153,34,0.8)' : 'rgba(63,185,80,0.8)'),
+          data: bars.map(b => ({ x: b.date, y: b.delta })),
+          backgroundColor: deltaBarColors(),
           borderRadius: 2,
         }],
       },
-      options: {
-        ...chartDefaults,
-        onClick: (e, elements) => {
-          if (elements.length > 0) {
-            const idx = elements[0].index;
-            showRunsForPoint(rows[idx + 1]); // deltas are offset by 1
-          }
+      options: chartOptions({
+        label: ctx => {
+          const bar = bars[ctx.dataIndex];
+          const minutes = Math.round((bar.t - bar.startT) / 60000);
+          return `API calls used: ${bar.lowerBound ? 'at least ' : ''}${ctx.parsed.y.toLocaleString()} in ${minutes} min`;
         },
-        plugins: {
-          ...chartDefaults.plugins,
-          tooltip: {
-            ...chartDefaults.plugins.tooltip,
-            callbacks: {
-              label: ctx => `API calls used: ${ctx.parsed.y.toLocaleString()}`,
-              footer: () => 'Click to see workflow runs',
-            },
-          },
-        },
-      },
+        afterLabel: ctx => bars[ctx.dataIndex].lowerBound
+          ? 'The quota reset here; calls made just before the reset are not known'
+          : '',
+        footer: () => CHART_ACTIONS_FOOTER,
+      }, false),
     });
   }
 
-  // ── Show workflow runs for a clicked data point ───────────────────────────────
-  async function showRunsForPoint(row) {
-    const panel = document.getElementById('detailPanel');
-    panel.classList.add('visible');
+  function renderCharts() {
+    buildCoreChart(rangeRows);
+    buildDeltaChart();
+  }
 
-    const ts = row.date.toLocaleString();
-    document.getElementById('detailTitle').textContent = `Workflow Runs near ${ts}`;
-    document.getElementById('detailSubtitle').textContent =
-      `Core API remaining at this point: ${row.core_remaining.toLocaleString()} / ${row.core_limit.toLocaleString()}`;
-    document.getElementById('detailContent').innerHTML = '<div class="loading">Fetching workflow runs…</div>';
-    panel.scrollIntoView({ behavior: 'smooth' });
+  // ── Time window selection ─────────────────────────────────────────────────────
+  function isBarSelected(bar) {
+    return selection !== null && bar.t > selection.from && bar.t <= selection.to;
+  }
 
-    const pat = loadPAT();
+  function selectedBars() {
+    return bars.filter(isBarSelected);
+  }
 
-    // Try to load pre-collected runs snapshot from data branch
-    const fileTs = row.timestamp.replace(/:/g, '-');
-    try {
-      const resp = await fetch(`${RAW_BASE}/runs/${fileTs}.json`);
-      if (resp.ok) {
-        // Older snapshots are a bare array of runs; newer ones wrap the runs with collection details
-        const snapshot = await resp.json();
-        const runs = Array.isArray(snapshot) ? snapshot : (snapshot.runs || []);
-        renderRuns(runs, 'Workflow runs collected at this checkpoint (from stored data)', snapshotWarning(snapshot));
+  function nearestBar(t) {
+    return bars.reduce((best, b) => (Math.abs(b.t - t) < Math.abs(best.t - t) ? b : best), bars[0]);
+  }
+
+  function setWindow(from, to, preset = null) {
+    if (bars.length === 0) return;
+    if (to < from) [from, to] = [to, from];
+    // A window between two samples holds no bars, so fall back to the closest one.
+    if (!bars.some(b => b.t > from && b.t <= to)) {
+      const bar = nearestBar(to);
+      from = bar.startT;
+      to = bar.t;
+    }
+    selection = { from, to };
+    windowPreset = preset;
+    allowLargeWindow = false;
+    syncWindowControls();
+    paintDeltaBars();
+    if (coreChart) coreChart.draw();
+    runAnalysis();
+  }
+
+  function selectLatestHour() {
+    const latest = bars[bars.length - 1].t;
+    setWindow(latest - 60 * 60 * 1000, latest, 60);
+  }
+
+  function selectClockHour(t) {
+    const hour = new Date(t);
+    hour.setMinutes(0, 0, 0);
+    setWindow(hour.getTime(), hour.getTime() + 60 * 60 * 1000, 60);
+  }
+
+  function selectPreset(minutes) {
+    const latest = bars[bars.length - 1].t;
+    if (minutes === 0) {
+      setWindow(bars[0].startT, latest, 0);
+      return;
+    }
+    const to = selection ? Math.min(selection.to, latest) : latest;
+    setWindow(to - minutes * 60 * 1000, to, minutes);
+  }
+
+  function moveWindow(direction) {
+    const length = selection.to - selection.from;
+    setWindow(selection.from + direction * length, selection.to + direction * length, windowPreset);
+  }
+
+  function zoomToWindow() {
+    const padding = Math.max((selection.to - selection.from) * 0.05, 60 * 1000);
+    viewRange = { min: selection.from - padding, max: selection.to + padding };
+    renderCharts();
+    syncWindowControls();
+  }
+
+  function resetZoom() {
+    viewRange = null;
+    renderCharts();
+    syncWindowControls();
+  }
+
+  function toLocalInputValue(ms) {
+    const offsetMs = new Date(ms).getTimezoneOffset() * 60000;
+    return new Date(ms - offsetMs).toISOString().slice(0, 16);
+  }
+
+  function syncWindowControls() {
+    document.getElementById('windowFrom').value = toLocalInputValue(selection.from);
+    document.getElementById('windowTo').value = toLocalInputValue(selection.to);
+    document.getElementById('windowPrev').disabled = !bars.some(b => b.t <= selection.from);
+    document.getElementById('windowNext').disabled = !bars.some(b => b.t > selection.to);
+    document.getElementById('zoomReset').disabled = viewRange === null;
+    document.querySelectorAll('[data-preset]').forEach(button => {
+      button.classList.toggle('active', Number(button.dataset.preset) === windowPreset);
+    });
+  }
+
+  function enableWindowSelection(canvas, getChart) {
+    const clampX = (chart, x) => Math.min(Math.max(x, chart.chartArea.left), chart.chartArea.right);
+
+    canvas.addEventListener('pointerdown', e => {
+      const chart = getChart();
+      if (!chart || bars.length === 0) return;
+      const area = chart.chartArea;
+      if (e.offsetX < area.left || e.offsetX > area.right) return;
+      dragState = { chart, startX: e.offsetX, x: e.offsetX };
+      canvas.setPointerCapture(e.pointerId);
+    });
+
+    canvas.addEventListener('pointermove', e => {
+      if (!dragState) return;
+      dragState.x = clampX(dragState.chart, e.offsetX);
+      dragState.chart.draw();
+    });
+
+    canvas.addEventListener('pointerup', () => {
+      if (!dragState) return;
+      const { chart, startX, x } = dragState;
+      dragState = null;
+      const scale = chart.scales.x;
+      if (Math.abs(x - startX) < 5) {
+        selectClockHour(nearestBar(scale.getValueForPixel(x)).t);
+      } else {
+        setWindow(scale.getValueForPixel(Math.min(startX, x)), scale.getValueForPixel(Math.max(startX, x)));
+      }
+      chart.draw();
+    });
+
+    canvas.addEventListener('pointercancel', () => {
+      if (!dragState) return;
+      const { chart } = dragState;
+      dragState = null;
+      chart.draw();
+    });
+
+    canvas.addEventListener('dblclick', e => {
+      const chart = getChart();
+      if (!chart || bars.length === 0) return;
+      const bar = nearestBar(chart.scales.x.getValueForPixel(e.offsetX));
+      setWindow(bar.startT, bar.t);
+    });
+  }
+
+  // ── Workflow runs for the selected window ─────────────────────────────────────
+  // Older snapshots are a bare array of runs; newer ones wrap the runs with collection details.
+  function normalizeSnapshot(data) {
+    if (Array.isArray(data)) return { runs: data, since: null, truncated: null, failed: false };
+    if (!data || !Array.isArray(data.runs)) return null;
+    return {
+      runs: data.runs,
+      since: data.since ? new Date(data.since).getTime() : null,
+      truncated: data.truncated || [],
+      failed: (data.errors || []).length > 0,
+    };
+  }
+
+  async function fetchSnapshotFile(fileTs) {
+    const resp = await fetch(`${RAW_BASE}/runs/${fileTs}.json`);
+    if (!resp.ok) return resp.status === 404 ? undefined : null;
+    return normalizeSnapshot(await resp.json());
+  }
+
+  function fetchSnapshot(row) {
+    if (!snapshotCache.has(row.timestamp)) {
+      const load = (async () => {
+        try {
+          const snapshot = await fetchSnapshotFile(row.timestamp.replace(/:/g, '-'));
+          if (snapshot !== undefined) return snapshot;
+          // Older rows named the file with a second call to `date`, which can tick over.
+          const nextSecond = new Date(row.date.getTime() + 1000).toISOString().replace('.000', '');
+          const retried = await fetchSnapshotFile(nextSecond.replace(/:/g, '-'));
+          return retried === undefined ? null : retried;
+        } catch (_) {
+          snapshotCache.delete(row.timestamp);  // network errors can be retried later
+          return null;
+        }
+      })();
+      snapshotCache.set(row.timestamp, load);
+    }
+    return snapshotCache.get(row.timestamp);
+  }
+
+  async function loadSnapshots(rows, isCancelled, onProgress) {
+    const results = new Array(rows.length);
+    let next = 0;
+    let done = 0;
+    const worker = async () => {
+      while (next < rows.length && !isCancelled()) {
+        const index = next++;
+        results[index] = await fetchSnapshot(rows[index]);
+        onProgress(++done);
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(8, rows.length) }, worker));
+    return results;
+  }
+
+  function normalizeRun(run, lastSeen) {
+    const start = new Date(run.created_at).getTime();
+    const updated = new Date(run.updated_at).getTime();
+    const finished = run.status === 'completed';
+    const name = run.name || '(unnamed run)';
+    return {
+      ...run,
+      name,
+      start,
+      // An unfinished run was still going when last seen, so its real end is unknown.
+      end: finished ? updated : Math.max(updated, lastSeen),
+      finished,
+      // Dependabot gives every run its own name, so prefer the workflow id for grouping.
+      workflowKey: `${run.repo}#${run.workflow_id ?? name}`,
+      isMonitor: run.repo === `${OWNER}/${REPO}` && name === MONITOR_WORKFLOW_NAME,
+      isAutomated: run.actor_login === 'dependabot[bot]' || name.toLowerCase() === 'codeql',
+      barIndexes: [],
+    };
+  }
+
+  function coveredMs(snapshotSpans, spanStart, spanEnd) {
+    let covered = 0;
+    let cursor = spanStart;
+    snapshotSpans.forEach(span => {
+      const from = Math.max(span.since, cursor);
+      const to = Math.min(span.t, spanEnd);
+      if (to > from) {
+        covered += to - from;
+        cursor = to;
+      }
+    });
+    return covered;
+  }
+
+  // Links every run to the bars it overlaps and splits each bar's calls across those
+  // runs by run time. That gives a ranking of suspects, not a measurement.
+  function buildAnalysis(windowBars, snapshotRows, snapshots) {
+    const runsById = new Map();
+    let cappedRepoSnapshots = 0;
+    let missingSnapshots = 0;
+    let emptyAtLowQuota = 0;
+    let failedSnapshots = 0;
+
+    snapshots.forEach((snapshot, i) => {
+      const row = snapshotRows[i];
+      if (snapshot === null) {
+        missingSnapshots++;
         return;
       }
-    } catch (_) { /* fall through to live fetch */ }
+      const { runs } = snapshot;
+      if (snapshot.failed) failedSnapshots++;
+      // Older snapshots do not record failures or truncation, so those have to be inferred.
+      if (snapshot.truncated === null && runs.length === 0 && row.core_remaining < 50) emptyAtLowQuota++;
+      const perRepo = {};
+      runs.forEach(run => {
+        perRepo[run.repo] = (perRepo[run.repo] || 0) + 1;
+        runsById.set(run.id, normalizeRun(run, row.date.getTime()));
+      });
+      cappedRepoSnapshots += snapshot.truncated === null
+        ? Object.values(perRepo).filter(n => n >= LEGACY_SNAPSHOT_REPO_RUN_CAP).length
+        : snapshot.truncated.length;
+    });
+    liveRuns.forEach((run, id) => runsById.set(id, normalizeRun(run, Date.now())));
 
-    if (!pat) {
-      document.getElementById('detailContent').innerHTML =
-        `<div class="error">No PAT configured and no cached data found for this time window.<br>
-        Enter your GitHub PAT above and click Save to enable live workflow run lookups.</div>`;
+    const spanStart = windowBars[0].startT;
+    const spanEnd = windowBars[windowBars.length - 1].t;
+    const workflows = new Map();
+    const barWeights = windowBars.map(() => []);
+    const runs = [];
+
+    [...runsById.values()].forEach(run => {
+      let i = windowBars.findIndex(b => b.t >= run.start);
+      if (i === -1) return;
+      for (; i < windowBars.length && windowBars[i].startT <= run.end; i++) {
+        const bar = windowBars[i];
+        const minutes = Math.max(0, Math.min(run.end, bar.t) - Math.max(run.start, bar.startT)) / 60000;
+        if (!workflows.has(run.workflowKey)) {
+          workflows.set(run.workflowKey, {
+            key: run.workflowKey,
+            repo: run.repo,
+            name: run.name,
+            latestStart: run.start,
+            names: new Set(),
+            isMonitor: run.isMonitor,
+            isAutomated: run.isAutomated,
+            runIds: new Set(),
+            activeBars: new Set(),
+            minutes: 0,
+            estimated: 0,
+          });
+        }
+        const workflow = workflows.get(run.workflowKey);
+        workflow.runIds.add(run.id);
+        workflow.names.add(run.name);
+        workflow.activeBars.add(i);
+        workflow.minutes += minutes;
+        if (run.start > workflow.latestStart) {
+          workflow.latestStart = run.start;
+          workflow.name = run.name;
+        }
+        run.barIndexes.push(i);
+        // Very short runs still count for something within a bar.
+        barWeights[i].push({ workflow, weight: Math.max(minutes, 0.5) });
+      }
+      if (run.barIndexes.length > 0) runs.push(run);
+    });
+
+    let callsWithoutWorkflows = 0;
+    windowBars.forEach((bar, i) => {
+      const totalWeight = barWeights[i].reduce((sum, w) => sum + w.weight, 0);
+      barWeights[i].forEach(w => { w.workflow.estimated += bar.delta * w.weight / totalWeight; });
+      if (!barWeights[i].some(w => !w.workflow.isMonitor)) callsWithoutWorkflows += bar.delta;
+    });
+
+    const totalCalls = windowBars.reduce((sum, b) => sum + b.delta, 0);
+    workflows.forEach(workflow => {
+      const activeCalls = [...workflow.activeBars].reduce((sum, i) => sum + windowBars[i].delta, 0);
+      const idleBars = windowBars.length - workflow.activeBars.size;
+      workflow.runCount = workflow.runIds.size;
+      workflow.activeBarCount = workflow.activeBars.size;
+      workflow.avgActive = activeCalls / workflow.activeBars.size;
+      workflow.avgIdle = idleBars > 0 ? (totalCalls - activeCalls) / idleBars : null;
+    });
+
+    runs.sort((a, b) => b.start - a.start);
+
+    // A snapshot with failed lookups did not cover its window; the next good one reaches back over it.
+    const snapshotSpans = snapshotRows
+      .map((r, i) => ({ t: r.date.getTime(), snapshot: snapshots[i] }))
+      .filter(({ snapshot }) => snapshot !== null && !snapshot.failed)
+      .map(({ t, snapshot }) => ({ t, since: snapshot.since ?? t - SNAPSHOT_LOOKBACK_MS }));
+    const coverage = spanEnd > spanStart ? coveredMs(snapshotSpans, spanStart, spanEnd) / (spanEnd - spanStart) : 1;
+
+    return {
+      bars: windowBars,
+      runs,
+      workflows: [...workflows.values()],
+      totalCalls,
+      callsWithoutWorkflows,
+      spanStart,
+      spanEnd,
+      coverage,
+      cappedRepoSnapshots,
+      missingSnapshots,
+      emptyAtLowQuota,
+      failedSnapshots,
+      snapshotCount: snapshotRows.length,
+    };
+  }
+
+  async function runAnalysis() {
+    const token = ++analysisToken;
+    const windowBars = selectedBars();
+    const panel = document.getElementById('detailPanel');
+    const content = document.getElementById('detailContent');
+    analysis = null;
+    panel.classList.add('visible');
+
+    document.getElementById('detailSubtitle').textContent = describeWindow(windowBars);
+    ['windowStats', 'suspectSummary', 'analysisNotes'].forEach(id => {
+      document.getElementById(id).innerHTML = '';
+    });
+
+    // Include one snapshot on each side: runs overlapping the window may only appear there.
+    const first = Math.max(0, windowBars[0].rowIndex - 1);
+    const last = windowBars[windowBars.length - 1].rowIndex + 1;
+    const snapshotRows = allRows.slice(first, last + 1);
+
+    if (snapshotRows.length > MAX_SNAPSHOTS_WITHOUT_ASKING && !allowLargeWindow) {
+      content.innerHTML = `
+        <p style="font-size:13px;margin-bottom:8px;">This window spans ${snapshotRows.length.toLocaleString()} run snapshots, and each one is a separate download.</p>
+        <button type="button" class="secondary" data-action="load-large">Load them anyway</button>`;
       return;
     }
 
-    // Live fetch: get recently active repos (user + orgs), then query runs around the data point time
+    const progress = done => {
+      if (token === analysisToken) {
+        content.innerHTML = `<div class="loading">Loading workflow run snapshots… ${done.toLocaleString()} of ${snapshotRows.length.toLocaleString()}</div>`;
+      }
+    };
+    progress(0);
+    const snapshots = await loadSnapshots(snapshotRows, () => token !== analysisToken, progress);
+    if (token !== analysisToken) return;
+
+    analysis = buildAnalysis(windowBars, snapshotRows, snapshots);
+    renderAnalysis();
+  }
+
+  function describeWindow(windowBars) {
+    const from = new Date(windowBars[0].startT).toLocaleString();
+    const to = windowBars[windowBars.length - 1].date.toLocaleString();
+    const count = windowBars.length;
+    return `${from} → ${to} · ${count.toLocaleString()} ${count === 1 ? 'bar' : 'bars'}`;
+  }
+
+  // ── Filters ───────────────────────────────────────────────────────────────────
+  function runFilters() {
+    return {
+      text: document.getElementById('runFilterText').value.trim().toLowerCase(),
+      result: document.getElementById('runFilterResult').value,
+      hideMonitor: document.getElementById('runFilterHideMonitor').checked,
+      hideAutomated: document.getElementById('runFilterHideAutomated').checked,
+    };
+  }
+
+  function runMatchesFilters(run, filters) {
+    if (filters.hideMonitor && run.isMonitor) return false;
+    if (filters.hideAutomated && run.isAutomated) return false;
+    if (focusedWorkflow && run.workflowKey !== focusedWorkflow) return false;
+    if (filters.result === 'unfinished' && run.finished) return false;
+    if (filters.result && filters.result !== 'unfinished' && run.conclusion !== filters.result) return false;
+    if (filters.text) {
+      const haystack = `${run.repo} ${run.name} ${run.actor_login || ''}`.toLowerCase();
+      if (!haystack.includes(filters.text)) return false;
+    }
+    return true;
+  }
+
+  // Bars to keep lit, or null when nothing narrows the runs down to specific ones.
+  function highlightedBarTimes() {
+    if (!analysis) return null;
+    const filters = runFilters();
+    if (!filters.text && !filters.result && !focusedWorkflow) return null;
+    const times = new Set();
+    analysis.runs.filter(run => runMatchesFilters(run, filters)).forEach(run => {
+      run.barIndexes.forEach(i => times.add(analysis.bars[i].t));
+    });
+    return times;
+  }
+
+  // ── Render the window analysis ────────────────────────────────────────────────
+  function escapeHtml(value) {
+    return String(value ?? '').replace(/[&<>"']/g, c => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[c]));
+  }
+
+  function formatCount(value) {
+    return Math.round(value).toLocaleString();
+  }
+
+  function shortName(name) {
+    return name.length > 80 ? `${name.slice(0, 80)}…` : name;
+  }
+
+  function statCard(label, value, sub) {
+    return `
+      <div class="stat-card">
+        <div class="label">${escapeHtml(label)}</div>
+        <div class="value">${escapeHtml(value)}</div>
+        <div class="sub">${escapeHtml(sub)}</div>
+      </div>`;
+  }
+
+  function renderWindowStats(filteredRuns) {
+    const peak = analysis.bars.reduce((best, b) => (b.delta > best.delta ? b : best), analysis.bars[0]);
+    const anyLowerBound = analysis.bars.some(b => b.lowerBound);
+    const visibleWorkflows = new Set(filteredRuns.map(run => run.workflowKey)).size;
+    document.getElementById('windowStats').innerHTML = `
+      <div class="stats-grid">
+        ${statCard('Calls used', `${anyLowerBound ? '≥ ' : ''}${formatCount(analysis.totalCalls)}`, anyLowerBound ? 'calls just before a reset are unknown' : 'in this window')}
+        ${statCard('Busiest bar', formatCount(peak.delta), peak.date.toLocaleTimeString())}
+        ${statCard('Workflow runs', filteredRuns.length.toLocaleString(), `of ${analysis.runs.length.toLocaleString()} recorded`)}
+        ${statCard('Workflows', visibleWorkflows.toLocaleString(), `of ${analysis.workflows.length.toLocaleString()} recorded`)}
+        ${statCard('Calls with no other run active', formatCount(analysis.callsWithoutWorkflows), 'in bars with only this monitor, or nothing')}
+      </div>`;
+  }
+
+  function renderSuspectSummary() {
+    const el = document.getElementById('suspectSummary');
+    const candidates = analysis.workflows.filter(w => !w.isMonitor);
+    if (candidates.length === 0 || analysis.totalCalls === 0) {
+      el.innerHTML = '';
+      return;
+    }
+    const suspect = candidates
+      .filter(w => w.avgIdle === null || w.avgActive >= w.avgIdle * SUSPECT_MIN_LIFT)
+      .sort((a, b) => b.estimated - a.estimated)[0];
+    if (!suspect) {
+      el.innerHTML = `
+        <div class="suspect-summary">
+          No workflow stands out in this window: none averaged at least ${SUSPECT_MIN_LIFT}× the calls when active compared to when idle.
+        </div>`;
+      return;
+    }
+    const compared = suspect.avgIdle === null
+      ? `It was active in all ${analysis.bars.length.toLocaleString()} bars, so this window has no idle bars to compare against.`
+      : `It was active in ${suspect.activeBarCount.toLocaleString()} of ${analysis.bars.length.toLocaleString()} bars, averaging ${formatCount(suspect.avgActive)} calls per bar, against ${formatCount(suspect.avgIdle)} when it was idle.`;
+    el.innerHTML = `
+      <div class="suspect-summary">
+        Top suspect: <strong>${escapeHtml(suspect.repo)} / ${escapeHtml(shortName(suspect.name))}</strong>. ${compared}
+      </div>`;
+  }
+
+  function renderAnalysisNotes() {
+    const notes = [];
+    const coverage = Math.round(analysis.coverage * 100);
+    const hasPAT = Boolean(localStorage.getItem('gh_pat'));
+
+    if (coverage < 100) {
+      notes.push(`<li class="warn">Run snapshots cover ${coverage}% of this window. Older snapshots only look back 20 minutes, and a snapshot with failed lookups covers nothing until a later one reaches back over it, so some runs in those gaps are missing.</li>`);
+    }
+    if (analysis.missingSnapshots > 0) {
+      notes.push(`<li class="warn">${analysis.missingSnapshots.toLocaleString()} of ${analysis.snapshotCount.toLocaleString()} snapshots could not be loaded.</li>`);
+    }
+    if (analysis.emptyAtLowQuota > 0) {
+      notes.push(`<li class="warn">${analysis.emptyAtLowQuota.toLocaleString()} ${analysis.emptyAtLowQuota === 1 ? 'snapshot is' : 'snapshots are'} empty while the quota was nearly used up. The monitor probably could not list runs at that moment, and runs from then are missing.</li>`);
+    }
+    if (analysis.failedSnapshots > 0) {
+      notes.push(`<li class="warn">${analysis.failedSnapshots.toLocaleString()} ${analysis.failedSnapshots === 1 ? 'snapshot' : 'snapshots'} recorded failed run lookups, usually because the quota was used up. Runs from then may be missing unless a later snapshot picked them up.</li>`);
+    }
+    if (analysis.cappedRepoSnapshots > 0) {
+      notes.push(`<li class="warn">A repo had more runs than a snapshot stores ${analysis.cappedRepoSnapshots.toLocaleString()} ${analysis.cappedRepoSnapshots === 1 ? 'time' : 'times'}, so busy repos may have more runs than shown.</li>`);
+    }
+    notes.push('<li>Estimated calls split each bar across the runs active in it, weighted by run time. This shows which runs line up with usage, not what they actually spent. Runs using <code>GITHUB_TOKEN</code> do not count against this quota, and calls made outside Actions with the same account do. Only the 20 most recently pushed repos are sampled.</li>');
+
+    const incomplete = coverage < 100 || analysis.missingSnapshots > 0 || analysis.emptyAtLowQuota > 0 || analysis.failedSnapshots > 0 || analysis.cappedRepoSnapshots > 0;
+    let liveAction = '';
+    if (incomplete && hasPAT) {
+      liveAction = '<button type="button" class="secondary" data-action="fetch-live">Fill gaps from the GitHub API (spends at least 20 of your calls)</button>';
+    } else if (incomplete) {
+      liveAction = '<div>Save a GitHub PAT above to fill these gaps from the GitHub API.</div>';
+    }
+    document.getElementById('analysisNotes').innerHTML = `<ul>${notes.join('')}</ul>${liveAction}`;
+  }
+
+  const WORKFLOW_COLUMNS = [
+    { id: 'name', label: 'Workflow' },
+    { id: 'estimated', label: 'Est. calls', num: true },
+    { id: 'runCount', label: 'Runs', num: true },
+    { id: 'minutes', label: 'Run minutes', num: true },
+    { id: 'activeBarCount', label: 'Active bars', num: true },
+    { id: 'avgActive', label: 'Avg calls when active', num: true },
+    { id: 'avgIdle', label: 'Avg calls when idle', num: true },
+  ];
+
+  function workflowsTable(filteredRuns) {
+    const visibleKeys = new Set(filteredRuns.map(run => run.workflowKey));
+    const { column, desc } = workflowSort;
+    const direction = desc ? -1 : 1;
+    const sorted = analysis.workflows
+      .filter(w => visibleKeys.has(w.key))
+      .sort((a, b) => {
+        if (column === 'name') return direction * `${a.repo}/${a.name}`.localeCompare(`${b.repo}/${b.name}`);
+        return direction * ((a[column] ?? -1) - (b[column] ?? -1));
+      });
+
+    const header = WORKFLOW_COLUMNS.map(c => {
+      const isSorted = c.id === column;
+      const ariaSort = isSorted ? ` aria-sort="${desc ? 'descending' : 'ascending'}"` : '';
+      return `<th class="${c.num ? 'num' : ''}"${ariaSort}><button type="button" data-sort="${c.id}">${c.label}${isSorted ? (desc ? ' ↓' : ' ↑') : ''}</button></th>`;
+    }).join('');
+
+    const rows = sorted.map(w => {
+      const share = analysis.totalCalls > 0 ? Math.round(w.estimated / analysis.totalCalls * 100) : 0;
+      const nameVariants = w.names.size > 1 ? `<span class="tag">${w.names.size} run names</span>` : '';
+      const monitorTag = w.isMonitor ? '<span class="tag">this monitor</span>' : '';
+      return `
+        <tr class="${w.key === focusedWorkflow ? 'focused' : ''}" data-workflow="${escapeHtml(w.key)}" tabindex="0" aria-pressed="${w.key === focusedWorkflow}">
+          <td>
+            <div class="wf-name" title="${escapeHtml(w.name)}">${escapeHtml(shortName(w.name))}${monitorTag}${nameVariants}</div>
+            <div class="wf-repo">${escapeHtml(w.repo)}</div>
+          </td>
+          <td class="num">${formatCount(w.estimated)} (${share}%)</td>
+          <td class="num">${w.runCount.toLocaleString()}</td>
+          <td class="num">${w.minutes.toLocaleString(undefined, { maximumFractionDigits: 1 })}</td>
+          <td class="num">${w.activeBarCount.toLocaleString()} / ${analysis.bars.length.toLocaleString()}</td>
+          <td class="num">${formatCount(w.avgActive)}</td>
+          <td class="num">${w.avgIdle === null ? '—' : formatCount(w.avgIdle)}</td>
+        </tr>`;
+    }).join('');
+
+    return `
+      <div class="section-title">Workflows by estimated calls</div>
+      <div class="table-scroll">
+        <table class="repos-table workflow-table">
+          <thead><tr>${header}</tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+      <p style="font-size:12px;color:#8b949e;margin-top:8px;">Click a workflow to filter the runs and light up its bars in the chart. Filters hide rows but do not change the estimates.</p>`;
+  }
+
+  function runsSection(filteredRuns) {
+    const repoCounts = {};
+    filteredRuns.forEach(r => { repoCounts[r.repo] = (repoCounts[r.repo] || 0) + 1; });
+    const summary = Object.entries(repoCounts)
+      .sort((a, b) => b[1] - a[1])
+      .map(([repo, count]) => `<button type="button" class="tag" data-filter-repo="${escapeHtml(repo)}"><span>${escapeHtml(repo)}</span> ×${count}</button>`)
+      .join('');
+
+    const items = filteredRuns.slice(0, MAX_RUNS_LISTED).map(run => {
+      const url = String(run.html_url || '').startsWith('https://github.com/') ? run.html_url : `https://github.com/${run.repo}/actions`;
+      const minutes = Math.max(0, run.end - run.start) / 60000;
+      const duration = `${run.finished ? '' : 'at least '}${minutes.toLocaleString(undefined, { maximumFractionDigits: 1 })} min`;
+      const actor = run.actor_login ? ` · ${escapeHtml(run.actor_login)}` : '';
+      return `
+      <li>
+        <div class="icon ${escapeHtml(conclusionClass(run.conclusion, run.status))}">${conclusionIcon(run.conclusion, run.status)}</div>
+        <div class="info">
+          <div class="repo"><a href="https://github.com/${escapeHtml(run.repo)}/actions" target="_blank" rel="noopener noreferrer">${escapeHtml(run.repo)}</a></div>
+          <div class="name"><a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${escapeHtml(run.name)}</a></div>
+          <div class="meta">${escapeHtml(run.status)}${run.conclusion ? ` · ${escapeHtml(run.conclusion)}` : ''} · ${new Date(run.start).toLocaleString()} · ${duration}${actor}</div>
+        </div>
+      </li>`;
+    }).join('');
+
+    const moreRuns = filteredRuns.length - MAX_RUNS_LISTED;
+    return `
+      <div class="section-title">Workflow runs (${filteredRuns.length.toLocaleString()})</div>
+      <div style="margin-bottom:12px;">${summary}</div>
+      <ul class="runs-list">${items}</ul>
+      ${moreRuns > 0 ? `<p style="font-size:12px;color:#8b949e;">${moreRuns.toLocaleString()} more runs are not listed. Narrow the window or the filters to see them.</p>` : ''}`;
+  }
+
+  function renderAnalysis() {
+    if (!analysis) return;
+    if (focusedWorkflow && !analysis.workflows.some(w => w.key === focusedWorkflow)) focusedWorkflow = null;
+
+    const filters = runFilters();
+    const filteredRuns = analysis.runs.filter(run => runMatchesFilters(run, filters));
+
+    renderWindowStats(filteredRuns);
+    renderSuspectSummary();
+    renderAnalysisNotes();
+
+    document.getElementById('detailContent').innerHTML = filteredRuns.length === 0
+      ? `<p style="color:#8b949e;font-size:13px;">${analysis.runs.length === 0 ? 'No workflow runs recorded in this time window.' : 'No workflow runs match these filters.'}</p>`
+      : workflowsTable(filteredRuns) + runsSection(filteredRuns);
+
+    paintDeltaBars();
+  }
+
+  // ── Fill snapshot gaps from the GitHub API ────────────────────────────────────
+  async function fetchLiveRuns(windowStart, windowEnd, pat) {
+    const reposResp = await ghFetch('https://api.github.com/user/repos?sort=pushed&direction=desc&per_page=20&type=owner', pat);
+    if (!reposResp.ok) throw new Error(`Repos fetch failed: ${reposResp.status}`);
+    const repos = await reposResp.json();
+
+    // Also fetch orgs the user belongs to and include their recently active repos
+    let orgRepos = [];
     try {
-      const windowStart = new Date(row.date.getTime() - 20 * 60 * 1000).toISOString();
-      const windowEnd   = new Date(row.date.getTime() + 20 * 60 * 1000).toISOString();
+      const orgsResp = await ghFetch('https://api.github.com/user/orgs?per_page=30', pat);
+      if (orgsResp.ok) {
+        const orgs = await orgsResp.json();
+        const orgRepoResults = await Promise.all(orgs.map(async org => {
+          try {
+            const r = await ghFetch(
+              `https://api.github.com/orgs/${org.login}/repos?sort=pushed&direction=desc&per_page=10`,
+              pat
+            );
+            return r.ok ? r.json() : [];
+          } catch (_) { return []; }
+        }));
+        orgRepos = orgRepoResults.flat();
+      }
+    } catch (_) { /* org fetch is best-effort */ }
 
-      const reposResp = await ghFetch('https://api.github.com/user/repos?sort=pushed&direction=desc&per_page=20&type=owner', pat);
-      if (!reposResp.ok) throw new Error(`Repos fetch failed: ${reposResp.status}`);
-      const repos = await reposResp.json();
+    // Combine user and org repos, sort by most recently pushed, take top 20
+    const allRepos = [...repos, ...orgRepos]
+      .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
+      .slice(0, 20);
 
-      // Also fetch orgs the user belongs to and include their recently active repos
-      let orgRepos = [];
+    const runs = [];
+    let failedRepos = 0;
+    await Promise.all(allRepos.map(async repo => {
       try {
-        const orgsResp = await ghFetch('https://api.github.com/user/orgs?per_page=30', pat);
-        if (orgsResp.ok) {
-          const orgs = await orgsResp.json();
-          const orgRepoResults = await Promise.all(orgs.map(async org => {
-            try {
-              const r = await ghFetch(
-                `https://api.github.com/orgs/${org.login}/repos?sort=pushed&direction=desc&per_page=10`,
-                pat
-              );
-              return r.ok ? r.json() : [];
-            } catch (_) { return []; }
-          }));
-          orgRepos = orgRepoResults.flat();
+        const r = await ghFetch(
+          `https://api.github.com/repos/${repo.full_name}/actions/runs?created=${windowStart}..${windowEnd}&per_page=100`,
+          pat
+        );
+        if (!r.ok) {
+          failedRepos++;
+          return;
         }
-      } catch (_) { /* org fetch is best-effort */ }
-
-      // Combine user and org repos, sort by most recently pushed, take top 20
-      const allRepos = [...repos, ...orgRepos]
-        .sort((a, b) => new Date(b.pushed_at) - new Date(a.pushed_at))
-        .slice(0, 20);
-
-      const allRuns = [];
-      await Promise.all(allRepos.map(async repo => {
-        try {
-          const r = await ghFetch(
-            `https://api.github.com/repos/${repo.full_name}/actions/runs?created=>=${windowStart}&per_page=10`,
-            pat
-          );
-          if (!r.ok) return;
-          const data = await r.json();
-          (data.workflow_runs || []).forEach(run => {
-            allRuns.push({
-              repo: repo.full_name,
-              id: run.id,
-              name: run.name,
-              status: run.status,
-              conclusion: run.conclusion,
-              created_at: run.created_at,
-              updated_at: run.updated_at,
-              html_url: run.html_url,
-            });
+        const data = await r.json();
+        (data.workflow_runs || []).forEach(run => {
+          runs.push({
+            repo: repo.full_name,
+            id: run.id,
+            name: run.name,
+            workflow_id: run.workflow_id,
+            status: run.status,
+            conclusion: run.conclusion,
+            created_at: run.created_at,
+            updated_at: run.updated_at,
+            html_url: run.html_url,
+            actor_login: run.actor ? run.actor.login : '',
           });
-        } catch (_) { /* skip repo on error */ }
-      }));
+        });
+      } catch (_) {
+        failedRepos++;
+      }
+    }));
+    return { runs, failedRepos, repoCount: allRepos.length };
+  }
 
-      // Sort by created date descending
-      allRuns.sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
-
-      renderRuns(allRuns, `Live data: workflow runs between ${new Date(windowStart).toLocaleString()} and ${new Date(windowEnd).toLocaleString()}`);
+  async function fillGapsFromApi(button) {
+    const pat = loadPAT();
+    const token = analysisToken;
+    button.disabled = true;
+    button.textContent = 'Fetching runs from the GitHub API…';
+    try {
+      const windowStart = new Date(analysis.spanStart - SNAPSHOT_LOOKBACK_MS).toISOString().replace('.000', '');
+      const windowEnd = new Date(analysis.spanEnd).toISOString().replace('.000', '');
+      const { runs, failedRepos, repoCount } = await fetchLiveRuns(windowStart, windowEnd, pat);
+      if (token !== analysisToken) return;
+      runs.forEach(run => liveRuns.set(run.id, run));
+      await runAnalysis();
+      if (failedRepos > 0 && token + 1 === analysisToken) {
+        document.getElementById('analysisNotes').insertAdjacentHTML('beforeend',
+          `<div class="warn">The GitHub API lookup failed for ${failedRepos} of ${repoCount} repos.</div>`);
+      }
     } catch (err) {
-      document.getElementById('detailContent').innerHTML =
-        `<div class="error">Failed to fetch workflow runs: ${err.message}</div>`;
+      if (token !== analysisToken) return;
+      document.getElementById('analysisNotes').insertAdjacentHTML('beforeend',
+        `<div class="error" style="margin-top:8px;">Failed to fetch workflow runs: ${escapeHtml(err.message)}</div>`);
+      button.disabled = false;
+      button.textContent = 'Try the GitHub API again';
     }
   }
 
@@ -718,57 +1543,6 @@
     return `conclusion-${conclusion || 'unknown'}`;
   }
 
-  function snapshotWarning(snapshot) {
-    const errors = (!Array.isArray(snapshot) && snapshot.errors) || [];
-    if (errors.length === 0) return '';
-    const rateLimited = errors.some(e => e.kind === 'rate_limited');
-    return `<div class="error">Run lookups failed at this checkpoint${rateLimited ? ' because the rate limit was reached' : ''}
-      (${Number(snapshot.repos_checked) || 0} of ${Number(snapshot.repos_planned) || 0} repos checked), so runs may be missing here.
-      The next successful snapshot looks back over this window.</div>`;
-  }
-
-  function renderRuns(runs, subtitle, warning = '') {
-    document.getElementById('detailSubtitle').textContent += ` — ${subtitle}`;
-
-    if (runs.length === 0) {
-      document.getElementById('detailContent').innerHTML = warning ||
-        '<p style="color:#8b949e;font-size:13px;">No workflow runs found in this time window.</p>';
-      return;
-    }
-
-    // Count runs per repo for a summary
-    const repoCounts = {};
-    runs.forEach(r => { repoCounts[r.repo] = (repoCounts[r.repo] || 0) + 1; });
-    const sortedRepos = Object.entries(repoCounts).sort((a, b) => b[1] - a[1]);
-
-    const summary = sortedRepos.map(([repo, count]) =>
-      `<span style="background:#21262d;border:1px solid #30363d;border-radius:4px;padding:2px 8px;font-size:12px;margin:2px;display:inline-block;">
-        <a href="https://github.com/${repo}/actions" target="_blank" style="color:#58a6ff;text-decoration:none;">${repo}</a>
-        <span style="color:#8b949e;"> ×${count}</span>
-      </span>`
-    ).join('');
-
-    const items = runs.map(run => `
-      <li>
-        <div class="icon ${conclusionClass(run.conclusion, run.status)}">${conclusionIcon(run.conclusion, run.status)}</div>
-        <div class="info">
-          <div class="repo"><a href="https://github.com/${run.repo}/actions" target="_blank">${run.repo}</a></div>
-          <div class="name"><a href="${run.html_url}" target="_blank">${run.name}</a></div>
-          <div class="meta">${run.status}${run.conclusion ? ` · ${run.conclusion}` : ''} · ${new Date(run.created_at).toLocaleString()}</div>
-        </div>
-      </li>
-    `).join('');
-
-    document.getElementById('detailContent').innerHTML = `
-      ${warning}
-      <div style="margin-bottom:16px;">
-        <div style="font-size:13px;color:#8b949e;margin-bottom:8px;">Most active repositories (${runs.length} runs total):</div>
-        <div>${summary}</div>
-      </div>
-      <ul class="runs-list">${items}</ul>
-    `;
-  }
-
   // ── Main data load & render ───────────────────────────────────────────────────
   async function loadAndRender() {
     document.getElementById('statusText').textContent = 'Fetching rate limit data…';
@@ -784,17 +1558,35 @@
       }
       const text  = await resp.text();
       allRows = parseCSV(text);
+      allBars = computeDeltas(allRows);
 
-      const filtered = filterRows(allRows);
+      refreshDashboard();
       document.getElementById('statusText').textContent =
-        `Loaded ${allRows.length.toLocaleString()} data points (showing ${filtered.length.toLocaleString()} in selected range). Click any data point for workflow run details.`;
-
-      updateStats(filtered);
-      buildCoreChart(filtered);
-      buildDeltaChart(filtered);
+        `Loaded ${allRows.length.toLocaleString()} data points (showing ${rangeRows.length.toLocaleString()} in selected range). Select a time window on either chart to see the workflow runs in it.`;
     } catch (err) {
       document.getElementById('statusText').textContent = `Error loading data: ${err.message}`;
     }
+  }
+
+  function refreshDashboard() {
+    rangeRows = filterRows(allRows);
+    bars = rangeRows.length > 0 ? allBars.filter(b => b.date >= rangeRows[0].date) : [];
+    viewRange = null;
+    updateStats(rangeRows);
+
+    if (bars.length === 0) {
+      selection = null;
+      renderCharts();
+      document.getElementById('detailPanel').classList.remove('visible');
+      return;
+    }
+
+    // Keep the current window when the new range still contains it.
+    const keepWindow = selectedBars().length > 0;
+    if (!keepWindow) selection = null;
+    renderCharts();
+    if (keepWindow) setWindow(selection.from, selection.to, windowPreset);
+    else selectLatestHour();
   }
 
   // ── Repos summary ─────────────────────────────────────────────────────────────
@@ -829,6 +1621,7 @@
       : 'unknown';
 
     document.getElementById('reposSummaryContent').innerHTML = `
+      <div class="table-scroll">
       <table class="repos-table">
         <thead>
           <tr>
@@ -839,6 +1632,7 @@
         </thead>
         <tbody>${rows}</tbody>
       </table>
+      </div>
       <p style="font-size:12px;color:#8b949e;margin-top:12px;">
         Last updated: ${lastUpdatedStr} &mdash;
         Run counts reflect unique workflow runs seen in collected snapshots for public repositories.
@@ -854,11 +1648,87 @@
   loadAndRender();
   loadReposSummary();
 
-  document.getElementById('rangeSelect').addEventListener('change', () => {
-    const filtered = filterRows(allRows);
-    updateStats(filtered);
-    buildCoreChart(filtered);
-    buildDeltaChart(filtered);
+  document.getElementById('rangeSelect').addEventListener('change', refreshDashboard);
+
+  enableWindowSelection(document.getElementById('coreChart'), () => coreChart);
+  enableWindowSelection(document.getElementById('deltaChart'), () => deltaChart);
+
+  document.querySelectorAll('[data-preset]').forEach(button => {
+    button.addEventListener('click', () => {
+      if (bars.length > 0) selectPreset(Number(button.dataset.preset));
+    });
+  });
+  document.getElementById('windowPrev').addEventListener('click', () => moveWindow(-1));
+  document.getElementById('windowNext').addEventListener('click', () => moveWindow(1));
+  document.getElementById('zoomIn').addEventListener('click', () => { if (selection) zoomToWindow(); });
+  document.getElementById('zoomReset').addEventListener('click', resetZoom);
+
+  document.getElementById('windowFrom').addEventListener('change', e => {
+    const from = new Date(e.target.value).getTime();
+    if (Number.isNaN(from) || !selection) syncWindowControls();
+    else setWindow(from, selection.to);
+  });
+  document.getElementById('windowTo').addEventListener('change', e => {
+    // The field only shows minutes, so include the whole of the chosen minute.
+    const to = new Date(e.target.value).getTime() + 59999;
+    if (Number.isNaN(to) || !selection) syncWindowControls();
+    else setWindow(selection.from, to);
+  });
+
+  document.getElementById('runFilterText').addEventListener('input', renderAnalysis);
+  ['runFilterResult', 'runFilterHideMonitor', 'runFilterHideAutomated'].forEach(id => {
+    document.getElementById(id).addEventListener('change', renderAnalysis);
+  });
+  document.getElementById('runFilterClear').addEventListener('click', () => {
+    document.getElementById('runFilterText').value = '';
+    document.getElementById('runFilterResult').value = '';
+    document.getElementById('runFilterHideMonitor').checked = true;
+    document.getElementById('runFilterHideAutomated').checked = false;
+    focusedWorkflow = null;
+    renderAnalysis();
+  });
+
+  document.getElementById('detailPanel').addEventListener('click', e => {
+    const action = e.target.closest('[data-action]');
+    if (action && action.dataset.action === 'load-large') {
+      allowLargeWindow = true;
+      runAnalysis();
+      return;
+    }
+    if (action && action.dataset.action === 'fetch-live') {
+      fillGapsFromApi(action);
+      return;
+    }
+    const sortButton = e.target.closest('[data-sort]');
+    if (sortButton) {
+      const column = sortButton.dataset.sort;
+      workflowSort = { column, desc: workflowSort.column === column ? !workflowSort.desc : column !== 'name' };
+      renderAnalysis();
+      return;
+    }
+    const repoFilter = e.target.closest('[data-filter-repo]');
+    if (repoFilter) {
+      document.getElementById('runFilterText').value = repoFilter.dataset.filterRepo;
+      renderAnalysis();
+      return;
+    }
+    if (e.target.closest('a')) return;
+    const row = e.target.closest('[data-workflow]');
+    if (row) {
+      focusedWorkflow = focusedWorkflow === row.dataset.workflow ? null : row.dataset.workflow;
+      renderAnalysis();
+    }
+  });
+  document.getElementById('detailPanel').addEventListener('keydown', e => {
+    if (e.key !== 'Enter' && e.key !== ' ') return;
+    const row = e.target.closest('[data-workflow]');
+    if (!row) return;
+    e.preventDefault();
+    const key = row.dataset.workflow;
+    focusedWorkflow = focusedWorkflow === key ? null : key;
+    renderAnalysis();
+    const focusedRow = [...document.querySelectorAll('[data-workflow]')].find(r => r.dataset.workflow === key);
+    if (focusedRow) focusedRow.focus();
   });
 </script>
 </body>
