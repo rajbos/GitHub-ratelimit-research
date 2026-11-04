@@ -195,19 +195,19 @@ jobs:
             if echo "$ORG_REPOS" | jq -e 'type == "array"' > /dev/null 2>&1; then
               ORG_REPO_COUNT=$(echo "$ORG_REPOS" | jq length)
               if [ "$ORG_REPO_COUNT" -ge 151 ]; then
-                echo "Skipping org ${org}: has more than 150 repos (${ORG_REPO_COUNT}+)"
+                echo "Skipping an org: has more than 150 repos (${ORG_REPO_COUNT}+)"
               else
                 echo "$ORG_REPOS" > /tmp/org_repos_tmp.json
                 jq -s '.[0] + .[1]' /tmp/repos.json /tmp/org_repos_tmp.json > /tmp/repos_tmp.json
                 mv /tmp/repos_tmp.json /tmp/repos.json
               fi
             else
+              # Logs of this public repo are public: don't name orgs, the PAT's memberships can be private
               ORG_ERROR=$(echo "$ORG_REPOS" | jq -r '.message // "unknown error"')
               if echo "$ORG_ERROR" | grep -qi "saml\|sso\|single sign-on\|enforcement"; then
-                echo "::warning::Skipping org ${org}: SSO/SAML enforcement active - PAT needs to be authorized for this org"
+                echo "::warning::Skipping an org: SSO/SAML enforcement active - PAT needs to be authorized for that org"
               else
-                echo "Raw ORG_REPOS response for org ${org}: $ORG_REPOS"
-                echo "Skipping org ${org}: API returned non-array response (${ORG_ERROR})"
+                echo "Skipping an org: API returned non-array response"
               fi
             fi
           done
@@ -225,8 +225,8 @@ jobs:
               -H "X-GitHub-Api-Version: 2022-11-28" \
               "https://api.github.com/repos/${repo}/actions/runs?created=>=${SINCE}&per_page=10")
             if ! echo "$RAW_RUNS" | jq -e 'type == "object"' > /dev/null 2>&1; then
-              echo "Raw runs response for ${repo}: $RAW_RUNS"
-              echo "Skipping ${repo}: runs API returned unexpected response"
+              # Logs of this public repo are public: don't name the repo, it can be private
+              echo "Skipping a repo: runs API returned unexpected response"
               continue
             fi
             RUNS=$(echo "$RAW_RUNS" | jq --arg repo "$repo" '[(.workflow_runs // [])[] | {repo: $repo, id: .id, name: .name, workflow_id: .workflow_id, status: .status, conclusion: .conclusion, created_at: .created_at, updated_at: .updated_at, html_url: .html_url, actor_login: (.actor.login // "")}]')
@@ -234,6 +234,51 @@ jobs:
             mv /tmp/runs_tmp.json /tmp/runs.json
           done
           echo "Collected $(jq length /tmp/runs.json) workflow runs since ${SINCE}"
+
+      - name: Pseudonymise non-public repos in runs
+        env:
+          SNAPSHOT_LABEL_KEY: ${{ secrets.SNAPSHOT_LABEL_KEY }}
+        run: |
+          # Snapshots are public. Anything not listed as public, including internal repos
+          # (private: true in the API), is replaced by a stable keyed label without a "/".
+          jq '[.[] | select(.private == false) | .full_name] - [.[] | select(.private != false) | .full_name]' \
+            /tmp/repos.json > /tmp/public-repos.json
+
+          # Without the key no label can be made, so leave those runs out rather than name them
+          echo "{}" > /tmp/repo-labels.json
+          if [ -z "${SNAPSHOT_LABEL_KEY}" ]; then
+            echo "::warning::SNAPSHOT_LABEL_KEY is not set: runs of non-public repos are left out of this snapshot"
+          else
+            # Workflow IDs get a label too: old snapshots pair the real IDs with repo names
+            for key in $(jq -r --slurpfile public /tmp/public-repos.json '[.[] | select(([.repo] - $public[0]) != []) | .repo, "\(.repo)#\(.workflow_id)"] | unique | .[]' /tmp/runs.json); do
+              LABEL=$(printf '%s' "$key" | openssl dgst -sha256 -hmac "$SNAPSHOT_LABEL_KEY" -r | cut -c1-12)
+              jq --arg key "$key" --arg label "$LABEL" '. + {($key): $label}' /tmp/repo-labels.json > /tmp/repo-labels_tmp.json
+              mv /tmp/repo-labels_tmp.json /tmp/repo-labels.json
+            done
+          fi
+
+          # Keep "CodeQL" and the two common bots: the dashboard needs them to spot automated runs
+          jq \
+            --slurpfile public /tmp/public-repos.json \
+            --slurpfile labels /tmp/repo-labels.json '
+            ($public[0] | map({key: ., value: true}) | from_entries) as $is_public |
+            [.[] |
+              if $is_public[.repo] then .
+              elif $labels[0][.repo] then {
+                repo: "private-\($labels[0][.repo])",
+                id,
+                name: (if ((.name // "") | ascii_downcase) == "codeql" then "CodeQL" else "workflow-\($labels[0]["\(.repo)#\(.workflow_id)"])" end),
+                workflow_id: $labels[0]["\(.repo)#\(.workflow_id)"],
+                status,
+                conclusion,
+                created_at,
+                updated_at,
+                html_url: null,
+                actor_login: (if .actor_login == "dependabot[bot]" or .actor_login == "github-actions[bot]" then .actor_login else "" end)
+              }
+              else empty end
+            ]' /tmp/runs.json > /tmp/runs-public.json
+          echo "Snapshot has $(jq length /tmp/runs-public.json) of $(jq length /tmp/runs.json) runs, $(jq '[.[] | select(.repo | contains("/") | not)] | length' /tmp/runs-public.json) of them pseudonymised"
 
       - name: Switch to data branch
         run: |
@@ -277,7 +322,7 @@ jobs:
           echo "${TIMESTAMP},${CORE_LIMIT},${CORE_REMAINING},${CORE_USED},${CORE_RESET},${SEARCH_LIMIT},${SEARCH_REMAINING},${SEARCH_USED},${GRAPHQL_LIMIT},${GRAPHQL_REMAINING},${GRAPHQL_USED}" >> ratelimit.csv
 
           # Store workflow runs snapshot for this time window
-          cp /tmp/runs.json "runs/${TIMESTAMP_FILE}.json"
+          cp /tmp/runs-public.json "runs/${TIMESTAMP_FILE}.json"
 
       - name: Update repos summary
         run: |
