@@ -610,8 +610,10 @@
     try {
       const resp = await fetch(`${RAW_BASE}/runs/${fileTs}.json`);
       if (resp.ok) {
-        const runs = await resp.json();
-        renderRuns(runs, 'Workflow runs collected at this checkpoint (from stored data)');
+        // Older snapshots are a bare array of runs; newer ones wrap the runs with collection details
+        const snapshot = await resp.json();
+        const runs = Array.isArray(snapshot) ? snapshot : (snapshot.runs || []);
+        renderRuns(runs, 'Workflow runs collected at this checkpoint (from stored data)', snapshotWarning(snapshot));
         return;
       }
     } catch (_) { /* fall through to live fetch */ }
@@ -716,11 +718,20 @@
     return `conclusion-${conclusion || 'unknown'}`;
   }
 
-  function renderRuns(runs, subtitle) {
+  function snapshotWarning(snapshot) {
+    const errors = (!Array.isArray(snapshot) && snapshot.errors) || [];
+    if (errors.length === 0) return '';
+    const rateLimited = errors.some(e => e.kind === 'rate_limited');
+    return `<div class="error">Run lookups failed at this checkpoint${rateLimited ? ' because the rate limit was reached' : ''}
+      (${Number(snapshot.repos_checked) || 0} of ${Number(snapshot.repos_planned) || 0} repos checked), so runs may be missing here.
+      The next successful snapshot looks back over this window.</div>`;
+  }
+
+  function renderRuns(runs, subtitle, warning = '') {
     document.getElementById('detailSubtitle').textContent += ` — ${subtitle}`;
 
     if (runs.length === 0) {
-      document.getElementById('detailContent').innerHTML =
+      document.getElementById('detailContent').innerHTML = warning ||
         '<p style="color:#8b949e;font-size:13px;">No workflow runs found in this time window.</p>';
       return;
     }
@@ -749,6 +760,7 @@
     `).join('');
 
     document.getElementById('detailContent').innerHTML = `
+      ${warning}
       <div style="margin-bottom:16px;">
         <div style="font-size:13px;color:#8b949e;margin-bottom:8px;">Most active repositories (${runs.length} runs total):</div>
         <div>${summary}</div>
