@@ -353,6 +353,18 @@
     .workflow-table tr.focused td { background: rgba(31,111,235,0.2); }
     .workflow-table .wf-name { color: #f0f6fc; }
     .workflow-table .wf-repo { font-size: 12px; color: #8b949e; }
+    .reveal-names { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 8px; }
+    .reveal-names label { flex-basis: 100%; }
+    .reveal-names input {
+      flex: 1 1 200px;
+      min-width: 0;
+      padding: 6px 10px;
+      background: #0d1117;
+      color: #f0f6fc;
+      border: 1px solid #30363d;
+      border-radius: 6px;
+      font-size: 13px;
+    }
 
     .tag {
       background: #21262d;
@@ -542,6 +554,11 @@
 
   const snapshotCache = new Map();  // CSV timestamp → Promise of a runs array, or null when missing
   const liveRuns = new Map();       // run id → run fetched live with the PAT
+  const REVEALED_NAMES_STORAGE = 'revealed_names';
+  const MAX_REPO_PAGES_TO_REVEAL = 20;
+
+  let labelKey = '';                // SNAPSHOT_LABEL_KEY as typed; only kept until the page reloads
+  let revealedNames = loadRevealedNames();
 
   const SNAPSHOT_LOOKBACK_MS = 20 * 60 * 1000;  // older snapshots collect runs created in the last 20 minutes
   const LEGACY_SNAPSHOT_REPO_RUN_CAP = 10;      // older snapshots store at most 10 runs per repo
@@ -995,7 +1012,23 @@
     return results;
   }
 
-  function normalizeRun(run, lastSeen) {
+  // Puts back the real names of a pseudonymised run, once they have been revealed in this browser.
+  function revealRun(run) {
+    const repo = revealedNames.repos[run.repo];
+    if (!repo) return run;
+    const workflow = revealedNames.workflows[run.workflow_id];
+    return {
+      ...run,
+      repo,
+      // The real id makes these group with runs of older snapshots and runs fetched live.
+      workflow_id: workflow ? workflow.id : run.workflow_id,
+      name: workflow && String(run.name).startsWith('workflow-') ? workflow.name : run.name,
+      html_url: `https://github.com/${repo}/actions/runs/${run.id}`,
+    };
+  }
+
+  function normalizeRun(rawRun, lastSeen) {
+    const run = revealRun(rawRun);
     const start = new Date(run.created_at).getTime();
     const updated = new Date(run.updated_at).getTime();
     const finished = run.status === 'completed';
@@ -1318,7 +1351,33 @@
     } else if (incomplete) {
       liveAction = '<div>Save a GitHub PAT above to fill these gaps from the GitHub API.</div>';
     }
-    document.getElementById('analysisNotes').innerHTML = `<ul>${notes.join('')}</ul>${liveAction}`;
+    document.getElementById('analysisNotes').innerHTML = `<ul>${notes.join('')}</ul>${liveAction}${revealNamesControls(hasPAT)}`;
+  }
+
+  // A workflow label stays a string; real workflow ids are numbers.
+  function hasHiddenName(run) {
+    return !run.repo.includes('/') || typeof run.workflow_id === 'string';
+  }
+
+  function revealNamesControls(hasPAT) {
+    const hasRevealed = Object.keys(revealedNames.repos).length > 0;
+    const forget = hasRevealed
+      ? '<button type="button" class="secondary" data-action="forget-names">Forget revealed names in this browser</button>'
+      : '';
+    const hiddenRuns = analysis.runs.filter(hasHiddenName).length;
+    if (hiddenRuns === 0) return forget ? `<div class="reveal-names">${forget}</div>` : '';
+
+    const about = `${hiddenRuns.toLocaleString()} ${hiddenRuns === 1 ? 'run in this window has' : 'runs in this window have'} hidden repo or workflow names.`;
+    if (!hasPAT) {
+      return `<div class="reveal-names"><div>${about} Save a GitHub PAT above that can read those repos to reveal them.</div>${forget}</div>`;
+    }
+    return `
+      <div class="reveal-names">
+        <label for="labelKeyInput">${about} Enter your <code>SNAPSHOT_LABEL_KEY</code> to show them in this browser only. The key is not stored or sent anywhere.</label>
+        <input type="password" id="labelKeyInput" autocomplete="off" spellcheck="false" placeholder="SNAPSHOT_LABEL_KEY" value="${escapeHtml(labelKey)}" />
+        <button type="button" class="secondary" data-action="reveal-names">Reveal names (spends a few of your calls)</button>
+        ${forget}
+      </div>`;
   }
 
   const WORKFLOW_COLUMNS = [
@@ -1519,6 +1578,116 @@
     }
   }
 
+  // ── Reveal pseudonymised names in this browser ────────────────────────────────
+  function loadRevealedNames() {
+    try {
+      const stored = JSON.parse(localStorage.getItem(REVEALED_NAMES_STORAGE));
+      if (stored && stored.repos && stored.workflows) return stored;
+    } catch (_) { /* start empty when storage is blocked or the value is damaged */ }
+    return { repos: {}, workflows: {} };
+  }
+
+  function saveRevealedNames() {
+    try {
+      localStorage.setItem(REVEALED_NAMES_STORAGE, JSON.stringify(revealedNames));
+    } catch (_) { /* the names still apply until the page reloads */ }
+  }
+
+  function importLabelKey(key) {
+    return crypto.subtle.importKey('raw', new TextEncoder().encode(key), { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  }
+
+  // Matches what the workflow computes: the first 12 hex characters of an HMAC-SHA256.
+  async function computeLabel(cryptoKey, text) {
+    const signature = await crypto.subtle.sign('HMAC', cryptoKey, new TextEncoder().encode(text));
+    return [...new Uint8Array(signature)].map(b => b.toString(16).padStart(2, '0')).join('').slice(0, 12);
+  }
+
+  async function revealNames(cryptoKey, pat, runs) {
+    const hiddenRepos = new Set(runs.filter(run => !run.repo.includes('/')).map(run => run.repo));
+    const reposToRead = new Set(runs.filter(run => run.repo.includes('/') && hasHiddenName(run)).map(run => run.repo));
+    const hiddenRepoCount = hiddenRepos.size;
+
+    for (let page = 1; hiddenRepos.size > 0 && page <= MAX_REPO_PAGES_TO_REVEAL; page++) {
+      const resp = await ghFetch(`https://api.github.com/user/repos?sort=pushed&direction=desc&per_page=100&page=${page}`, pat);
+      if (!resp.ok) throw new Error(`Repos fetch failed: ${resp.status}`);
+      const repos = await resp.json();
+      for (const repo of repos) {
+        const label = `private-${await computeLabel(cryptoKey, repo.full_name)}`;
+        if (hiddenRepos.delete(label)) {
+          revealedNames.repos[label] = repo.full_name;
+          reposToRead.add(repo.full_name);
+        }
+      }
+      if (repos.length < 100) break;
+    }
+
+    let failedRepos = 0;
+    await Promise.all([...reposToRead].map(async repo => {
+      try {
+        const resp = await ghFetch(`https://api.github.com/repos/${repo}/actions/workflows?per_page=100`, pat);
+        if (!resp.ok) {
+          failedRepos++;
+          return;
+        }
+        const data = await resp.json();
+        for (const workflow of data.workflows || []) {
+          const label = await computeLabel(cryptoKey, `${repo}#${workflow.id}`);
+          revealedNames.workflows[label] = { id: workflow.id, name: workflow.name };
+        }
+      } catch (_) {
+        failedRepos++;
+      }
+    }));
+    saveRevealedNames();
+    return { hiddenRepoCount, missedRepos: hiddenRepos.size, failedRepos };
+  }
+
+  async function revealNamesFromForm(button) {
+    labelKey = document.getElementById('labelKeyInput').value.trim();
+    if (!labelKey) {
+      document.getElementById('labelKeyInput').focus();
+      return;
+    }
+    const token = analysisToken;
+    button.disabled = true;
+    button.textContent = 'Revealing names…';
+    try {
+      const cryptoKey = await importLabelKey(labelKey);
+      const result = await revealNames(cryptoKey, loadPAT(), analysis.runs.filter(hasHiddenName));
+      if (token !== analysisToken) return;
+      await runAnalysis();
+      if (token + 1 !== analysisToken) return;
+      const problems = [];
+      if (result.missedRepos > 0) {
+        problems.push(`${result.missedRepos} of ${result.hiddenRepoCount} repos could not be matched. Check the key, and that your PAT can read those repos.`);
+      }
+      if (result.failedRepos > 0) problems.push(`Listing workflows failed for ${result.failedRepos} repos.`);
+      const hiddenLeft = analysis.runs.filter(hasHiddenName).length;
+      if (result.missedRepos === 0 && result.failedRepos === 0 && hiddenLeft > 0) {
+        problems.push('Some workflows no longer exist in their repo, so their names cannot be recovered.');
+      }
+      if (problems.length > 0) {
+        document.getElementById('analysisNotes').insertAdjacentHTML('beforeend', `<div class="warn">${escapeHtml(problems.join(' '))}</div>`);
+      }
+    } catch (err) {
+      if (token !== analysisToken) return;
+      document.getElementById('analysisNotes').insertAdjacentHTML('beforeend',
+        `<div class="error" style="margin-top:8px;">Failed to reveal names: ${escapeHtml(err.message)}</div>`);
+      button.disabled = false;
+      button.textContent = 'Reveal names (spends a few of your calls)';
+    }
+  }
+
+  function forgetRevealedNames() {
+    revealedNames = { repos: {}, workflows: {} };
+    labelKey = '';
+    try {
+      localStorage.removeItem(REVEALED_NAMES_STORAGE);
+    } catch (_) { /* nothing was stored then */ }
+    runAnalysis();
+  }
+
   function ghFetch(url, pat) {
     return fetch(url, {
       headers: {
@@ -1701,6 +1870,14 @@
       fillGapsFromApi(action);
       return;
     }
+    if (action && action.dataset.action === 'reveal-names') {
+      revealNamesFromForm(action);
+      return;
+    }
+    if (action && action.dataset.action === 'forget-names') {
+      forgetRevealedNames();
+      return;
+    }
     const sortButton = e.target.closest('[data-sort]');
     if (sortButton) {
       const column = sortButton.dataset.sort;
@@ -1721,7 +1898,15 @@
       renderAnalysis();
     }
   });
+  document.getElementById('detailPanel').addEventListener('input', e => {
+    // The notes re-render on every filter change, so keep what was typed.
+    if (e.target.id === 'labelKeyInput') labelKey = e.target.value;
+  });
   document.getElementById('detailPanel').addEventListener('keydown', e => {
+    if (e.target.id === 'labelKeyInput') {
+      if (e.key === 'Enter') document.querySelector('[data-action="reveal-names"]').click();
+      return;
+    }
     if (e.key !== 'Enter' && e.key !== ' ') return;
     const row = e.target.closest('[data-workflow]');
     if (!row) return;
