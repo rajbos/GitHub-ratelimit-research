@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-11-05T11:46:26Z",
+  "last_updated": "2026-11-05T12:02:05Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12553,
+      "run_count": 12555,
       "total_minutes": 1417,
       "seen_run_ids": [
-        41628116080,
-        41632257809,
         41635075258,
         41636472697,
         41638437555,
@@ -206,7 +204,9 @@
         42015446702,
         42013391950,
         42017512341,
-        42019526298
+        42019526298,
+        42023675971,
+        42021596873
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4693,15 +4693,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1614,
-      "total_minutes": 1405,
+      "run_count": 1620,
+      "total_minutes": 1414,
       "seen_run_ids": [
-        39123801622,
-        39128882369,
-        39128801802,
-        39128801842,
-        39128800541,
-        39128792462,
         39128792477,
         39128792453,
         39128790814,
@@ -4895,7 +4889,13 @@
         42011661515,
         42018919723,
         42018918082,
-        42018918188
+        42018918188,
+        42020109884,
+        42020108523,
+        42020108475,
+        42019674155,
+        42019674132,
+        42019670375
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5126,10 +5126,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 965,
+      "run_count": 966,
       "total_minutes": 1400,
       "seen_run_ids": [
-        35535082370,
         35535038405,
         35535034178,
         35577948272,
@@ -5328,7 +5327,8 @@
         41999510254,
         41999482834,
         42009457914,
-        42009457627
+        42009457627,
+        42021059500
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5737,10 +5737,9 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 293,
+      "run_count": 294,
       "total_minutes": 42,
       "seen_run_ids": [
-        34204850979,
         34329434500,
         34329434521,
         34329435043,
@@ -5939,7 +5938,8 @@
         41993796847,
         41993796840,
         41993797126,
-        41993763008
+        41993763008,
+        42020197644
       ]
     },
     "rajbos/ai-engineering-fluency": {
