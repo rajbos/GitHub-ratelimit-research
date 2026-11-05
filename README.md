@@ -25,7 +25,7 @@ Create a [fine-grained PAT](https://github.com/settings/tokens) (or classic PAT)
 
 In your repository settings → *Secrets and variables* → *Actions*, create a secret named **`PAT`** containing your token.
 
-Also create a secret named **`SNAPSHOT_LABEL_KEY`** containing a random value, for example the output of `openssl rand -hex 32`. Snapshots on the `data` branch are public, so private and internal repos appear as `private-<12 hex characters>` and their workflows as `workflow-<12 hex characters>`, with no real workflow names or IDs, run links or human actors. Without this secret, runs of those repos are left out of the snapshots.
+Also create a secret named **`SNAPSHOT_LABEL_KEY`** containing a random value, for example the output of `openssl rand -hex 32`. Snapshots on the `data` branch are public, so private and internal repos appear as `private-<12 hex characters>` and their workflows as `workflow-<12 hex characters>`, with no real workflow names or IDs, run links or human actors. Without this secret, runs of those repos are left out of the snapshots. Keep a copy of the value: GitHub won't show it again, and the dashboard needs it to reveal those names to you.
 
 To check whether a label stands for a repo, or for a workflow using `owner/repo#<workflow id>`:
 
@@ -69,3 +69,14 @@ Treat the result as a list of suspects to check, not as a measurement:
 - Only the 20 most recently pushed repos are sampled, with at most 100 runs per repo per snapshot (10 in older snapshots).
 - Each snapshot looks back to the previous sample, by up to 6 hours, and records any failed lookups so the next one can cover that window. Older snapshots only look back 20 minutes, so runs that started and finished in a longer gap are missing. The dashboard warns you when this affects the selected window.
 - When a quota reset falls inside a bar, calls made just before the reset are not known, so that bar shows a lower bound.
+
+### Revealing private repo names
+
+Private and internal repos show up as `private-<12 hex characters>` in the public snapshots. To see the real names on your own screen, save a PAT that can read those repos, select a window that contains them, enter your `SNAPSHOT_LABEL_KEY` and choose **Reveal names**.
+
+The page lists your repos with the PAT, computes the same labels in your browser and matches them. This also restores links to the runs.
+
+- The key stays in the page until you reload it. It is not stored or sent anywhere.
+- The revealed names are stored in this browser's local storage until you choose **Forget revealed names**.
+- Nothing is published, and other visitors still see the labels.
+- Replacing `SNAPSHOT_LABEL_KEY` changes the labels, so older snapshots can only be revealed with the old key. A workflow that no longer exists stays a label.
