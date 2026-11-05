@@ -697,6 +697,36 @@
     };
   }
 
+  // Draws a vertical line at every whole hour (local time), with midnight stronger. When zoomed
+  // far out the step widens (2, 3, 6, 12, 24 h) so the lines stay at least ~14px apart.
+  const hourGridlines = {
+    id: 'hourGridlines',
+    beforeDatasetsDraw(chart) {
+      const { ctx, chartArea: area, scales: { x } } = chart;
+      if (!x || !isFinite(x.min) || !isFinite(x.max)) return;
+      const HOUR = 3600000;
+      const pxPerHour = (area.right - area.left) / ((x.max - x.min) / HOUR);
+      const step = [1, 2, 3, 6, 12, 24].find(s => s * pxPerHour >= 14);
+      if (!step) return;
+      const d = new Date(x.min);
+      d.setMinutes(0, 0, 0);
+      d.setHours(Math.floor(d.getHours() / step) * step);
+      ctx.save();
+      ctx.lineWidth = 1;
+      for (; d.getTime() <= x.max; d.setHours(d.getHours() + step)) {
+        const t = d.getTime();
+        if (t < x.min) continue;
+        const px = Math.round(x.getPixelForValue(t)) + 0.5;
+        ctx.strokeStyle = d.getHours() === 0 ? 'rgba(139,148,158,0.55)' : 'rgba(139,148,158,0.3)';
+        ctx.beginPath();
+        ctx.moveTo(px, area.top);
+        ctx.lineTo(px, area.bottom);
+        ctx.stroke();
+      }
+      ctx.restore();
+    },
+  };
+
   // Shades the selected time window (or the selection being dragged) on a chart.
   const selectionOverlay = {
     id: 'selectionOverlay',
@@ -737,7 +767,7 @@
 
     coreChart = new Chart(ctx, {
       type: 'line',
-      plugins: [selectionOverlay],
+      plugins: [hourGridlines, selectionOverlay],
       data: {
         datasets: [{
           label: 'Core Remaining',
@@ -785,7 +815,7 @@
 
     deltaChart = new Chart(ctx, {
       type: 'bar',
-      plugins: [selectionOverlay],
+      plugins: [hourGridlines, selectionOverlay],
       data: {
         datasets: [{
           label: 'API Calls Used',
