@@ -1,0 +1,15 @@
+{
+  "since": "2026-11-05T21:29:14Z",
+  "repos_planned": 20,
+  "repos_checked": 0,
+  "truncated": [],
+  "errors": [
+    {
+      "scope": "runs",
+      "kind": "rate_limited",
+      "status": 403,
+      "count": 20
+    }
+  ],
+  "runs": []
+}
