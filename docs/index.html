@@ -554,6 +554,8 @@
 
   const snapshotCache = new Map();  // CSV timestamp → Promise of a runs array, or null when missing
   const liveRuns = new Map();       // run id → run fetched live with the PAT
+  let csvText = null;               // the CSV currently shown, to skip re-rendering unchanged data
+  let lastLoadAttempt = 0;          // when the CSV was last requested, in epoch ms
   const REVEALED_NAMES_STORAGE = 'revealed_names';
   const MAX_REPO_PAGES_TO_REVEAL = 20;
 
@@ -566,6 +568,8 @@
   const MAX_RUNS_LISTED = 200;
   const SUSPECT_MIN_LIFT = 1.5;  // calls when active vs idle, before a workflow counts as standing out
   const MONITOR_WORKFLOW_NAME = 'Check GitHub Rate Limit';
+  const RUN_INTERVAL_MS = 15 * 60 * 1000;   // the monitor's cron schedule
+  const MIN_RELOAD_GAP_MS = 60 * 1000;      // don't refetch on every focus while the next run is late
 
   // ── PAT storage ──────────────────────────────────────────────────────────────
   function loadPAT() {
@@ -1716,9 +1720,10 @@
 
   // ── Main data load & render ───────────────────────────────────────────────────
   async function loadAndRender() {
+    lastLoadAttempt = Date.now();
     document.getElementById('statusText').textContent = 'Fetching rate limit data…';
     try {
-      const resp = await fetch(`${RAW_BASE}/ratelimit.csv`);
+      const resp = await fetch(`${RAW_BASE}/ratelimit.csv`, { cache: 'no-cache' });
       if (!resp.ok) {
         if (resp.status === 404) {
           document.getElementById('statusText').textContent =
@@ -1728,10 +1733,10 @@
         throw new Error(`HTTP ${resp.status}`);
       }
       const text  = await resp.text();
-      allRows = parseCSV(text);
-      allBars = computeDeltas(allRows);
-
-      refreshDashboard();
+      if (text !== csvText) {
+        csvText = text;
+        showNewData(text);
+      }
       document.getElementById('statusText').textContent =
         `Loaded ${allRows.length.toLocaleString()} data points (showing ${rangeRows.length.toLocaleString()} in selected range). Select a time window on either chart to see the workflow runs in it.`;
     } catch (err) {
@@ -1739,11 +1744,39 @@
     }
   }
 
-  function refreshDashboard() {
+  function applyRange() {
     rangeRows = filterRows(allRows);
     bars = rangeRows.length > 0 ? allBars.filter(b => b.date >= rangeRows[0].date) : [];
-    viewRange = null;
     updateStats(rangeRows);
+  }
+
+  // Keeps the zoom and the selected window, so new data doesn't undo what the user was looking at.
+  function showNewData(text) {
+    const latestBefore = bars.length > 0 ? bars[bars.length - 1].t : Infinity;
+    const followingLatest = selection !== null && selection.to >= latestBefore;
+    allRows = parseCSV(text);
+    allBars = computeDeltas(allRows);
+    applyRange();
+
+    if (bars.length === 0 || (selectedBars().length === 0 && !followingLatest)) {
+      refreshDashboard();
+      return;
+    }
+
+    renderCharts();
+    if (followingLatest) {
+      // A window ending at the newest sample moves along with it; an older one is left alone.
+      const to = Math.max(selection.to, bars[bars.length - 1].t);
+      const from = windowPreset === 0 ? bars[0].startT : selection.from + (to - selection.to);
+      setWindow(from, to, windowPreset);
+    } else {
+      syncWindowControls();
+    }
+  }
+
+  function refreshDashboard() {
+    applyRange();
+    viewRange = null;
 
     if (bars.length === 0) {
       selection = null;
@@ -1760,10 +1793,34 @@
     else selectLatestHour();
   }
 
+  // ── Refresh when the page regains focus ───────────────────────────────────────
+  // The length of the last run window: the gap between the two newest samples. Scheduled
+  // runs can start late, so one long gap must not postpone the next refresh by as much.
+  function lastRunWindowMs() {
+    if (allRows.length < 2) return RUN_INTERVAL_MS;
+    const gap = allRows[allRows.length - 1].date.getTime() - allRows[allRows.length - 2].date.getTime();
+    return gap > 0 ? Math.min(gap, RUN_INTERVAL_MS) : RUN_INTERVAL_MS;
+  }
+
+  // Compares epoch milliseconds: the CSV timestamps are UTC and parsed as such, and Date.now()
+  // is UTC too, so the viewer's timezone (which only affects the displayed text) plays no part.
+  function isDataStale(now) {
+    if (allRows.length === 0) return true;
+    return now - allRows[allRows.length - 1].date.getTime() > lastRunWindowMs();
+  }
+
+  function refreshIfStale() {
+    if (document.visibilityState !== 'visible' || dragState) return;
+    const now = Date.now();
+    if (now - lastLoadAttempt < MIN_RELOAD_GAP_MS || !isDataStale(now)) return;
+    loadAndRender();
+    loadReposSummary();
+  }
+
   // ── Repos summary ─────────────────────────────────────────────────────────────
   async function loadReposSummary() {
     try {
-      const resp = await fetch(`${RAW_BASE}/repos-summary.json`);
+      const resp = await fetch(`${RAW_BASE}/repos-summary.json`, { cache: 'no-cache' });
       if (!resp.ok) return;
       const data = await resp.json();
       renderReposSummary(data);
@@ -1818,6 +1875,10 @@
   loadPAT();
   loadAndRender();
   loadReposSummary();
+
+  // Switching tabs fires visibilitychange, switching windows fires focus.
+  document.addEventListener('visibilitychange', refreshIfStale);
+  window.addEventListener('focus', refreshIfStale);
 
   document.getElementById('rangeSelect').addEventListener('change', refreshDashboard);
 

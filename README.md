@@ -33,6 +33,8 @@ To check whether a label stands for a repo, or for a workflow using `owner/repo#
 printf '%s' 'owner/repo' | openssl dgst -sha256 -hmac "$SNAPSHOT_LABEL_KEY" -r | cut -c1-12
 ```
 
+Optionally, create a variable named **`RUNS_EXCLUDE_ORGS`** with a comma-separated list of orgs to leave out of run collection. Use this for orgs whose repos are pushed to so often that they take the lookup slots of more relevant repos.
+
 ### 3. Enable GitHub Pages
 
 In your repository settings → *Pages*, set the source to **Deploy from a branch**, branch **`main`**, folder **`/docs`**.
