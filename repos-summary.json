@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-11-05T09:46:09Z",
+  "last_updated": "2026-11-05T10:01:48Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12541,
+      "run_count": 12543,
       "total_minutes": 1416,
       "seen_run_ids": [
-        41603838663,
-        41607634913,
         41609827073,
         41613642121,
         41611622278,
@@ -206,7 +204,9 @@
         41995506192,
         41998971663,
         42001252722,
-        42002975192
+        42002975192,
+        42007192310,
+        42005041979
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6747,12 +6747,17 @@
     "xebia/github-agentic-workflows-demo": {
       "full_name": "xebia/github-agentic-workflows-demo",
       "html_url": "https://github.com/xebia/github-agentic-workflows-demo",
-      "run_count": 3,
-      "total_minutes": 2,
+      "run_count": 8,
+      "total_minutes": 20,
       "seen_run_ids": [
         42002533738,
         42002475857,
-        42002281223
+        42002281223,
+        42005548331,
+        42004891026,
+        42004179629,
+        42004042242,
+        42003372208
       ]
     }
   }
