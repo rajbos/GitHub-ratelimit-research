@@ -1,0 +1,129 @@
+{
+  "since": "2026-11-06T06:01:17Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 42173954335,
+      "name": "workflow-8aff520b57f0",
+      "workflow_id": "8aff520b57f0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:21:56Z",
+      "updated_at": "2026-11-06T06:22:28Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 42173714780,
+      "name": "workflow-b0317f29692e",
+      "workflow_id": "b0317f29692e",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:19:38Z",
+      "updated_at": "2026-11-06T06:21:58Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-882b9716397c",
+      "id": 42173298702,
+      "name": "workflow-12a97ccf0fb5",
+      "workflow_id": "12a97ccf0fb5",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-06T06:15:33Z",
+      "updated_at": "2026-11-06T06:23:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 42173373635,
+      "name": "workflow-486d5eeed191",
+      "workflow_id": "486d5eeed191",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:16:17Z",
+      "updated_at": "2026-11-06T06:17:10Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 42172635285,
+      "name": "workflow-93c8a5530162",
+      "workflow_id": "93c8a5530162",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:09:14Z",
+      "updated_at": "2026-11-06T06:10:04Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 42172634371,
+      "name": "workflow-39dc37f08bb4",
+      "workflow_id": "39dc37f08bb4",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:09:14Z",
+      "updated_at": "2026-11-06T06:10:20Z",
+      "html_url": null,
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 42172616138,
+      "name": "workflow-373df73b43a9",
+      "workflow_id": "373df73b43a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:09:03Z",
+      "updated_at": "2026-11-06T06:09:15Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42174328549,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-06T06:25:25Z",
+      "updated_at": "2026-11-06T06:25:28Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42174328549",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42171979994,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:02:48Z",
+      "updated_at": "2026-11-06T06:04:06Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42171979994",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-367605b5ecd5",
+      "id": 42172060586,
+      "name": "workflow-5a7f0f4cab7b",
+      "workflow_id": "5a7f0f4cab7b",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-06T06:03:36Z",
+      "updated_at": "2026-11-06T06:08:47Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
