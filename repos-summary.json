@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-06T07:17:48Z",
+  "last_updated": "2026-11-06T07:31:04Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12631,
+      "run_count": 12632,
       "total_minutes": 1420,
       "seen_run_ids": [
-        41792768621,
         41794507775,
         41796326746,
         41798704721,
@@ -206,7 +205,8 @@
         42175418093,
         42178096737,
         42176479918,
-        42179891587
+        42179891587,
+        42181345828
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5946,16 +5946,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 11179,
+      "run_count": 11186,
       "total_minutes": 10830,
       "seen_run_ids": [
-        42065606079,
-        42072026511,
-        42070692985,
-        42070686328,
-        42070686413,
-        42070686577,
-        42070686281,
         42070686320,
         42070686578,
         42070686443,
@@ -6148,7 +6141,14 @@
         42179202811,
         42179203071,
         42179203026,
-        42179202360
+        42179202360,
+        42180647628,
+        42180484267,
+        42180223145,
+        42180201581,
+        42180143734,
+        42180093125,
+        42180086472
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6577,7 +6577,7 @@
     "devex-metrics/repo-landscape-template": {
       "full_name": "devex-metrics/repo-landscape-template",
       "html_url": "https://github.com/devex-metrics/repo-landscape-template",
-      "run_count": 20,
+      "run_count": 24,
       "total_minutes": 0,
       "seen_run_ids": [
         36143027501,
@@ -6599,13 +6599,17 @@
         41227991616,
         41227849881,
         41230196548,
-        41230092360
+        41230092360,
+        42180771393,
+        42180765778,
+        42180043169,
+        42179999387
       ]
     },
     "devex-metrics/repo-landscape-cli": {
       "full_name": "devex-metrics/repo-landscape-cli",
       "html_url": "https://github.com/devex-metrics/repo-landscape-cli",
-      "run_count": 21,
+      "run_count": 23,
       "total_minutes": 0,
       "seen_run_ids": [
         36142760003,
@@ -6628,7 +6632,9 @@
         40565719522,
         40565701486,
         40565589231,
-        42122901780
+        42122901780,
+        42180051083,
+        42180031403
       ]
     },
     "rajbos/typescript-demo": {
