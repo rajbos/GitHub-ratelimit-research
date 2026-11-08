@@ -1,0 +1,57 @@
+{
+  "since": "2026-11-08T12:29:19Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42481744772,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-08T12:45:41Z",
+      "updated_at": "2026-11-08T12:45:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42481744772",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42480605090,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-08T12:30:49Z",
+      "updated_at": "2026-11-08T12:31:59Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42480605090",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-367605b5ecd5",
+      "id": 42480913021,
+      "name": "workflow-a92dbbecff11",
+      "workflow_id": "a92dbbecff11",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-08T12:34:42Z",
+      "updated_at": "2026-11-08T12:34:43Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 42481015129,
+      "name": "Collect DevEx Metrics",
+      "workflow_id": 253065855,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-08T12:35:59Z",
+      "updated_at": "2026-11-08T12:36:02Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/42481015129",
+      "actor_login": "rajbos"
+    }
+  ]
+}
