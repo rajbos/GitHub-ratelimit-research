@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-09T19:31:19Z",
+  "last_updated": "2026-11-09T19:46:07Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12834,
+      "run_count": 12835,
       "total_minutes": 1424,
       "seen_run_ids": [
-        42394163829,
         42395427194,
         42396675930,
         42397877738,
@@ -206,7 +205,8 @@
         42676852211,
         42679247223,
         42681674759,
-        42684048137
+        42684048137,
+        42686406499
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1459,10 +1459,9 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 266,
-      "total_minutes": 83,
+      "run_count": 267,
+      "total_minutes": 91,
       "seen_run_ids": [
-        24280558188,
         24280558004,
         24280497727,
         24280497734,
@@ -1661,7 +1660,8 @@
         41796987270,
         41796987232,
         41796985975,
-        42642697877
+        42642697877,
+        42685135795
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
