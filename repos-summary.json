@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-09T22:16:15Z",
+  "last_updated": "2026-11-09T22:31:33Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12845,
+      "run_count": 12846,
       "total_minutes": 1424,
       "seen_run_ids": [
-        42407763678,
         42408958304,
         42410193045,
         42411394903,
@@ -206,7 +205,8 @@
         42703186907,
         42705565413,
         42710255469,
-        42707913538
+        42707913538,
+        42712557312
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6794,10 +6794,14 @@
     "rajbos/mistral-openapi-spec-checker": {
       "full_name": "rajbos/mistral-openapi-spec-checker",
       "html_url": "https://github.com/rajbos/mistral-openapi-spec-checker",
-      "run_count": 1,
-      "total_minutes": 4,
+      "run_count": 5,
+      "total_minutes": 7,
       "seen_run_ids": [
-        42527712754
+        42527712754,
+        42712551304,
+        42710893277,
+        42710606421,
+        42710550536
       ]
     }
   }
