@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-09T14:29:11Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-8c13cc2562ac",
+      "id": 42637505339,
+      "name": "workflow-5bb38dd9e9aa",
+      "workflow_id": "5bb38dd9e9aa",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-09T14:43:45Z",
+      "updated_at": "2026-11-09T14:43:54Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42637820831,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-09T14:45:39Z",
+      "updated_at": "2026-11-09T14:45:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42637820831",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42635397942,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:30:45Z",
+      "updated_at": "2026-11-09T14:31:51Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42635397942",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-8dc90425d66d",
+      "id": 42635830162,
+      "name": "workflow-9d9b4bd2b3c3",
+      "workflow_id": "9d9b4bd2b3c3",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:33:23Z",
+      "updated_at": "2026-11-09T14:34:42Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-8dc90425d66d",
+      "id": 42635163025,
+      "name": "workflow-2bf1b3696972",
+      "workflow_id": "2bf1b3696972",
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-09T14:29:21Z",
+      "updated_at": "2026-11-09T14:29:21Z",
+      "html_url": null,
+      "actor_login": "github-actions[bot]"
+    }
+  ]
+}
