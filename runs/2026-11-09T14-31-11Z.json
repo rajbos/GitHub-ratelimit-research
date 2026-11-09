@@ -1,0 +1,153 @@
+{
+  "since": "2026-11-09T14:16:03Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-8dc90425d66d",
+      "id": 42635163025,
+      "name": "workflow-2bf1b3696972",
+      "workflow_id": "2bf1b3696972",
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-09T14:29:21Z",
+      "updated_at": "2026-11-09T14:29:21Z",
+      "html_url": null,
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "private-8dc90425d66d",
+      "id": 42635105688,
+      "name": "workflow-1fa696f474fa",
+      "workflow_id": "1fa696f474fa",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:29:00Z",
+      "updated_at": "2026-11-09T14:29:24Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-8dc90425d66d",
+      "id": 42635103492,
+      "name": "workflow-1fa696f474fa",
+      "workflow_id": "1fa696f474fa",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-09T14:28:59Z",
+      "updated_at": "2026-11-09T14:29:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42634136731,
+      "name": "CI",
+      "workflow_id": 253922805,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:23:05Z",
+      "updated_at": "2026-11-09T14:25:18Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42634136731",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42634137374,
+      "name": "Secure Input Scan",
+      "workflow_id": 282184826,
+      "status": "completed",
+      "conclusion": "startup_failure",
+      "created_at": "2026-11-09T14:23:05Z",
+      "updated_at": "2026-11-09T14:23:06Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42634137374",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42634136372,
+      "name": "Dependency Review",
+      "workflow_id": 253999913,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:23:05Z",
+      "updated_at": "2026-11-09T14:23:20Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42634136372",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42634136688,
+      "name": "CodeQL",
+      "workflow_id": 253999908,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:23:05Z",
+      "updated_at": "2026-11-09T14:24:04Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42634136688",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42633623968,
+      "name": "docker in /. - Update #1690463908",
+      "workflow_id": 253994566,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:19:57Z",
+      "updated_at": "2026-11-09T14:20:30Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42633623968",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42633620434,
+      "name": "pip in /. - Update #1690463916",
+      "workflow_id": 253994566,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:19:56Z",
+      "updated_at": "2026-11-09T14:20:42Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42633620434",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devops-actions/load-dependents-count",
+      "id": 42633620055,
+      "name": "github_actions in /. - Update #1690463923",
+      "workflow_id": 253994566,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:19:56Z",
+      "updated_at": "2026-11-09T14:21:03Z",
+      "html_url": "https://github.com/devops-actions/load-dependents-count/actions/runs/42633620055",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42635397942,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-09T14:30:45Z",
+      "updated_at": "2026-11-09T14:30:48Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42635397942",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 42633249730,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-09T14:17:36Z",
+      "updated_at": "2026-11-09T14:18:57Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/42633249730",
+      "actor_login": "rajbos"
+    }
+  ]
+}
