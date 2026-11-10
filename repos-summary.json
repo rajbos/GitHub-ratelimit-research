@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-10T06:35:31Z",
+  "last_updated": "2026-11-10T06:46:13Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 12877,
+      "run_count": 12878,
       "total_minutes": 1424,
       "seen_run_ids": [
-        42445066830,
         42446181679,
         42447117500,
         42448097700,
@@ -206,7 +205,8 @@
         42764145959,
         42768218853,
         42765843301,
-        42769481618
+        42769481618,
+        42770680334
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1459,15 +1459,9 @@
     "devops-actions/github-copilot-pr-analysis": {
       "full_name": "devops-actions/github-copilot-pr-analysis",
       "html_url": "https://github.com/devops-actions/github-copilot-pr-analysis",
-      "run_count": 267,
-      "total_minutes": 91,
+      "run_count": 273,
+      "total_minutes": 93,
       "seen_run_ids": [
-        24280558004,
-        24280497727,
-        24280497734,
-        24280497733,
-        24280497683,
-        24280497138,
         24286131172,
         24286131166,
         24286131152,
@@ -1661,7 +1655,13 @@
         41796987232,
         41796985975,
         42642697877,
-        42685135795
+        42685135795,
+        42770429855,
+        42770429341,
+        42770429889,
+        42770429944,
+        42770429753,
+        42770428904
       ]
     },
     "actions-marketplace-validations/jessehouwing_actions-semver-checker": {
@@ -1813,32 +1813,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 662,
-      "total_minutes": 301,
+      "run_count": 685,
+      "total_minutes": 308,
       "seen_run_ids": [
-        30247854581,
-        30247854560,
-        30247854322,
-        30247854572,
-        30247830985,
-        30247831012,
-        30247830960,
-        30247830894,
-        30247830606,
-        30303944021,
-        30303944060,
-        30303944099,
-        30303943457,
-        30303944010,
-        30303914878,
-        30303914765,
-        30303915236,
-        30303914649,
-        30303914466,
-        32011280623,
-        32023828831,
-        32023828407,
-        32023828408,
         32023828336,
         32023823833,
         32023823186,
@@ -2015,7 +1992,30 @@
         42574646388,
         42574646392,
         42574646207,
-        42574646387
+        42574646387,
+        42770599558,
+        42770599936,
+        42770599587,
+        42770599535,
+        42770599802,
+        42770585081,
+        42770585053,
+        42770584807,
+        42770585207,
+        42770567434,
+        42770567478,
+        42770567486,
+        42770567440,
+        42770551397,
+        42770551128,
+        42770551030,
+        42770551136,
+        42770551405,
+        42770476881,
+        42770477306,
+        42770476931,
+        42770476655,
+        42770476844
       ]
     },
     "rajbos/github-fork-updater": {
@@ -4262,8 +4262,8 @@
     "devops-actions/actionlint": {
       "full_name": "devops-actions/actionlint",
       "html_url": "https://github.com/devops-actions/actionlint",
-      "run_count": 175,
-      "total_minutes": 23,
+      "run_count": 184,
+      "total_minutes": 24,
       "seen_run_ids": [
         22571439276,
         22571438201,
@@ -4439,7 +4439,16 @@
         39555442441,
         39555442327,
         40302060027,
-        41423245928
+        41423245928,
+        42770437584,
+        42770417749,
+        42770417324,
+        42770417135,
+        42770417482,
+        42770417181,
+        42770417765,
+        42770417578,
+        42770415415
       ]
     },
     "rajbos/github-copilot-model-notifier": {
@@ -5013,7 +5022,7 @@
     "devops-actions/secure-action-inputs": {
       "full_name": "devops-actions/secure-action-inputs",
       "html_url": "https://github.com/devops-actions/secure-action-inputs",
-      "run_count": 108,
+      "run_count": 111,
       "total_minutes": 27,
       "seen_run_ids": [
         23454907907,
@@ -5123,7 +5132,10 @@
         38352757919,
         39555532188,
         39555532288,
-        39555532270
+        39555532270,
+        42770461939,
+        42770462191,
+        42770461974
       ]
     },
     "devex-metrics/devex-metrics": {
@@ -5414,8 +5426,8 @@
     "devops-actions/load-dependents-count": {
       "full_name": "devops-actions/load-dependents-count",
       "html_url": "https://github.com/devops-actions/load-dependents-count",
-      "run_count": 82,
-      "total_minutes": 21,
+      "run_count": 84,
+      "total_minutes": 23,
       "seen_run_ids": [
         23757011128,
         23763827226,
@@ -5498,7 +5510,9 @@
         40518858985,
         40518858920,
         41470087514,
-        41470087345
+        41470087345,
+        42770445229,
+        42770445148
       ]
     },
     "rajbos/create-github-app-from-manifest": {
