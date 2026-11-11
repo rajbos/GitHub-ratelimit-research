@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-11T21:59:25Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "GHAS-examples/WebGoat.NETCore",
+      "id": 43110364833,
+      "name": ".NET Core",
+      "workflow_id": 97450618,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-11T22:16:28Z",
+      "updated_at": "2026-11-11T22:16:32Z",
+      "html_url": "https://github.com/GHAS-examples/WebGoat.NETCore/actions/runs/43110364833",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "GHAS-examples/WebGoat.NETCore",
+      "id": 43110347755,
+      "name": ".NET Core",
+      "workflow_id": 97450618,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-11T22:16:21Z",
+      "updated_at": "2026-11-11T22:16:25Z",
+      "html_url": "https://github.com/GHAS-examples/WebGoat.NETCore/actions/runs/43110347755",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "GHAS-examples/WebGoat.NETCore",
+      "id": 43109905395,
+      "name": "github_actions in /. - Update #1696872168",
+      "workflow_id": 206194051,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-11T22:13:21Z",
+      "updated_at": "2026-11-11T22:13:57Z",
+      "html_url": "https://github.com/GHAS-examples/WebGoat.NETCore/actions/runs/43109905395",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "GHAS-examples/WebGoat.NETCore",
+      "id": 43109905430,
+      "name": "nuget in /. - Update #1696872171",
+      "workflow_id": 206194051,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-11T22:13:21Z",
+      "updated_at": "2026-11-11T22:16:45Z",
+      "html_url": "https://github.com/GHAS-examples/WebGoat.NETCore/actions/runs/43109905430",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-8889aae342bd",
+      "id": 43108653297,
+      "name": "workflow-004b23d28422",
+      "workflow_id": "004b23d28422",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-11T22:04:46Z",
+      "updated_at": "2026-11-11T22:05:27Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43110259535,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-11T22:15:44Z",
+      "updated_at": "2026-11-11T22:15:47Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43110259535",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43108085496,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-11T22:00:55Z",
+      "updated_at": "2026-11-11T22:02:06Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43108085496",
+      "actor_login": "rajbos"
+    }
+  ]
+}
