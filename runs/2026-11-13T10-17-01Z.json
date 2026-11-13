@@ -1,0 +1,81 @@
+{
+  "since": "2026-11-13T09:59:27Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43406985218,
+      "name": "workflow-8ebaa7a66754",
+      "workflow_id": "8ebaa7a66754",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T10:09:33Z",
+      "updated_at": "2026-11-13T10:09:54Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43406985412,
+      "name": "workflow-0c0c803f60fc",
+      "workflow_id": "0c0c803f60fc",
+      "status": "queued",
+      "conclusion": null,
+      "created_at": "2026-11-13T10:09:33Z",
+      "updated_at": "2026-11-13T10:09:44Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-b3319f6d6648",
+      "id": 43406365922,
+      "name": "workflow-6087beee5efb",
+      "workflow_id": "6087beee5efb",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T10:05:01Z",
+      "updated_at": "2026-11-13T10:07:35Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43407941609,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-13T10:16:36Z",
+      "updated_at": "2026-11-13T10:16:39Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43407941609",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43405828227,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T10:00:59Z",
+      "updated_at": "2026-11-13T10:02:07Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43405828227",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-e07cdfbbe6f8",
+      "id": 43406942017,
+      "name": "workflow-ed5ea4775ab7",
+      "workflow_id": "ed5ea4775ab7",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T10:09:14Z",
+      "updated_at": "2026-11-13T10:10:11Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
