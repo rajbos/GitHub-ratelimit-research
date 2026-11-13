@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-13T06:03:03Z",
+  "last_updated": "2026-11-13T06:24:34Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13159,
+      "run_count": 13160,
       "total_minutes": 1447,
       "seen_run_ids": [
-        42951881437,
         42953259443,
         42954871108,
         42956483622,
@@ -206,7 +205,8 @@
         43370937696,
         43372522405,
         43374116244,
-        43375937995
+        43375937995,
+        43378434674
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6785,10 +6785,11 @@
     "githubpartners/microsoft-learn": {
       "full_name": "githubpartners/microsoft-learn",
       "html_url": "https://github.com/githubpartners/microsoft-learn",
-      "run_count": 1,
+      "run_count": 2,
       "total_minutes": 0,
       "seen_run_ids": [
-        40685706974
+        40685706974,
+        43376887841
       ]
     },
     "xebia/github-agentic-workflows-demo": {

@@ -1,0 +1,117 @@
+{
+  "since": "2026-11-13T06:01:03Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 43378095209,
+      "name": "workflow-8aff520b57f0",
+      "workflow_id": "8aff520b57f0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:21:10Z",
+      "updated_at": "2026-11-13T06:21:41Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 43377841679,
+      "name": "workflow-b0317f29692e",
+      "workflow_id": "b0317f29692e",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:18:58Z",
+      "updated_at": "2026-11-13T06:21:10Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-882b9716397c",
+      "id": 43377286925,
+      "name": "workflow-12a97ccf0fb5",
+      "workflow_id": "12a97ccf0fb5",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-13T06:14:14Z",
+      "updated_at": "2026-11-13T06:22:01Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 43376581323,
+      "name": "workflow-93c8a5530162",
+      "workflow_id": "93c8a5530162",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:08:07Z",
+      "updated_at": "2026-11-13T06:08:55Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 43376580508,
+      "name": "workflow-39dc37f08bb4",
+      "workflow_id": "39dc37f08bb4",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:08:07Z",
+      "updated_at": "2026-11-13T06:09:15Z",
+      "html_url": null,
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 43376560964,
+      "name": "workflow-373df73b43a9",
+      "workflow_id": "373df73b43a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:07:57Z",
+      "updated_at": "2026-11-13T06:08:08Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43378434674,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-13T06:24:04Z",
+      "updated_at": "2026-11-13T06:24:07Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43378434674",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43375937995,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:02:31Z",
+      "updated_at": "2026-11-13T06:03:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43375937995",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "githubpartners/microsoft-learn",
+      "id": 43376887841,
+      "name": "Issue Triage Agent (Agentic)",
+      "workflow_id": 343853034,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-13T06:10:43Z",
+      "updated_at": "2026-11-13T06:10:55Z",
+      "html_url": "https://github.com/githubpartners/microsoft-learn/actions/runs/43376887841",
+      "actor_login": "v-chukslord1"
+    }
+  ]
+}
