@@ -1,0 +1,117 @@
+{
+  "since": "2026-11-14T07:59:42Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43575086177,
+      "name": "Tag rajbos on new issues and PRs",
+      "workflow_id": 169491894,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-14T08:17:12Z",
+      "updated_at": "2026-11-14T08:17:12Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43575086177",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43575086213,
+      "name": "Deploy to GitHub Pages",
+      "workflow_id": 169491892,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-14T08:17:12Z",
+      "updated_at": "2026-11-14T08:17:12Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43575086213",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43575086272,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-14T08:17:12Z",
+      "updated_at": "2026-11-14T08:17:12Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43575086272",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43575068188,
+      "name": "Update model multipliers",
+      "workflow_id": 339458691,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T08:17:01Z",
+      "updated_at": "2026-11-14T08:17:11Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43575068188",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/github-copilot-model-notifier",
+      "id": 43574232233,
+      "name": "pages build and deployment",
+      "workflow_id": 241164719,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T08:06:43Z",
+      "updated_at": "2026-11-14T08:07:05Z",
+      "html_url": "https://github.com/rajbos/github-copilot-model-notifier/actions/runs/43574232233",
+      "actor_login": "github-pages[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-model-notifier",
+      "id": 43574222944,
+      "name": "Check GitHub Copilot Models",
+      "workflow_id": 240919636,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T08:06:36Z",
+      "updated_at": "2026-11-14T08:06:45Z",
+      "html_url": "https://github.com/rajbos/github-copilot-model-notifier/actions/runs/43574222944",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43575072684,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-14T08:17:03Z",
+      "updated_at": "2026-11-14T08:17:06Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43575072684",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43573782241,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T08:01:10Z",
+      "updated_at": "2026-11-14T08:02:29Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43573782241",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-a4941768b733",
+      "id": 43574071981,
+      "name": "workflow-ab8bbfbaf3a9",
+      "workflow_id": "ab8bbfbaf3a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T08:04:47Z",
+      "updated_at": "2026-11-14T08:04:57Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
