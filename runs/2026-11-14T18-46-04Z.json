@@ -1,0 +1,45 @@
+{
+  "since": "2026-11-14T18:29:15Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43628385219,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-14T18:45:37Z",
+      "updated_at": "2026-11-14T18:45:40Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43628385219",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43626996385,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-14T18:30:45Z",
+      "updated_at": "2026-11-14T18:31:50Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43626996385",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "XpiritCommunityEvents/HOLAgentFramework",
+      "id": 43627675820,
+      "name": "Provision Participant environment",
+      "workflow_id": 228666513,
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-14T18:37:55Z",
+      "updated_at": "2026-11-14T18:38:04Z",
+      "html_url": "https://github.com/XpiritCommunityEvents/HOLAgentFramework/actions/runs/43627675820",
+      "actor_login": "vriesmarcel"
+    }
+  ]
+}
