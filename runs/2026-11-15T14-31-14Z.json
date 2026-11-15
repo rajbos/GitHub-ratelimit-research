@@ -1,0 +1,21 @@
+{
+  "since": "2026-11-15T14:14:11Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-de7d21bc63a5",
+      "id": 43723847524,
+      "name": "workflow-64a26c5a9069",
+      "workflow_id": "64a26c5a9069",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T14:20:44Z",
+      "updated_at": "2026-11-15T14:21:11Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
