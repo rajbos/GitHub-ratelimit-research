@@ -1,0 +1,57 @@
+{
+  "since": "2026-11-15T17:59:34Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-de7d21bc63a5",
+      "id": 43744962497,
+      "name": "workflow-64a26c5a9069",
+      "workflow_id": "64a26c5a9069",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T18:07:38Z",
+      "updated_at": "2026-11-15T18:08:08Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43745825370,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-15T18:16:35Z",
+      "updated_at": "2026-11-15T18:16:38Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43745825370",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43744321405,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T18:01:02Z",
+      "updated_at": "2026-11-15T18:02:14Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43744321405",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-eb0ce5b1d598",
+      "id": 43745891051,
+      "name": "workflow-5678c32cd941",
+      "workflow_id": "5678c32cd941",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-15T18:17:13Z",
+      "updated_at": "2026-11-15T18:17:19Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    }
+  ]
+}
