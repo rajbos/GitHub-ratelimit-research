@@ -1,0 +1,45 @@
+{
+  "since": "2026-11-15T07:44:10Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43692543438,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-15T08:01:20Z",
+      "updated_at": "2026-11-15T08:01:23Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43692543438",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43691373327,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T07:45:41Z",
+      "updated_at": "2026-11-15T07:46:48Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43691373327",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 43692331273,
+      "name": "CodeQL",
+      "workflow_id": 357341985,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-15T07:58:42Z",
+      "updated_at": "2026-11-15T07:59:58Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/43692331273",
+      "actor_login": "rajbos"
+    }
+  ]
+}
