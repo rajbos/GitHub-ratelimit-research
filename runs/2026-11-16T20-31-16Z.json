@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-16T20:14:37Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43949827080,
+      "name": "workflow-8ebaa7a66754",
+      "workflow_id": "8ebaa7a66754",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T20:26:38Z",
+      "updated_at": "2026-11-16T20:27:02Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43949821236,
+      "name": "workflow-0c0c803f60fc",
+      "workflow_id": "0c0c803f60fc",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T20:26:37Z",
+      "updated_at": "2026-11-16T20:26:47Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43949546369,
+      "name": "workflow-b8f2eb633538",
+      "workflow_id": "b8f2eb633538",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T20:25:02Z",
+      "updated_at": "2026-11-16T20:26:31Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-1296dba9b48e",
+      "id": 43949546490,
+      "name": "workflow-b8f2eb633538",
+      "workflow_id": "b8f2eb633538",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T20:25:02Z",
+      "updated_at": "2026-11-16T20:26:54Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 43949112100,
+      "name": "workflow-a8655d8468e7",
+      "workflow_id": "a8655d8468e7",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-16T20:22:31Z",
+      "updated_at": "2026-11-16T20:30:21Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43950513097,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-16T20:30:40Z",
+      "updated_at": "2026-11-16T20:30:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43950513097",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43947979656,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T20:15:59Z",
+      "updated_at": "2026-11-16T20:17:24Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43947979656",
+      "actor_login": "rajbos"
+    }
+  ]
+}
