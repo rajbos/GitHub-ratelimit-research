@@ -1,0 +1,129 @@
+{
+  "since": "2026-11-16T08:07:32Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43832428329,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-16T08:35:14Z",
+      "updated_at": "2026-11-16T08:35:14Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43832428329",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43832428295,
+      "name": "Deploy to GitHub Pages",
+      "workflow_id": 169491892,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-16T08:35:14Z",
+      "updated_at": "2026-11-16T08:35:14Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43832428295",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43832428463,
+      "name": "Tag rajbos on new issues and PRs",
+      "workflow_id": 169491894,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-16T08:35:14Z",
+      "updated_at": "2026-11-16T08:35:14Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43832428463",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 43832397824,
+      "name": "Update model multipliers",
+      "workflow_id": 339458691,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T08:35:02Z",
+      "updated_at": "2026-11-16T08:35:14Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/43832397824",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-b3319f6d6648",
+      "id": 43830009856,
+      "name": "workflow-6087beee5efb",
+      "workflow_id": "6087beee5efb",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T08:17:14Z",
+      "updated_at": "2026-11-16T08:19:18Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 43829786058,
+      "name": "workflow-f23b268626ee",
+      "workflow_id": "f23b268626ee",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T08:15:31Z",
+      "updated_at": "2026-11-16T08:15:40Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 43829786006,
+      "name": "workflow-a19f6da367df",
+      "workflow_id": "a19f6da367df",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-16T08:15:31Z",
+      "updated_at": "2026-11-16T08:15:56Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43832395799,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-16T08:35:01Z",
+      "updated_at": "2026-11-16T08:35:05Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43832395799",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43828931423,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T08:08:58Z",
+      "updated_at": "2026-11-16T08:10:15Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43828931423",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-a4941768b733",
+      "id": 43829888041,
+      "name": "workflow-ab8bbfbaf3a9",
+      "workflow_id": "ab8bbfbaf3a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T08:16:17Z",
+      "updated_at": "2026-11-16T08:16:31Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
