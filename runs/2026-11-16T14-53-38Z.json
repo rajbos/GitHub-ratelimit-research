@@ -1,0 +1,141 @@
+{
+  "since": "2026-11-16T14:34:38Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43889558233,
+      "name": "workflow-18e3cc756efb",
+      "workflow_id": "18e3cc756efb",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:48:02Z",
+      "updated_at": "2026-11-16T14:48:12Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43889558239,
+      "name": "workflow-9fff162ee997",
+      "workflow_id": "9fff162ee997",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:48:02Z",
+      "updated_at": "2026-11-16T14:48:59Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43889558235,
+      "name": "workflow-b80b58aeaa94",
+      "workflow_id": "b80b58aeaa94",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-16T14:48:02Z",
+      "updated_at": "2026-11-16T14:51:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43889558286,
+      "name": "CodeQL",
+      "workflow_id": "10c1589fe836",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-16T14:48:02Z",
+      "updated_at": "2026-11-16T14:51:51Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43888648584,
+      "name": "workflow-b80b58aeaa94",
+      "workflow_id": "b80b58aeaa94",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-16T14:42:59Z",
+      "updated_at": "2026-11-16T14:48:14Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43888648633,
+      "name": "workflow-18e3cc756efb",
+      "workflow_id": "18e3cc756efb",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:42:59Z",
+      "updated_at": "2026-11-16T14:43:08Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43888647678,
+      "name": "workflow-9fff162ee997",
+      "workflow_id": "9fff162ee997",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:42:58Z",
+      "updated_at": "2026-11-16T14:44:03Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43888648342,
+      "name": "CodeQL",
+      "workflow_id": "10c1589fe836",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-16T14:42:58Z",
+      "updated_at": "2026-11-16T14:48:41Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 43888472850,
+      "name": "workflow-9fff162ee997",
+      "workflow_id": "9fff162ee997",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:42:00Z",
+      "updated_at": "2026-11-16T14:43:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43890464436,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-16T14:53:06Z",
+      "updated_at": "2026-11-16T14:53:09Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43890464436",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 43887444826,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-16T14:36:15Z",
+      "updated_at": "2026-11-16T14:37:25Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/43887444826",
+      "actor_login": "rajbos"
+    }
+  ]
+}
