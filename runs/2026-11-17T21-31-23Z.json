@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-17T21:14:24Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 44180146377,
+      "name": "UI checks comment",
+      "workflow_id": 410465030,
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-17T21:28:18Z",
+      "updated_at": "2026-11-17T21:28:19Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/44180146377",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 44179434216,
+      "name": "CodeQL",
+      "workflow_id": 357341985,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-17T21:24:10Z",
+      "updated_at": "2026-11-17T21:25:07Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/44179434216",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 44179434090,
+      "name": "CI",
+      "workflow_id": 259353175,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-17T21:24:10Z",
+      "updated_at": "2026-11-17T21:28:14Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/44179434090",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 44179241147,
+      "name": "npm_and_yarn in /. - Update #1712887024",
+      "workflow_id": 259184725,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-17T21:23:05Z",
+      "updated_at": "2026-11-17T21:24:05Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/44179241147",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "devex-metrics/devex-metrics",
+      "id": 44179241297,
+      "name": "github_actions in /. - Update #1712887034",
+      "workflow_id": 259184725,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-17T21:23:05Z",
+      "updated_at": "2026-11-17T21:23:58Z",
+      "html_url": "https://github.com/devex-metrics/devex-metrics/actions/runs/44179241297",
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44180571459,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-17T21:30:47Z",
+      "updated_at": "2026-11-17T21:30:50Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44180571459",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44177969922,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-17T21:15:53Z",
+      "updated_at": "2026-11-17T21:17:03Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44177969922",
+      "actor_login": "rajbos"
+    }
+  ]
+}
