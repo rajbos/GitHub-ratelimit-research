@@ -1,14 +1,12 @@
 {
-  "last_updated": "2026-11-17T07:18:15Z",
+  "last_updated": "2026-11-17T07:31:34Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13536,
-      "total_minutes": 1472,
+      "run_count": 13538,
+      "total_minutes": 1473,
       "seen_run_ids": [
-        43670416386,
-        43671776135,
         43672713891,
         43673791533,
         43674899505,
@@ -206,7 +204,9 @@
         44032606123,
         44033776662,
         44035519409,
-        44037591714
+        44037591714,
+        44039298653,
+        44038349273
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3544,7 +3544,7 @@
     "rajbos/actions-marketplace": {
       "full_name": "rajbos/actions-marketplace",
       "html_url": "https://github.com/rajbos/actions-marketplace",
-      "run_count": 138,
+      "run_count": 139,
       "total_minutes": 284,
       "seen_run_ids": [
         22548387879,
@@ -3684,7 +3684,8 @@
         43128215223,
         43337993872,
         43781671289,
-        43988575205
+        43988575205,
+        44038372071
       ]
     },
     "mcp-research/mcp-security-scans": {
@@ -5991,10 +5992,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12321,
+      "run_count": 12322,
       "total_minutes": 11971,
       "seen_run_ids": [
-        43381366685,
         43381363340,
         43381363345,
         43381363394,
@@ -6193,7 +6193,8 @@
         43979106603,
         43999906598,
         44007753153,
-        44024078440
+        44024078440,
+        44038457789
       ]
     },
     "rajbos-actions/github-show-actions": {
