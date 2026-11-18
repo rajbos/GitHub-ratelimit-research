@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-18T14:15:40Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44325032020,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-18T14:30:40Z",
+      "updated_at": "2026-11-18T14:30:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44325032020",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44322584936,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T14:17:12Z",
+      "updated_at": "2026-11-18T14:18:30Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44322584936",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 44322487230,
+      "name": "workflow-57beb9465d88",
+      "workflow_id": "57beb9465d88",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T14:16:38Z",
+      "updated_at": "2026-11-18T14:16:45Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 44322487215,
+      "name": "workflow-18e3cc756efb",
+      "workflow_id": "18e3cc756efb",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T14:16:38Z",
+      "updated_at": "2026-11-18T14:16:46Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 44322487191,
+      "name": "workflow-9fff162ee997",
+      "workflow_id": "9fff162ee997",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-18T14:16:38Z",
+      "updated_at": "2026-11-18T14:17:47Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 44322487272,
+      "name": "workflow-b80b58aeaa94",
+      "workflow_id": "b80b58aeaa94",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-18T14:16:38Z",
+      "updated_at": "2026-11-18T14:22:46Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-70f66c1b3417",
+      "id": 44322487231,
+      "name": "CodeQL",
+      "workflow_id": "10c1589fe836",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-18T14:16:38Z",
+      "updated_at": "2026-11-18T14:21:58Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
