@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T15:46:11Z",
+  "last_updated": "2026-11-18T16:01:33Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13666,
+      "run_count": 13667,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43875493566,
         43879261739,
         43882827606,
         43887444826,
@@ -206,7 +205,8 @@
         44330717731,
         44333570556,
         44336485361,
-        44339338462
+        44339338462,
+        44342278826
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6898,6 +6898,15 @@
         42777963305,
         42777962886,
         42777963109
+      ]
+    },
+    "Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr": {
+      "full_name": "Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr",
+      "html_url": "https://github.com/Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr",
+      "run_count": 1,
+      "total_minutes": 0,
+      "seen_run_ids": [
+        44340637077
       ]
     }
   }
