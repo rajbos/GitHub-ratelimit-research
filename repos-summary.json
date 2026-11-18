@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T20:46:22Z",
+  "last_updated": "2026-11-18T21:01:28Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13686,
+      "run_count": 13687,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43932212664,
         43934879225,
         43937452699,
         43940090073,
@@ -206,7 +205,8 @@
         44386539219,
         44389310981,
         44391788679,
-        44394416604
+        44394416604,
+        44397008717
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4727,21 +4727,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1818,
-      "total_minutes": 1654,
+      "run_count": 1830,
+      "total_minutes": 1664,
       "seen_run_ids": [
-        42019674132,
-        42019670375,
-        42056183587,
-        42067647172,
-        42067639282,
-        42067630879,
-        42071439445,
-        42071222251,
-        42071222653,
-        42071219805,
-        42081668098,
-        42081668171,
         42081668032,
         42081664859,
         42080923465,
@@ -4929,7 +4917,19 @@
         44357288953,
         44357288927,
         44357289057,
-        44357280037
+        44357280037,
+        44396775021,
+        44396772511,
+        44396772248,
+        44396688631,
+        44396686226,
+        44396686066,
+        44396597831,
+        44396593648,
+        44396593804,
+        44396500448,
+        44396498595,
+        44396497775
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5790,15 +5790,9 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 340,
-      "total_minutes": 44,
+      "run_count": 346,
+      "total_minutes": 48,
       "seen_run_ids": [
-        36113395504,
-        36229883686,
-        36229883680,
-        36229883683,
-        36229874508,
-        36306323566,
         36306323586,
         36306323601,
         36306314166,
@@ -5992,7 +5986,13 @@
         44357228458,
         44357228457,
         44357218837,
-        44357218901
+        44357218901,
+        44396207972,
+        44396207986,
+        44395957655,
+        44395957583,
+        44395944027,
+        44395945241
       ]
     },
     "rajbos/ai-engineering-fluency": {
