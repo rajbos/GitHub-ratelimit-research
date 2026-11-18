@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T15:01:42Z",
+  "last_updated": "2026-11-18T15:16:08Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13663,
+      "run_count": 13664,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43863002273,
         43867188362,
         43871325889,
         43875493566,
@@ -206,7 +205,8 @@
         44322584936,
         44325032020,
         44327829732,
-        44330717731
+        44330717731,
+        44333570556
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5162,14 +5162,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 1095,
-      "total_minutes": 1578,
+      "run_count": 1100,
+      "total_minutes": 1579,
       "seen_run_ids": [
-        36573895922,
-        36573881652,
-        36577373748,
-        36577361187,
-        36582968704,
         36582953863,
         36592448819,
         36593758438,
@@ -5364,7 +5359,12 @@
         44264431486,
         44270141765,
         44270119040,
-        44270531221
+        44270531221,
+        44332631513,
+        44332516726,
+        44332371558,
+        44332320443,
+        44332319970
       ]
     },
     "rajbos/demo-repo-march": {
@@ -5997,11 +5997,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12794,
-      "total_minutes": 12345,
+      "run_count": 12796,
+      "total_minutes": 12348,
       "seen_run_ids": [
-        44151170317,
-        44151162001,
         44151021296,
         44150627618,
         44150622714,
@@ -6199,7 +6197,9 @@
         44329391267,
         44329382316,
         44329379291,
-        44329140646
+        44329140646,
+        44332453130,
+        44332425807
       ]
     },
     "rajbos-actions/github-show-actions": {
