@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T17:16:13Z",
+  "last_updated": "2026-11-18T17:31:11Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13672,
+      "run_count": 13673,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43895993336,
         43898308102,
         43900446603,
         43902827469,
@@ -206,7 +205,8 @@
         44348053959,
         44350955432,
         44353873355,
-        44356662206
+        44356662206,
+        44359501107
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -4727,24 +4727,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1803,
-      "total_minutes": 1638,
+      "run_count": 1818,
+      "total_minutes": 1654,
       "seen_run_ids": [
-        42013321348,
-        42013319865,
-        42013318777,
-        42011835140,
-        42011665360,
-        42011665280,
-        42011665348,
-        42011661515,
-        42018919723,
-        42018918082,
-        42018918188,
-        42020109884,
-        42020108523,
-        42020108475,
-        42019674155,
         42019674132,
         42019670375,
         42056183587,
@@ -4929,7 +4914,22 @@
         44354414918,
         44354414946,
         44354415001,
-        44354404676
+        44354404676,
+        44358625975,
+        44358242211,
+        44358006805,
+        44358008050,
+        44358006765,
+        44358006773,
+        44357557662,
+        44357310900,
+        44357310884,
+        44357310842,
+        44357304782,
+        44357288953,
+        44357288927,
+        44357289057,
+        44357280037
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5790,13 +5790,9 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 336,
-      "total_minutes": 42,
+      "run_count": 340,
+      "total_minutes": 44,
       "seen_run_ids": [
-        35975762852,
-        36113412549,
-        36113412673,
-        36113412574,
         36113395504,
         36229883686,
         36229883680,
@@ -5992,7 +5988,11 @@
         44355579997,
         44355579626,
         44355562133,
-        44355562069
+        44355562069,
+        44357228458,
+        44357228457,
+        44357218837,
+        44357218901
       ]
     },
     "rajbos/ai-engineering-fluency": {
@@ -6748,7 +6748,7 @@
     "xebia/ai-assisted-se-claude-exercise": {
       "full_name": "xebia/ai-assisted-se-claude-exercise",
       "html_url": "https://github.com/xebia/ai-assisted-se-claude-exercise",
-      "run_count": 18,
+      "run_count": 19,
       "total_minutes": 15,
       "seen_run_ids": [
         38244738295,
@@ -6768,7 +6768,8 @@
         43835437201,
         43873131828,
         44090269307,
-        44288662197
+        44288662197,
+        44358565539
       ]
     },
     "xebia/github-universe-led-cap": {
