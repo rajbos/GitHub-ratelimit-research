@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T16:46:06Z",
+  "last_updated": "2026-11-18T17:01:43Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13670,
+      "run_count": 13671,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43890464436,
         43891869984,
         43895993336,
         43898308102,
@@ -206,7 +205,8 @@
         44342278826,
         44345220988,
         44348053959,
-        44350955432
+        44350955432,
+        44353873355
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1043,27 +1043,9 @@
     "devops-actions/load-runner-info": {
       "full_name": "devops-actions/load-runner-info",
       "html_url": "https://github.com/devops-actions/load-runner-info",
-      "run_count": 273,
-      "total_minutes": 112,
+      "run_count": 291,
+      "total_minutes": 116,
       "seen_run_ids": [
-        24286132126,
-        24286132117,
-        24286132073,
-        24286132133,
-        24286132118,
-        24286132071,
-        24286132120,
-        24286131454,
-        24286084216,
-        24286084221,
-        24929877360,
-        24929954572,
-        24929954567,
-        24929954569,
-        24929954561,
-        24929954535,
-        24929954539,
-        24929954229,
         24929933442,
         24929933426,
         24929933436,
@@ -1245,7 +1227,25 @@
         42137556486,
         42638365494,
         42682056939,
-        43962916938
+        43962916938,
+        44353784118,
+        44353784715,
+        44353784882,
+        44353783953,
+        44353784787,
+        44353784431,
+        44353782874,
+        44353782751,
+        44353774367,
+        44353745461,
+        44353745447,
+        44352803819,
+        44352803866,
+        44352803849,
+        44352803854,
+        44352800134,
+        44352802327,
+        44352802299
       ]
     },
     "devops-actions/github-actions-marketplace-news": {
@@ -2875,15 +2875,9 @@
     "devops-actions/json-to-file": {
       "full_name": "devops-actions/json-to-file",
       "html_url": "https://github.com/devops-actions/json-to-file",
-      "run_count": 206,
-      "total_minutes": 36,
+      "run_count": 212,
+      "total_minutes": 38,
       "seen_run_ids": [
-        22540905439,
-        22540876716,
-        22540876705,
-        23814624951,
-        23814624917,
-        23814625001,
         23814624905,
         23814435729,
         23814435724,
@@ -3077,7 +3071,13 @@
         42115027533,
         42115027869,
         42115026749,
-        42115026940
+        42115026940,
+        44353077201,
+        44353077479,
+        44353077334,
+        44353077089,
+        44353076274,
+        44353076388
       ]
     },
     "actions-marketplace-validations/issue-ops_labeler": {
@@ -5789,10 +5789,9 @@
     "rajbos/github-copilot-premium-reqs-usage-fork": {
       "full_name": "rajbos/github-copilot-premium-reqs-usage-fork",
       "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork",
-      "run_count": 330,
+      "run_count": 331,
       "total_minutes": 42,
       "seen_run_ids": [
-        35837517369,
         35884414100,
         35884413946,
         35975782315,
@@ -5991,35 +5990,16 @@
         44266079280,
         44266079222,
         44266079315,
-        44266052559
+        44266052559,
+        44353951107
       ]
     },
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12817,
-      "total_minutes": 12360,
+      "run_count": 12837,
+      "total_minutes": 12402,
       "seen_run_ids": [
-        44149436643,
-        44149436500,
-        44149435231,
-        44149352266,
-        44149138604,
-        44154186259,
-        44154181848,
-        44154181303,
-        44154181268,
-        44154181234,
-        44154180206,
-        44154181224,
-        44154181197,
-        44154161015,
-        44153899425,
-        44153581067,
-        44153149165,
-        44153139873,
-        44153140268,
-        44153140039,
         44153139924,
         44153140178,
         44153139879,
@@ -6199,7 +6179,27 @@
         44344379173,
         44347335121,
         44345733375,
-        44350873361
+        44350873361,
+        44353535059,
+        44351999306,
+        44351989390,
+        44351989732,
+        44351989648,
+        44351989907,
+        44351989774,
+        44351989630,
+        44351989521,
+        44351988731,
+        44351247255,
+        44351247154,
+        44351247481,
+        44351247139,
+        44351247158,
+        44351247681,
+        44351247611,
+        44351247532,
+        44351247303,
+        44351232278
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -6903,11 +6903,12 @@
     "Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr": {
       "full_name": "Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr",
       "html_url": "https://github.com/Technical-Bootcamp/2026-11-18-copilot-adv-hunter-1-bootcamp-pagelsr",
-      "run_count": 2,
+      "run_count": 3,
       "total_minutes": 0,
       "seen_run_ids": [
         44340637077,
-        44347153497
+        44347153497,
+        44351583095
       ]
     }
   }
