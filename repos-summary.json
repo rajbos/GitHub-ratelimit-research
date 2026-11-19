@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-19T12:02:01Z",
+  "last_updated": "2026-11-19T12:22:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13746,
+      "run_count": 13747,
       "total_minutes": 1477,
       "seen_run_ids": [
-        44058547032,
         44060877084,
         44063385610,
         44065490391,
@@ -206,7 +205,8 @@
         44513268901,
         44515465075,
         44517663299,
-        44520038173
+        44520038173,
+        44523161445
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2732,8 +2732,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 139,
-      "total_minutes": 157,
+      "run_count": 146,
+      "total_minutes": 159,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -2873,7 +2873,14 @@
         44485523806,
         44487208746,
         44519791902,
-        44519793451
+        44519793451,
+        44521330601,
+        44521327113,
+        44521038397,
+        44521037661,
+        44521037515,
+        44521025805,
+        44521024052
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -4822,13 +4829,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1870,
-      "total_minutes": 1691,
+      "run_count": 1874,
+      "total_minutes": 1695,
       "seen_run_ids": [
-        42383684336,
-        42383684384,
-        42383683059,
-        42383531935,
         42383531180,
         42383531536,
         42383160059,
@@ -5024,7 +5027,11 @@
         44499664990,
         44499665157,
         44499660906,
-        44503518769
+        44503518769,
+        44520598227,
+        44520595446,
+        44520595659,
+        44520551529
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
