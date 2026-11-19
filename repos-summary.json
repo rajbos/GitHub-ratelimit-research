@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-19T08:20:53Z",
+  "last_updated": "2026-11-19T08:31:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13731,
+      "run_count": 13732,
       "total_minutes": 1477,
       "seen_run_ids": [
-        44031102508,
         44032606123,
         44033776662,
         44035519409,
@@ -206,7 +205,8 @@
         44480168085,
         44482096662,
         44484145803,
-        44486760171
+        44486760171,
+        44488307180
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2732,7 +2732,7 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 136,
+      "run_count": 137,
       "total_minutes": 157,
       "seen_run_ids": [
         22539829530,
@@ -2870,7 +2870,8 @@
         44485530555,
         44485531050,
         44485530531,
-        44485523806
+        44485523806,
+        44487208746
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -6172,19 +6173,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12842,
-      "total_minutes": 12403,
+      "run_count": 12852,
+      "total_minutes": 12404,
       "seen_run_ids": [
-        44153125161,
-        44152434489,
-        44152429175,
-        44152429866,
-        44152429982,
-        44152429842,
-        44152430035,
-        44152429959,
-        44152429701,
-        44152429841,
         44152406443,
         44152263757,
         44151788637,
@@ -6374,7 +6365,17 @@
         44420436903,
         44441191027,
         44448966148,
-        44465148399
+        44465148399,
+        44487252872,
+        44487252987,
+        44487252911,
+        44487252889,
+        44487252952,
+        44487252883,
+        44487253002,
+        44487252848,
+        44487246402,
+        44487107278
       ]
     },
     "rajbos-actions/github-show-actions": {
