@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-18T23:46:10Z",
+  "last_updated": "2026-11-19T00:04:15Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13698,
+      "run_count": 13699,
       "total_minutes": 1477,
       "seen_run_ids": [
-        43963331795,
         43965811445,
         43968280586,
         43970735346,
@@ -206,7 +205,8 @@
         44416931155,
         44419173982,
         44421370505,
-        44423471895
+        44423471895,
+        44425922542
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -645,23 +645,9 @@
     "devops-actions/load-available-actions": {
       "full_name": "devops-actions/load-available-actions",
       "html_url": "https://github.com/devops-actions/load-available-actions",
-      "run_count": 324,
-      "total_minutes": 188,
+      "run_count": 338,
+      "total_minutes": 193,
       "seen_run_ids": [
-        30080760194,
-        30080760120,
-        30080759776,
-        30080760651,
-        30080759789,
-        30080364029,
-        30080364696,
-        30091248687,
-        30091248744,
-        30091248707,
-        30091248369,
-        30091248690,
-        30091248189,
-        30091248439,
         30091248384,
         30090770494,
         30090770042,
@@ -847,7 +833,21 @@
         44416230120,
         44416227920,
         44416227748,
-        44416228119
+        44416228119,
+        44425158457,
+        44425158460,
+        44425158944,
+        44425159148,
+        44425158615,
+        44425159137,
+        44425116088,
+        44425115631,
+        44425115569,
+        44425116368,
+        44425116306,
+        44425115141,
+        44425116146,
+        44425115346
       ]
     },
     "rajbos/GHAzDo-widget": {
