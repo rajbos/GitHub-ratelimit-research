@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-19T11:43:55Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/github-azure-devops-marketplace-extension-news",
+      "id": 44519791902,
+      "name": "Automatic Dependency Submission (NuGet)",
+      "workflow_id": 178477994,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T12:00:03Z",
+      "updated_at": "2026-11-19T12:00:55Z",
+      "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news/actions/runs/44519791902",
+      "actor_login": "github-advanced-security[bot]"
+    },
+    {
+      "repo": "rajbos/github-azure-devops-marketplace-extension-news",
+      "id": 44519793451,
+      "name": "Upgrade C# dependencies",
+      "workflow_id": 72853700,
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-19T12:00:03Z",
+      "updated_at": "2026-11-19T12:00:45Z",
+      "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news/actions/runs/44519793451",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/github-azure-devops-marketplace-extension-news",
+      "id": 44519793380,
+      "name": "CodeQL",
+      "workflow_id": 2800599,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T12:00:03Z",
+      "updated_at": "2026-11-19T12:02:25Z",
+      "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news/actions/runs/44519793380",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44520038173,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-19T12:01:33Z",
+      "updated_at": "2026-11-19T12:01:36Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44520038173",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44517663299,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-19T11:45:33Z",
+      "updated_at": "2026-11-19T11:46:43Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44517663299",
+      "actor_login": "rajbos"
+    }
+  ]
+}
