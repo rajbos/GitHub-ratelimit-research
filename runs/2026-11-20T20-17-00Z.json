@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-20T19:59:42Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44809853014,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-20T20:16:30Z",
+      "updated_at": "2026-11-20T20:16:33Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44809853014",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44807486479,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-20T20:01:06Z",
+      "updated_at": "2026-11-20T20:02:31Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44807486479",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-a4941768b733",
+      "id": 44807528177,
+      "name": "workflow-b05f098e1318",
+      "workflow_id": "b05f098e1318",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-20T20:01:22Z",
+      "updated_at": "2026-11-20T20:01:34Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-41fa80a8a9cb",
+      "id": 44809227579,
+      "name": "workflow-bf049b7fd15d",
+      "workflow_id": "bf049b7fd15d",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-20T20:12:25Z",
+      "updated_at": "2026-11-20T20:12:26Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-41fa80a8a9cb",
+      "id": 44809168018,
+      "name": "workflow-1e6288007936",
+      "workflow_id": "1e6288007936",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-20T20:12:01Z",
+      "updated_at": "2026-11-20T20:12:03Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
