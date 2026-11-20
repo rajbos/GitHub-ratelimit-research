@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-20T08:20:52Z",
+  "last_updated": "2026-11-20T08:32:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 13826,
+      "run_count": 13827,
       "total_minutes": 1478,
       "seen_run_ids": [
-        44248441558,
         44251163175,
         44252573575,
         44253905493,
@@ -206,7 +205,8 @@
         44695475962,
         44697346882,
         44699274166,
-        44701755829
+        44701755829,
+        44703159365
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2732,8 +2732,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 150,
-      "total_minutes": 160,
+      "run_count": 151,
+      "total_minutes": 164,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -2884,7 +2884,8 @@
         44698314715,
         44698077458,
         44698077234,
-        44698075864
+        44698075864,
+        44702127110
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -6189,19 +6190,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12852,
+      "run_count": 12862,
       "total_minutes": 12404,
       "seen_run_ids": [
-        44152406443,
-        44152263757,
-        44151788637,
-        44156282999,
-        44156274382,
-        44156274511,
-        44156274416,
-        44156274661,
-        44156274432,
-        44156274323,
         44156273194,
         44156214898,
         44155576914,
@@ -6391,7 +6382,17 @@
         44487253002,
         44487252848,
         44487246402,
-        44487107278
+        44487107278,
+        44702176227,
+        44702176437,
+        44702176140,
+        44702176211,
+        44702176338,
+        44702176218,
+        44702176255,
+        44702176224,
+        44702169808,
+        44702077872
       ]
     },
     "rajbos-actions/github-show-actions": {
