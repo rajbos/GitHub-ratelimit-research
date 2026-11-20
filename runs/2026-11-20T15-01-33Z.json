@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-20T14:44:16Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-147c7c57786f",
+      "id": 44758050390,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-20T14:54:59Z",
+      "updated_at": "2026-11-20T14:57:15Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 44757940602,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-20T14:54:17Z",
+      "updated_at": "2026-11-20T14:55:16Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 44756871616,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-20T14:47:39Z",
+      "updated_at": "2026-11-20T14:49:09Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44759008775,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-20T15:00:57Z",
+      "updated_at": "2026-11-20T15:01:00Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44759008775",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44756569047,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-20T14:45:46Z",
+      "updated_at": "2026-11-20T14:47:04Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44756569047",
+      "actor_login": "rajbos"
+    }
+  ]
+}
