@@ -1,0 +1,33 @@
+{
+  "since": "2026-11-21T18:44:13Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44938644808,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-21T19:01:11Z",
+      "updated_at": "2026-11-21T19:01:14Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44938644808",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44937278332,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T18:45:44Z",
+      "updated_at": "2026-11-21T18:46:48Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44937278332",
+      "actor_login": "rajbos"
+    }
+  ]
+}
