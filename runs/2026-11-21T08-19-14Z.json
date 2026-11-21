@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-21T08:00:00Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 44884200931,
+      "name": "Deploy to GitHub Pages",
+      "workflow_id": 169491892,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-21T08:17:44Z",
+      "updated_at": "2026-11-21T08:17:44Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/44884200931",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 44884200801,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-21T08:17:44Z",
+      "updated_at": "2026-11-21T08:17:44Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/44884200801",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 44884194240,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-21T08:17:39Z",
+      "updated_at": "2026-11-21T08:17:42Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/44884194240",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 44884183775,
+      "name": "Update model multipliers",
+      "workflow_id": 339458691,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T08:17:31Z",
+      "updated_at": "2026-11-21T08:17:41Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/44884183775",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44884274967,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-21T08:18:41Z",
+      "updated_at": "2026-11-21T08:18:44Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44884274967",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 44882904027,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T08:01:25Z",
+      "updated_at": "2026-11-21T08:02:50Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/44882904027",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-a4941768b733",
+      "id": 44883190665,
+      "name": "workflow-ab8bbfbaf3a9",
+      "workflow_id": "ab8bbfbaf3a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-21T08:05:05Z",
+      "updated_at": "2026-11-21T08:05:17Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
