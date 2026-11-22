@@ -1,0 +1,141 @@
+{
+  "since": "2026-11-22T22:29:23Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45078635139,
+      "name": "workflow-f23b268626ee",
+      "workflow_id": "f23b268626ee",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:36:04Z",
+      "updated_at": "2026-11-22T22:36:13Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45078217379,
+      "name": "workflow-f23b268626ee",
+      "workflow_id": "f23b268626ee",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:31:43Z",
+      "updated_at": "2026-11-22T22:31:53Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078420485,
+      "name": "workflow-8e94e2af62bd",
+      "workflow_id": "8e94e2af62bd",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-22T22:33:49Z",
+      "updated_at": "2026-11-22T22:34:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078265920,
+      "name": "workflow-9680ef33d646",
+      "workflow_id": "9680ef33d646",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:32:14Z",
+      "updated_at": "2026-11-22T22:38:31Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078253894,
+      "name": "workflow-b89716d77764",
+      "workflow_id": "b89716d77764",
+      "status": "completed",
+      "conclusion": "skipped",
+      "created_at": "2026-11-22T22:32:06Z",
+      "updated_at": "2026-11-22T22:32:07Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078253883,
+      "name": "workflow-fd971d2ac387",
+      "workflow_id": "fd971d2ac387",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:32:06Z",
+      "updated_at": "2026-11-22T22:33:40Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078251637,
+      "name": "workflow-e0eef29031ca",
+      "workflow_id": "e0eef29031ca",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:32:04Z",
+      "updated_at": "2026-11-22T22:34:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-f419c9680b7e",
+      "id": 45078247787,
+      "name": "workflow-fd971d2ac387",
+      "workflow_id": "fd971d2ac387",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:32:02Z",
+      "updated_at": "2026-11-22T22:33:29Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45079498878,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-22T22:45:39Z",
+      "updated_at": "2026-11-22T22:45:42Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45079498878",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45078128557,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T22:30:49Z",
+      "updated_at": "2026-11-22T22:31:58Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45078128557",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 45077997088,
+      "name": "workflow-dfc290fdc62c",
+      "workflow_id": "dfc290fdc62c",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-22T22:29:27Z",
+      "updated_at": "2026-11-22T22:31:47Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
