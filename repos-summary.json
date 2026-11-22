@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-22T11:01:27Z",
+  "last_updated": "2026-11-22T11:16:03Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14027,
+      "run_count": 14028,
       "total_minutes": 1488,
       "seen_run_ids": [
-        44705119959,
         44707160092,
         44709422053,
         44711342899,
@@ -206,7 +205,8 @@
         45011553198,
         45012793014,
         45013984871,
-        45015192679
+        45015192679,
+        45016424592
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3391,22 +3391,9 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 243,
+      "run_count": 256,
       "total_minutes": 93,
       "seen_run_ids": [
-        23089990554,
-        23089990506,
-        23089987378,
-        23089987295,
-        23090171698,
-        23090171683,
-        23090171661,
-        23090171608,
-        23090170841,
-        23090170790,
-        23090343446,
-        23090343448,
-        23090343443,
         23090343430,
         23090283665,
         23090283674,
@@ -3593,7 +3580,20 @@
         45014562122,
         45014561963,
         45014110382,
-        45014110418
+        45014110418,
+        45015374768,
+        45015374513,
+        45015374678,
+        45015374682,
+        45015374464,
+        45015374762,
+        45015374652,
+        45015337503,
+        45015337514,
+        45015337378,
+        45015337049,
+        45015337449,
+        45015323355
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -6205,12 +6205,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 12885,
+      "run_count": 12888,
       "total_minutes": 12405,
       "seen_run_ids": [
-        44160184820,
-        44160185112,
-        44160184958,
         44160185159,
         44160113864,
         44160113818,
@@ -6407,7 +6404,10 @@
         45002464158,
         45002464180,
         45002460651,
-        45002418355
+        45002418355,
+        45015396186,
+        45015396121,
+        45015396200
       ]
     },
     "rajbos-actions/github-show-actions": {
