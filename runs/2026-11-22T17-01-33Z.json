@@ -1,0 +1,57 @@
+{
+  "since": "2026-11-22T16:44:21Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45046401651,
+      "name": "workflow-a19f6da367df",
+      "workflow_id": "a19f6da367df",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-22T16:54:13Z",
+      "updated_at": "2026-11-22T16:54:38Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45047022673,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-22T17:01:01Z",
+      "updated_at": "2026-11-22T17:01:05Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45047022673",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45045628064,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T16:45:43Z",
+      "updated_at": "2026-11-22T16:47:05Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45045628064",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/ai-engineering-fluency",
+      "id": 45046159089,
+      "name": "UI checks comment",
+      "workflow_id": 381295949,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T16:51:34Z",
+      "updated_at": "2026-11-22T16:51:56Z",
+      "html_url": "https://github.com/rajbos/ai-engineering-fluency/actions/runs/45046159089",
+      "actor_login": "rajbos"
+    }
+  ]
+}
