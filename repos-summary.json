@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-22T13:46:07Z",
+  "last_updated": "2026-11-22T14:01:29Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14038,
+      "run_count": 14039,
       "total_minutes": 1488,
       "seen_run_ids": [
-        44728203412,
         44730213517,
         44732337938,
         44735131344,
@@ -206,7 +205,8 @@
         45025241972,
         45026566215,
         45027852173,
-        45029177553
+        45029177553,
+        45030499708
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3391,21 +3391,9 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 332,
+      "run_count": 344,
       "total_minutes": 95,
       "seen_run_ids": [
-        26343197597,
-        26343197616,
-        26343197583,
-        26343197615,
-        26343197566,
-        28335918464,
-        28335918481,
-        28335918534,
-        28335918482,
-        28335918319,
-        29163624931,
-        29163624959,
         29163624928,
         29163624919,
         29163624802,
@@ -3593,7 +3581,19 @@
         45028757263,
         45028757237,
         45028757023,
-        45028757001
+        45028757001,
+        45029758063,
+        45029758197,
+        45029758062,
+        45029758076,
+        45029758117,
+        45029758071,
+        45029757660,
+        45029757746,
+        45029750092,
+        45029750390,
+        45029750090,
+        45029750350
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -4846,12 +4846,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 1874,
+      "run_count": 1877,
       "total_minutes": 1695,
       "seen_run_ids": [
-        42383531180,
-        42383531536,
-        42383160059,
         42383159419,
         42383160129,
         42382923512,
@@ -5048,7 +5045,10 @@
         44520598227,
         44520595446,
         44520595659,
-        44520551529
+        44520551529,
+        45030340476,
+        45030340511,
+        45030200942
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -5293,10 +5293,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 1101,
+      "run_count": 1102,
       "total_minutes": 1579,
       "seen_run_ids": [
-        36592448819,
         36593758438,
         36617099980,
         36617099596,
@@ -5495,7 +5494,8 @@
         44332371558,
         44332320443,
         44332319970,
-        45020650144
+        45020650144,
+        45029882343
       ]
     },
     "rajbos/demo-repo-march": {
