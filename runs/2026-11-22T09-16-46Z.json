@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-22T08:59:58Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-8e6fe908487f",
+      "id": 45005995827,
+      "name": "workflow-a59f02c4931a",
+      "workflow_id": "a59f02c4931a",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T09:07:29Z",
+      "updated_at": "2026-11-22T09:08:30Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-8e6fe908487f",
+      "id": 45005798655,
+      "name": "workflow-f2ddd2562c68",
+      "workflow_id": "f2ddd2562c68",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T09:05:05Z",
+      "updated_at": "2026-11-22T09:05:52Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-8e6fe908487f",
+      "id": 45005762023,
+      "name": "workflow-532e384f3003",
+      "workflow_id": "532e384f3003",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T09:04:37Z",
+      "updated_at": "2026-11-22T09:05:05Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45006720437,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-22T09:16:18Z",
+      "updated_at": "2026-11-22T09:16:20Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45006720437",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45005501979,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-22T09:01:23Z",
+      "updated_at": "2026-11-22T09:02:49Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45005501979",
+      "actor_login": "rajbos"
+    }
+  ]
+}
