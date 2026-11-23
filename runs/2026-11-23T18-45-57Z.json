@@ -1,0 +1,153 @@
+{
+  "since": "2026-11-23T18:29:13Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-2aacb9660dd5",
+      "id": 45240900514,
+      "name": "workflow-1000f7b942f2",
+      "workflow_id": "1000f7b942f2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:40:33Z",
+      "updated_at": "2026-11-23T18:41:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240122915,
+      "name": "Scorecards supply-chain security scan",
+      "workflow_id": 253147827,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:06Z",
+      "updated_at": "2026-11-23T18:36:51Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240122915",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240122305,
+      "name": "Validate Action Examples",
+      "workflow_id": 259363883,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:06Z",
+      "updated_at": "2026-11-23T18:36:21Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240122305",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240122432,
+      "name": "Submit Actions Dependencies",
+      "workflow_id": 213561470,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:06Z",
+      "updated_at": "2026-11-23T18:37:04Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240122432",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240121533,
+      "name": "Lint Code Base",
+      "workflow_id": 51062063,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:06Z",
+      "updated_at": "2026-11-23T18:37:09Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240121533",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240120973,
+      "name": ".github/workflows/issue-pr-create.yml",
+      "workflow_id": 59524361,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:05Z",
+      "updated_at": "2026-11-23T18:36:24Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240120973",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240121435,
+      "name": "Test local action",
+      "workflow_id": 51015904,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:05Z",
+      "updated_at": "2026-11-23T18:36:56Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240121435",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240120884,
+      "name": "Update the rhysd/actionlint reference",
+      "workflow_id": 59410259,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:05Z",
+      "updated_at": "2026-11-23T18:36:25Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240120884",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240117840,
+      "name": ".github/workflows/workflow-with-errors.yml",
+      "workflow_id": 58819139,
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-23T18:36:04Z",
+      "updated_at": "2026-11-23T18:36:04Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240117840",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/actionlint",
+      "id": 45240117216,
+      "name": "Push on main",
+      "workflow_id": 144037513,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:36:04Z",
+      "updated_at": "2026-11-23T18:36:52Z",
+      "html_url": "https://github.com/devops-actions/actionlint/actions/runs/45240117216",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45241761202,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-23T18:45:32Z",
+      "updated_at": "2026-11-23T18:45:35Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45241761202",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45239173376,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T18:30:44Z",
+      "updated_at": "2026-11-23T18:32:06Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45239173376",
+      "actor_login": "rajbos"
+    }
+  ]
+}
