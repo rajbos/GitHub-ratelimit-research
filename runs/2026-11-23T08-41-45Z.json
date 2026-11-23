@@ -1,0 +1,93 @@
+{
+  "since": "2026-11-23T08:22:15Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-3acd20f224cb",
+      "id": 45139514813,
+      "name": "workflow-82d3fded5383",
+      "workflow_id": "82d3fded5383",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T08:33:03Z",
+      "updated_at": "2026-11-23T08:34:40Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45139602080,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-23T08:33:41Z",
+      "updated_at": "2026-11-23T08:41:13Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45139602080",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45138251590,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T08:23:40Z",
+      "updated_at": "2026-11-23T08:25:12Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45138251590",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 45138156554,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-23T08:22:55Z",
+      "updated_at": "2026-11-23T08:22:55Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/45138156554",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 45138157194,
+      "name": "Deploy to GitHub Pages",
+      "workflow_id": 169491892,
+      "status": "completed",
+      "conclusion": "action_required",
+      "created_at": "2026-11-23T08:22:55Z",
+      "updated_at": "2026-11-23T08:22:55Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/45138157194",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 45138144688,
+      "name": "CI Build",
+      "workflow_id": 192749475,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T08:22:49Z",
+      "updated_at": "2026-11-23T08:24:17Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/45138144688",
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "rajbos/github-copilot-premium-reqs-usage-fork",
+      "id": 45138125487,
+      "name": "Update model multipliers",
+      "workflow_id": 339458691,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-23T08:22:40Z",
+      "updated_at": "2026-11-23T08:22:52Z",
+      "html_url": "https://github.com/rajbos/github-copilot-premium-reqs-usage-fork/actions/runs/45138125487",
+      "actor_login": "rajbos"
+    }
+  ]
+}
