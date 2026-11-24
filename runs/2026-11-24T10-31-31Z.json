@@ -1,0 +1,153 @@
+{
+  "since": "2026-11-24T10:14:02Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-50a132694c7d",
+      "id": 45375472382,
+      "name": "workflow-f7794c72a9c6",
+      "workflow_id": "f7794c72a9c6",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:44Z",
+      "updated_at": "2026-11-24T10:31:15Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-50a132694c7d",
+      "id": 45375471787,
+      "name": "workflow-5ebabee4e894",
+      "workflow_id": "5ebabee4e894",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-24T10:30:43Z",
+      "updated_at": "2026-11-24T10:30:49Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375390791,
+      "name": "CI build",
+      "workflow_id": 41895914,
+      "status": "queued",
+      "conclusion": null,
+      "created_at": "2026-11-24T10:30:15Z",
+      "updated_at": "2026-11-24T10:30:15Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375390791",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375391299,
+      "name": "Lint GitHub Actions workflows",
+      "workflow_id": 219705464,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:15Z",
+      "updated_at": "2026-11-24T10:30:37Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375391299",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375391309,
+      "name": "Validate Action Examples",
+      "workflow_id": 259368304,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:15Z",
+      "updated_at": "2026-11-24T10:30:34Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375391309",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375391566,
+      "name": "Scorecards supply-chain security scan",
+      "workflow_id": 219706114,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:15Z",
+      "updated_at": "2026-11-24T10:31:14Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375391566",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375391388,
+      "name": "Submit Actions Dependencies",
+      "workflow_id": 219706113,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:15Z",
+      "updated_at": "2026-11-24T10:31:35Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375391388",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "devops-actions/variable-substitution",
+      "id": 45375390756,
+      "name": "CodeQL",
+      "workflow_id": 42619810,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:30:14Z",
+      "updated_at": "2026-11-24T10:32:08Z",
+      "html_url": "https://github.com/devops-actions/variable-substitution/actions/runs/45375390756",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45373327471,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-24T10:17:14Z",
+      "updated_at": "2026-11-24T10:19:54Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45375492824,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-24T10:30:51Z",
+      "updated_at": "2026-11-24T10:30:55Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45375492824",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45373054057,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T10:15:34Z",
+      "updated_at": "2026-11-24T10:16:50Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45373054057",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-8e5263c1ba5c",
+      "id": 45375683701,
+      "name": "workflow-2ad8498a0341",
+      "workflow_id": "2ad8498a0341",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-24T10:32:03Z",
+      "updated_at": "2026-11-24T10:32:08Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    }
+  ]
+}
