@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-24T19:01:23Z",
+  "last_updated": "2026-11-24T19:16:15Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14249,
+      "run_count": 14250,
       "total_minutes": 1504,
       "seen_run_ids": [
-        45045628064,
         45047022673,
         45048431205,
         45049850652,
@@ -206,7 +205,8 @@
         45458138803,
         45460331288,
         45462981738,
-        45465648508
+        45465648508,
+        45468314945
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1813,22 +1813,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 756,
-      "total_minutes": 361,
+      "run_count": 769,
+      "total_minutes": 362,
       "seen_run_ids": [
-        34094233367,
-        34094233285,
-        34094233323,
-        34094233337,
-        34094232606,
-        35571276615,
-        35571276629,
-        35571276692,
-        35571276590,
-        35571276571,
-        35571270503,
-        35571270481,
-        35571270480,
         35571270375,
         35571264690,
         35575352520,
@@ -2015,7 +2002,20 @@
         45287852997,
         45287852958,
         45287852948,
-        45287852915
+        45287852915,
+        45468380356,
+        45468380015,
+        45468380074,
+        45468380091,
+        45467023138,
+        45467000959,
+        45467002883,
+        45467001767,
+        45467001499,
+        45467000853,
+        45466993631,
+        45466986967,
+        45466986275
       ]
     },
     "rajbos/github-fork-updater": {
@@ -4042,16 +4042,9 @@
     "devops-actions/.github": {
       "full_name": "devops-actions/.github",
       "html_url": "https://github.com/devops-actions/.github",
-      "run_count": 394,
+      "run_count": 401,
       "total_minutes": 68,
       "seen_run_ids": [
-        33354151035,
-        33354151056,
-        33354151042,
-        33354151038,
-        33354148935,
-        33354098223,
-        33367945159,
         33367857517,
         34077588361,
         34077588406,
@@ -4244,7 +4237,14 @@
         45455787599,
         45455788488,
         45455764793,
-        45455764794
+        45455764794,
+        45468360977,
+        45468361296,
+        45466974039,
+        45466974495,
+        45466973986,
+        45466974393,
+        45466966962
       ]
     },
     "UnclesTavern/CopilotAdventures": {
