@@ -1,0 +1,117 @@
+{
+  "since": "2026-11-24T07:16:56Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45347646327,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-24T07:23:42Z",
+      "updated_at": "2026-11-24T07:25:53Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45347595700,
+      "name": "workflow-f472928b6735",
+      "workflow_id": "f472928b6735",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T07:23:18Z",
+      "updated_at": "2026-11-24T07:24:25Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45347548926,
+      "name": "workflow-f472928b6735",
+      "workflow_id": "f472928b6735",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-24T07:22:56Z",
+      "updated_at": "2026-11-24T07:23:24Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45347496353,
+      "name": "workflow-f472928b6735",
+      "workflow_id": "f472928b6735",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-24T07:22:31Z",
+      "updated_at": "2026-11-24T07:23:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45347374263,
+      "name": "workflow-f472928b6735",
+      "workflow_id": "f472928b6735",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "created_at": "2026-11-24T07:21:33Z",
+      "updated_at": "2026-11-24T07:22:41Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45348591073,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-24T07:31:02Z",
+      "updated_at": "2026-11-24T07:31:04Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45348591073",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45347739153,
+      "name": "Scorecard supply-chain security",
+      "workflow_id": 253687481,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T07:24:25Z",
+      "updated_at": "2026-11-24T07:25:07Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45347739153",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45346963675,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T07:18:22Z",
+      "updated_at": "2026-11-24T07:19:35Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45346963675",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/ai-engineering-fluency",
+      "id": 45347775609,
+      "name": "Scorecard supply-chain security",
+      "workflow_id": 193299170,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T07:24:42Z",
+      "updated_at": "2026-11-24T07:25:31Z",
+      "html_url": "https://github.com/rajbos/ai-engineering-fluency/actions/runs/45347775609",
+      "actor_login": "rajbos"
+    }
+  ]
+}
