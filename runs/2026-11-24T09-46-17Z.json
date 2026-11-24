@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-24T09:29:19Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45367784015,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-24T09:42:48Z",
+      "updated_at": "2026-11-24T09:45:09Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45366607356,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-24T09:35:14Z",
+      "updated_at": "2026-11-24T09:37:53Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "gh-actions-governance/actions-marketplace",
+      "id": 45367402345,
+      "name": "Get available action data",
+      "workflow_id": 10263440,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T09:40:20Z",
+      "updated_at": "2026-11-24T09:40:54Z",
+      "html_url": "https://github.com/gh-actions-governance/actions-marketplace/actions/runs/45367402345",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45368246608,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-24T09:45:42Z",
+      "updated_at": "2026-11-24T09:45:45Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45368246608",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45365906983,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-24T09:30:51Z",
+      "updated_at": "2026-11-24T09:32:08Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45365906983",
+      "actor_login": "rajbos"
+    }
+  ]
+}

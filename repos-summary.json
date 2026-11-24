@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-24T09:31:19Z",
+  "last_updated": "2026-11-24T09:46:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14211,
+      "run_count": 14212,
       "total_minutes": 1503,
       "seen_run_ids": [
-        44997460126,
         44998559239,
         44999689367,
         45000830688,
@@ -206,7 +205,8 @@
         45358981801,
         45361237425,
         45363992152,
-        45365906983
+        45365906983,
+        45368246608
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -7294,10 +7294,11 @@
     "gh-actions-governance/actions-marketplace": {
       "full_name": "gh-actions-governance/actions-marketplace",
       "html_url": "https://github.com/gh-actions-governance/actions-marketplace",
-      "run_count": 1,
+      "run_count": 2,
       "total_minutes": 0,
       "seen_run_ids": [
-        45089773687
+        45089773687,
+        45367402345
       ]
     },
     "devops-actions/actionlint-testing-repo": {
