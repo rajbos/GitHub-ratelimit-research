@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T12:02:19Z",
+  "last_updated": "2026-11-25T12:24:13Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14316,
+      "run_count": 14317,
       "total_minutes": 1508,
       "seen_run_ids": [
-        45152218511,
         45154686322,
         45156746851,
         45159027806,
@@ -206,7 +205,8 @@
         45602873349,
         45605111261,
         45607428837,
-        45609873842
+        45609873842,
+        45613315560
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -5411,10 +5411,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 1130,
+      "run_count": 1131,
       "total_minutes": 1604,
       "seen_run_ids": [
-        37027077681,
         37030517305,
         37030517074,
         37029984510,
@@ -5613,7 +5612,8 @@
         45601117567,
         45601097717,
         45609608380,
-        45609487382
+        45609487382,
+        45613017927
       ]
     },
     "rajbos/demo-repo-march": {
@@ -6449,21 +6449,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 13436,
+      "run_count": 13448,
       "total_minutes": 12931,
       "seen_run_ids": [
-        45268817480,
-        45268817308,
-        45268817409,
-        45268818071,
-        45268745146,
-        45268744551,
-        45268505374,
-        45268498760,
-        45268499366,
-        45268499136,
-        45268498750,
-        45268499047,
         45268499033,
         45268498774,
         45268481237,
@@ -6651,7 +6639,19 @@
         45609620114,
         45609620172,
         45609620045,
-        45609620149
+        45609620149,
+        45611887452,
+        45610736622,
+        45610121928,
+        45610121861,
+        45610121774,
+        45610121714,
+        45610121751,
+        45610121655,
+        45610121770,
+        45610121623,
+        45610121742,
+        45610109615
       ]
     },
     "rajbos-actions/github-show-actions": {
