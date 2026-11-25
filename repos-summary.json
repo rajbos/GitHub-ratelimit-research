@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T23:16:12Z",
+  "last_updated": "2026-11-25T23:31:17Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14361,
+      "run_count": 14362,
       "total_minutes": 1515,
       "seen_run_ids": [
-        45267836528,
         45270397347,
         45272970392,
         45275465199,
@@ -206,7 +205,8 @@
         45713836665,
         45715942838,
         45717967007,
-        45719968623
+        45719968623,
+        45721916171
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1813,18 +1813,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 804,
-      "total_minutes": 375,
+      "run_count": 813,
+      "total_minutes": 379,
       "seen_run_ids": [
-        35627584185,
-        35627584182,
-        35627579836,
-        35627577892,
-        35627577983,
-        37105270459,
-        37277186951,
-        37277186806,
-        37277186866,
         37277186613,
         37277186908,
         37277106777,
@@ -2015,7 +2006,16 @@
         45709270455,
         45709270092,
         45709270283,
-        45709268507
+        45709268507,
+        45721428949,
+        45721409297,
+        45721409347,
+        45721409363,
+        45721409678,
+        45721409783,
+        45721404783,
+        45721386236,
+        45721386059
       ]
     },
     "rajbos/github-fork-updater": {
@@ -2801,8 +2801,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 183,
-      "total_minutes": 175,
+      "run_count": 188,
+      "total_minutes": 176,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -2986,7 +2986,12 @@
         45713513778,
         45713508760,
         45713509129,
-        45712961275
+        45712961275,
+        45722008271,
+        45721839411,
+        45721839243,
+        45721840058,
+        45721817456
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -6481,10 +6486,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 14089,
+      "run_count": 14090,
       "total_minutes": 13677,
       "seen_run_ids": [
-        45703382709,
         45703361881,
         45703361646,
         45709465816,
@@ -6683,7 +6687,8 @@
         45718423179,
         45718413486,
         45718384854,
-        45718151602
+        45718151602,
+        45721132438
       ]
     },
     "rajbos-actions/github-show-actions": {
