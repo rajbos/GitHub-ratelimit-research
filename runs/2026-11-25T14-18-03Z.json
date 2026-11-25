@@ -1,0 +1,45 @@
+{
+  "since": "2026-11-25T13:59:50Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45632441544,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-25T14:17:30Z",
+      "updated_at": "2026-11-25T14:17:33Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45632441544",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45629522465,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-25T14:01:15Z",
+      "updated_at": "2026-11-25T14:02:44Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45629522465",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/ai-engineering-fluency",
+      "id": 45629616240,
+      "name": "Tag on New Issue",
+      "workflow_id": 219074839,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-25T14:01:47Z",
+      "updated_at": "2026-11-25T14:02:02Z",
+      "html_url": "https://github.com/rajbos/ai-engineering-fluency/actions/runs/45629616240",
+      "actor_login": "Squixx"
+    }
+  ]
+}
