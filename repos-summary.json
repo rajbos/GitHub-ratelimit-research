@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T21:31:17Z",
+  "last_updated": "2026-11-25T21:46:08Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14354,
+      "run_count": 14355,
       "total_minutes": 1511,
       "seen_run_ids": [
-        45249730269,
         45252263434,
         45254931918,
         45257559743,
@@ -206,7 +205,8 @@
         45698045640,
         45700429448,
         45702720938,
-        45705022766
+        45705022766,
+        45707275582
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1813,18 +1813,9 @@
     "devops-actions/alternative-github-actions-marketplace": {
       "full_name": "devops-actions/alternative-github-actions-marketplace",
       "html_url": "https://github.com/devops-actions/alternative-github-actions-marketplace",
-      "run_count": 790,
-      "total_minutes": 368,
+      "run_count": 799,
+      "total_minutes": 373,
       "seen_run_ids": [
-        35605842540,
-        35605842557,
-        35605843189,
-        35605842623,
-        35621749519,
-        35621732373,
-        35621730977,
-        35621731018,
-        35621731081,
         35621728020,
         35621707458,
         35621707401,
@@ -2015,7 +2006,16 @@
         45479373401,
         45479373619,
         45479373537,
-        45479371935
+        45479371935,
+        45706306445,
+        45706284186,
+        45706284250,
+        45706283743,
+        45706283868,
+        45706283813,
+        45706279230,
+        45706237728,
+        45706237777
       ]
     },
     "rajbos/github-fork-updater": {
@@ -2801,8 +2801,8 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 156,
-      "total_minutes": 165,
+      "run_count": 168,
+      "total_minutes": 168,
       "seen_run_ids": [
         22539829530,
         22539829516,
@@ -2959,7 +2959,19 @@
         45704407589,
         45704408379,
         45704407977,
-        45704377143
+        45704377143,
+        45705929166,
+        45705652153,
+        45705651484,
+        45705651598,
+        45705638780,
+        45705522091,
+        45705469372,
+        45705288834,
+        45705289503,
+        45705288597,
+        45705239894,
+        45705239879
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
