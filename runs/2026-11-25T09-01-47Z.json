@@ -1,0 +1,57 @@
+{
+  "since": "2026-11-25T08:44:12Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45581435696,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-25T09:01:13Z",
+      "updated_at": "2026-11-25T09:01:17Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45581435696",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45579116252,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-25T08:45:41Z",
+      "updated_at": "2026-11-25T08:47:10Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45579116252",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45578896271,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-25T08:44:13Z",
+      "updated_at": "2026-11-25T08:47:00Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/Jarvis",
+      "id": 45581383899,
+      "name": "gh-aw Version Drift Check",
+      "workflow_id": 280437634,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-25T09:00:55Z",
+      "updated_at": "2026-11-25T09:01:02Z",
+      "html_url": "https://github.com/rajbos/Jarvis/actions/runs/45581383899",
+      "actor_login": "rajbos"
+    }
+  ]
+}
