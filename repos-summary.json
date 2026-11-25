@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T11:01:41Z",
+  "last_updated": "2026-11-25T11:16:45Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14312,
+      "run_count": 14313,
       "total_minutes": 1508,
       "seen_run_ids": [
-        45143452867,
         45146353787,
         45148005656,
         45149933295,
@@ -206,7 +205,8 @@
         45593551716,
         45595691363,
         45598074646,
-        45600440927
+        45600440927,
+        45602873349
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3460,21 +3460,9 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 409,
-      "total_minutes": 116,
+      "run_count": 421,
+      "total_minutes": 118,
       "seen_run_ids": [
-        45013810515,
-        45013783888,
-        45013783784,
-        45013783497,
-        45013783454,
-        45013599426,
-        45013599433,
-        45013599416,
-        45013599238,
-        45013599478,
-        45013599418,
-        45013599496,
         45013525328,
         45013525358,
         45013525163,
@@ -3662,7 +3650,19 @@
         45472427866,
         45472405738,
         45472406416,
-        45472406499
+        45472406499,
+        45601713315,
+        45601712404,
+        45601712479,
+        45601713022,
+        45601712938,
+        45601713161,
+        45601713232,
+        45601712886,
+        45601666305,
+        45601666187,
+        45601665757,
+        45601665714
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
@@ -5411,12 +5411,9 @@
     "devex-metrics/devex-metrics": {
       "full_name": "devex-metrics/devex-metrics",
       "html_url": "https://github.com/devex-metrics/devex-metrics",
-      "run_count": 1125,
-      "total_minutes": 1602,
+      "run_count": 1128,
+      "total_minutes": 1604,
       "seen_run_ids": [
-        36984763791,
-        36993734934,
-        37026452872,
         37026357324,
         37026003722,
         37027077681,
@@ -5613,7 +5610,10 @@
         45600199051,
         45598582453,
         45598462813,
-        45598446977
+        45598446977,
+        45601250393,
+        45601117567,
+        45601097717
       ]
     },
     "rajbos/demo-repo-march": {
