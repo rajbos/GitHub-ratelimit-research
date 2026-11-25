@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T12:24:13Z",
+  "last_updated": "2026-11-25T12:35:23Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14317,
+      "run_count": 14318,
       "total_minutes": 1508,
       "seen_run_ids": [
-        45154686322,
         45156746851,
         45159027806,
         45161278268,
@@ -206,7 +205,8 @@
         45605111261,
         45607428837,
         45609873842,
-        45613315560
+        45613315560,
+        45615103883
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -3460,20 +3460,9 @@
     "devops-actions/variable-substitution": {
       "full_name": "devops-actions/variable-substitution",
       "html_url": "https://github.com/devops-actions/variable-substitution",
-      "run_count": 421,
-      "total_minutes": 118,
+      "run_count": 432,
+      "total_minutes": 121,
       "seen_run_ids": [
-        45013525328,
-        45013525358,
-        45013525163,
-        45014832399,
-        45014710159,
-        45014710110,
-        45014710055,
-        45014709722,
-        45014709758,
-        45014709926,
-        45014575071,
         45014575129,
         45014575082,
         45014575109,
@@ -3662,7 +3651,18 @@
         45601666305,
         45601666187,
         45601665757,
-        45601665714
+        45601665714,
+        45614116692,
+        45614116736,
+        45614116799,
+        45614116233,
+        45614116663,
+        45614116702,
+        45614116206,
+        45614107762,
+        45614107775,
+        45614107254,
+        45614107294
       ]
     },
     "actions-marketplace-validations/akiojin_clean-workspace-github-action": {
