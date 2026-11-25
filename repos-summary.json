@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T17:46:15Z",
+  "last_updated": "2026-11-25T18:01:48Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14339,
+      "run_count": 14340,
       "total_minutes": 1511,
       "seen_run_ids": [
-        45208836968,
         45211690907,
         45214809854,
         45217357927,
@@ -206,7 +205,8 @@
         45660146052,
         45662882166,
         45665544435,
-        45668119128
+        45668119128,
+        45670790437
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -6449,21 +6449,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 13782,
-      "total_minutes": 13167,
+      "run_count": 13794,
+      "total_minutes": 13173,
       "seen_run_ids": [
-        45640323559,
-        45640309309,
-        45640309404,
-        45640309233,
-        45640309260,
-        45640309357,
-        45640309688,
-        45640305830,
-        45640014745,
-        45639517927,
-        45638861216,
-        45638854499,
         45638854313,
         45638854389,
         45638854606,
@@ -6651,7 +6639,19 @@
         45666859247,
         45666859200,
         45666860024,
-        45666857846
+        45666857846,
+        45670124675,
+        45670030527,
+        45670025796,
+        45670026023,
+        45670026159,
+        45670026202,
+        45670025822,
+        45670026452,
+        45670026177,
+        45670025832,
+        45669989755,
+        45669613996
       ]
     },
     "rajbos-actions/github-show-actions": {
@@ -7463,7 +7463,7 @@
     "devops-actions/action-template": {
       "full_name": "devops-actions/action-template",
       "html_url": "https://github.com/devops-actions/action-template",
-      "run_count": 12,
+      "run_count": 17,
       "total_minutes": 0,
       "seen_run_ids": [
         45277087110,
@@ -7477,7 +7477,12 @@
         45640189662,
         45640189704,
         45640170731,
-        45640170513
+        45640170513,
+        45669656045,
+        45669656152,
+        45669656463,
+        45669656316,
+        45669655501
       ]
     }
   }
