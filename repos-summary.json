@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-25T22:01:26Z",
+  "last_updated": "2026-11-25T22:20:32Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14356,
-      "total_minutes": 1511,
+      "run_count": 14357,
+      "total_minutes": 1514,
       "seen_run_ids": [
-        45254931918,
         45257559743,
         45260109850,
         45262686566,
@@ -206,7 +205,8 @@
         45702720938,
         45705022766,
         45707275582,
-        45709502495
+        45709502495,
+        45711811881
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -2801,7 +2801,7 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 175,
+      "run_count": 179,
       "total_minutes": 170,
       "seen_run_ids": [
         22539829530,
@@ -2978,7 +2978,11 @@
         45709351702,
         45709352066,
         45709266246,
-        45709266673
+        45709266673,
+        45712226786,
+        45712227926,
+        45712226529,
+        45712170226
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -4941,12 +4945,9 @@
     "rajbos/Jarvis": {
       "full_name": "rajbos/Jarvis",
       "html_url": "https://github.com/rajbos/Jarvis",
-      "run_count": 2018,
+      "run_count": 2021,
       "total_minutes": 1814,
       "seen_run_ids": [
-        44396775021,
-        44396772511,
-        44396772248,
         44396688631,
         44396686226,
         44396686066,
@@ -5143,7 +5144,10 @@
         45336334566,
         45361232608,
         45533101648,
-        45581383899
+        45581383899,
+        45712216324,
+        45712211541,
+        45712210934
       ]
     },
     "GH-Action-workshop/rob-skills-hello-github-actions": {
@@ -6029,21 +6033,9 @@
     "devops-actions/azure-appservice-settings": {
       "full_name": "devops-actions/azure-appservice-settings",
       "html_url": "https://github.com/devops-actions/azure-appservice-settings",
-      "run_count": 228,
-      "total_minutes": 23,
+      "run_count": 240,
+      "total_minutes": 24,
       "seen_run_ids": [
-        24280496525,
-        24280496571,
-        24286130553,
-        24286130560,
-        24286130578,
-        24286130569,
-        24286130548,
-        24286130559,
-        24286082177,
-        24286082186,
-        24285989847,
-        25748361476,
         25748361570,
         25748361483,
         25748361252,
@@ -6231,7 +6223,19 @@
         45709622051,
         45709621988,
         45709478501,
-        45709478485
+        45709478485,
+        45710838836,
+        45710837992,
+        45710838980,
+        45710839012,
+        45710839142,
+        45709872927,
+        45709870803,
+        45709870586,
+        45709869760,
+        45709870493,
+        45709870430,
+        45709870543
       ]
     },
     "rajbos/demo-actions": {
@@ -6473,33 +6477,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 13914,
-      "total_minutes": 13282,
+      "run_count": 13938,
+      "total_minutes": 13354,
       "seen_run_ids": [
-        45650062235,
-        45650062357,
-        45649430782,
-        45649428981,
-        45648840662,
-        45653073788,
-        45652354443,
-        45652292860,
-        45652288604,
-        45652288659,
-        45652288179,
-        45652288772,
-        45652288716,
-        45652288840,
-        45652288505,
-        45652288710,
-        45652288735,
-        45652279807,
-        45652278996,
-        45652172365,
-        45652172060,
-        45652172326,
-        45652172277,
-        45652172231,
         45652172163,
         45652172285,
         45652172329,
@@ -6675,7 +6655,31 @@
         45708418960,
         45708243484,
         45708241536,
-        45708242379
+        45708242379,
+        45712172850,
+        45712143257,
+        45712137532,
+        45712137377,
+        45712137387,
+        45712137522,
+        45712137555,
+        45712137320,
+        45712137338,
+        45712127913,
+        45710982558,
+        45710976831,
+        45710976781,
+        45710976542,
+        45710976690,
+        45710976847,
+        45710976966,
+        45710976624,
+        45710976835,
+        45710977116,
+        45710976638,
+        45710914363,
+        45710912337,
+        45710242644
       ]
     },
     "rajbos-actions/github-show-actions": {
