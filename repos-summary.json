@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-26T21:01:20Z",
+  "last_updated": "2026-11-26T21:16:20Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14447,
+      "run_count": 14448,
       "total_minutes": 1524,
       "seen_run_ids": [
-        45462981738,
         45465648508,
         45468314945,
         45470965792,
@@ -206,7 +205,8 @@
         45889821149,
         45891552640,
         45893381757,
-        45895117568
+        45895117568,
+        45896903310
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 921,
-      "total_minutes": 836,
+      "run_count": 922,
+      "total_minutes": 837,
       "seen_run_ids": [
-        35527093755,
         35529031677,
         35528814220,
         35528436133,
@@ -622,7 +621,8 @@
         45889358206,
         45890568540,
         45892291952,
-        45894396645
+        45894396645,
+        45896366108
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -6491,29 +6491,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 14369,
-      "total_minutes": 13966,
+      "run_count": 14389,
+      "total_minutes": 13985,
       "seen_run_ids": [
-        45867481583,
-        45867481981,
-        45867481593,
-        45867483201,
-        45867481581,
-        45867481645,
-        45867469819,
-        45867298236,
-        45866952566,
-        45866948153,
-        45866948194,
-        45866947928,
-        45866947007,
-        45866947775,
-        45866947858,
-        45866947779,
-        45866911973,
-        45869717670,
-        45869559709,
-        45869559455,
         45869558376,
         45868976109,
         45868973006,
@@ -6693,7 +6673,27 @@
         45893789822,
         45893789890,
         45893789781,
-        45893789898
+        45893789898,
+        45896727112,
+        45895904768,
+        45895902929,
+        45895902885,
+        45895902917,
+        45895902276,
+        45895902924,
+        45895902967,
+        45895902920,
+        45895576119,
+        45895514239,
+        45895507858,
+        45895508050,
+        45895507882,
+        45895507866,
+        45895507805,
+        45895507869,
+        45895507978,
+        45895507896,
+        45895471043
       ]
     },
     "rajbos-actions/github-show-actions": {
