@@ -1,0 +1,45 @@
+{
+  "since": "2026-11-26T23:29:26Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45912804766,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T23:45:33Z",
+      "updated_at": "2026-11-26T23:45:36Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45912804766",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45911392204,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T23:31:02Z",
+      "updated_at": "2026-11-26T23:32:08Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45911392204",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45911939682,
+      "name": "Update Mirrors",
+      "workflow_id": 220063788,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T23:36:31Z",
+      "updated_at": "2026-11-26T23:37:10Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45911939682",
+      "actor_login": "rajbos"
+    }
+  ]
+}
