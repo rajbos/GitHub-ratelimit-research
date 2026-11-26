@@ -1,0 +1,105 @@
+{
+  "since": "2026-11-26T07:44:19Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "gh-actions-governance/actions-marketplace",
+      "id": 45779449297,
+      "name": "Get available action data",
+      "workflow_id": 10263440,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T07:59:35Z",
+      "updated_at": "2026-11-26T08:00:06Z",
+      "html_url": "https://github.com/gh-actions-governance/actions-marketplace/actions/runs/45779449297",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45778948555,
+      "name": "workflow-a6d97526d7eb",
+      "workflow_id": "a6d97526d7eb",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T07:55:30Z",
+      "updated_at": "2026-11-26T08:01:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-ef9ea506e64d",
+      "id": 45778512797,
+      "name": "workflow-f472928b6735",
+      "workflow_id": "f472928b6735",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T07:52:01Z",
+      "updated_at": "2026-11-26T07:57:51Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45778692161,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T07:53:27Z",
+      "updated_at": "2026-11-26T07:56:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45777945683,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T07:47:28Z",
+      "updated_at": "2026-11-26T07:50:13Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45779695437,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T08:01:22Z",
+      "updated_at": "2026-11-26T08:01:25Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45779695437",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45777726721,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T07:45:42Z",
+      "updated_at": "2026-11-26T07:47:03Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45777726721",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-cf0a903dbeb2",
+      "id": 45778171191,
+      "name": "workflow-31afb21cae81",
+      "workflow_id": "31afb21cae81",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-26T07:49:18Z",
+      "updated_at": "2026-11-26T07:50:21Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    }
+  ]
+}
