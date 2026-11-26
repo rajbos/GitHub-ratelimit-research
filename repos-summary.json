@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-26T10:01:43Z",
+  "last_updated": "2026-11-26T10:17:36Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14403,
+      "run_count": 14404,
       "total_minutes": 1517,
       "seen_run_ids": [
-        45350519706,
         45352560364,
         45355348351,
         45356863162,
@@ -206,7 +205,8 @@
         45790787830,
         45792639671,
         45794989401,
-        45797344688
+        45797344688,
+        45799879238
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -1251,11 +1251,9 @@
     "devops-actions/github-actions-marketplace-news": {
       "full_name": "devops-actions/github-actions-marketplace-news",
       "html_url": "https://github.com/devops-actions/github-actions-marketplace-news",
-      "run_count": 299,
-      "total_minutes": 864,
+      "run_count": 301,
+      "total_minutes": 865,
       "seen_run_ids": [
-        24215593599,
-        24247291974,
         24266202578,
         24276658564,
         24283688345,
@@ -1453,7 +1451,9 @@
         45719777966,
         45719778264,
         45719777730,
-        45719778352
+        45719778352,
+        45798131585,
+        45798131727
       ]
     },
     "devops-actions/github-copilot-pr-analysis": {
@@ -2801,7 +2801,7 @@
     "rajbos/github-azure-devops-marketplace-extension-news": {
       "full_name": "rajbos/github-azure-devops-marketplace-extension-news",
       "html_url": "https://github.com/rajbos/github-azure-devops-marketplace-extension-news",
-      "run_count": 190,
+      "run_count": 192,
       "total_minutes": 181,
       "seen_run_ids": [
         22539829530,
@@ -2993,7 +2993,9 @@
         45721840058,
         45721817456,
         45730167195,
-        45740002647
+        45740002647,
+        45798321690,
+        45798320229
       ]
     },
     "actions-marketplace-validations/devops-actions_azure-appservice-settings": {
@@ -6488,42 +6490,9 @@
     "rajbos/ai-engineering-fluency": {
       "full_name": "rajbos/ai-engineering-fluency",
       "html_url": "https://github.com/rajbos/ai-engineering-fluency",
-      "run_count": 14094,
-      "total_minutes": 13678,
+      "run_count": 14127,
+      "total_minutes": 13679,
       "seen_run_ids": [
-        45709152877,
-        45709154748,
-        45709152186,
-        45709152286,
-        45709152432,
-        45709152374,
-        45709152128,
-        45709076824,
-        45708426890,
-        45708418963,
-        45708419036,
-        45708418937,
-        45708418815,
-        45708418978,
-        45708418953,
-        45708418965,
-        45708418960,
-        45708243484,
-        45708241536,
-        45708242379,
-        45712172850,
-        45712143257,
-        45712137532,
-        45712137377,
-        45712137387,
-        45712137522,
-        45712137555,
-        45712137320,
-        45712137338,
-        45712127913,
-        45710982558,
-        45710976831,
-        45710976781,
         45710976542,
         45710976690,
         45710976847,
@@ -6690,7 +6659,40 @@
         45739632053,
         45746680298,
         45761654047,
-        45782747969
+        45782747969,
+        45800009420,
+        45799999983,
+        45799994510,
+        45799994471,
+        45799994468,
+        45799994545,
+        45799949339,
+        45799939599,
+        45799934279,
+        45799934271,
+        45799934362,
+        45799934603,
+        45799934276,
+        45799932835,
+        45799891758,
+        45799882434,
+        45799877865,
+        45799877835,
+        45799877983,
+        45799877792,
+        45799876717,
+        45799806442,
+        45799800647,
+        45799801314,
+        45799801237,
+        45799801246,
+        45799801269,
+        45799801239,
+        45799801176,
+        45799761584,
+        45799752274,
+        45799752483,
+        45799751003
       ]
     },
     "rajbos-actions/github-show-actions": {
