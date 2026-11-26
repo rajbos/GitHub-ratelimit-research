@@ -1,0 +1,69 @@
+{
+  "since": "2026-11-26T08:32:57Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45786105978,
+      "name": "workflow-f63b438d1622",
+      "workflow_id": "f63b438d1622",
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T08:47:10Z",
+      "updated_at": "2026-11-26T08:47:15Z",
+      "html_url": null,
+      "actor_login": "dependabot[bot]"
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45785940690,
+      "name": "workflow-a8655d8468e7",
+      "workflow_id": "a8655d8468e7",
+      "status": "waiting",
+      "conclusion": null,
+      "created_at": "2026-11-26T08:46:01Z",
+      "updated_at": "2026-11-26T08:47:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45785939559,
+      "name": "workflow-a19f6da367df",
+      "workflow_id": "a19f6da367df",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T08:46:00Z",
+      "updated_at": "2026-11-26T08:46:31Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45785903165,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T08:45:45Z",
+      "updated_at": "2026-11-26T08:46:13Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45785903165",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "private-550d9c28e4f7",
+      "id": 45784658556,
+      "name": "workflow-9d82ba4b8ea2",
+      "workflow_id": "9d82ba4b8ea2",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T08:36:53Z",
+      "updated_at": "2026-11-26T08:40:04Z",
+      "html_url": null,
+      "actor_login": ""
+    }
+  ]
+}
