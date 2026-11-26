@@ -1,0 +1,141 @@
+{
+  "since": "2026-11-26T21:59:52Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45903197603,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:11:49Z",
+      "updated_at": "2026-11-26T22:13:07Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45903197566,
+      "name": "workflow-ba67fbae1d52",
+      "workflow_id": "ba67fbae1d52",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:11:49Z",
+      "updated_at": "2026-11-26T22:13:58Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45903047932,
+      "name": "workflow-ba67fbae1d52",
+      "workflow_id": "ba67fbae1d52",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:10:29Z",
+      "updated_at": "2026-11-26T22:10:43Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45903047945,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:10:29Z",
+      "updated_at": "2026-11-26T22:11:45Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45902227499,
+      "name": "workflow-ba67fbae1d52",
+      "workflow_id": "ba67fbae1d52",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:03:07Z",
+      "updated_at": "2026-11-26T22:05:01Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45902227521,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:03:07Z",
+      "updated_at": "2026-11-26T22:04:44Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45901989778,
+      "name": "workflow-3db1cda3e574",
+      "workflow_id": "3db1cda3e574",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:00:59Z",
+      "updated_at": "2026-11-26T22:02:34Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-147c7c57786f",
+      "id": 45901989758,
+      "name": "workflow-ba67fbae1d52",
+      "workflow_id": "ba67fbae1d52",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:00:59Z",
+      "updated_at": "2026-11-26T22:03:02Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45903646157,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T22:15:48Z",
+      "updated_at": "2026-11-26T22:15:52Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45903646157",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45902025959,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-26T22:01:17Z",
+      "updated_at": "2026-11-26T22:02:30Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45902025959",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45903194867,
+      "name": "Analyze",
+      "workflow_id": 42674550,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-26T22:11:47Z",
+      "updated_at": "2026-11-26T22:13:17Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45903194867",
+      "actor_login": "rajbos"
+    }
+  ]
+}
