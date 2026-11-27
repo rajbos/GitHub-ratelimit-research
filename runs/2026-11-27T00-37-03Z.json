@@ -1,0 +1,57 @@
+{
+  "since": "2026-11-27T00:01:45Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45917714497,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:36:33Z",
+      "updated_at": "2026-11-27T00:36:35Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45917714497",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45914462364,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T00:03:14Z",
+      "updated_at": "2026-11-27T00:04:22Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45914462364",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45917787032,
+      "name": "Description backfill",
+      "workflow_id": 323169856,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:37:17Z",
+      "updated_at": "2026-11-27T00:37:20Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45917787032",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45917348992,
+      "name": "Analyze",
+      "workflow_id": 42674550,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:32:52Z",
+      "updated_at": "2026-11-27T00:34:30Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45917348992",
+      "actor_login": "rajbos"
+    }
+  ]
+}
