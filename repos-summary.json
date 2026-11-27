@@ -1,13 +1,12 @@
 {
-  "last_updated": "2026-11-27T08:01:55Z",
+  "last_updated": "2026-11-27T08:21:34Z",
   "repos": {
     "rajbos/GitHub-ratelimit-research": {
       "full_name": "rajbos/GitHub-ratelimit-research",
       "html_url": "https://github.com/rajbos/GitHub-ratelimit-research",
-      "run_count": 14490,
+      "run_count": 14491,
       "total_minutes": 1526,
       "seen_run_ids": [
-        45555807940,
         45557715998,
         45560589580,
         45562336521,
@@ -206,7 +205,8 @@
         45957560628,
         45958974674,
         45960712982,
-        45962521358
+        45962521358,
+        45964972540
       ]
     },
     "rajbos/github-copilot-token-usage": {
@@ -420,10 +420,9 @@
     "rajbos/actions-marketplace-checks": {
       "full_name": "rajbos/actions-marketplace-checks",
       "html_url": "https://github.com/rajbos/actions-marketplace-checks",
-      "run_count": 969,
-      "total_minutes": 886,
+      "run_count": 970,
+      "total_minutes": 888,
       "seen_run_ids": [
-        35533838814,
         35533835858,
         35533836018,
         35533835749,
@@ -622,7 +621,8 @@
         45954920896,
         45957109417,
         45958212648,
-        45959653956
+        45959653956,
+        45964493558
       ]
     },
     "rajbos/openssf-scorecard-monitor": {
@@ -7473,13 +7473,14 @@
     "gh-actions-governance/actions-marketplace": {
       "full_name": "gh-actions-governance/actions-marketplace",
       "html_url": "https://github.com/gh-actions-governance/actions-marketplace",
-      "run_count": 4,
+      "run_count": 5,
       "total_minutes": 0,
       "seen_run_ids": [
         45089773687,
         45367402345,
         45574235709,
-        45779449297
+        45779449297,
+        45962676839
       ]
     },
     "devops-actions/actionlint-testing-repo": {
