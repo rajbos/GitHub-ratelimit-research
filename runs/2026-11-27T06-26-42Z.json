@@ -1,0 +1,141 @@
+{
+  "since": "2026-11-27T06:01:17Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 45951397856,
+      "name": "workflow-8aff520b57f0",
+      "workflow_id": "8aff520b57f0",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:22:09Z",
+      "updated_at": "2026-11-27T06:22:40Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a49e32f8995",
+      "id": 45951146499,
+      "name": "workflow-b0317f29692e",
+      "workflow_id": "b0317f29692e",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:19:51Z",
+      "updated_at": "2026-11-27T06:22:11Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45950447457,
+      "name": "workflow-a19f6da367df",
+      "workflow_id": "a19f6da367df",
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-27T06:13:08Z",
+      "updated_at": "2026-11-27T06:13:41Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-1a7f33577d77",
+      "id": 45950447541,
+      "name": "workflow-f23b268626ee",
+      "workflow_id": "f23b268626ee",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:13:08Z",
+      "updated_at": "2026-11-27T06:13:20Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 45949982381,
+      "name": "workflow-39dc37f08bb4",
+      "workflow_id": "39dc37f08bb4",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:08:46Z",
+      "updated_at": "2026-11-27T06:09:43Z",
+      "html_url": null,
+      "actor_login": "github-actions[bot]"
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 45949982742,
+      "name": "workflow-93c8a5530162",
+      "workflow_id": "93c8a5530162",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:08:46Z",
+      "updated_at": "2026-11-27T06:09:31Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "private-c3701107ca9b",
+      "id": 45949968546,
+      "name": "workflow-373df73b43a9",
+      "workflow_id": "373df73b43a9",
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:08:38Z",
+      "updated_at": "2026-11-27T06:08:46Z",
+      "html_url": null,
+      "actor_login": ""
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45951834649,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T06:26:07Z",
+      "updated_at": "2026-11-27T06:26:10Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45951834649",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45949367401,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T06:02:45Z",
+      "updated_at": "2026-11-27T06:03:59Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45949367401",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45951915182,
+      "name": "Description backfill",
+      "workflow_id": 323169856,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T06:26:53Z",
+      "updated_at": "2026-11-27T06:26:56Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45951915182",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45951413996,
+      "name": "Analyze",
+      "workflow_id": 42674550,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T06:22:17Z",
+      "updated_at": "2026-11-27T06:24:00Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45951413996",
+      "actor_login": "rajbos"
+    }
+  ]
+}
