@@ -1,0 +1,105 @@
+{
+  "since": "2026-11-27T00:35:03Z",
+  "repos_planned": 20,
+  "repos_checked": 20,
+  "truncated": [],
+  "errors": [],
+  "runs": [
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45919357700,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:53:15Z",
+      "updated_at": "2026-11-27T00:55:34Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45919357700",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/GitHub-ratelimit-research",
+      "id": 45917714497,
+      "name": "Check GitHub Rate Limit",
+      "workflow_id": 239218135,
+      "status": "completed",
+      "conclusion": "success",
+      "created_at": "2026-11-27T00:36:33Z",
+      "updated_at": "2026-11-27T00:37:45Z",
+      "html_url": "https://github.com/rajbos/GitHub-ratelimit-research/actions/runs/45917714497",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45919652804,
+      "name": "Get repo info",
+      "workflow_id": 215184281,
+      "status": "queued",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:56:13Z",
+      "updated_at": "2026-11-27T00:56:13Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45919652804",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45919185783,
+      "name": "AI description generation",
+      "workflow_id": 323640583,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:51:29Z",
+      "updated_at": "2026-11-27T00:53:45Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45919185783",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45918864142,
+      "name": "Update Mirrors",
+      "workflow_id": 220063788,
+      "status": "queued",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:48:15Z",
+      "updated_at": "2026-11-27T00:49:16Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45918864142",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45918264594,
+      "name": "Refresh release/tag version info",
+      "workflow_id": 320929370,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:42:11Z",
+      "updated_at": "2026-11-27T00:42:22Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45918264594",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45917854053,
+      "name": "Upload to API",
+      "workflow_id": 220483920,
+      "status": "completed",
+      "conclusion": "failure",
+      "created_at": "2026-11-27T00:38:00Z",
+      "updated_at": "2026-11-27T00:44:20Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45917854053",
+      "actor_login": "rajbos"
+    },
+    {
+      "repo": "rajbos/actions-marketplace-checks",
+      "id": 45917787032,
+      "name": "Description backfill",
+      "workflow_id": 323169856,
+      "status": "in_progress",
+      "conclusion": null,
+      "created_at": "2026-11-27T00:37:17Z",
+      "updated_at": "2026-11-27T00:43:08Z",
+      "html_url": "https://github.com/rajbos/actions-marketplace-checks/actions/runs/45917787032",
+      "actor_login": "rajbos"
+    }
+  ]
+}
